@@ -13,7 +13,43 @@
                 <h5>Basic</h5>
                 <Dropdown v-model="selectedCity1" :options="cities" optionLabel="name" optionValue="code" placeholder="Select a City" />
 
-                <h5>Editable</h5>
+                <h5>Customize</h5>
+                <Dropdown
+                    v-model="selectedCity2"
+                    :options="cities"
+                    optionLabel="name"
+                    optionValue="code"
+                    placeholder="Select a City"
+                    :slotProps="{
+                        root: { class: 'inline-flex align-items-center border-1 border-500 border-round' },
+                        panel: { class: 'surface-overlay shadow-4 absolute' },
+                        input: { class: 'p-3 flex flex-grow-1 flex-shrink-1' },
+                        trigger: { class: 'p-3' },
+                        panelItemsWrapper: { class: 'overflow-auto max-h-20rem' },
+                        panelItems: { class: 'reset' }
+                    }"
+                />
+
+                <h5>Unstyled</h5>
+                <Dropdown
+                    v-model="selectedCity3"
+                    :options="cities"
+                    optionLabel="name"
+                    optionValue="code"
+                    placeholder="Select a City"
+                    :slotProps="{
+                        root: ({ states }) => ({ class: ['inline-flex align-items-center border-2 border-500 border-round cursor-pointer', { 'border-primary': states.focused }] }),
+                        panel: { class: 'surface-overlay shadow-4 absolute' },
+                        input: ({ root }) => ({ class: ['p-3 flex flex-grow-1 flex-shrink-1', { 'outline-none': root.states.focused }] }),
+                        trigger: { class: 'p-3' },
+                        panelItemsWrapper: { class: 'overflow-auto max-h-20rem' },
+                        panelItems: { class: 'reset' },
+                        panelItem: ({ states }) => ({ class: ['p-4 flex cursor-pointer hover:bg-gray-200', { 'bg-green-100': states.focused, 'bg-green-200': states.selected, 'bg-green-300': states.focused && states.selected }] })
+                    }"
+                    unstyled
+                />
+
+                <!--<h5>Editable</h5>
                 <Dropdown v-model="selectedCity2" :options="cities" optionLabel="name" :editable="true" />
 
                 <h5>Grouped</h5>
@@ -65,7 +101,7 @@
                             <Skeleton :width="options.even ? '60%' : '50%'" height="1rem" />
                         </div>
                     </template>
-                </Dropdown>
+                </Dropdown>-->
             </div>
         </div>
 
@@ -81,6 +117,7 @@ export default {
         return {
             selectedCity1: null,
             selectedCity2: null,
+            selectedCity3: null,
             selectedCountry: null,
             selectedGroupedCity: null,
             selectedItem1: null,
@@ -178,6 +215,12 @@ export default {
 .country-item-value {
     img.flag {
         width: 17px;
+    }
+}
+
+::v-deep(.p-dropdown) {
+    .p-placeholder {
+        color: red;
     }
 }
 </style>
