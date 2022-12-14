@@ -1083,10 +1083,18 @@ export default {
 
 <!-- TODO: Refactor => <style lang="scss"> -->
 <style>
+.p-dropdown {
+    position: relative;
+}
+
 .p-dropdown-panel {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.p-dropdown .p-dropdown-panel {
+    min-width: 100%;
 }
 
 @layer primevue.styled.dropdown {
@@ -1127,10 +1135,6 @@ export default {
 
     .p-dropdown.p-styled input.p-dropdown-label {
         cursor: default;
-    }
-
-    .p-dropdown.p-styled .p-dropdown-panel {
-        min-width: 100%;
     }
 
     .p-dropdown-panel.p-styled .p-dropdown-items-wrapper {
