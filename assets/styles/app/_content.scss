@@ -237,3 +237,19 @@
         }
     }
 }
+
+.layout-content {
+    margin-left: 250px;
+    padding-top: 5rem;
+
+    .layout-content-inner {
+        padding: 2rem 4rem;
+    }
+
+    .card {
+        background: var(--surface-card);
+        padding: 2rem;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+}

@@ -104,6 +104,11 @@ import AppDemoActions from '@/layouts/AppDemoActions';
 import AppDoc from '@/layouts/AppDocumentation';
 import AppInputStyleSwitch from '@/layouts/AppInputStyleSwitch';
 import DevelopmentSection from '@/layouts/DevelopmentSection';
+import DocApiSection from '@/layouts/doc/DocApiSection';
+import DocSectionCode from '@/layouts/doc/DocSectionCode';
+import DocSectionNav from '@/layouts/doc/DocSectionNav';
+import DocSections from '@/layouts/doc/DocSections';
+import DocSectionText from '@/layouts/doc/DocSectionText';
 
 export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.use(PrimeVue, { ripple: true });
@@ -215,4 +220,9 @@ export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.component('AppInputStyleSwitch', AppInputStyleSwitch);
     nuxtApp.vueApp.component('DevelopmentSection', DevelopmentSection);
     nuxtApp.vueApp.component('AppDoc', AppDoc);
+    nuxtApp.vueApp.component('DocSections', DocSections);
+    nuxtApp.vueApp.component('DocSectionText', DocSectionText);
+    nuxtApp.vueApp.component('DocSectionCode', DocSectionCode);
+    nuxtApp.vueApp.component('DocSectionNav', DocSectionNav);
+    nuxtApp.vueApp.component('DocApiSection', DocApiSection);
 });
