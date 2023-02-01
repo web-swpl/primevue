@@ -9,10 +9,6 @@
                     "to": "/setup"
                 },
                 {
-                    "name": "Examples",
-                    "href": "https://github.com/primefaces/primereact-examples"
-                },
-                {
                     "name": "Locale",
                     "to": "/locale"
                 },
@@ -70,6 +66,10 @@
                             "to": "/inputmask"
                         },
                         {
+                            "name": "InputNumber",
+                            "to": "/inputnumber"
+                        },
+                        {
                             "name": "InputSwitch",
                             "to": "/inputswitch"
                         },
@@ -78,28 +78,12 @@
                             "to": "/inputtext"
                         },
                         {
-                            "name": "InputTextarea",
-                            "to": "/inputtextarea"
-                        },
-                        {
-                            "name": "InputNumber",
-                            "to": "/inputnumber"
-                        },
-                        {
                             "name": "Knob",
                             "to": "/knob"
                         },
                         {
-                            "name": "KeyFilter",
-                            "to": "/keyfilter"
-                        },
-                        {
                             "name": "Listbox",
                             "to": "/listbox"
-                        },
-                        {
-                            "name": "Mention",
-                            "to": "/mention"
                         },
                         {
                             "name": "MultiSelect",
@@ -126,20 +110,20 @@
                             "to": "/slider"
                         },
                         {
+                            "name": "Textarea",
+                            "to": "/textarea"
+                        },
+                        {
+                            "name": "ToggleButton",
+                            "to": "/togglebutton"
+                        },
+                        {
                             "name": "TreeSelect",
                             "to": "/treeselect"
                         },
                         {
                             "name": "TriStateCheckbox",
                             "to": "/tristatecheckbox"
-                        },
-                        {
-                            "name": "MultiStateCheckbox",
-                            "to": "/multistatecheckbox"
-                        },
-                        {
-                            "name": "ToggleButton",
-                            "to": "/togglebutton"
                         }
                     ]
                 },
@@ -170,10 +154,6 @@
                         {
                             "name": "DataView",
                             "to": "/dataview"
-                        },
-                        {
-                            "name": "DataScroller",
-                            "to": "/datascroller"
                         },
                         {
                             "name": "VirtualScroller",
@@ -296,6 +276,10 @@
                     "name": "Menu",
                     "children": [
                         {
+                            "name": "MenuModel",
+                            "to": "/menumodel"
+                        },
+                        {
                             "name": "Breadcrumb",
                             "to": "/breadcrumb"
                         },
@@ -311,7 +295,6 @@
                             "name": "Menu",
                             "to": "/menu"
                         },
-
                         {
                             "name": "Menubar",
                             "to": "/menubar"
@@ -323,10 +306,6 @@
                         {
                             "name": "PanelMenu",
                             "to": "/panelmenu"
-                        },
-                        {
-                            "name": "SlideMenu",
-                            "to": "/slidemenu"
                         },
                         {
                             "name": "Steps",
@@ -357,10 +336,6 @@
                         {
                             "name": "Message",
                             "to": "/message"
-                        },
-                        {
-                            "name": "Messages",
-                            "to": "/messages"
                         },
                         {
                             "name": "Toast",
@@ -403,6 +378,10 @@
                         {
                             "name": "Chip",
                             "to": "/chip"
+                        },
+                        {
+                            "name": "FocusTrap",
+                            "to": "/focustrap"
                         },
                         {
                             "name": "Inplace",
