@@ -53,46 +53,6 @@ export default {
                     label: 'API',
                     doc: [{ name: 'Terminal', pathname: '/modules/terminal.html' }]
                 }
-                /*   {
-                    id: 'basic',
-                    label: 'Basic',
-                    component: BasicDoc
-                },
-                {
-                    id: 'severity',
-                    label: 'Severity',
-                    component: SeverityDoc
-                },
-                {
-                    id: 'pill',
-                    label: 'Pill',
-                    component: PillDoc
-                },
-                {
-                    id: 'icons',
-                    label: 'Icon',
-                    component: IconDoc
-                },
-                {
-                    id: 'template',
-                    label: 'Template',
-                    component: TemplateDoc
-                },
-                {
-                    id: 'style',
-                    label: 'Style',
-                    component: StyleDoc
-                },
-                {
-                    id: 'accessibility',
-                    label: 'Accessibility',
-                    component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Tag', pathname: '/modules/tag.html' }]
-                } */
             ]
         };
     }
