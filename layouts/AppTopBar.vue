@@ -12,8 +12,8 @@
                 >
                     <i class="pi pi-github text-700"></i>
                 </a>
-                <div ref="{containerElement}" class="layout-topbar">
-                    <button type="button" class="p-link menu-button" onClick="{onMenuButtonClick}" aria-haspopup aria-label="Menu">
+                <div class="layout-topbar">
+                    <button type="button" class="p-link menu-button" @click="onMenuButtonClick" aria-haspopup aria-label="Menu">
                         <i class="pi pi-bars"></i>
                     </button>
 
@@ -35,7 +35,7 @@
                             </a>
                         </li>
                         <li>
-                            <button type="button" class="p-button flex border-1 w-2rem h-2rem p-0 align-items-center justify-content-center transition-all transition-duration-300" onClick="{onConfigButtonClick}">
+                            <button type="button" class="p-button flex border-1 w-2rem h-2rem p-0 align-items-center justify-content-center transition-all transition-duration-300" @click="onConfigButtonClick">
                                 <i class="pi pi-cog"></i>
                             </button>
                         </li>
@@ -70,7 +70,7 @@
                 </a>
             </li>
             <li>
-                <button type="button" class="p-button flex border-1 w-2rem h-2rem p-0 align-items-center justify-content-center transition-all transition-duration-300" onClick="{onConfigButtonClick}">
+                <button type="button" class="p-button flex border-1 w-2rem h-2rem p-0 align-items-center justify-content-center transition-all transition-duration-300" @click="onConfigButtonClick">
                     <i class="pi pi-cog"></i>
                 </button>
             </li>
@@ -101,12 +101,9 @@
 </template>
 
 <script>
-import EventBus from '@/layouts/AppEventBus';
-
 export default {
-    emits: ['menubutton-click'],
+    emits: ['menubutton-click', 'configbutton-click'],
     outsideClickListener: null,
-    darkDemoStyle: null,
     data() {
         return {
             versions: [
@@ -128,11 +125,6 @@ export default {
             ]
         };
     },
-    watch: {
-        $route() {
-            this.activeMenuIndex = null;
-        }
-    },
     scrollListener: null,
     container: null,
     mounted() {
@@ -144,17 +136,11 @@ export default {
         }
     },
     methods: {
-        changeTheme(event, theme, dark) {
-            EventBus.emit('theme-change', { theme: theme, dark: dark });
-            this.activeMenuIndex = null;
-            event.preventDefault();
+        onConfigButtonClick(event) {
+            this.$emit('configbutton-click', event);
         },
-        toggleMenu(event, index) {
-            this.activeMenuIndex = this.activeMenuIndex === index ? null : index;
-            event.preventDefault();
-        },
-        onMenuEnter() {
-            this.bindOutsideClickListener();
+        onMenuButtonClick(event) {
+            this.$emit('menubutton-click', event);
         },
         bindScrollListener() {
             if (!this.scrollListener) {
@@ -177,8 +163,7 @@ export default {
         bindOutsideClickListener() {
             if (!this.outsideClickListener) {
                 this.outsideClickListener = (event) => {
-                    if (this.activeMenuIndex != null && this.isOutsideTopbarMenuClicked(event)) {
-                        this.activeMenuIndex = null;
+                    if (this.isOutsideTopbarMenuClicked(event)) {
                         this.unbindOutsideClickListener();
                     }
                 };

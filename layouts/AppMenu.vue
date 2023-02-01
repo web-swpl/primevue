@@ -1,5 +1,5 @@
 <template>
-    <aside class="layout-sidebar">
+    <aside class="layout-sidebar" :class="{ active: active }">
         <nuxt-link to="/" class="logo" aria-label="PrimeReact logo"> <img alt="logo" :src="`/demo/images/primevue-logo${darkTheme ? '-light' : '-dark'}.svg`" /></nuxt-link>
         <nav>
             <ol class="layout-menu">
@@ -13,6 +13,12 @@
 import menudata from '@/assets/menu/menu.json';
 import AppMenuItem from './AppMenuItem.vue';
 export default {
+    props: {
+        active: {
+            type: Boolean,
+            default: true
+        }
+    },
     data() {
         return {
             menu: menudata.data
