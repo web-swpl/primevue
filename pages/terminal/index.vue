@@ -5,7 +5,7 @@
             <Meta name="description" content="Terminal is a text based user interface." />
         </Head>
 
-        <div class="content-section doc">
+        <div class="doc">
             <div class="doc-main">
                 <div class="doc-intro">
                     <h1>Terminal</h1>

@@ -5,7 +5,7 @@
             <Meta name="description" content="Tag component is used to categorize content." />
         </Head>
 
-        <div class="content-section doc">
+        <div class="doc">
             <div class="doc-main">
                 <div class="doc-intro">
                     <h1>Tag</h1>
