@@ -9,7 +9,7 @@
         <Badge value="12" severity="warning"></Badge>
         <Badge value="3" severity="danger"></Badge>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

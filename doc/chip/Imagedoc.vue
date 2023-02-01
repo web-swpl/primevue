@@ -8,7 +8,7 @@
         <Chip label="Onyama Limba" image="/demo/images/avatar/onyamalimba.png" />
         <Chip label="Xuxue Feng" image="/demo/images/avatar/xuxuefeng.png" removable />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

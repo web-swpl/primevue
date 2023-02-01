@@ -7,7 +7,7 @@
         <i v-badge.danger="'5+'" class="pi pi-calendar p-overlay-badge" style="font-size: 2rem" />
         <i v-badge.danger class="pi pi-envelope p-overlay-badge" style="font-size: 2rem" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

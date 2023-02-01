@@ -40,7 +40,7 @@
             <Button type="submit" label="Submit" class="mt-2" />
         </div>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

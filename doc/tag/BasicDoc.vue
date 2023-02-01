@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <Tag value="New"></Tag>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

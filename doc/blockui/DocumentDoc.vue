@@ -6,7 +6,7 @@
         <BlockUI :blocked="blocked" fullScreen />
         <Button label="Block" @click="blockDocument" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

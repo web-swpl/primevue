@@ -8,7 +8,7 @@
         <Chip label="Google" icon="pi pi-google" />
         <Chip label="Microsoft" icon="pi pi-microsoft" removable />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>
