@@ -22,8 +22,7 @@
 import AccessibilityDoc from '../../doc/badge/AccessibilityDoc.vue';
 import BasicDoc from '../../doc/badge/BasicDoc.vue';
 import ButtonDoc from '../../doc/badge/ButtonDoc.vue';
-import ImportComponentDoc from '../../doc/badge/ImportComponentDoc.vue';
-import ImportDirectiveDoc from '../../doc/badge/ImportDirectiveDoc.vue';
+import ImportDoc from '../../doc/badge/ImportDoc.vue';
 import PositionDoc from '../../doc/badge/PositionDoc.vue';
 import SeverityDoc from '../../doc/badge/SeverityDoc.vue';
 import SizeDoc from '../../doc/badge/SizeDoc.vue';
@@ -34,14 +33,9 @@ export default {
         return {
             docs: [
                 {
-                    id: 'importcomponent',
-                    label: 'Import as a Component',
-                    component: ImportComponentDoc
-                },
-                {
-                    id: 'importdirective',
-                    label: 'Import as a Directive',
-                    component: ImportDirectiveDoc
+                    id: 'import',
+                    label: 'Import',
+                    component: ImportDoc
                 },
                 {
                     id: 'basic',

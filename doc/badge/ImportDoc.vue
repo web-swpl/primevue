@@ -8,7 +8,13 @@ export default {
     data() {
         return {
             code: {
-                basic: `import Badge from 'primevue/badge';`
+                basic: `// import as component
+import Badge from 'primevue/badge';
+
+// import as directive
+import BadgeDirective from 'primevue/badgedirective';
+
+app.directive('badge', BadgeDirective);`
             }
         };
     }
