@@ -5,67 +5,74 @@
             <Meta name="description" content="ProgressBar is a process status indicator." />
         </Head>
 
-        <div class="content-section introduction">
-            <div class="feature-intro">
-                <h1>ProgressBar</h1>
-                <p>ProgressBar is a process status indicator.</p>
+        <div class="doc">
+            <div class="doc-main">
+                <div class="doc-intro">
+                    <h1>ProgressBar</h1>
+                    <p>ProgressBar is a process status indicator.</p>
+                </div>
+                <DocSections :docs="docs" />
             </div>
-            <AppDemoActions />
+            <DocSectionNav :docs="docs" />
         </div>
-
-        <div class="content-section implementation">
-            <div class="card">
-                <h5>Dynamic</h5>
-                <ProgressBar :value="value1" />
-
-                <h5>Static</h5>
-                <ProgressBar :value="value2" :showValue="false" />
-
-                <h5>Indeterminate</h5>
-                <ProgressBar mode="indeterminate" style="height: 0.5em" />
-            </div>
-        </div>
-
-        <ProgressBarDoc />
     </div>
 </template>
 
 <script>
-import ProgressBarDoc from './ProgressBarDoc';
+import AccessibilityDoc from '../../doc/progressbar/AccessibilityDoc';
+import BasicDoc from '../../doc/progressbar/BasicDoc';
+import DynamicDoc from '../../doc/progressbar/DynamicDoc';
+import ImportDoc from '../../doc/progressbar/ImportDoc';
+import IndeterminateDoc from '../../doc/progressbar/IndeterminateDoc';
+import StyleDoc from '../../doc/progressbar/StyleDoc';
+import TemplateDoc from '../../doc/progressbar/TemplateDoc';
 
 export default {
     data() {
         return {
-            value1: 0,
-            value2: 50
-        };
-    },
-    interval: null,
-    mounted() {
-        this.startProgress();
-    },
-    beforeUnmount() {
-        this.endProgress();
-    },
-    methods: {
-        startProgress() {
-            this.interval = setInterval(() => {
-                let newValue = this.value1 + Math.floor(Math.random() * 10) + 1;
-
-                if (newValue >= 100) {
-                    newValue = 100;
+            docs: [
+                {
+                    id: 'import',
+                    label: 'Import',
+                    component: ImportDoc
+                },
+                {
+                    id: 'basic',
+                    label: 'Basic',
+                    component: BasicDoc
+                },
+                {
+                    id: 'dynamic',
+                    label: 'Dynamic',
+                    component: DynamicDoc
+                },
+                {
+                    id: 'template',
+                    label: 'Template',
+                    component: TemplateDoc
+                },
+                {
+                    id: 'indeterminate',
+                    label: 'Indeterminate',
+                    component: IndeterminateDoc
+                },
+                {
+                    id: 'style',
+                    label: 'Style',
+                    component: StyleDoc
+                },
+                {
+                    id: 'accessibility',
+                    label: 'Accessibility',
+                    component: AccessibilityDoc
+                },
+                {
+                    id: 'api',
+                    label: 'API',
+                    doc: [{ name: 'ProgressBar', pathname: '/modules/progressbar.html' }]
                 }
-
-                this.value1 = newValue;
-            }, 2000);
-        },
-        endProgress() {
-            clearInterval(this.interval);
-            this.interval = null;
-        }
-    },
-    components: {
-        ProgressBarDoc: ProgressBarDoc
+            ]
+        };
     }
 };
 </script>
