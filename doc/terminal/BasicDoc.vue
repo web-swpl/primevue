@@ -64,26 +64,25 @@ export default {
     }
 }
 <\/script>
-<style lang="scss" scoped>
+<style scoped>
 p {
     margin-top: 0;
 }
-
 ::v-deep(.dark-demo-terminal) {
     background-color: #212121;
     color: #ffffff;
+}
 
-    .p-terminal-command {
-        color: #80CBC4;
-    }
+::v-deep(.dark-demo-terminal .p-terminal-command) {
+    color: #80cbc4;
+}
 
-    .p-terminal-prompt {
-        color: #FFD54F;
-    }
+::v-deep(.dark-demo-terminal .p-terminal-prompt) {
+    color: #ffd54f;
+}
 
-    .p-terminal-response {
-        color: #9FA8DA;
-    }
+::v-deep(.dark-demo-terminal .p-terminal-response) {
+    color: #9fa8da;
 }
 </style>
         `,
@@ -133,26 +132,25 @@ const commandHandler = (text) => {
 }
 <\/script>
 
-<style lang="scss" scoped>
+<style scoped>
 p {
     margin-top: 0;
 }
-
 ::v-deep(.dark-demo-terminal) {
     background-color: #212121;
     color: #ffffff;
+}
 
-    .p-terminal-command {
-        color: #80CBC4;
-    }
+::v-deep(.dark-demo-terminal .p-terminal-command) {
+    color: #80cbc4;
+}
 
-    .p-terminal-prompt {
-        color: #FFD54F;
-    }
+::v-deep(.dark-demo-terminal .p-terminal-prompt) {
+    color: #ffd54f;
+}
 
-    .p-terminal-response {
-        color: #9FA8DA;
-    }
+::v-deep(.dark-demo-terminal .p-terminal-response) {
+    color: #9fa8da;
 }
 </style>
         `
@@ -194,21 +192,24 @@ p {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 p {
     margin-top: 0;
 }
 ::v-deep(.dark-demo-terminal) {
     background-color: #212121;
     color: #ffffff;
-    .p-terminal-command {
-        color: #80cbc4;
-    }
-    .p-terminal-prompt {
-        color: #ffd54f;
-    }
-    .p-terminal-response {
-        color: #9fa8da;
-    }
+}
+
+::v-deep(.dark-demo-terminal .p-terminal-command) {
+    color: #80cbc4;
+}
+
+::v-deep(.dark-demo-terminal .p-terminal-prompt) {
+    color: #ffd54f;
+}
+
+::v-deep(.dark-demo-terminal .p-terminal-response) {
+    color: #9fa8da;
 }
 </style>
