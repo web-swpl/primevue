@@ -8,8 +8,8 @@
         <div class="doc">
             <div class="doc-main">
                 <div class="doc-intro">
-                    <h1>Tag</h1>
-                    <p>Tag component is used to categorize content.</p>
+                    <h1>Ripple</h1>
+                    <p>Ripple directive adds ripple effect to the host element.</p>
                 </div>
                 <DocSections :docs="docs" />
             </div>
