@@ -114,6 +114,7 @@ const endProgress = () => {
                 if (newValue >= 100) {
                     newValue = 100;
                     this.$toast.add({ severity: 'info', summary: 'Success', detail: 'Process Completed', life: 1000 });
+                    this.endProgress();
                 }
 
                 this.value = newValue;
