@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import ProductService from '../../service/ProductService';
+import { ProductService } from '../../service/ProductService';
 
 export default {
     data() {
@@ -141,12 +141,8 @@ export default {
             }
         };
     },
-    productService: null,
-    created() {
-        this.productService = new ProductService();
-    },
     mounted() {
-        this.productService.getProductsSmall().then((data) => (this.products = data));
+        ProductService.getProductsSmall().then((data) => (this.products = data));
     }
 };
 </script>

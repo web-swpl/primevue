@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import ProductService from '../../service/ProductService';
+import { ProductService } from '../../service/ProductService';
 
 export default {
     data() {
@@ -192,10 +192,8 @@ export default {
             }
         };
     },
-    productService: null,
-    created() {
-        this.productService = new ProductService();
 
+    created() {
         this.columns = [
             { field: 'name', header: 'Name' },
             { field: 'category', header: 'Category' },
@@ -204,7 +202,7 @@ export default {
         this.selectedColumns = this.columns;
     },
     mounted() {
-        this.productService.getProductsSmall().then((data) => (this.products = data));
+        ProductService.getProductsSmall().then((data) => (this.products = data));
     },
     methods: {
         onToggle(value) {

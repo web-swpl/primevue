@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import ProductService from '../../service/ProductService';
+import { ProductService } from '../../service/ProductService';
 
 export default {
     data() {
@@ -101,13 +101,9 @@ const loadData = () => {
             }
         };
     },
-    productService: null,
-    created() {
-        this.productService = new ProductService();
-    },
     methods: {
         loadData() {
-            this.productService.getProductsSmall().then((data) => (this.products = data));
+            ProductService.getProductsSmall().then((data) => (this.products = data));
         }
     }
 };

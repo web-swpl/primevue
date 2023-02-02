@@ -86,8 +86,8 @@
 
 <script>
 import TerminalService from 'primevue/terminalservice';
-import NodeService from '../../service/NodeService';
-import PhotoService from '../../service/PhotoService';
+import { NodeService } from '../../service/NodeService';
+import { PhotoService } from '../../service/PhotoService';
 import DockDoc from './DockDoc.vue';
 
 export default {
@@ -303,15 +303,9 @@ export default {
             ]
         };
     },
-    nodeService: null,
-    photoService: null,
-    created() {
-        this.nodeService = new NodeService();
-        this.photoService = new PhotoService();
-    },
     mounted() {
-        this.photoService.getImages().then((data) => (this.images = data));
-        this.nodeService.getTreeNodes().then((data) => (this.nodes = data));
+        PhotoService.getImages().then((data) => (this.images = data));
+        NodeService.getTreeNodes().then((data) => (this.nodes = data));
         TerminalService.on('command', this.commandHandler);
     },
     beforeUnmount() {

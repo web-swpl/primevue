@@ -104,7 +104,7 @@
 <script>
 import { useVuelidate } from '@vuelidate/core';
 import { email, required } from '@vuelidate/validators';
-import CountryService from '../../service/CountryService';
+import { CountryService } from '../../service/CountryService';
 
 export default {
     setup: () => ({ v$: useVuelidate() }),
@@ -489,7 +489,6 @@ export default {
             }
         };
     },
-    countryService: null,
     validations() {
         return {
             name: {
@@ -507,11 +506,8 @@ export default {
             }
         };
     },
-    created() {
-        this.countryService = new CountryService();
-    },
     mounted() {
-        this.countryService.getCountries().then((data) => (this.countries = data));
+        CountryService.getCountries().then((data) => (this.countries = data));
     },
     methods: {
         handleSubmit(isFormValid) {

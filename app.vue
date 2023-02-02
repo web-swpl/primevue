@@ -6,7 +6,6 @@
 
 <script>
 import EventBus from '@/layouts/AppEventBus';
-import NewsService from '@/service/NewsService';
 
 export default {
     themeChangeListener: null,
@@ -30,12 +29,9 @@ export default {
             }
         }
     },
-    created() {
-        this.newsService = new NewsService();
-    },
     mounted() {
         /*this.newsActivate = () => {
-            this.newsService.fetchNews().then((data) => {
+            NewsService.fetchNews().then((data) => {
                 this.$appState.announcement = data;
 
                 const itemString = localStorage.getItem(this.storageKey);

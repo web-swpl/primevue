@@ -11,10 +11,10 @@
             <div class="card">
                 <Galleria :value="images" :responsiveOptions="responsiveOptions" :numVisible="7" :circular="true" style="max-width: 800px">
                     <template #item="slotProps">
-                        <img :src="$config.public.contextPath + slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
+                        <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
                     </template>
                     <template #thumbnail="slotProps">
-                        <img :src="$config.public.contextPath + slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" style="display: block" />
+                        <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" style="display: block" />
                     </template>
                 </Galleria>
             </div>
@@ -79,7 +79,7 @@ export default {
 </template>
 
 <script>
-import PhotoService from '../../service/PhotoService';
+import { PhotoService } from '../../service/PhotoService';
 
 export default {
     data() {
@@ -105,12 +105,8 @@ export default {
             ]
         };
     },
-    galleriaService: null,
-    created() {
-        this.galleriaService = new PhotoService();
-    },
     mounted() {
-        this.galleriaService.getImages().then((data) => (this.images = data));
+        PhotoService.getImages().then((data) => (this.images = data));
     }
 };
 </script>

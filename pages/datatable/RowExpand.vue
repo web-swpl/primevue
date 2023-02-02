@@ -74,7 +74,7 @@
 </template>
 
 <script>
-import ProductService from '../../service/ProductService';
+import { ProductService } from '../../service/ProductService';
 
 export default {
     data() {
@@ -453,12 +453,8 @@ export default {
             }
         };
     },
-    productService: null,
-    created() {
-        this.productService = new ProductService();
-    },
     mounted() {
-        this.productService.getProductsWithOrdersSmall().then((data) => (this.products = data));
+        ProductService.getProductsWithOrdersSmall().then((data) => (this.products = data));
     },
     methods: {
         onRowExpand(event) {

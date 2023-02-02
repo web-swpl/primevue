@@ -148,7 +148,7 @@
 
 <script>
 import { FilterMatchMode } from 'primevue/api';
-import CustomerService from '../../service/CustomerService';
+import { CustomerService } from '../../service/CustomerService';
 
 export default {
     data() {
@@ -697,14 +697,12 @@ export default {
             }
         };
     },
-    customerService: null,
     created() {
-        this.customerService = new CustomerService();
         this.initFilters1();
         this.initFilters2();
     },
     mounted() {
-        this.customerService.getCustomersMedium().then((data) => (this.customers = data));
+        CustomerService.getCustomersMedium().then((data) => (this.customers = data));
     },
     methods: {
         initFilters1() {

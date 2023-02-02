@@ -177,7 +177,7 @@
 
 <script>
 import { FilterMatchMode } from 'primevue/api';
-import ProductService from '../../service/ProductService';
+import { ProductService } from '../../service/ProductService';
 
 export default {
     data() {
@@ -1173,13 +1173,12 @@ export default {
             }
         };
     },
-    productService: null,
+
     created() {
-        this.productService = new ProductService();
         this.initFilters();
     },
     mounted() {
-        this.productService.getProducts().then((data) => (this.products = data));
+        ProductService.getProducts().then((data) => (this.products = data));
     },
     methods: {
         formatCurrency(value) {

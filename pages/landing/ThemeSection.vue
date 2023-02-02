@@ -87,7 +87,7 @@
 
 <script>
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
-import CustomerService from '../../service/CustomerService';
+import { CustomerService } from '../../service/CustomerService';
 
 export default {
     emits: ['table-theme-change'],
@@ -112,12 +112,8 @@ export default {
             loading: true
         };
     },
-    customerService: null,
-    created() {
-        this.customerService = new CustomerService();
-    },
     mounted() {
-        this.customerService.getCustomersLarge().then((data) => {
+        CustomerService.getCustomersLarge().then((data) => {
             this.customers = data;
             this.customers.forEach((customer) => (customer.date = new Date(customer.date)));
             this.loading = false;

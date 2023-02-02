@@ -54,7 +54,7 @@
 
 <script>
 import { FilterMatchMode, FilterService } from 'primevue/api';
-import CountryService from '../../service/CountryService';
+import { CountryService } from '../../service/CountryService';
 import AutoCompleteDoc from './AutoCompleteDoc';
 
 export default {
@@ -104,12 +104,8 @@ export default {
             items: Array.from({ length: 1000 }, (_, i) => ({ label: `Item #${i}`, value: i }))
         };
     },
-    countryService: null,
-    created() {
-        this.countryService = new CountryService();
-    },
     mounted() {
-        this.countryService.getCountries().then((data) => (this.countries = data));
+        CountryService.getCountries().then((data) => (this.countries = data));
     },
     methods: {
         searchCountry(event) {

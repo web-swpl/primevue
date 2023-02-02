@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import NodeService from '../../service/NodeService';
+import { NodeService } from '../../service/NodeService';
 
 export default {
     data() {
@@ -185,10 +185,8 @@ export default {
             }
         };
     },
-    nodeService: null,
-    created() {
-        this.nodeService = new NodeService();
 
+    created() {
         this.columns = [
             { field: 'size', header: 'Size' },
             { field: 'type', header: 'Type' }
@@ -197,7 +195,7 @@ export default {
         this.selectedColumns = this.columns;
     },
     mounted() {
-        this.nodeService.getTreeTableNodes().then((data) => (this.nodes = data));
+        NodeService.getTreeTableNodes().then((data) => (this.nodes = data));
     },
     methods: {
         onToggle(value) {

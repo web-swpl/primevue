@@ -19,8 +19,6 @@
 </template>
 
 <script>
-import NodeService from '../../service/NodeService';
-
 export default {
     data() {
         return {
@@ -260,10 +258,6 @@ export default {
                 }
             }
         };
-    },
-    nodeService: null,
-    created() {
-        this.nodeService = new NodeService();
     },
     mounted() {
         this.loading = true;

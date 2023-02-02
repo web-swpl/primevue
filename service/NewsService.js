@@ -1,5 +1,11 @@
-export default class NewsService {
-    fetchNews() {
-        return fetch('https://www.primefaces.org/cdn/news/primevue.json', { cache: 'no-store', mode: 'no-cors' }).then((res) => res.json());
+async function fetchNews() {
+    try {
+        const response = await fetch('https://www.primefaces.org/cdn/news/primereact.json', { cache: 'no-store' });
+
+        return response.json();
+    } catch {
+        return null;
     }
 }
+
+export default fetchNews;

@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import ProductService from '../../service/ProductService';
+import { ProductService } from '../../service/ProductService';
 import InfoDemo from './InfoDemo.vue';
 
 export default {
@@ -33,12 +33,8 @@ export default {
             products: null
         };
     },
-    productService: null,
-    created() {
-        this.productService = new ProductService();
-    },
     mounted() {
-        this.productService.getProductsSmall().then((data) => (this.products = data.slice(0, 5)));
+        ProductService.getProductsSmall().then((data) => (this.products = data.slice(0, 5)));
     },
     methods: {
         selectProduct(data) {

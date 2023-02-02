@@ -60,7 +60,7 @@
 </template>
 
 <script>
-import NodeService from '../../service/NodeService';
+import { NodeService } from '../../service/NodeService';
 
 export default {
     data() {
@@ -348,12 +348,8 @@ export default {
             }
         };
     },
-    nodeService: null,
-    created() {
-        this.nodeService = new NodeService();
-    },
     mounted() {
-        this.nodeService.getTreeTableNodes().then((data) => (this.nodes = data));
+        NodeService.getTreeTableNodes().then((data) => (this.nodes = data));
     },
     methods: {
         onNodeSelect(node) {

@@ -66,7 +66,7 @@
 </template>
 
 <script>
-import CarService from '../../service/CarService';
+import { CarService } from '../../service/CarService';
 
 export default {
     data() {
@@ -398,13 +398,9 @@ export default {
             }
         };
     },
-    carService: null,
     loadLazyTimeout: null,
-    created() {
-        this.carService = new CarService();
-    },
     mounted() {
-        this.cars = Array.from({ length: 100000 }).map((_, i) => this.carService.generateCar(i + 1));
+        this.cars = Array.from({ length: 100000 }).map((_, i) => CarService.generateCar(i + 1));
     },
     methods: {
         loadCarsLazy(event) {

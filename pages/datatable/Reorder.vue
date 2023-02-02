@@ -22,8 +22,6 @@
 </template>
 
 <script>
-import ProductService from '../../service/ProductService';
-
 export default {
     data() {
         return {
@@ -191,10 +189,7 @@ export default {
             }
         };
     },
-    productService: null,
     created() {
-        this.productService = new ProductService();
-
         this.columns = [
             { field: 'code', header: 'Code' },
             { field: 'name', header: 'Name' },
@@ -203,7 +198,7 @@ export default {
         ];
     },
     mounted() {
-        this.productService.getProductsSmall().then((data) => (this.products = data));
+        ProductService.getProductsSmall().then((data) => (this.products = data));
     },
     methods: {
         onColReorder() {

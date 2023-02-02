@@ -101,7 +101,7 @@
 </template>
 
 <script>
-import ProductService from '../../service/ProductService';
+import { ProductService } from '../../service/ProductService';
 import CarouselDoc from './CarouselDoc';
 
 export default {
@@ -127,12 +127,8 @@ export default {
             ]
         };
     },
-    productService: null,
-    created() {
-        this.productService = new ProductService();
-    },
     mounted() {
-        this.productService.getProductsSmall().then((data) => (this.products = data.slice(0, 9)));
+        ProductService.getProductsSmall().then((data) => (this.products = data.slice(0, 9)));
     },
     components: {
         CarouselDoc: CarouselDoc

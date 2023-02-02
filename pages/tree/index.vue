@@ -31,7 +31,7 @@
     </div>
 </template>
 <script>
-import NodeService from '../../service/NodeService';
+import { NodeService } from '../../service/NodeService';
 import TreeDoc from './TreeDoc';
 
 export default {
@@ -41,12 +41,8 @@ export default {
             expandedKeys: {}
         };
     },
-    nodeService: null,
-    created() {
-        this.nodeService = new NodeService();
-    },
     mounted() {
-        this.nodeService.getTreeNodes().then((data) => (this.nodes = data));
+        NodeService.getTreeNodes().then((data) => (this.nodes = data));
     },
     methods: {
         expandAll() {

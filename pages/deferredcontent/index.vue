@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import ProductService from '../../service/ProductService';
+import { ProductService } from '../../service/ProductService';
 import DeferredContentDoc from './DeferredContentDoc';
 
 export default {
@@ -48,16 +48,12 @@ export default {
             products: null
         };
     },
-    productService: null,
-    created() {
-        this.productService = new ProductService();
-    },
     methods: {
         onImageLoad() {
             this.$toast.add({ severity: 'success', summary: 'Image Initialized', detail: 'Scroll down to load the datatable' });
         },
         onDataLoad() {
-            this.productService.getProductsSmall().then((data) => (this.products = data));
+            ProductService.getProductsSmall().then((data) => (this.products = data));
             this.$toast.add({ severity: 'success', summary: 'Data Initialized', detail: 'Render Completed' });
         }
     },

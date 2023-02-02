@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import NodeService from '../../service/NodeService';
+import { NodeService } from '../../service/NodeService';
 
 export default {
     data() {
@@ -255,12 +255,8 @@ export default {
             }
         };
     },
-    nodeService: null,
-    created() {
-        this.nodeService = new NodeService();
-    },
     mounted() {
-        this.nodeService.getTreeNodes().then((data) => (this.nodes1 = data));
+        NodeService.getTreeNodes().then((data) => (this.nodes1 = data));
         this.nodes2 = Array.from({ length: 100 }).map((_, i) => this.createNode(i, 2));
     },
     methods: {

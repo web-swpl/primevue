@@ -76,7 +76,7 @@
 
 <script>
 import { FilterMatchMode } from 'primevue/api';
-import ProductService from '../../service/ProductService';
+import { ProductService } from '../../service/ProductService';
 
 export default {
     data() {
@@ -615,10 +615,7 @@ export default {
             }
         };
     },
-    productService: null,
     created() {
-        this.productService = new ProductService();
-
         this.columns = [
             { field: 'code', header: 'Code' },
             { field: 'name', header: 'Name' },
@@ -627,9 +624,9 @@ export default {
         ];
     },
     mounted() {
-        this.productService.getProductsSmall().then((data) => (this.products1 = data));
-        this.productService.getProductsSmall().then((data) => (this.products2 = data));
-        this.productService.getProductsSmall().then((data) => (this.products3 = data));
+        ProductService.getProductsSmall().then((data) => (this.products1 = data));
+        ProductService.getProductsSmall().then((data) => (this.products2 = data));
+        ProductService.getProductsSmall().then((data) => (this.products3 = data));
     },
     methods: {
         onCellEditComplete(event) {

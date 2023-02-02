@@ -48,7 +48,7 @@
 
 <script>
 import { FilterMatchMode, FilterService } from 'primevue/api';
-import CustomerService from '../../service/CustomerService';
+import { CustomerService } from '../../service/CustomerService';
 import FilterServiceDoc from './FilterServiceDoc';
 
 const YOUR_FILTER = 'YOUR FILTER';
@@ -68,11 +68,8 @@ export default {
             loading: true
         };
     },
-    created() {
-        this.customerService = new CustomerService();
-    },
     mounted() {
-        this.customerService.getCustomersLarge().then((data) => {
+        CustomerService.getCustomersLarge().then((data) => {
             this.customers = data;
             this.loading = false;
         });

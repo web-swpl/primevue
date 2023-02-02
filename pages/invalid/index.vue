@@ -56,8 +56,8 @@
 </template>
 
 <script>
-import CountryService from '../../service/CountryService';
-import NodeService from '../../service/NodeService';
+import { CountryService } from '../../service/CountryService';
+import { NodeService } from '../../service/NodeService';
 
 export default {
     data() {
@@ -730,15 +730,9 @@ export default {
             }
         };
     },
-    countryService: null,
-    nodeService: null,
-    created() {
-        this.countryService = new CountryService();
-        this.nodeService = new NodeService();
-    },
     mounted() {
-        this.countryService.getCountries().then((data) => (this.countries = data));
-        this.nodeService.getTreeNodes().then((data) => (this.nodes = data));
+        CountryService.getCountries().then((data) => (this.countries = data));
+        NodeService.getTreeNodes().then((data) => (this.nodes = data));
     },
     methods: {
         searchCountry(event) {

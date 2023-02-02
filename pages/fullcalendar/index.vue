@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import EventService from '../../service/EventService';
+import { EventService } from '../../service/EventService';
 import FullCalendarDoc from './FullCalendarDoc';
 
 export default {
@@ -26,7 +26,7 @@ export default {
         return {
             options: {
                 ...this.$fullCalendar?.options,
-                initialDate: '2019-01-01',
+                initialDate: '2023-02-01',
                 headerToolbar: {
                     left: 'prev,next today',
                     center: 'title',
@@ -40,12 +40,8 @@ export default {
             events: null
         };
     },
-    eventService: null,
-    created() {
-        this.eventService = new EventService();
-    },
     mounted() {
-        this.eventService.getEvents().then((data) => (this.events = data));
+        EventService.getEvents().then((data) => (this.events = data));
     },
     components: {
         FullCalendarDoc: FullCalendarDoc

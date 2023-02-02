@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import NodeService from '../../service/NodeService';
+import { NodeService } from '../../service/NodeService';
 import TreeSelectDoc from './TreeSelectDoc';
 
 export default {
@@ -43,12 +43,8 @@ export default {
             selectedNodes2: null
         };
     },
-    nodeService: null,
-    created() {
-        this.nodeService = new NodeService();
-    },
     mounted() {
-        this.nodeService.getTreeNodes().then((data) => (this.nodes = data));
+        NodeService.getTreeNodes().then((data) => (this.nodes = data));
     },
     components: {
         TreeSelectDoc: TreeSelectDoc

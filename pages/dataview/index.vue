@@ -78,7 +78,7 @@
 </template>
 
 <script>
-import ProductService from '../../service/ProductService';
+import { ProductService } from '../../service/ProductService';
 import DataViewDoc from './DataViewDoc';
 
 export default {
@@ -95,12 +95,8 @@ export default {
             ]
         };
     },
-    productService: null,
-    created() {
-        this.productService = new ProductService();
-    },
     mounted() {
-        this.productService.getProducts().then((data) => (this.products = data));
+        ProductService.getProducts().then((data) => (this.products = data));
     },
     methods: {
         onSortChange(event) {

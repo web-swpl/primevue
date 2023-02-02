@@ -226,7 +226,7 @@
 
 <script>
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
-import CustomerService from '../../service/CustomerService';
+import { CustomerService } from '../../service/CustomerService';
 
 export default {
     data() {
@@ -1319,17 +1319,16 @@ export default {
         };
     },
     created() {
-        this.customerService = new CustomerService();
         this.initFilters1();
     },
     mounted() {
-        this.customerService.getCustomersLarge().then((data) => {
+        CustomerService.getCustomersLarge().then((data) => {
             this.customers1 = data;
             this.loading1 = false;
             this.customers1.forEach((customer) => (customer.date = new Date(customer.date)));
         });
 
-        this.customerService.getCustomersLarge().then((data) => {
+        CustomerService.getCustomersLarge().then((data) => {
             this.customers2 = data;
             this.loading2 = false;
             this.customers2.forEach((customer) => (customer.date = new Date(customer.date)));

@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import ProductService from '../../service/ProductService';
+import { ProductService } from '../../service/ProductService';
 import OverlayPanelDoc from './OverlayPanelDoc';
 
 export default {
@@ -50,12 +50,8 @@ export default {
             selectedProduct: null
         };
     },
-    productService: null,
-    created() {
-        this.productService = new ProductService();
-    },
     mounted() {
-        this.productService.getProductsSmall().then((data) => (this.products = data));
+        ProductService.getProductsSmall().then((data) => (this.products = data));
     },
     methods: {
         toggle(event) {

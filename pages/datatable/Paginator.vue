@@ -68,7 +68,7 @@
 </template>
 
 <script>
-import CustomerService from '../../service/CustomerService';
+import { CustomerService } from '../../service/CustomerService';
 
 export default {
     data() {
@@ -288,12 +288,8 @@ export default {
             }
         };
     },
-    customerService: null,
-    created() {
-        this.customerService = new CustomerService();
-    },
     mounted() {
-        this.customerService.getCustomersLarge().then((data) => (this.customers = data));
+        CustomerService.getCustomersLarge().then((data) => (this.customers = data));
     }
 };
 </script>

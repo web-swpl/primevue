@@ -131,7 +131,7 @@
 </template>
 
 <script>
-import CustomerService from '../../service/CustomerService';
+import { CustomerService } from '../../service/CustomerService';
 
 export default {
     data() {
@@ -828,20 +828,16 @@ export default {
             }
         };
     },
-    customerService: null,
-    created() {
-        this.customerService = new CustomerService();
-    },
     mounted() {
         this.loading = true;
 
-        this.customerService.getCustomersLarge().then((data) => {
+        CustomerService.getCustomersLarge().then((data) => {
             this.customers1 = data;
             this.loading = false;
         });
-        this.customerService.getCustomersMedium().then((data) => (this.customers2 = data));
-        this.customerService.getCustomersMedium().then((data) => (this.unlockedCustomers = data));
-        this.customerService.getCustomersMedium().then((data) => (this.customersGrouped = data));
+        CustomerService.getCustomersMedium().then((data) => (this.customers2 = data));
+        CustomerService.getCustomersMedium().then((data) => (this.unlockedCustomers = data));
+        CustomerService.getCustomersMedium().then((data) => (this.customersGrouped = data));
 
         this.lockedCustomers = [
             {

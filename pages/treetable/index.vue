@@ -49,7 +49,7 @@
 </template>
 
 <script>
-import NodeService from '../../service/NodeService';
+import { NodeService } from '../../service/NodeService';
 import TreeTableDoc from './TreeTableDoc';
 
 export default {
@@ -60,10 +60,7 @@ export default {
             expandedKeys: {}
         };
     },
-    nodeService: null,
     created() {
-        this.nodeService = new NodeService();
-
         this.columns = [
             { field: 'name', header: 'Vin', expander: true },
             { field: 'size', header: 'Size' },
@@ -71,7 +68,7 @@ export default {
         ];
     },
     mounted() {
-        this.nodeService.getTreeTableNodes().then((data) => (this.nodes = data));
+        NodeService.getTreeTableNodes().then((data) => (this.nodes = data));
     },
     methods: {
         expandAll() {

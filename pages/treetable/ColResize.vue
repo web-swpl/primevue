@@ -186,12 +186,8 @@ export default {
             }
         };
     },
-    nodeService: null,
-    created() {
-        this.nodeService = new NodeService();
-    },
     mounted() {
-        this.nodeService.getTreeTableNodes().then((data) => (this.nodes = data));
+        NodeService.getTreeTableNodes().then((data) => (this.nodes = data));
     }
 };
 </script>
