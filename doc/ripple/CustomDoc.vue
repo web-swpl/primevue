@@ -30,6 +30,19 @@ export default {
 
 <script>
 <\\/script>
+
+<style scoped>
+::v-deep(.styled-box-green .p-ink) {
+    background: rgba(75, 175, 80, 0.3);
+}
+::v-deep(.styled-box-orange .p-ink) {
+    background: rgba(255, 193, 6, 0.3);
+}
+
+::v-deep(.styled-box-purple .p-ink) {
+    background: rgba(156, 39, 176, 0.3);
+}
+</style>
   `,
                 composition: `
 <template>
@@ -42,6 +55,19 @@ export default {
 
 <script setup>
 <\\/script>
+
+<style scoped>
+::v-deep(.styled-box-green .p-ink) {
+    background: rgba(75, 175, 80, 0.3);
+}
+::v-deep(.styled-box-orange .p-ink) {
+    background: rgba(255, 193, 6, 0.3);
+}
+
+::v-deep(.styled-box-purple .p-ink) {
+    background: rgba(156, 39, 176, 0.3);
+}
+</style>
   `
             }
         };
