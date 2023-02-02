@@ -14,7 +14,8 @@ export default {
     data() {
         return {
             code: {
-                basic: `<Button v-styleclass="{ selector: '@next', toggleClass: 'p-disabled' }" label="Toggle p-disabled" />
+                basic: `
+<Button v-styleclass="{ selector: '@next', toggleClass: 'p-disabled' }" label="Toggle p-disabled" />
 <InputText class="block mt-3" />`,
                 options: `
 <template>
@@ -23,7 +24,7 @@ export default {
 </template>
 
 <script>
-<\\/script>
+<\/script>
         `,
                 composition: `
 <template>
@@ -32,7 +33,7 @@ export default {
 </template>
 
 <script setup>
-<\\/script>
+<\/script>
         `
             }
         };

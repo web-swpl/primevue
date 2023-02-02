@@ -5,7 +5,7 @@
         </p>
     </DocSectionText>
     <div class="card">
-        <p>Enter "<strong>date</strong>" to display the current date, "<strong>greet {'{0}'}</strong>" for a message and "<strong>random</strong>" to get a random number.</p>
+        <p>Enter "<strong>date</strong>" to display the current date, "<strong>greet {0}</strong>" for a message and "<strong>random</strong>" to get a random number.</p>
         <Terminal welcomeMessage="Welcome to PrimeVue" prompt="primevue $" class="dark-demo-terminal" aria-label="PrimeVue Terminal Service" />
     </div>
     <DocSectionCode :code="code" v-bind="$attrs" />
@@ -63,7 +63,7 @@ export default {
         TerminalService.off('command', this.commandHandler);
     }
 }
-<\\/script>
+<\/script>
 <style lang="scss" scoped>
 p {
     margin-top: 0;
@@ -131,7 +131,7 @@ const commandHandler = (text) => {
     
     TerminalService.emit('response', response);
 }
-<\\/script>
+<\/script>
 
 <style lang="scss" scoped>
 p {

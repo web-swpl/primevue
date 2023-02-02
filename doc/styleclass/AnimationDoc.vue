@@ -22,7 +22,8 @@ export default {
     data() {
         return {
             code: {
-                basic: `<Button v-styleclass="{ selector: '.box', enterClass: 'hidden', enterActiveClass: 'my-fadein' }" label="Show" class="mr-2" />
+                basic: `
+<Button v-styleclass="{ selector: '.box', enterClass: 'hidden', enterActiveClass: 'my-fadein' }" label="Show" class="mr-2" />
 <Button v-styleclass="{ selector: '.box', leaveActiveClass: 'my-fadeout', leaveToClass: 'hidden' }" label="Hide" />
 <div class="hidden animation-duration-500 box">
     <div class="flex bg-green-500 text-white align-items-center justify-content-center py-3 border-round-md mt-3 font-bold shadow-2 w-8rem h-8rem">Content</div>
@@ -30,8 +31,10 @@ export default {
                 options: `
 <template>
     <div class="card flex flex-column align-items-center">
-        <Button v-styleclass="{ selector: '.box', enterClass: 'hidden', enterActiveClass: 'my-fadein' }" label="Show" class="mr-2" />
-        <Button v-styleclass="{ selector: '.box', leaveActiveClass: 'my-fadeout', leaveToClass: 'hidden' }" label="Hide" />
+        <div>
+            <Button v-styleclass="{ selector: '.box', enterClass: 'hidden', enterActiveClass: 'my-fadein' }" label="Show" class="mr-2" />
+            <Button v-styleclass="{ selector: '.box', leaveActiveClass: 'my-fadeout', leaveToClass: 'hidden' }" label="Hide" />
+        </div>
         <div class="hidden animation-duration-500 box">
             <div class="flex bg-green-500 text-white align-items-center justify-content-center py-3 border-round-md mt-3 font-bold shadow-2 w-8rem h-8rem">Content</div>
         </div>
@@ -39,9 +42,9 @@ export default {
 </template>
 
 <script>
-<\\/script>
+<\/script>
 
-<style lang="scss" scoped>
+<style scoped>
 .box {
     background-color: var(--green-500);
     color: #ffffff;
@@ -88,8 +91,10 @@ export default {
                 composition: `
 <template>
     <div class="card flex flex-column align-items-center">
-        <Button v-styleclass="{ selector: '.box', enterClass: 'hidden', enterActiveClass: 'my-fadein' }" label="Show" class="mr-2" />
-        <Button v-styleclass="{ selector: '.box', leaveActiveClass: 'my-fadeout', leaveToClass: 'hidden' }" label="Hide" />
+        <div>
+            <Button v-styleclass="{ selector: '.box', enterClass: 'hidden', enterActiveClass: 'my-fadein' }" label="Show" class="mr-2" />
+            <Button v-styleclass="{ selector: '.box', leaveActiveClass: 'my-fadeout', leaveToClass: 'hidden' }" label="Hide" />
+        </div>
         <div class="hidden animation-duration-500 box">
             <div class="flex bg-green-500 text-white align-items-center justify-content-center py-3 border-round-md mt-3 font-bold shadow-2 w-8rem h-8rem">Content</div>
         </div>
@@ -97,9 +102,9 @@ export default {
 </template>
 
 <script setup>
-<\\/script>
+<\/script>
 
-<style lang="scss" scoped>
+<style scoped>
 .box {
     background-color: var(--green-500);
     color: #ffffff;
