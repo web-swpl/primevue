@@ -75,9 +75,6 @@ export default {
         onButtonClick(doc) {
             // Scroll to the clicked button's parent element
             this.scrollToTheSection(doc.id, 'smooth');
-            setTimeout(() => {
-                console.log(this.$route);
-            }, 2000);
         },
         scrollToTheSection(id, behavior) {
             document.getElementById(id).parentElement.scrollIntoView({ block: 'start', behavior });
