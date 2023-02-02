@@ -1,9 +1,9 @@
 import sdk from '@stackblitz/sdk';
 import { getVueApp } from './templates';
 
-const useCodeSandbox = (language, code, service) => {
+const useCodeSandbox = (language, code, service, extPages) => {
     const getSandboxParameters = (sourceType) => {
-        const { files, dependencies, sourceFileName } = getVueApp({ code, service }, sourceType);
+        const { files, dependencies, sourceFileName } = getVueApp({ code, service, extPages }, sourceType);
 
         files['sandbox.config.json'] = {
             content: {
@@ -28,9 +28,9 @@ const useCodeSandbox = (language, code, service) => {
         .then((data) => window.open(`https://codesandbox.io/s/${data.sandbox_id}`, '_blank'));
 };
 
-const useStackBlitz = (language, code, service) => {
+const useStackBlitz = (language, code, service, extPages) => {
     const getStackBlitzParameters = (sourceType) => {
-        const { files, dependencies, sourceFileName } = getVueApp({ code, service }, sourceType);
+        const { files, dependencies, sourceFileName } = getVueApp({ code, service, extPages }, sourceType);
 
         return { files, dependencies, sourceFileName };
     };

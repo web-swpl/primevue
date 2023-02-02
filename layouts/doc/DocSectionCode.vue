@@ -162,10 +162,10 @@ export default {
             await navigator.clipboard.writeText(this.code[this.codeLang]);
         },
         showCodesandbox() {
-            useCodeSandbox(this.codeLang, this.code[this.codeLang === 'data' ? 'options' : this.codeLang], this.service);
+            useCodeSandbox(this.codeLang, this.code[this.codeLang === 'data' ? 'options' : this.codeLang], this.service, this.code.pages);
         },
         showStackblitz() {
-            useStackBlitz(this.codeLang, this.code[this.codeLang === 'data' ? 'options' : this.codeLang], this.service);
+            useStackBlitz(this.codeLang, this.code[this.codeLang === 'data' ? 'options' : this.codeLang], this.service, this.code.pages);
         }
     }
 };

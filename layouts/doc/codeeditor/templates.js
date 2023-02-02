@@ -11,6 +11,7 @@ const app_dependencies = pkg ? pkg.devDependencies : {};
 
 const core_dependencies = {
     vue: '^3.2.45',
+    'vue-router': '^4.1.6',
     '@vitejs/plugin-vue': '^4.0.0',
     vite: '^4.0.0',
     primevue: PrimeVue.version || 'latest',
@@ -21,11 +22,12 @@ const core_dependencies = {
 // create-vue -> https://github.com/vuejs/create-vue
 const getVueApp = (props = {}) => {
     const path = 'src/';
-    const { code: sources, title = 'primevue_demo', description = '', dependencies: pDependencies = {}, service } = props;
+    const { code: sources, title = 'primevue_demo', description = '', service, extPages } = props;
     const dependencies = { ...core_dependencies };
 
     const fileExtension = '.vue';
-    const sourceFileName = `${path}App${fileExtension}`;
+    const mainFileName = 'App';
+    const sourceFileName = `${path}${mainFileName}${fileExtension}`;
 
     let extFiles = {};
 
@@ -93,6 +95,7 @@ import "./index.css";
 
 import { createApp } from "vue";
 import App from "./App.vue";
+import { router } from "./router";
 import PrimeVue from "primevue/config";
 import AutoComplete from 'primevue/autocomplete';
 import Accordion from 'primevue/accordion';
@@ -197,6 +200,7 @@ app.use(PrimeVue, { ripple: true });
 app.use(ConfirmationService);
 app.use(ToastService);
 app.use(DialogService);
+app.use(router);
 
 app.directive('tooltip', Tooltip);
 app.directive('badge', BadgeDirective);
@@ -312,11 +316,44 @@ body {
 }
 `
         },
+        [`${path}router.js`]: {
+            content: `import { createRouter, createWebHistory } from "vue-router";
+import ${mainFileName} from "./${mainFileName}${fileExtension}";
+
+export const router = createRouter({
+history: createWebHistory(),
+routes: [{ path: "/", component: ${mainFileName} }]
+});`
+        },
         [`${sourceFileName}`]: {
             content: sources.replaceAll('<\\/script>', '</script>')
         },
         ...extFiles
     };
+
+    if (extPages && extPages.length >= 1) {
+        let routePaths = '';
+        let viewImports = '';
+
+        extPages.forEach((page, index) => {
+            let compPath = page.tabName.replace('Demo', '').toLowerCase();
+
+            routePaths += `{ path: "/${index === 0 ? '' : compPath}", component: ${page.tabName} },\n`;
+            viewImports += `import ${page.tabName} from "./components/${page.tabName}${fileExtension}";\n`;
+            files[`${path}components/${page.tabName}${fileExtension}`] = {
+                content: page.content
+            };
+        });
+
+        files[`${path}router.js`] = {
+            content: `import { createRouter, createWebHistory } from "vue-router";
+${viewImports}
+export const router = createRouter({
+history: createWebHistory(),
+routes: [ ${routePaths}]
+});`
+        };
+    }
 
     if (service) {
         service.forEach((name) => {
