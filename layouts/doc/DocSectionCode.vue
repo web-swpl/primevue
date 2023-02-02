@@ -82,7 +82,7 @@
 
         <template v-if="codeMode === 'basic'">
             <pre v-code.script><code>
-{{ code.basic }}
+{{ (code.basic).toString() }}
 
 </code></pre>
         </template>
