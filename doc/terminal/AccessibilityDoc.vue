@@ -1,9 +1,9 @@
 <template>
     <DocSectionText id="accessibility" label="Accessibility" v-bind="$attrs">
-        <h6>Screen Reader</h6>
+        <h3>Screen Reader</h3>
         <p>Terminal component has an input element that can be described with <i>aria-label</i> or <i>aria-labelledby</i> props. The element that lists the previous commands has <i>aria-live</i> so that changes are received by the screen reader.</p>
 
-        <h6>Keyboard Support</h6>
+        <h4>Keyboard Support</h4>
         <div class="doc-tablewrapper">
             <table class="doc-table">
                 <thead>
