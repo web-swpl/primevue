@@ -9,7 +9,7 @@
                 <span style="margin-left: 0.5rem; vertical-align: middle">View Picture</span>
             </template>
             <template #content>
-                <img alt="Nature" src="/demo/images/nature/nature1.jpg" />
+                <img alt="Nature" src="/images/nature/nature1.jpg" />
             </template>
         </Inplace>
     </div>
@@ -28,7 +28,7 @@ export default {
         <span style="margin-left: 0.5rem; vertical-align: middle">View Picture</span>
     </template>
     <template #content>
-        <img alt="Nature" src="/demo/images/nature/nature1.jpg" />
+        <img alt="Nature" src="/images/nature/nature1.jpg" />
     </template>
 </Inplace>`,
                 options: `

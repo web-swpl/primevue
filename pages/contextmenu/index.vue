@@ -18,7 +18,7 @@
 
         <div class="content-section implementation">
             <div class="card">
-                <img alt="logo" src="/demo/images/nature/nature3.jpg" @contextmenu="onImageRightClick" aria-haspopup="true" />
+                <img alt="logo" src="/images/nature/nature3.jpg" @contextmenu="onImageRightClick" aria-haspopup="true" />
                 <ContextMenu ref="menu" :model="items" />
             </div>
         </div>

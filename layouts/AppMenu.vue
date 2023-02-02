@@ -1,6 +1,6 @@
 <template>
     <aside class="layout-sidebar" :class="{ active: active }">
-        <nuxt-link to="/" class="logo" aria-label="PrimeReact logo"> <img alt="logo" :src="`/demo/images/primevue-logo${darkTheme ? '-light' : '-dark'}.svg`" /></nuxt-link>
+        <nuxt-link to="/" class="logo" aria-label="PrimeReact logo"> <img alt="logo" :src="`/images/primevue-logo${darkTheme ? '-light' : '-dark'}.svg`" /></nuxt-link>
         <nav>
             <ol class="layout-menu">
                 <app-menu-item :menu="menu"></app-menu-item>

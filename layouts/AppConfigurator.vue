@@ -42,25 +42,25 @@
                 <div class="grid free-themes">
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('bootstrap4-light-blue')">
-                            <img src="/demo/images/themes/bootstrap4-light-blue.svg" alt="Bootstrap Light Blue" class="w-3rem border-round" />
+                            <img src="/images/themes/bootstrap4-light-blue.svg" alt="Bootstrap Light Blue" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Blue</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('bootstrap4-light-purple')">
-                            <img src="/demo/images/themes/bootstrap4-light-purple.svg" alt="Bootstrap Light Blue" class="w-3rem border-round" />
+                            <img src="/images/themes/bootstrap4-light-purple.svg" alt="Bootstrap Light Blue" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Purple</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('bootstrap4-dark-blue', true)">
-                            <img src="/demo/images/themes/bootstrap4-dark-blue.svg" alt="Bootstrap Dark Blue" class="w-3rem border-round" />
+                            <img src="/images/themes/bootstrap4-dark-blue.svg" alt="Bootstrap Dark Blue" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Blue</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('bootstrap4-dark-purple', true)">
-                            <img src="/demo/images/themes/bootstrap4-dark-purple.svg" alt="Bootstrap Dark Blue" class="w-3rem border-round" />
+                            <img src="/images/themes/bootstrap4-dark-purple.svg" alt="Bootstrap Dark Blue" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Purple</span>
                     </div>
@@ -70,25 +70,25 @@
                 <div class="grid free-themes">
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('md-light-indigo', true)">
-                            <img src="/demo/images/themes/md-light-indigo.svg" alt="Material Light Indigo" class="w-3rem border-round" />
+                            <img src="/images/themes/md-light-indigo.svg" alt="Material Light Indigo" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Indigo</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('md-light-deeppurple', true)">
-                            <img src="/demo/images/themes/md-light-deeppurple.svg" alt="Material Light Deep Purple" class="w-3rem border-round" />
+                            <img src="/images/themes/md-light-deeppurple.svg" alt="Material Light Deep Purple" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Deep Purple</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('md-dark-indigo', true)">
-                            <img src="/demo/images/themes/md-dark-indigo.svg" alt="Material Dark Indigo" class="w-3rem border-round" />
+                            <img src="/images/themes/md-dark-indigo.svg" alt="Material Dark Indigo" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Indigo</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('md-dark-purple', true)">
-                            <img src="/demo/images/themes/md-dark-deeppurple.svg" alt="Material Dark Deep Purple" class="w-3rem border-round" />
+                            <img src="/images/themes/md-dark-deeppurple.svg" alt="Material Dark Deep Purple" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Deep Purple</span>
                     </div>
@@ -98,25 +98,25 @@
                 <div class="grid free-themes">
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('md-light-indigo')">
-                            <img src="/demo/images/themes/md-light-indigo.svg" alt="Material Compact Light Indigo" class="w-3rem border-round" />
+                            <img src="/images/themes/md-light-indigo.svg" alt="Material Compact Light Indigo" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Indigo</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('mdc-light-deeppurple')">
-                            <img src="/demo/images/themes/md-light-deeppurple.svg" alt="Material Compact Deep Purple" class="w-3rem border-round" />
+                            <img src="/images/themes/md-light-deeppurple.svg" alt="Material Compact Deep Purple" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Deep Purple</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('mdc-dark-indigo', true)">
-                            <img src="/demo/images/themes/md-dark-indigo.svg" alt="Material Compact Dark Indigo" class="w-3rem border-round" />
+                            <img src="/images/themes/md-dark-indigo.svg" alt="Material Compact Dark Indigo" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Indigo</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('mdc-dark-deeppurple', true)">
-                            <img src="/demo/images/themes/md-dark-deeppurple.svg" alt="Material Compact Dark Deep Purple" class="w-3rem border-round" />
+                            <img src="/images/themes/md-dark-deeppurple.svg" alt="Material Compact Dark Deep Purple" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Deep Purple</span>
                     </div>
@@ -126,7 +126,7 @@
                 <div class="grid free-themes">
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('tailwind-light')">
-                            <img src="/demo/images/themes/tailwind-light.png" alt="Tailwind Light" class="w-3rem border-round" />
+                            <img src="/images/themes/tailwind-light.png" alt="Tailwind Light" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Tailwind Light</span>
                     </div>
@@ -136,7 +136,7 @@
                 <div class="grid free-themes">
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('fluent-light')">
-                            <img src="/demo/images/themes/fluent-light.png" alt="Fluent Light" class="w-3rem border-round" />
+                            <img src="/images/themes/fluent-light.png" alt="Fluent Light" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Blue</span>
                     </div>
@@ -146,49 +146,49 @@
                 <div class="grid free-themes">
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('lara-light-indigo')">
-                            <img src="/demo/images/themes/lara-light-indigo.png" alt="Lara Light Indigo" class="w-3rem border-round" />
+                            <img src="/images/themes/lara-light-indigo.png" alt="Lara Light Indigo" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Lara Indigo</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('lara-light-blue')">
-                            <img src="/demo/images/themes/lara-light-blue.png" alt="Lara Light Blue" class="w-3rem border-round" />
+                            <img src="/images/themes/lara-light-blue.png" alt="Lara Light Blue" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Lara Blue</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('lara-light-purple')">
-                            <img src="/demo/images/themes/lara-light-purple.png" alt="Lara Light Purple" class="w-3rem border-round" />
+                            <img src="/images/themes/lara-light-purple.png" alt="Lara Light Purple" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Lara Purple</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('lara-light-teal')">
-                            <img src="/demo/images/themes/lara-light-teal.png" alt="Lara Light Teal" class="w-3rem border-round" />
+                            <img src="/images/themes/lara-light-teal.png" alt="Lara Light Teal" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Lara Teal</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('lara-dark-indigo')">
-                            <img src="/demo/images/themes/lara-dark-indigo.png" alt="Lara Dark Indigo" class="w-3rem border-round" />
+                            <img src="/images/themes/lara-dark-indigo.png" alt="Lara Dark Indigo" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Lara Indigo</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('lara-dark-blue', true)">
-                            <img src="/demo/images/themes/lara-dark-blue.png" alt="Lara Dark Blue" class="w-3rem border-round" />
+                            <img src="/images/themes/lara-dark-blue.png" alt="Lara Dark Blue" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Lara Blue</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('lara-dark-purple', true)">
-                            <img src="/demo/images/themes/lara-dark-purple.png" alt="Lara Dark Purple" class="w-3rem border-round" />
+                            <img src="/images/themes/lara-dark-purple.png" alt="Lara Dark Purple" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Lara Purple</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('lara-dark-teal', true)">
-                            <img src="/demo/images/themes/lara-dark-teal.png" alt="Lara Dark Teal" class="w-3rem border-round" />
+                            <img src="/images/themes/lara-dark-teal.png" alt="Lara Dark Teal" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Lara Teal</span>
                     </div>
@@ -198,37 +198,37 @@
                 <div class="grid free-themes">
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('soho-light')">
-                            <img src="/demo/images/themes/soho-light.png" alt="Soho Light" class="w-3rem border-round" />
+                            <img src="/images/themes/soho-light.png" alt="Soho Light" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Soho Light</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('soho-dark', true)">
-                            <img src="/demo/images/themes/soho-dark.png" alt="Soho Dark" class="w-3rem border-round" />
+                            <img src="/images/themes/soho-dark.png" alt="Soho Dark" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Soho Dark</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('viva-light')">
-                            <img src="/demo/images/themes/viva-light.svg" alt="Viva Light" class="w-3rem border-round" />
+                            <img src="/images/themes/viva-light.svg" alt="Viva Light" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Viva Light</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('viva-dark', true)">
-                            <img src="/demo/images/themes/viva-dark.svg" alt="Viva Dark" class="w-3rem border-round" />
+                            <img src="/images/themes/viva-dark.svg" alt="Viva Dark" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Viva Dark</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('mira')">
-                            <img src="/demo/images/themes/mira.jpg" alt="Mira" class="w-3rem border-round" />
+                            <img src="/images/themes/mira.jpg" alt="Mira" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Mira</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('nano')">
-                            <img src="/demo/images/themes/nano.jpg" alt="Nano" class="w-3rem border-round" />
+                            <img src="/images/themes/nano.jpg" alt="Nano" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Nano</span>
                     </div>
@@ -238,73 +238,73 @@
                 <div class="grid free-themes">
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('saga-blue')">
-                            <img src="/demo/images/themes/saga-blue.png" alt="Saga Blue" class="w-3rem border-round" />
+                            <img src="/images/themes/saga-blue.png" alt="Saga Blue" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Saga Blue</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('saga-green')">
-                            <img src="/demo/images/themes/saga-green.png" alt="Saga Green" class="w-3rem border-round" />
+                            <img src="/images/themes/saga-green.png" alt="Saga Green" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Saga Green</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('saga-orange')">
-                            <img src="/demo/images/themes/saga-orange.png" alt="Saga Orange" class="w-3rem border-round" />
+                            <img src="/images/themes/saga-orange.png" alt="Saga Orange" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Saga Orange</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('saga-purple')">
-                            <img src="/demo/images/themes/saga-purple.png" alt="Saga Purple" class="w-3rem border-round" />
+                            <img src="/images/themes/saga-purple.png" alt="Saga Purple" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Saga Purple</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('vela-blue', true)">
-                            <img src="/demo/images/themes/vela-blue.png" alt="Vela Blue" class="w-3rem border-round" />
+                            <img src="/images/themes/vela-blue.png" alt="Vela Blue" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Vela Blue</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('vela-green', true)">
-                            <img src="/demo/images/themes/vela-green.png" alt="Vela Green" class="w-3rem border-round" />
+                            <img src="/images/themes/vela-green.png" alt="Vela Green" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Vela Green</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('vela-orange', true)">
-                            <img src="/demo/images/themes/vela-orange.png" alt="Vela Orange" class="w-3rem border-round" />
+                            <img src="/images/themes/vela-orange.png" alt="Vela Orange" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Vela Orange</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('vela-purple', true)">
-                            <img src="/demo/images/themes/vela-purple.png" alt="Vela Purple" class="w-3rem border-round" />
+                            <img src="/images/themes/vela-purple.png" alt="Vela Purple" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Vela Purple</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('arya-blue', true)">
-                            <img src="/demo/images/themes/arya-blue.png" alt="Arya Blue" class="w-3rem border-round" />
+                            <img src="/images/themes/arya-blue.png" alt="Arya Blue" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Arya Blue</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('arya-green', true)">
-                            <img src="/demo/images/themes/arya-green.png" alt="Arya Green" class="w-3rem border-round" />
+                            <img src="/images/themes/arya-green.png" alt="Arya Green" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Arya Green</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('arya-orange', true)">
-                            <img src="/demo/images/themes/arya-orange.png" alt="Arya Orange" class="w-3rem border-round" />
+                            <img src="/images/themes/arya-orange.png" alt="Arya Orange" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Arya Orange</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
                         <button class="p-link" @click="changeTheme('arya-purple', true)">
-                            <img src="/demo/images/themes/arya-purple.png" alt="Arya Purple" class="w-3rem border-round" />
+                            <img src="/images/themes/arya-purple.png" alt="Arya Purple" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Arya Purple</span>
                     </div>
