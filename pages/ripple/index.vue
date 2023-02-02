@@ -5,76 +5,62 @@
             <Meta name="description" content="Ripple component adds ripple effect to the host element." />
         </Head>
 
-        <div class="content-section introduction">
-            <div class="feature-intro">
-                <h1>Ripple</h1>
-                <p>Ripple directive adds ripple effect to the host element.</p>
+        <div class="doc">
+            <div class="doc-main">
+                <div class="doc-intro">
+                    <h1>Tag</h1>
+                    <p>Tag component is used to categorize content.</p>
+                </div>
+                <DocSections :docs="docs" />
             </div>
-            <AppDemoActions />
+            <DocSectionNav :docs="docs" />
         </div>
-
-        <div class="content-section implementation">
-            <div class="card-container flex">
-                <div v-ripple class="card primary-box p-ripple">Default</div>
-                <div v-ripple class="card styled-box-green p-ripple">Green</div>
-                <div v-ripple class="card styled-box-orange p-ripple">Orange</div>
-                <div v-ripple class="card styled-box-purple p-ripple">Purple</div>
-            </div>
-        </div>
-
-        <RippleDoc />
     </div>
 </template>
 
 <script>
-import RippleDoc from './RippleDoc';
+import AccessibilityDoc from '/doc/ripple/AccessibilityDoc';
+import CustomDoc from '/doc/ripple/CustomDoc';
+import DefaultDoc from '/doc/ripple/DefaultDoc';
+import ImportDoc from '/doc/ripple/ImportDoc';
+import StyleDoc from '/doc/ripple/StyleDoc';
 
 export default {
-    components: {
-        RippleDoc: RippleDoc
+    data() {
+        return {
+            docs: [
+                {
+                    id: 'import',
+                    label: 'Import',
+                    component: ImportDoc
+                },
+                {
+                    id: 'default',
+                    label: 'Default',
+                    component: DefaultDoc
+                },
+                {
+                    id: 'custom',
+                    label: 'Custom',
+                    component: CustomDoc
+                },
+                {
+                    id: 'style',
+                    label: 'Style',
+                    component: StyleDoc
+                },
+                {
+                    id: 'accessibility',
+                    label: 'Accessibility',
+                    component: AccessibilityDoc
+                },
+                {
+                    id: 'api',
+                    label: 'API',
+                    doc: [{ name: 'Ripple', pathname: '/modules/ripple.html' }]
+                }
+            ]
+        };
     }
 };
 </script>
-
-<style lang="scss" scoped>
-::v-deep(.card-container) {
-    .card {
-        width: 75px;
-        height: 75px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 1rem;
-        user-select: none;
-        padding: 0;
-
-        &.primary-box {
-            background-color: var(--primary-color);
-            padding: 0;
-            color: var(--primary-color-text);
-        }
-
-        &.styled-box-green {
-            .p-ink {
-                background: rgba(#4baf50, 0.3);
-            }
-        }
-
-        &.styled-box-orange {
-            .p-ink {
-                background: rgba(#ffc106, 0.3);
-            }
-        }
-
-        &.styled-box-purple {
-            .p-ink {
-                background: rgba(#9c27b0, 0.3);
-            }
-        }
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-}
-</style>
