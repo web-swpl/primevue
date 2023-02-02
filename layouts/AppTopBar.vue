@@ -1,68 +1,14 @@
 <template>
     <div :ref="containerRef" class="layout-topbar">
-        <button type="button" class="p-link menu-button" onClick="{onMenuButtonClick}" aria-haspopup aria-label="Menu">
+        <button type="button" class="p-link menu-button" @click="onMenuButtonClick" aria-haspopup aria-label="Menu">
             <i class="pi pi-bars"></i>
         </button>
 
         <ul class="flex list-none m-0 p-0 ml-auto gap-2 align-items-center">
             <li>
-                <a
-                    href="https://primefaces.github.io/primereact"
-                    class="flex p-link border-1 w-2rem h-2rem surface-border border-round surface-card align-items-center justify-content-center transition-all transition-duration-300 hover:border-primary"
-                >
+                <a href="https://primefaces.github.io/primevue" class="flex p-link border-1 w-2rem h-2rem surface-border border-round surface-card align-items-center justify-content-center transition-all transition-duration-300 hover:border-primary">
                     <i class="pi pi-github text-700"></i>
                 </a>
-                <div class="layout-topbar">
-                    <button type="button" class="p-link menu-button" @click="onMenuButtonClick" aria-haspopup aria-label="Menu">
-                        <i class="pi pi-bars"></i>
-                    </button>
-
-                    <ul class="flex list-none m-0 p-0 ml-auto gap-2 align-items-center">
-                        <li>
-                            <a
-                                href="https://primefaces.github.io/primereact"
-                                class="flex p-link border-1 w-2rem h-2rem surface-border border-round surface-card align-items-center justify-content-center transition-all transition-duration-300 hover:border-primary"
-                            >
-                                <i class="pi pi-github text-700"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://discord.gg/gzKFYnpmCY"
-                                class="flex p-link border-1 w-2rem h-2rem surface-border border-round surface-card align-items-center justify-content-center transition-all transition-duration-300 hover:border-primary"
-                            >
-                                <i class="pi pi-discord text-700"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <button type="button" class="p-button flex border-1 w-2rem h-2rem p-0 align-items-center justify-content-center transition-all transition-duration-300" @click="onConfigButtonClick">
-                                <i class="pi pi-cog"></i>
-                            </button>
-                        </li>
-
-                        <li class="relative">
-                            <button
-                                v-styleclass="{ selector: '@next', enterClass: 'hidden', enterActiveClass: 'scalein', leaveToClass: 'hidden', leaveActiveClass: 'fadeout', hideOnOutsideClick: true }"
-                                type="button"
-                                class="p-link flex align-items-center surface-card h-2rem px-3 hover:surface-hover border-1 border-solid surface-border transition-all transition-duration-300 hover:border-primary"
-                            >
-                                <span v-if="versions && versions.length" class="text-900">{{ versions[0].version }}</span>
-                                <span class="ml-2 pi pi-angle-down text-600"></span>
-                            </button>
-
-                            <div class="p-3 surface-overlay hidden absolute right-0 top-auto border-round shadow-2 origin-top w-12rem">
-                                <ul class="list-none m-0 p-0">
-                                    <li v-for="version in versions" :key="version.version" role="none">
-                                        <a href="{version.url}" class="block p-2 border-round hover:surface-hover w-full">
-                                            <span class="font-bold text-900">{{ version.name }}</span>
-                                            <span class="ml-2 text-700">({{ version.version }})</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
             </li>
             <li>
                 <a href="https://discord.gg/gzKFYnpmCY" class="flex p-link border-1 w-2rem h-2rem surface-border border-round surface-card align-items-center justify-content-center transition-all transition-duration-300 hover:border-primary">
@@ -107,11 +53,6 @@ export default {
     data() {
         return {
             versions: [
-                {
-                    name: 'v3-beta',
-                    version: '3.23.0-beta.1',
-                    url: 'https://www.beta.primevue.org'
-                },
                 {
                     name: 'v3',
                     version: '3.23.0',
