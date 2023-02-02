@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>BreadCrumb requires a collection of menuitems as its <i>model</i>.</p>
+        <p>Breadcrumb requires a collection of menuitems as its <i>model</i>.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
         <Breadcrumb :home="home" :model="items" />
@@ -19,7 +19,7 @@ export default {
             items: [{ label: 'Computer' }, { label: 'Notebook' }, { label: 'Accessories' }, { label: 'Backpacks' }, { label: 'Item' }],
             code: {
                 basic: `
-<BreadCrumb :home="home" :model="items" />`,
+<Breadcrumb :home="home" :model="items" />`,
                 options: `
 <template>
     <div class="card flex justify-content-center">
