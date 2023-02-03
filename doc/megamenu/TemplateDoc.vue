@@ -5,7 +5,7 @@
     <div class="card">
         <MegaMenu :model="items" orientation="horizontal">
             <template #start>
-                <img alt="logo" src="@/assets/images/logo.svg" height="40" class="mr-2" />
+                <img alt="logo" src="/images/logo.svg" height="40" class="mr-2" />
             </template>
             <template #end>
                 <InputText placeholder="Search" type="text" />
@@ -139,7 +139,7 @@ export default {
                 basic: `
 <MegaMenu :model="items" orientation="horizontal">
     <template #start>
-        <img alt="logo" src="@/assets/images/logo.svg" height="40" class="mr-2" />
+        <img alt="logo" src="/images/logo.svg" height="40" class="mr-2" />
     </template>
     <template #end>
         <InputText placeholder="Search" type="text" />
