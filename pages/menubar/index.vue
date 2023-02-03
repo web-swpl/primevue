@@ -5,164 +5,62 @@
             <Meta name="description" content="Menubar is a horizontal menu component." />
         </Head>
 
-        <div class="content-section introduction">
-            <div class="feature-intro">
-                <h1>Menubar</h1>
-                <p>Menubar is a horizontal menu component.</p>
+        <div class="doc">
+            <div class="doc-main">
+                <div class="doc-intro">
+                    <h1>Menubar</h1>
+                    <p>Menubar also known as Navbar, is a horizontal menu component.</p>
+                </div>
+                <DocSections :docs="docs" />
             </div>
-            <AppDemoActions />
+            <DocSectionNav :docs="docs" />
         </div>
-
-        <div class="content-section implementation">
-            <div class="card">
-                <Menubar :model="items">
-                    <template #start>
-                        <img alt="logo" src="@/assets/images/logo.svg" height="40" class="mr-2" />
-                    </template>
-                    <template #end>
-                        <InputText placeholder="Search" type="text" />
-                    </template>
-                </Menubar>
-            </div>
-        </div>
-
-        <MenubarDoc />
     </div>
 </template>
 
 <script>
-import MenubarDoc from './MenubarDoc';
+import AccessibilityDoc from '../../doc/menubar/accessibilitydoc';
+import BasicDoc from '../../doc/menubar/basicdoc';
+import ImportDoc from '../../doc/menubar/importdoc';
+import StyleDoc from '../../doc/menubar/styledoc';
+import TemplateDoc from '../../doc/menubar/templatedoc';
 
 export default {
     data() {
         return {
-            items: [
+            docs: [
                 {
-                    label: 'File',
-                    icon: 'pi pi-fw pi-file',
-                    items: [
-                        {
-                            label: 'New',
-                            icon: 'pi pi-fw pi-plus',
-                            items: [
-                                {
-                                    label: 'Bookmark',
-                                    icon: 'pi pi-fw pi-bookmark'
-                                },
-                                {
-                                    label: 'Video',
-                                    icon: 'pi pi-fw pi-video'
-                                }
-                            ]
-                        },
-                        {
-                            label: 'Delete',
-                            icon: 'pi pi-fw pi-trash'
-                        },
-                        {
-                            separator: true
-                        },
-                        {
-                            label: 'Export',
-                            icon: 'pi pi-fw pi-external-link'
-                        }
-                    ]
+                    id: 'import',
+                    label: 'Import',
+                    component: ImportDoc
                 },
                 {
-                    label: 'Edit',
-                    icon: 'pi pi-fw pi-pencil',
-                    items: [
-                        {
-                            label: 'Left',
-                            icon: 'pi pi-fw pi-align-left'
-                        },
-                        {
-                            label: 'Right',
-                            icon: 'pi pi-fw pi-align-right'
-                        },
-                        {
-                            label: 'Center',
-                            icon: 'pi pi-fw pi-align-center'
-                        },
-                        {
-                            label: 'Justify',
-                            icon: 'pi pi-fw pi-align-justify'
-                        }
-                    ]
+                    id: 'basic',
+                    label: 'Basic',
+                    component: BasicDoc
                 },
                 {
-                    label: 'Users',
-                    icon: 'pi pi-fw pi-user',
-                    items: [
-                        {
-                            label: 'New',
-                            icon: 'pi pi-fw pi-user-plus'
-                        },
-                        {
-                            label: 'Delete',
-                            icon: 'pi pi-fw pi-user-minus'
-                        },
-                        {
-                            label: 'Search',
-                            icon: 'pi pi-fw pi-users',
-                            items: [
-                                {
-                                    label: 'Filter',
-                                    icon: 'pi pi-fw pi-filter',
-                                    items: [
-                                        {
-                                            label: 'Print',
-                                            icon: 'pi pi-fw pi-print'
-                                        }
-                                    ]
-                                },
-                                {
-                                    icon: 'pi pi-fw pi-bars',
-                                    label: 'List'
-                                }
-                            ]
-                        }
-                    ]
+                    id: 'template',
+                    label: 'Template',
+                    component: TemplateDoc
                 },
                 {
-                    label: 'Events',
-                    icon: 'pi pi-fw pi-calendar',
-                    items: [
-                        {
-                            label: 'Edit',
-                            icon: 'pi pi-fw pi-pencil',
-                            items: [
-                                {
-                                    label: 'Save',
-                                    icon: 'pi pi-fw pi-calendar-plus'
-                                },
-                                {
-                                    label: 'Delete',
-                                    icon: 'pi pi-fw pi-calendar-minus'
-                                }
-                            ]
-                        },
-                        {
-                            label: 'Archieve',
-                            icon: 'pi pi-fw pi-calendar-times',
-                            items: [
-                                {
-                                    label: 'Remove',
-                                    icon: 'pi pi-fw pi-calendar-minus'
-                                }
-                            ]
-                        }
-                    ]
+                    id: 'style',
+                    label: 'Style',
+                    component: StyleDoc
                 },
                 {
-                    label: 'Quit',
-                    icon: 'pi pi-fw pi-power-off'
+                    id: 'accessibility',
+                    label: 'Accessibility',
+                    component: AccessibilityDoc
+                },
+                {
+                    id: 'api',
+                    label: 'API',
+                    doc: [{ name: 'Menubar', pathname: '/modules/menubar.html' }]
                 }
             ]
         };
-    },
-    components: {
-        MenubarDoc: MenubarDoc
     }
 };
 </script>
