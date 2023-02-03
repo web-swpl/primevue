@@ -877,8 +877,8 @@ import { NodeService } from './service/NodeService';
 import { PhotoService } from './service/PhotoService';
 
 onMounted(() => {
-    PhotoService.value.getImages().then(data => images.value = data);
-    NodeService.value.getTreeNodes().then(data => nodes.value = data);
+    PhotoService.getImages().then(data => images.value = data);
+    NodeService.getTreeNodes().then(data => nodes.value = data);
     TerminalService.on('command', commandHandler);
 })
 
