@@ -831,6 +831,7 @@ export default {
 }
 
 .dock-demo .p-menubar {
+    padding: 0;
     border-radius: 0;
 }
 </style>
@@ -1130,6 +1131,7 @@ const commandHandler = (text) => {
 }
 
 .dock-demo .p-menubar {
+    padding: 0;
     border-radius: 0;
 }
 </style>

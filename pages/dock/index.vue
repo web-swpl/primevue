@@ -82,6 +82,7 @@ export default {
     }
 
     .p-menubar {
+        padding: 0;
         border-radius: 0;
     }
 }
