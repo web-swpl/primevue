@@ -5,84 +5,56 @@
             <Meta name="description" content="Steps also known as Stepper, is an indicator for the steps in a workflow. Layout of steps component is optimized for responsive design." />
         </Head>
 
-        <div class="content-section introduction">
-            <div class="feature-intro">
-                <h1>Steps</h1>
-                <p>Steps components is an indicator for the steps in a wizard workflow. Example below uses nested routes with Steps.</p>
+        <div class="doc">
+            <div class="doc-main">
+                <div class="doc-intro">
+                    <h1>Steps</h1>
+                    <p>Steps also known as Stepper, is an indicator for the steps in a workflow. Layout of steps component is optimized for responsive design.</p>
+                </div>
+                <DocSections :docs="docs" />
             </div>
-            <AppDemoActions />
+            <DocSectionNav :docs="docs" />
         </div>
-
-        <div class="content-section implementation">
-            <div class="card">
-                <Steps :model="items" aria-label="Form Steps" />
-            </div>
-
-            <NuxtPage v-slot="{ Component }" :formData="formObject" @prev-page="prevPage($event)" @next-page="nextPage($event)" @complete="complete">
-                <keep-alive>
-                    <component :is="Component" />
-                </keep-alive>
-            </NuxtPage>
-        </div>
-
-        <StepsDoc />
     </div>
 </template>
 
 <script>
-import StepsDoc from './steps/StepsDoc';
+import AccessibilityDoc from '../doc/steps/AccessibilityDoc';
+import ImportDoc from '../doc/steps/ImportDoc';
+import InteractiveDoc from '../doc/steps/InteractiveDoc';
+import StyleDoc from '../doc/steps/StyleDoc';
 
 export default {
     data() {
         return {
-            items: [
+            docs: [
                 {
-                    label: 'Personal',
-                    to: '/steps'
+                    id: 'import',
+                    label: 'Import',
+                    component: ImportDoc
                 },
                 {
-                    label: 'Seat',
-                    to: '/steps/seat'
+                    id: 'interactive',
+                    label: 'Interactive',
+                    component: InteractiveDoc
                 },
                 {
-                    label: 'Payment',
-                    to: '/steps/payment'
+                    id: 'style',
+                    label: 'Style',
+                    component: StyleDoc
                 },
                 {
-                    label: 'Confirmation',
-                    to: '/steps/confirmation'
+                    id: 'accessibility',
+                    label: 'Accessibility',
+                    component: AccessibilityDoc
+                },
+                {
+                    id: 'api',
+                    label: 'API',
+                    doc: [{ name: 'Steps', pathname: '/modules/steps.html' }]
                 }
-            ],
-            formObject: {}
+            ]
         };
-    },
-    methods: {
-        nextPage(event) {
-            for (let field in event.formData) {
-                this.formObject[field] = event.formData[field];
-            }
-
-            this.$router.push(this.items[event.pageIndex + 1].to);
-        },
-        prevPage(event) {
-            this.$router.push(this.items[event.pageIndex - 1].to);
-        },
-        complete() {
-            this.$toast.add({ severity: 'success', summary: 'Order submitted', detail: 'Dear, ' + this.formObject.firstname + ' ' + this.formObject.lastname + ' your order completed.' });
-        }
-    },
-    components: {
-        StepsDoc: StepsDoc
     }
 };
 </script>
-
-<style scoped lang="scss">
-::v-deep(b) {
-    display: block;
-}
-
-::v-deep(.p-card-body) {
-    padding: 2rem;
-}
-</style>
