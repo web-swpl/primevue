@@ -48,7 +48,8 @@ export default {
         <component :is="Component" />
     </keep-alive>
 </router-view>`,
-                options: `<template>
+                options: `
+<template>
     <div>
         <Toast />
         
@@ -133,7 +134,7 @@ export default {
     </div>
 </template>
 
-<script>
+<script setup>
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 import { useToast } from "primevue/usetoast";
