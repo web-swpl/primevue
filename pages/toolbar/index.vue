@@ -5,68 +5,56 @@
             <Meta name="description" content="Toolbar is a grouping component for buttons and other content." />
         </Head>
 
-        <div class="content-section introduction">
-            <div class="feature-intro">
-                <h1>Toolbar</h1>
-                <p>Toolbar is a grouping component for buttons and other content.</p>
+        <div class="doc">
+            <div class="doc-main">
+                <div class="doc-intro">
+                    <h1>Toolbar</h1>
+                    <p>Toolbar is a grouping component for buttons and other content.</p>
+                </div>
+                <DocSections :docs="docs" />
             </div>
-            <AppDemoActions />
-        </div>
-
-        <div class="content-section implementation">
-            <Toolbar>
-                <template #start>
-                    <Button label="New" icon="pi pi-plus" class="mr-2" />
-                    <Button label="Upload" icon="pi pi-upload" class="p-button-success" />
-                    <i class="pi pi-bars p-toolbar-separator mr-2" />
-                    <SplitButton label="Save" icon="pi pi-check" :model="items" class="p-button-warning"></SplitButton>
-                </template>
-
-                <template #end>
-                    <Button icon="pi pi-search" class="mr-2" />
-                    <Button icon="pi pi-calendar" class="p-button-success mr-2" />
-                    <Button icon="pi pi-times" class="p-button-danger" />
-                </template>
-            </Toolbar>
+            <DocSectionNav :docs="docs" />
         </div>
 
         <ToolbarDoc />
     </div>
 </template>
 <script>
-import ToolbarDoc from './ToolbarDoc';
-
+import AccessibilityDoc from '/doc/toolbar/AccessibilityDoc';
+import BasicDoc from '/doc/toolbar/BasicDoc';
+import ImportDoc from '/doc/toolbar/ImportDoc';
+import StyleDoc from '/doc/toolbar/StyleDoc';
 export default {
     data() {
         return {
-            items: [
+            docs: [
                 {
-                    label: 'Update',
-                    icon: 'pi pi-refresh'
+                    id: 'import',
+                    label: 'Import',
+                    component: ImportDoc
                 },
                 {
-                    label: 'Delete',
-                    icon: 'pi pi-times'
+                    id: 'basic',
+                    label: 'Basic',
+                    component: BasicDoc
                 },
                 {
-                    label: 'Vue Website',
-                    icon: 'pi pi-external-link',
-                    command: () => {
-                        window.location.href = 'https://vuejs.org/';
-                    }
+                    id: 'style',
+                    label: 'Style',
+                    component: StyleDoc
                 },
                 {
-                    label: 'Upload',
-                    icon: 'pi pi-upload',
-                    command: () => {
-                        this.$router.push('fileupload');
-                    }
+                    id: 'accessibility',
+                    label: 'Accessibility',
+                    component: AccessibilityDoc
+                },
+                {
+                    id: 'api',
+                    label: 'API',
+                    doc: [{ name: 'Toolbar', pathname: '/modules/toolbar.html' }]
                 }
             ]
         };
-    },
-    components: {
-        ToolbarDoc: ToolbarDoc
     }
 };
 </script>
