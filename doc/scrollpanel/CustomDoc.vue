@@ -3,8 +3,8 @@
         <p>Scrollbar visuals can be styled for a unified look across different platforms.</p>
     </DocSectionText>
     <div class="card">
-        <div class="grid">
-            <div class="col-12 md:col-6">
+        <div class="flex flex-column md:flex-row gap-5">
+            <div class="flex-auto">
                 <ScrollPanel style="width: 100%; height: 200px" class="custombar1">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -20,7 +20,7 @@
                     </p>
                 </ScrollPanel>
             </div>
-            <div class="col-12 md:col-6">
+            <div class="flex-auto">
                 <ScrollPanel style="width: 100%; height: 200px" class="custombar2">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -61,8 +61,8 @@ export default {
                 options: `
 <template>
     <div class="card">
-        <div class="grid">
-            <div class="col-12 md:col-6">
+        <div class="flex flex-column md:flex-row gap-5">
+            <div class="flex-auto">
                 <ScrollPanel style="width: 100%; height: 200px" class="custombar1">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -78,7 +78,7 @@ export default {
                     </p>
                 </ScrollPanel>
             </div>
-            <div class="col-12 md:col-6">
+            <div class="flex-auto">
                 <ScrollPanel style="width: 100%; height: 200px" class="custombar2">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -131,8 +131,8 @@ export default {
                 composition: `
 <template>
     <div class="card">
-        <div class="grid">
-            <div class="col-12 md:col-6">
+        <div class="flex flex-column md:flex-row gap-5">
+            <div class="flex-auto">
                 <ScrollPanel style="width: 100%; height: 200px" class="custombar1">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -148,7 +148,7 @@ export default {
                     </p>
                 </ScrollPanel>
             </div>
-            <div class="col-12 md:col-6">
+            <div class="flex-auto">
                 <ScrollPanel style="width: 100%; height: 200px" class="custombar2">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
