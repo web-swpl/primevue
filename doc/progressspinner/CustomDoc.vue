@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>ProgressSpinner can be customized with styling property like <i>style</i>, <i>strokeWidth</i> and <i>fill</i>.</p>
+        <p>ProgressSpinner can be customized with styling property like <i>style</i>, <i>strokeWidth</i> <i>fill</i> and <i>animationDuration</i>.</p>
     </DocSectionText>
     <div class="card">
         <ProgressSpinner style="width: 50px; height: 50px" strokeWidth="8" fill="var(--surface-ground)" animationDuration=".5s" aria-label="Custom ProgressSpinner" />
