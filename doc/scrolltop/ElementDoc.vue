@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>ProgressSpinner can be customized with styling property like <i>style</i>, <i>strokeWidth</i> and <i>fill</i>.</p>
+        <p>Setting the <i>target</i> property to <i>parent</i> binds ScrollTop to its parent element that has scrolling content.</p>
     </DocSectionText>
     <div class="card">
         <ScrollPanel style="width: 250px; height: 200px">
@@ -22,7 +22,8 @@ export default {
     data() {
         return {
             code: {
-                basic: `<ScrollTop target="parent" :threshold="100" class="custom-scrolltop" icon="pi pi-arrow-up" />`,
+                basic: `
+<ScrollTop target="parent" :threshold="100" class="custom-scrolltop" icon="pi pi-arrow-up" />`,
                 options: `
 <template>
     <div class="card">
