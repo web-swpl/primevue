@@ -15,8 +15,6 @@
             </div>
             <DocSectionNav :docs="docs" />
         </div>
-
-        <ToolbarDoc />
     </div>
 </template>
 <script>
