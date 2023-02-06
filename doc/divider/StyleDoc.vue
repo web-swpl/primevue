@@ -1,6 +1,6 @@
 <template>
     <DocSectionText id="style" label="Style" v-bind="$attrs">
-        <p>Following is the list of structural style classes, for theming classes visit <nuxt-link href="/theming"> theming</nuxt-link> page.</p>
+        <p>Following is the list of structural style classes, for theming classes visit <nuxt-link to="/theming"> theming</nuxt-link> page.</p>
     </DocSectionText>
     <div class="doc-tablewrapper">
         <table class="doc-table">
