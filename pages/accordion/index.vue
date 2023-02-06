@@ -26,7 +26,7 @@ import Disabled from '/doc/accordion/DisabledDoc.vue';
 import ImportDoc from '/doc/accordion/ImportDoc';
 import MultipleDoc from '/doc/accordion/MultipleDoc.vue';
 import StyleDoc from '/doc/accordion/StyleDoc';
-import TemplateDoc from '/doc/accordion/TemplateDoc';
+import TemplateDoc from '/doc/accordion/TemplateDoc.vue';
 
 export default {
     data() {
@@ -43,11 +43,6 @@ export default {
                     component: BasicDoc
                 },
                 {
-                    id: 'template',
-                    label: 'Template',
-                    component: TemplateDoc
-                },
-                {
                     id: 'multiple',
                     label: 'Multiple',
                     component: MultipleDoc
@@ -61,6 +56,11 @@ export default {
                     id: 'controlled',
                     label: 'Controlled',
                     component: ControlledDoc
+                },
+                {
+                    id: 'template',
+                    label: 'Template',
+                    component: TemplateDoc
                 },
                 {
                     id: 'style',
