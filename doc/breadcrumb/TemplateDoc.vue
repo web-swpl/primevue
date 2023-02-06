@@ -65,7 +65,7 @@ export default {
     </div>
 </template>
 
-<script>
+<script setup>
 import { ref } from "vue";
 
 const home = ref({ icon: 'pi pi-home', url: 'https://www.primefaces.org/primevue' });

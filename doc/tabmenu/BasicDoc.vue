@@ -67,7 +67,8 @@ export default {
     }
 }
 <\/script>`,
-                composition: `<template>
+                composition: `
+<template>
     <div class="card">
         <TabMenu :model="items" />
         <router-view />
