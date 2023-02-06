@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Title section is customized with the <i>headerTemplate</i> property that takes a <i>PanelHeaderTemplateOptions</i> object as a parameter and returns content.</p>
+        <p>Header of the panel is either defined with the header property or the header template.</p>
     </DocSectionText>
     <div class="card">
         <Panel header="Header" :toggleable="true">
