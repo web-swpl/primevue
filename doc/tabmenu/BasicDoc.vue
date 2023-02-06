@@ -67,7 +67,45 @@ export default {
     }
 }
 <\/script>`,
-                composition: ``,
+                composition: `<template>
+    <div class="card">
+        <TabMenu :model="items" />
+        <router-view />
+    </div>
+</template>
+
+<script setup>
+import { ref } from "vue";
+
+const items = ref([
+    {
+        label: 'Home',
+        icon: 'pi pi-fw pi-home',
+        to: '/'
+    },
+    {
+        label: 'Calendar',
+        icon: 'pi pi-fw pi-calendar',
+        to: '/calendar'
+    },
+    {
+        label: 'Edit',
+        icon: 'pi pi-fw pi-pencil',
+        to: '/edit'
+    },
+    {
+        label: 'Documentation',
+        icon: 'pi pi-fw pi-file',
+        to: '/documentation'
+    },
+    {
+        label: 'Settings',
+        icon: 'pi pi-fw pi-cog',
+        to: '/settings'
+    }
+]);
+
+<\/script>`,
                 pages: [
                     {
                         tabName: 'HomeDemo',
