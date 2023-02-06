@@ -6,7 +6,7 @@
             avatars need to be tabbable, <i>tabindex</i> can be added as well to implement custom key handlers.
         </p>
 
-        <h4>Keyboard Support</h4>
+        <h3>Keyboard Support</h3>
         <p>Component does not include any interactive elements.</p>
     </DocSectionText>
 </template>

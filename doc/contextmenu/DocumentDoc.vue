@@ -286,8 +286,7 @@ export default {
         };
     }
 };
-<\/script>
-`,
+<\/script>`,
                 composition: `
 <template>
     <div class="card text-center">

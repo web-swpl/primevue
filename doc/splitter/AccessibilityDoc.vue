@@ -1,9 +1,9 @@
 <template>
     <DocSectionText id="accessibility" label="Accessibility" v-bind="$attrs">
-        <h6>Screen Reader</h6>
+        <h3>Screen Reader</h3>
         <p>Splitter bar defines <i>separator</i> as the role with <i>aria-orientation</i> set to either horizontal or vertical.</p>
 
-        <h6>Keyboard Support</h6>
+        <h3>Keyboard Support</h3>
         <div class="doc-tablewrapper">
             <table class="doc-table">
                 <thead>

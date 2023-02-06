@@ -1,6 +1,6 @@
 <template>
     <DocSectionText id="stylingofavatar" label="Styling of Avatar" v-bind="$attrs">
-        <p>Following is the list of structural style classes, for theming classes visit <Link href="/theming"> theming</Link> page.</p>
+        <p>Following is the list of structural style classes, for theming classes visit <NuxtLink href="/theming"> theming</NuxtLink> page.</p>
     </DocSectionText>
     <div class="doc-tablewrapper">
         <table class="doc-table">

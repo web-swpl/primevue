@@ -36,8 +36,7 @@ export default {
 
 <script>
 
-<\\/script>
-        `,
+<\/script>`,
                 composition: `
 <template>
     <div class="flex flex-wrap justify-content-center gap-2">
@@ -51,7 +50,7 @@ export default {
 
 <script setup>
 
-<\\/script>
+<\/script>
         `
             }
         };

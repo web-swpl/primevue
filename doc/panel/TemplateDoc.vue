@@ -143,8 +143,7 @@ export default {
         }
     }
 }
-<\\/script>
-  `,
+<\/script>`,
                 composition: `
 <template>
     <div class="card">
@@ -213,8 +212,7 @@ const toggle = (event) => {
 const save = () => {
     toast.add({ severity: 'success', summary: 'Success', detail: 'Data Saved', life: 3000 });
 };
-<\\/script>
-  `
+<\/script>`
             }
         };
     },

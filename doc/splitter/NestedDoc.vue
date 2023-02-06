@@ -62,8 +62,7 @@ export default {
 </template>
 
 <script>
-<\\/script>
-    `,
+<\/script>`,
                 composition: `
 <template>
     <div class="card">
@@ -85,8 +84,7 @@ export default {
 </template>
 
 <script setup>
-<\\/script>
-    `
+<\/script>`
             }
         };
     }

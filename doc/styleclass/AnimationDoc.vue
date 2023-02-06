@@ -86,8 +86,7 @@ export default {
 .my-fadeout {
     animation: my-fadeout 150ms linear;
 }
-</style>
-        `,
+</style>`,
                 composition: `
 <template>
     <div class="card flex flex-column align-items-center">
@@ -146,8 +145,7 @@ export default {
 .my-fadeout {
     animation: my-fadeout 150ms linear;
 }
-</style>
-        `
+</style>`
             }
         };
     }

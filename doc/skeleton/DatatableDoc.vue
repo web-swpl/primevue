@@ -93,8 +93,7 @@ export default {
         };
     }
 }
-<\\/script>
-  `,
+<\/script>`,
                 composition: `
 <template>
     <div class="card">
@@ -127,8 +126,7 @@ export default {
 import { ref } from 'vue';
 
 const products = ref(new Array(4));
-<\\/script>
-  `
+<\/script>`
             },
             products: new Array(4)
         };

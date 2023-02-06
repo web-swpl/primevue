@@ -65,8 +65,7 @@ export default {
         }
     }
 };
-<\\/script>
-    `,
+<\/script>`,
                 composition: `
 <template>
     <div class="card">
@@ -94,8 +93,7 @@ const onDataLoad = () => {
     ProductService.getProductsSmall().then((data) => (products.value = data));
     toast.add({ severity: 'success', summary: 'Data Initialized', detail: 'Render Completed' });
 };
-<\\/script>
-    `
+<\/script>`
             },
             products: null
         };

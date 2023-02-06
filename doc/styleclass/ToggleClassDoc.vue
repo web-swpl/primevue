@@ -24,8 +24,7 @@ export default {
 </template>
 
 <script>
-<\/script>
-        `,
+<\/script>`,
                 composition: `
 <template>
     <Button v-styleclass="{ selector: '@next', toggleClass: 'p-disabled' }" label="Toggle p-disabled" />
@@ -33,8 +32,7 @@ export default {
 </template>
 
 <script setup>
-<\/script>
-        `
+<\/script>`
             }
         };
     }

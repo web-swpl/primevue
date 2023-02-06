@@ -5,7 +5,7 @@
             BlockUI manages <i>aria-busy</i> state attribute when the UI gets blocked and unblocked. Any valid attribute is passed to the root element so additional attributes like <i>role</i> and <i>aria-live</i> can be used to define live regions.
         </p>
 
-        <h4>Keyboard Support</h4>
+        <h3>Keyboard Support</h3>
         <p>Component does not include any interactive elements.</p>
     </DocSectionText>
 </template>

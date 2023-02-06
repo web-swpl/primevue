@@ -106,8 +106,7 @@ export default {
             }
         }
     }
-<\\/script>
-  `,
+<\/script>`,
                 composition: `
 <template>
     <div class="card">
@@ -144,8 +143,7 @@ export default {
     import { ref } from 'vue';
 
     const active = ref(0);
-<\\/script>
-  `
+<\/script>`
             }
         };
     }

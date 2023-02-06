@@ -78,8 +78,7 @@ export default {
         };
     }
 };
-<\/script>
-`,
+<\/script>`,
                 composition: `
 <template>
     <div class="card">
@@ -114,8 +113,7 @@ const items = ref([
         icon: 'pi pi-fw pi-cog'
     }
 ]);
-<\/script>
-`
+<\/script>`
             }
         };
     }

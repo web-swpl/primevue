@@ -138,8 +138,7 @@ export default {
 </template>
 
 <script>
-<\\/script>
-  `,
+<\/script>`,
                 composition: `
 <template>
     <div class="border-round border-1 surface-border p-4 surface-card">
@@ -185,8 +184,7 @@ export default {
 </template>
 
 <script setup>
-<\\/script>
-  `
+<\/script>`
             }
         };
     }

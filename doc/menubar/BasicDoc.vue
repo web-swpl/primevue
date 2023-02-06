@@ -275,8 +275,7 @@ export default {
         };
     }
 };
-<\/script>
-    `,
+<\/script>`,
                 composition: `
 <template>
     <div class="card relative z-2">
@@ -410,8 +409,7 @@ const items = ref([
         icon: 'pi pi-fw pi-power-off'
     }
 ]);
-<\/script>
-`
+<\/script>`
             }
         };
     }

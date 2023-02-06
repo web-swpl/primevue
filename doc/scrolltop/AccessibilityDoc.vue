@@ -1,12 +1,12 @@
 <template>
     <DocSectionText id="accessibility" label="Accessibility" v-bind="$attrs">
-        <h6>Screen Reader</h6>
+        <h3>Screen Reader</h3>
         <p>
             ScrollTop uses a button element with an <i>aria-label</i> that refers to the <i>aria.scrollTop</i> property of the <nuxt-link to="/locale">locale</nuxt-link> API by default, you may use your own aria roles and attributes as any valid
             attribute is passed to the button element implicitly.
         </p>
 
-        <h6>Keyboard Support</h6>
+        <h3>Keyboard Support</h3>
         <div class="doc-tablewrapper">
             <table class="doc-table">
                 <thead>

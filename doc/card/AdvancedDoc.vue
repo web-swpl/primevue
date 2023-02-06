@@ -71,8 +71,7 @@ export default {
 </template>
 
 <script>
-<\\/script>
-    `,
+<\/script>`,
                 composition: `
 <template>
     <div class="card flex align-items-center justify-content-center">
@@ -97,8 +96,7 @@ export default {
 </template>
 
 <script setup>
-<\\/script>
-    `
+<\/script>`
             }
         };
     }

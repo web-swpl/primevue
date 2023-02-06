@@ -29,7 +29,7 @@ export default {
 </template>
 
 <script>
-<\\/script>
+<\/script>
 
 <style scoped>
 ::v-deep(.styled-box-green .p-ink) {
@@ -42,8 +42,7 @@ export default {
 ::v-deep(.styled-box-purple .p-ink) {
     background: rgba(156, 39, 176, 0.3);
 }
-</style>
-  `,
+</style>`,
                 composition: `
 <template>
     <div class="card card-container flex justify-content-center align-items-center">
@@ -54,7 +53,7 @@ export default {
 </template>
 
 <script setup>
-<\\/script>
+<\/script>
 
 <style scoped>
 ::v-deep(.styled-box-green .p-ink) {
@@ -67,8 +66,7 @@ export default {
 ::v-deep(.styled-box-purple .p-ink) {
     background: rgba(156, 39, 176, 0.3);
 }
-</style>
-  `
+</style>`
             }
         };
     }

@@ -84,8 +84,7 @@ p {
 ::v-deep(.dark-demo-terminal .p-terminal-response) {
     color: #9fa8da;
 }
-</style>
-        `,
+</style>`,
                 composition: `
 <template>
     <div>
@@ -152,8 +151,7 @@ p {
 ::v-deep(.dark-demo-terminal .p-terminal-response) {
     color: #9fa8da;
 }
-</style>
-        `
+</style>`
             }
         };
     },

@@ -41,8 +41,7 @@ export default {
         }
     }
 };
-<\\/script>
-    `,
+<\/script>`,
                 composition: `
 <template>
     <div class="card">
@@ -61,8 +60,7 @@ import { ref } from 'vue';
 const onImageLoad = () => {
     toast.add({ severity: 'success', summary: 'Image Initialized', detail: 'Scroll down to load the datatable' });
 };
-<\\/script>
-    `
+<\/script>`
             }
         };
     },

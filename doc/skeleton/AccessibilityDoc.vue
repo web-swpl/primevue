@@ -6,7 +6,7 @@
             may use <i>aria-busy</i> on the container element as well to indicate the loading process.
         </p>
 
-        <h4>Keyboard Support</h4>
+        <h3>Keyboard Support</h3>
         <div class="doc-tablewrapper">
             <p>Component does not include any interactive elements.</p>
         </div>

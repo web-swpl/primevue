@@ -119,7 +119,7 @@ export default {
 </template>
 
 <script>
-<\\/script>
+<\/script>
 
 <style scoped>
 .accordion-custom i span {
@@ -134,8 +134,7 @@ export default {
     line-height: 1.5;
     margin: 0;
 }
-</style>
-  `,
+</style>`,
                 composition: `
 <template>
     <div class="card">
@@ -176,7 +175,7 @@ export default {
 </template>
 
 <script setup>
-<\\/script>
+<\/script>
 
 <style scoped>
 .accordion-custom i span {
@@ -191,8 +190,7 @@ export default {
     line-height: 1.5;
     margin: 0;
 }
-</style>
-  `
+</style>`
             }
         };
     }

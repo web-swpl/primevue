@@ -151,8 +151,7 @@ export default {
     <template #end>
         <InputText placeholder="Search" type="text" />
     </template>
-</Menubar>
-`,
+</Menubar>`,
                 options: `
 <template>
     <div class="card relative z-2">
@@ -297,8 +296,7 @@ export default {
         };
     }
 };
-<\/script>
-`,
+<\/script>`,
                 composition: `
 <template>
     <div class="card relative z-2">
@@ -313,7 +311,7 @@ export default {
     </div>
 </template>
 
-<script>
+<script setup>
 import { ref } from "vue";
 
 const items = ref([
@@ -439,8 +437,7 @@ const items = ref([
         icon: 'pi pi-fw pi-power-off'
     }
 ]);
-<\/script>
-`
+<\/script>`
             }
         };
     }

@@ -282,8 +282,7 @@ export default {
         };
     }
 };
-<\/script>
-`,
+<\/script>`,
                 composition: `
 <MegaMenu :model="items" orientation="horizontal">
     <template #start>
@@ -413,8 +412,7 @@ const items = ref([
         ]
     }
 ]);
-<\/script>
-`
+<\/script>`
             }
         };
     }

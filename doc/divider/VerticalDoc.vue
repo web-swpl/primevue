@@ -74,8 +74,7 @@ export default {
 </template>
 
 <script>
-<\\/script>
-`,
+<\/script>`,
                 composition: `
 <template>
     <div class="card flex">
@@ -101,8 +100,7 @@ export default {
 </template>
 
 <script setup>
-<\\/script>
-`
+<\/script>`
             }
         };
     }

@@ -57,8 +57,7 @@ export default {
     <p>
         Lorem ipsum dolor ..
     </p>
-</ScrollPanel>
-                `,
+</ScrollPanel>`,
                 options: `
 <template>
     <div class="card">
@@ -100,7 +99,7 @@ export default {
 </template>
 
 <script>
-<\\/script>
+<\/script>
 
 <style scoped>
 ::v-deep(.p-scrollpanel.custombar1 .p-scrollpanel-wrapper) {
@@ -128,8 +127,7 @@ export default {
     opacity: 1;
     transition: background-color 0.3s;
 }
-</style>
-    `,
+</style>`,
                 composition: `
 <template>
     <div class="card">
@@ -171,7 +169,7 @@ export default {
 </template>
 
 <script setup>
-<\\/script>
+<\/script>
 
 <style scoped>
 ::v-deep(.p-scrollpanel.custombar1 .p-scrollpanel-wrapper) {
@@ -199,8 +197,7 @@ export default {
     opacity: 1;
     transition: background-color 0.3s;
 }
-</style>
-    `
+</style>`
             }
         };
     }

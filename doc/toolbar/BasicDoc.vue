@@ -64,8 +64,7 @@ export default {
         <Button icon="pi pi-calendar" class="p-button-success mr-2" />
         <Button icon="pi pi-times" class="p-button-danger" />
     </template>
-</Toolbar>
-                `,
+</Toolbar>`,
                 options: `
 <template>
     <div class="card">
@@ -117,8 +116,7 @@ export default {
         };
     }
 };
-<\\/script>
-    `,
+<\/script>`,
                 composition: `
 <template>
     <div class="card">
@@ -143,31 +141,30 @@ export default {
 import { ref } from 'vue';
 
 const items = ref([
-                {
-                    label: 'Update',
-                    icon: 'pi pi-refresh'
-                },
-                {
-                    label: 'Delete',
-                    icon: 'pi pi-times'
-                },
-                {
-                    label: 'Vue Website',
-                    icon: 'pi pi-external-link',
-                    command: () => {
-                        window.location.href = 'https://vuejs.org/';
-                    }
-                },
-                {
-                    label: 'Upload',
-                    icon: 'pi pi-upload',
-                    command: () => {
-                        this.$router.push('fileupload');
-                    }
-                }
-            ])
-<\\/script>
-    `
+    {
+        label: 'Update',
+        icon: 'pi pi-refresh'
+    },
+    {
+        label: 'Delete',
+        icon: 'pi pi-times'
+    },
+    {
+        label: 'Vue Website',
+        icon: 'pi pi-external-link',
+        command: () => {
+            window.location.href = 'https://vuejs.org/';
+        }
+    },
+    {
+        label: 'Upload',
+        icon: 'pi pi-upload',
+        command: () => {
+            this.$router.push('fileupload');
+        }
+    }
+])
+<\/script>`
             }
         };
     }

@@ -10,6 +10,7 @@ export default {
             code: {
                 basic: `
 import Ripple from 'primevue/ripple';
+
 app.directive('ripple', Ripple);`
             }
         };

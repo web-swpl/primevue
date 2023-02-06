@@ -526,8 +526,7 @@ export default {
         }
     }
 };
-<\/script>
-`,
+<\/script>`,
                 options: `
 <template>
     <div class="card dock-demo">
@@ -834,8 +833,7 @@ export default {
     padding: 0;
     border-radius: 0;
 }
-</style>
-`,
+</style>`,
                 composition: `
 <template>
     <div>
@@ -1134,8 +1132,7 @@ const commandHandler = (text) => {
     padding: 0;
     border-radius: 0;
 }
-</style>
-`
+</style>`
             }
         };
     },

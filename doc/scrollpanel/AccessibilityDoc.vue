@@ -1,9 +1,9 @@
 <template>
     <DocSectionText id="accessibility" label="Accessibility" v-bind="$attrs">
-        <h6>Screen Reader</h6>
+        <h3>Screen Reader</h3>
         <p>Scrollbars of the ScrollPanel has a <i>scrollbar</i> role along with the <i>aria-controls</i> attribute that refers to the id of the scrollable content container and the <i>aria-orientation</i> to indicate the orientation of scrolling.</p>
 
-        <h6>Header Keyboard Support</h6>
+        <h3>Header Keyboard Support</h3>
         <div class="doc-tablewrapper">
             <table class="doc-table">
                 <thead>

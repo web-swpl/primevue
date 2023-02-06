@@ -291,8 +291,7 @@ export default {
         }
     }
 };
-<\/script>
-`,
+<\/script>`,
                 composition: `
 <template>
     <div>

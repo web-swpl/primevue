@@ -22,8 +22,7 @@ export default {
 </template>
 
 <script>
-<\\/script>
-    `,
+<\/script>`,
                 composition: `
 <template>
     <div class="card card-container flex justify-content-center align-items-center">
@@ -32,8 +31,7 @@ export default {
 </template>
 
 <script setup>
-<\\/script>
-    `
+<\/script>`
             }
         };
     }

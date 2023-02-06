@@ -40,7 +40,7 @@ export default {
 </template>
 
 <script>
-<\\/script>
+<\/script>
 
 <style scoped>
 ::v-deep(.custom-scrolltop) {
@@ -58,8 +58,7 @@ export default {
     font-size: 1rem;
     color: var(--primary-color-text);
 }
-</style>
-  `,
+</style>`,
                 composition: `
 <template>
     <div class="card">
@@ -77,7 +76,7 @@ export default {
 </template>
 
 <script setup>
-<\\/script>
+<\/script>
 
 <style scoped>
 ::v-deep(.custom-scrolltop) {
@@ -95,8 +94,7 @@ export default {
     font-size: 1rem;
     color: var(--primary-color-text);
 }
-</style>
-  `
+</style>`
             }
         };
     }
