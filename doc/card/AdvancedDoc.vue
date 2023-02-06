@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Card content can be customized further with <i>subTitle</i>, <i>header</i> and <i>footer</i> slots.</p>
+        <p>Card provides <i>header</i>, <i>title</i>, <i>subtitle</i>, <i>content</i> and <i>footer</i> as the named templates to place content.</p>
     </DocSectionText>
     <div class="card flex align-items-center justify-content-center">
         <Card style="width: 25em">
