@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Various shapes and sizes can be created using styling properties like <i>shape</i>, <i>width</i>, <i>height</i>, <i>borderRadius</i> and <i>className</i>.</p>
+        <p>Sample DataTable implementation using different Skeleton components and PrimeFlex CSS utilities.</p>
     </DocSectionText>
     <div class="card">
         <DataTable :value="products" responsiveLayout="scroll">
