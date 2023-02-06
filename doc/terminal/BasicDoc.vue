@@ -17,7 +17,8 @@ export default {
     data() {
         return {
             code: {
-                basic: `<Terminal welcomeMessage="Welcome to PrimeVue" prompt="primevue $" />`,
+                basic: `
+<Terminal welcomeMessage="Welcome to PrimeVue" prompt="primevue $" />`,
                 options: `
 <template>
     <div>
