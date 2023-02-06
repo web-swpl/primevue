@@ -14,7 +14,8 @@ export default {
         return {
             value: null,
             code: {
-                basic: `<InputText type="text" v-model="value" />`,
+                basic: `
+<InputText type="text" v-model="value" />`,
                 options: `
 <template>
     <div className="card flex justify-content-center">
