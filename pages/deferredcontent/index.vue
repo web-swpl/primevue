@@ -21,7 +21,7 @@
 <script>
 import AccessibilityDoc from '/doc/deferredcontent/AccessibilityDoc.vue';
 import BasicDoc from '/doc/deferredcontent/BasicDoc.vue';
-import DatatableDoc from '/doc/deferredcontent/DatatableDoc.vue';
+import DataTableDoc from '/doc/deferredcontent/DataTableDoc.vue';
 import ImportDoc from '/doc/deferredcontent/ImportDoc.vue';
 import StyleDoc from '/doc/deferredcontent/StyleDoc.vue';
 
@@ -42,7 +42,7 @@ export default {
                 {
                     id: 'datatable',
                     label: 'DataTable',
-                    component: DatatableDoc
+                    component: DataTableDoc
                 },
                 {
                     id: 'style',
