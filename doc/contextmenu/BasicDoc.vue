@@ -141,10 +141,8 @@ export default {
             ],
             code: {
                 basic: `
-<div class="card flex md:justify-content-center">
-    <img alt="Logo" src="/images/nature/nature3.jpg" class="w-full md:w-auto" @contextmenu="onImageRightClick" aria-haspopup="true" />
-    <ContextMenu ref="menu" :model="items" />
-</div>`,
+<img alt="Logo" src="/images/nature/nature3.jpg" class="w-full md:w-auto" @contextmenu="onImageRightClick" aria-haspopup="true" />
+<ContextMenu ref="menu" :model="items" />`,
                 options: `
 <template>
     <div class="card flex md:justify-content-center">

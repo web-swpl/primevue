@@ -141,10 +141,8 @@ export default {
             ],
             code: {
                 basic: `
-<div class="card text-center">
-    <p class="mb-0">Right-Click anywhere on this page to view the global ContextMenu.</p>
-    <ContextMenu global :model="items" />
-</div>`,
+<p class="mb-0">Right-Click anywhere on this page to view the global ContextMenu.</p>
+<ContextMenu global :model="items" />`,
                 options: `
 <template>
     <div class="card text-center">

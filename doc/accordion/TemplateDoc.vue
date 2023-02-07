@@ -46,7 +46,7 @@ export default {
         return {
             code: {
                 basic: `
-<Accordion class="accordion-cus:activeIndex="0">
+<Accordion class="accordion-custom" :activeIndex="0">
     <AccordionTab>
         <template #header>
             <i class="pi pi-calendar"></i>
