@@ -5,40 +5,61 @@
             <Meta name="description" content="ToggleButton is used to select a boolean value using a button." />
         </Head>
 
-        <div class="content-section introduction">
-            <div class="feature-intro">
-                <h1>ToggleButton</h1>
-                <p>ToggleButton is used to select a boolean value using a button.</p>
+        <div class="doc">
+            <div class="doc-main">
+                <div class="doc-intro">
+                    <h1>ToggleButton</h1>
+                    <p>ToggleButton is used to select a boolean value using a button.</p>
+                </div>
+                <DocSections :docs="docs" />
             </div>
-            <AppDemoActions />
+            <DocSectionNav :docs="docs" />
         </div>
-
-        <div class="content-section implementation">
-            <div class="card">
-                <h5>Basic</h5>
-                <ToggleButton v-model="checked1" onIcon="pi pi-check" offIcon="pi pi-times" class="w-full sm:w-10rem" aria-label="Confirmation" />
-
-                <h5>Customized</h5>
-                <ToggleButton v-model="checked2" onLabel="I confirm" offLabel="I reject" onIcon="pi pi-check" offIcon="pi pi-times" class="w-full sm:w-10rem" aria-label="do you confirm" />
-            </div>
-        </div>
-
-        <ToggleButtonDoc />
     </div>
 </template>
 
 <script>
-import ToggleButtonDoc from './ToggleButtonDoc';
-
+import AccessibilityDoc from '/doc/togglebutton/AccessibilityDoc.vue';
+import BasicDoc from '/doc/togglebutton/BasicDoc.vue';
+import CustomizedDoc from '/doc/togglebutton/CustomizedDoc.vue';
+import ImportDoc from '/doc/togglebutton/ImportDoc.vue';
+import StyleDoc from '/doc/togglebutton/StyleDoc.vue';
 export default {
     data() {
         return {
-            checked1: false,
-            checked2: true
+            docs: [
+                {
+                    id: 'import',
+                    label: 'Import',
+                    component: ImportDoc
+                },
+                {
+                    id: 'basic',
+                    label: 'Basic',
+                    component: BasicDoc
+                },
+                {
+                    id: 'customized',
+                    label: 'Customized',
+                    component: CustomizedDoc
+                },
+                {
+                    id: 'style',
+                    label: 'Style',
+                    component: StyleDoc
+                },
+                {
+                    id: 'accessibility',
+                    label: 'Accessibility',
+                    component: AccessibilityDoc
+                },
+                {
+                    id: 'api',
+                    label: 'API',
+                    doc: [{ name: 'ToggleButton', pathname: '/modules/togglebutton.html' }]
+                }
+            ]
         };
-    },
-    components: {
-        ToggleButtonDoc: ToggleButtonDoc
     }
 };
 </script>
