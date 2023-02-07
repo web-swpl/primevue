@@ -13,7 +13,8 @@ export default {
     data() {
         return {
             code: {
-                basic: `<Tag value="New"></Tag>`,
+                basic: `
+<Tag value="New"></Tag>`,
                 options: `
 <template>
     <div class="flex justify-content-center">

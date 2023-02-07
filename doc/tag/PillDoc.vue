@@ -18,13 +18,11 @@ export default {
         return {
             code: {
                 basic: `
-<div class="card flex flex-wrap justify-content-center gap-2">
-    <Tag value="Primary" rounded></Tag>
-    <Tag severity="success" value="Success" rounded></Tag>
-    <Tag severity="info" value="Info" rounded></Tag>
-    <Tag severity="warning" value="Warning" rounded></Tag>
-    <Tag severity="danger" value="Danger" rounded></Tag>
-</div>`,
+<Tag value="Primary" rounded></Tag>
+<Tag severity="success" value="Success" rounded></Tag>
+<Tag severity="info" value="Info" rounded></Tag>
+<Tag severity="warning" value="Warning" rounded></Tag>
+<Tag severity="danger" value="Danger" rounded></Tag>`,
                 options: `
 <template>
     <div class="card flex flex-wrap justify-content-center gap-2">
