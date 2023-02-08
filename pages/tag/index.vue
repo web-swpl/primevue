@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Tag Component</Title>
-            <Meta name="description" content="Tag component is used to categorize content." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Tag</h1>
-                    <p>Tag component is used to categorize content.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue Tag Component" header="Tag" description="Tag component is used to categorize content." :componentDocs="docs" :apiDocs="[{ name: 'Tag', pathname: '/modules/tag.html' }]" />
 </template>
 
 <script>
@@ -71,11 +55,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Tag', pathname: '/modules/tag.html' }]
                 }
             ]
         };
