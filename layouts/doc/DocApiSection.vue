@@ -1,15 +1,23 @@
 <template>
-    <DocSectionText v-bind="$attrs">Visit the API documentation for detailed information about all the properties, events and methods of the component.</DocSectionText>
-    <ul>
-        <li v-for="apiDoc of $attrs.doc" :key="apiDoc.name">
-            {{ apiDoc.name }}
-            <!-- <a :href="`${apiDoc.apiDocUrl + apiDoc.pathname}`" target="_blank" rel="noreferrer"> {{ apiDoc.name }} </a> -->
-        </li>
-    </ul>
+    <div class="doc-main">
+        <DocSectionText v-bind="$attrs">
+            <p>{{ doc ? 'Visit the API documentation for detailed information about all the properties, events and methods of the component.' : 'The components does not have any Javascript API.' }}</p>
+        </DocSectionText>
+
+        <template v-if="doc">
+            <template v-for="(apiDoc, index) of doc" :key="index">
+                <li class="field doc-section-description">
+                    <a :href="apiDoc.pathname" target="_blank" rel="noreferrer">
+                        {{ apiDoc.name }}
+                    </a>
+                </li>
+            </template>
+        </template>
+    </div>
 </template>
 
 <script>
 export default {
-    inheritAttrs: false
+    props: ['doc']
 };
 </script>

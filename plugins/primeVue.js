@@ -105,6 +105,7 @@ import AppDoc from '@/layouts/AppDocumentation';
 import AppInputStyleSwitch from '@/layouts/AppInputStyleSwitch';
 import DevelopmentSection from '@/layouts/DevelopmentSection';
 import DocApiSection from '@/layouts/doc/DocApiSection';
+import DocComponent from '@/layouts/doc/DocComponent';
 import DocSectionCode from '@/layouts/doc/DocSectionCode';
 import DocSectionNav from '@/layouts/doc/DocSectionNav';
 import DocSections from '@/layouts/doc/DocSections';
@@ -225,4 +226,5 @@ export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.component('DocSectionCode', DocSectionCode);
     nuxtApp.vueApp.component('DocSectionNav', DocSectionNav);
     nuxtApp.vueApp.component('DocApiSection', DocApiSection);
+    nuxtApp.vueApp.component('DocComponent', DocComponent);
 });
