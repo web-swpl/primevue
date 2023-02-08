@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Divider Component</Title>
-            <Meta name="description" content="Divider is used to separate contents." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Divider</h1>
-                    <p>Divider is used to separate contents.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue Divider Component" header="Divider" description="Divider is used to separate contents." :componentDocs="docs" :apiDocs="[{ name: 'Divider', pathname: '/modules/divider.html' }]" />
 </template>
 
 <script>

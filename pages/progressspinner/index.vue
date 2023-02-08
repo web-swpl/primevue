@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue ProgressBar Component</Title>
-            <Meta name="description" component="ProgressBar is a process status indicator." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>ProgressSpinner</h1>
-                    <p>ProgressSpinner is a process status indicator.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue ProgressBar Component" header="ProgressBar" description="ProgressBar is a process status indicator." :componentDocs="docs" :apiDocs="[{ name: 'ProgressBar', pathname: '/modules/progressbar.html' }]" />
 </template>
 
 <script>
@@ -53,11 +37,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'ProgressSpinner', pathname: '/modules/progressspinner.html' }]
                 }
             ]
         };

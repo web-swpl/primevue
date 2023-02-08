@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue SelectButton Component</Title>
-            <Meta name="description" content="SelectButton is used to choose single or multiple items from a list using buttons." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>SelectButton</h1>
-                    <p>SelectButton is a form component to choose a value from a list of options using button elements.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue SelectButton Component" header="SelectButton" description="Slider is a component to provide input with a drag handle." :componentDocs="docs" :apiDocs="[{ name: 'SelectButton', pathname: '/modules/selectbutton.html' }]" />
 </template>
 
 <script>

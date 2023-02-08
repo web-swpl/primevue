@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Accordion Component</Title>
-            <Meta name="description" content="Accordion groups a collection of contents in tabs." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Accordion</h1>
-                    <p>Accordion groups a collection of contents in tabs.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue Accordion Component" header="Accordion" description="Accordion groups a collection of contents in tabs." :componentDocs="docs" :apiDocs="[{ name: 'Accordion', pathname: '/modules/accordion.html' }]" />
 </template>
 
 <script>
@@ -71,11 +55,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Accordion', pathname: '/modules/accordion.html' }]
                 }
             ]
         };

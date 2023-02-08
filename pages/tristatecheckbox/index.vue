@@ -1,21 +1,11 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue TriStateCheckbox Component</Title>
-            <Meta name="description" content="TriStateCheckbox is used to select either true, false or null as the value." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>TriStateCheckbox</h1>
-                    <p>TriStateCheckbox is used to select either "true", "false" or "null" as the value.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent
+        title="Vue TriStateCheckbox Component"
+        header="TriStateCheckbox"
+        description="TriStateCheckbox is used to select either true, false or null as the value."
+        :componentDocs="docs"
+        :apiDocs="[{ name: 'TriStateCheckbox', pathname: '/modules/tristatecheckbox.html' }]"
+    />
 </template>
 
 <script>
@@ -59,11 +49,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'TriStateCheckbox', pathname: '/modules/tristatecheckbox.html' }]
                 }
             ]
         };

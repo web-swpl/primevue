@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Slider Component</Title>
-            <Meta name="description" content="Slider is a component to provide input with a drag handle." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Slider</h1>
-                    <p>Slider is an input component to provide a numerical input.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue Slider Component" header="Slider" description="Slider is a component to provide input with a drag handle." :componentDocs="docs" :apiDocs="[{ name: 'Slider', pathname: '/modules/slider.html' }]" />
 </template>
 
 <script>
@@ -71,11 +55,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Slider', pathname: '/modules/slider.html' }]
                 }
             ]
         };

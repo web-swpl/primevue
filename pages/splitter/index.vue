@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Splitter Component</Title>
-            <Meta name="description" content="Splitter is utilized to separate and resize panels." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Splitter</h1>
-                    <p>Splitter is utilized to separate and resize panels.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue Splitter Component" header="Splitter" description="Splitter is utilized to separate and resize panels." :componentDocs="docs" :apiDocs="[{ name: 'Splitter', pathname: '/modules/splitter.html' }]" />
 </template>
 
 <script>
@@ -65,11 +49,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Splitter', pathname: '/modules/splitter.html' }]
                 }
             ]
         };

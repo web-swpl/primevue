@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Toolbar Component</Title>
-            <Meta name="description" content="Toolbar is a grouping component for buttons and other content." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Toolbar</h1>
-                    <p>Toolbar is a grouping component for buttons and other content.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue Toolbar Component" header="Toolbar" description="Toolbar is a grouping component for buttons and other content." :componentDocs="docs" :apiDocs="[{ name: 'Toolbar', pathname: '/modules/toolbar.html' }]" />
 </template>
 <script>
 import AccessibilityDoc from '/doc/toolbar/AccessibilityDoc';
@@ -45,11 +29,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Toolbar', pathname: '/modules/toolbar.html' }]
                 }
             ]
         };

@@ -1,21 +1,11 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Textarea Component</Title>
-            <Meta name="description" content="Textarea adds styling, key filtering and autoResize functionality to standard textarea element." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Textarea</h1>
-                    <p>Textarea is a multi-line text input element.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent
+        title="Vue Textarea Component"
+        header="Textarea"
+        description="Textarea adds styling, key filtering and autoResize functionality to standard textarea element."
+        :componentDocs="docs"
+        :apiDocs="[{ name: 'Textarea', pathname: '/modules/textarea.html' }]"
+    />
 </template>
 
 <script>
@@ -71,11 +61,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Textarea', pathname: '/modules/textarea.html' }]
                 }
             ]
         };

@@ -1,20 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Fieldset Component</Title>
-            <Meta name="description" content="Fieldset is a grouping component with a content toggle feature." />
-        </Head>
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Fieldset</h1>
-                    <p>Fieldset is a grouping component with the optional content toggle feature.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue Fieldset Component" header="Fieldset" description="Fieldset is a grouping component with a content toggle feature." :componentDocs="docs" :apiDocs="[{ name: 'Fieldset', pathname: '/modules/fieldset.html' }]" />
 </template>
 
 <script>
@@ -57,11 +42,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Fieldset', pathname: '/modules/fieldset.html' }]
                 }
             ]
         };

@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Skeleton Component</Title>
-            <Meta name="description" content="Skeleton is a placeholder to display instead of the actual content." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Skeleton</h1>
-                    <p>Skeleton displays a rectangle in its simplest form.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue Skeleton Component" header="Skeleton" description="Skeleton is a placeholder to display instead of the actual content." :componentDocs="docs" :apiDocs="[{ name: 'Skeleton', pathname: '/modules/skeleton.html' }]" />
 </template>
 
 <script>

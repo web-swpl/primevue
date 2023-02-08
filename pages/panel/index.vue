@@ -1,20 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Panel Component</Title>
-            <Meta name="description" content="Panel is a grouping component providing with content toggle feature." />
-        </Head>
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Panel</h1>
-                    <p>Panel is a container with the optional content toggle feature.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue Panel Component" header="Panel" description="Panel is a grouping component providing with content toggle feature." :componentDocs="docs" :apiDocs="[{ name: 'Panel', pathname: '/modules/panel.html' }]" />
 </template>
 <script>
 import AccessibilityDoc from '/doc/panel/AccessibilityDoc.vue';
@@ -56,11 +41,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Panel', pathname: '/modules/panel.html' }]
                 }
             ]
         };

@@ -1,21 +1,11 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue ToggleButton Component</Title>
-            <Meta name="description" content="ToggleButton is used to select a boolean value using a button." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>ToggleButton</h1>
-                    <p>ToggleButton is used to select a boolean value using a button.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent
+        title="Vue ToggleButton Component"
+        header="ToggleButton"
+        description="ToggleButton is used to select a boolean value using a button."
+        :componentDocs="docs"
+        :apiDocs="[{ name: 'ToggleButton', pathname: '/modules/togglebutton.html' }]"
+    />
 </template>
 
 <script>
@@ -52,11 +42,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'ToggleButton', pathname: '/modules/togglebutton.html' }]
                 }
             ]
         };

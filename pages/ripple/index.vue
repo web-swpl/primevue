@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Ripple Directive</Title>
-            <Meta name="description" content="Ripple component adds ripple effect to the host element." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Ripple</h1>
-                    <p>Ripple directive adds ripple effect to the host element.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue Ripple Component" header="Ripple" description="Ripple component adds ripple effect to the host element." :componentDocs="docs" :apiDocs="[{ name: 'Ripple', pathname: '/modules/ripple.html' }]" />
 </template>
 
 <script>
@@ -53,11 +37,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Ripple', pathname: '/modules/ripple.html' }]
                 }
             ]
         };

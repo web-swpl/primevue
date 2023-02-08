@@ -1,21 +1,11 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Deferred Content Component</Title>
-            <Meta name="description" content="DeferredContent postpones the loading the content that is initially not in the viewport until it becomes visible on scroll." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>DeferredContent</h1>
-                    <p>DeferredContent postpones the loading the content that is initially not in the viewport until it becomes visible on scroll.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent
+        title="Vue Deferred Content Component"
+        header="DeferredContent"
+        description="DeferredContent postpones the loading the content that is initially not in the viewport until it becomes visible on scroll."
+        :componentDocs="docs"
+        :apiDocs="[{ name: 'DeferredContent', pathname: '/modules/deferredcontent.html' }]"
+    />
 </template>
 
 <script>

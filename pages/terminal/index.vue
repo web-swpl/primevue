@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Terminal Component</Title>
-            <Meta name="description" content="Terminal is a text based user interface." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Terminal</h1>
-                    <p>Terminal is a text based user interface.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue Terminal Component" header="Terminal" description="Terminal is a text based user interface." :componentDocs="docs" :apiDocs="[{ name: 'Terminal', pathname: '/modules/terminal.html' }]" />
 </template>
 
 <script>
@@ -47,37 +31,9 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Terminal', pathname: '/modules/terminal.html' }]
                 }
             ]
         };
     }
 };
 </script>
-
-<style lang="scss" scoped>
-p {
-    margin-top: 0;
-}
-
-::v-deep(.dark-demo-terminal) {
-    background-color: #212121;
-    color: #ffffff;
-
-    .p-terminal-command {
-        color: #80cbc4;
-    }
-
-    .p-terminal-prompt {
-        color: #ffd54f;
-    }
-
-    .p-terminal-response {
-        color: #9fa8da;
-    }
-}
-</style>

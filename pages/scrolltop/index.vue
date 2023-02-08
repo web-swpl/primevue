@@ -1,21 +1,11 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue ScrollTop Component</Title>
-            <Meta name="description" content="ScrollTop gets displayed after a certain scroll position and used to navigates to the top of the page quickly." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>ScrollTop</h1>
-                    <p>ScrollTop gets displayed after a certain scroll position and used to navigates to the top of the page quickly.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent
+        title="Vue ScrollTop Component"
+        header="ScrollTop"
+        description="ScrollTop gets displayed after a certain scroll position and used to navigates to the top of the page quickly."
+        :componentDocs="docs"
+        :apiDocs="[{ name: 'ScrollTop', pathname: '/modules/scrolltop.html' }]"
+    />
 </template>
 
 <script>
@@ -53,11 +43,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'ScrollTop', pathname: '/modules/scrolltop.html' }]
                 }
             ]
         };

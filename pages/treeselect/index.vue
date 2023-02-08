@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue TreeSelect Component</Title>
-            <Meta name="description" content="TreeSelect is a form component to choose from hierarchical data." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>TreeSelect</h1>
-                    <p>TreeSelect is a form component to choose from hierarchical data.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue TreeSelect Component" header="TreeSelect" description="TreeSelect is a form component to choose from hierarchical data." :componentDocs="docs" :apiDocs="[{ name: 'TreeSelect', pathname: '/modules/treeselect.html' }]" />
 </template>
 
 <script>
@@ -76,11 +60,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'TreeSelect', pathname: '/modules/treeselect.html' }]
                 }
             ]
         };
