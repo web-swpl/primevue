@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Navbar Component</Title>
-            <Meta name="description" content="Menubar is a horizontal menu component." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Menubar</h1>
-                    <p>Menubar also known as Navbar, is a horizontal menu component.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue Navbar Component" header="Navbar" description="Menubar also known as Navbar, is a horizontal menu component." :componentDocs="docs" :apiDocs="[{ name: 'Menubar', pathname: '/modules/menubar.html' }]" />
 </template>
 
 <script>
@@ -53,11 +37,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Menubar', pathname: '/modules/menubar.html' }]
                 }
             ]
         };

@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue BreadCrumb Component</Title>
-            <Meta name="description" content="Breadcrumb provides contextual information about page hierarchy." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Breadcrumb</h1>
-                    <p>Breadcrumb provides contextual information about page hierarchy.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue BreadCrumb Component" header="BreadCrumb" description="Breadcrumb provides contextual information about page hierarchy." :componentDocs="docs" :apiDocs="[{ name: 'BreadCrumb', pathname: '/modules/breadcrumb.html' }]" />
 </template>
 
 <script>
@@ -55,11 +39,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Breadcrumb', pathname: '/modules/breadcrumb.html' }]
                 }
             ]
         };

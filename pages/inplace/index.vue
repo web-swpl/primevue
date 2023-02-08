@@ -1,21 +1,11 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Inplace Component</Title>
-            <Meta name="description" content="Inplace provides an easy to do editing and display at the same time where clicking the output displays the actual content." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Inplace</h1>
-                    <p>Inplace provides an easy to do editing and display at the same time where clicking the output displays the actual content.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent
+        title="Vue Inplace Component"
+        header="Inplace"
+        description="Inplace provides an easy to do editing and display at the same time where clicking the output displays the actual content."
+        :componentDocs="docs"
+        :apiDocs="[{ name: 'Inplace', pathname: '/modules/inplace.html' }]"
+    />
 </template>
 
 <script>
@@ -65,11 +55,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Inplace', pathname: '/modules/inplace.html' }]
                 }
             ]
         };

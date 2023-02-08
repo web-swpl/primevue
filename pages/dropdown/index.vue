@@ -1,21 +1,11 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Select Component</Title>
-            <Meta name="description" content="Dropdown also known as Select, is used to choose an item from a collection of options." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Dropdown</h1>
-                    <p>Dropdown also known as Select, is used to choose an item from a collection of options.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent
+        title="Vue Select Component"
+        header="Dropdown"
+        description="Dropdown also known as Select, is used to choose an item from a collection of options."
+        :componentDocs="docs"
+        :apiDocs="[{ name: 'Dropdown', pathname: '/modules/dropdown.html' }]"
+    />
 </template>
 
 <script>
@@ -113,11 +103,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Dropdown', pathname: '/modules/dropdown.html' }]
                 }
             ]
         };

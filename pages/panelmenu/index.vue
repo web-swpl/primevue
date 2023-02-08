@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue PanelMenu Component</Title>
-            <Meta name="description" content="PanelMenu is a hybrid of accordion-tree components." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>PanelMenu</h1>
-                    <p>PanelMenu is a hybrid of accordion-tree components.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue PanelMenu Component" header="PanelMenu" description="PanelMenu is a hybrid of accordion-tree components." :componentDocs="docs" :apiDocs="[{ name: 'PanelMenu', pathname: '/modules/panelmenu.html' }]" />
 </template>
 
 <script>
@@ -53,11 +37,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'PanelMenu', pathname: '/modules/panelmenu.html' }]
                 }
             ]
         };

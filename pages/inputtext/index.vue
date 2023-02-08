@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue InputText Component</Title>
-            <Meta name="description" content="InputText is an extension to standard input element with theming." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>InputText</h1>
-                    <p>InputText is an extension to standard input element with theming.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue InputText Component" header="InputText" description="InputText is an extension to standard input element with theming." :componentDocs="docs" :apiDocs="[{ name: 'InputText', pathname: '/modules/inputtext.html' }]" />
 </template>
 
 <script>

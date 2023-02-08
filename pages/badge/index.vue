@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Badge Component</Title>
-            <Meta name="description" content="Badge is a small status indicator for another element." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Badge</h1>
-                    <p>Badge is a small status indicator for another element.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue Badge Component" header="Badge" description="Badge is a small status indicator for another element." :componentDocs="docs" :apiDocs="[{ name: 'Badge', pathname: '/modules/badge.html' }]" />
 </template>
 
 <script>
@@ -71,11 +55,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Badge', pathname: '/modules/badge.html' }]
                 }
             ]
         };

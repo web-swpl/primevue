@@ -230,3 +230,24 @@ const positions = ref([
     }
 };
 </script>
+
+<style scoped>
+.dock-demo > .dock-window {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    background-image: url('https://primereact.org/images/dock/window.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.dock-demo > .p-dock {
+    z-index: 1000;
+}
+
+.dock-demo .p-menubar {
+    padding: 0;
+    border-radius: 0;
+}
+</style>

@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue MegaMenu Component</Title>
-            <Meta name="description" content="MegaMenu is navigation component that displays submenus together." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>MegaMenu</h1>
-                    <p>MegaMenu is navigation component that displays submenus together.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue MegaMenu Component" header="MegaMenu" description="MegaMenu is navigation component that displays submenus together." :componentDocs="docs" :apiDocs="[{ name: 'MegaMenu', pathname: '/modules/megamenu.html' }]" />
 </template>
 
 <script>
@@ -59,11 +43,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'MegaMenu', pathname: '/modules/megamenu.html' }]
                 }
             ]
         };

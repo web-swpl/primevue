@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Avatar Component</Title>
-            <Meta name="description" content="Avatar represents people using icons, labels and images." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Avatar</h1>
-                    <p>Avatar represents people using icons, labels and images.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue Avatar Component" header="Avatar" description="Avatar represents people using icons, labels and images." :componentDocs="docs" :apiDocs="[{ name: 'Avatar', pathname: '/modules/avatar.html' }]" />
 </template>
 
 <script>
@@ -71,11 +55,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Avatar', pathname: '/modules/avatar.html' }]
                 }
             ]
         };

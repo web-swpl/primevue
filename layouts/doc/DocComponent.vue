@@ -2,7 +2,7 @@
     <div class="doc-component">
         <Head>
             <title>{{ title }}</title>
-            <meta name="description" :content="title" />
+            <meta name="description" :content="description" />
         </Head>
 
         <ul class="doc-tabmenu">

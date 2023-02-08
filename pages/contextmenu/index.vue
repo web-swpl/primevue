@@ -1,24 +1,11 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue ContextMenu Component</Title>
-            <Meta name="description" content="ContextMenu displays an overlay menu on right click of its target." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>ContextMenu</h1>
-                    <p>
-                        ContextMenu displays an overlay menu on right click of its target. Note that components like DataTable has special integration with ContextMenu. Refer to documentation of the individual documentation of the components having a
-                        special integration.
-                    </p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent
+        title="Vue ContextMenu Component"
+        header="ContextMenu"
+        description="ContextMenu displays an overlay menu on right click of its target."
+        :componentDocs="docs"
+        :apiDocs="[{ name: 'ContextMenu', pathname: '/modules/contextmenu.html' }]"
+    />
 </template>
 
 <script>
@@ -56,11 +43,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'ContextMenu', pathname: '/modules/contextmenu.html' }]
                 }
             ]
         };

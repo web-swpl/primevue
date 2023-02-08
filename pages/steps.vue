@@ -1,21 +1,11 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Stepper Component</Title>
-            <Meta name="description" content="Steps also known as Stepper, is an indicator for the steps in a workflow. Layout of steps component is optimized for responsive design." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Steps</h1>
-                    <p>Steps also known as Stepper, is an indicator for the steps in a workflow. Layout of steps component is optimized for responsive design.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent
+        title="Vue Stepper Component"
+        header="Stepper"
+        description="Steps also known as Stepper, is an indicator for the steps in a workflow. Layout of steps component is optimized for responsive design."
+        :componentDocs="docs"
+        :apiDocs="[{ name: 'Stepper', pathname: '/modules/stepper.html' }]"
+    />
 </template>
 
 <script>
@@ -47,11 +37,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Steps', pathname: '/modules/steps.html' }]
                 }
             ]
         };

@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue FocusTrap Directive</Title>
-            <Meta name="description" content="Focus Trap keeps focus within a certain DOM element while tabbing." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>FocusTrap</h1>
-                    <p>Focus Trap keeps focus within a certain DOM element while tabbing.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue FocusTrap Directive" header="Focus Trap" description="Focus Trap keeps focus within a certain DOM element while tabbing." :componentDocs="docs" :apiDocs="[{ name: 'FocusTrap', pathname: '/modules/focustrap.html' }]" />
 </template>
 
 <script>

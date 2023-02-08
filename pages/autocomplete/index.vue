@@ -4,17 +4,13 @@
             <Title>Vue AutoComplete Component</Title>
             <Meta name="description" content="AutoComplete is an input component that provides real-time suggestions when being typed." />
         </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>AutoComplete</h1>
-                    <p>AutoComplete is an input component that provides real-time suggestions while being typed.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
+        <DocComponent
+            title="Vue AutoComplete Component"
+            header="AutoComplete"
+            description="AutoComplete is an input component that provides real-time suggestions when being typed."
+            :componentDocs="docs"
+            :apiDocs="[{ name: 'AutoComplete', pathname: '/modules/autocomplete.html' }]"
+        />
     </div>
 </template>
 
@@ -107,11 +103,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'AutoComplete', pathname: '/modules/autocomplete.html' }]
                 }
             ]
         };

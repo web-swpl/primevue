@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue BlockUI Component</Title>
-            <Meta name="description" content="BlockUI can either block other components or the whole page." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>BlockUI</h1>
-                    <p>BlockUI can block certain elements or the whole page.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue BlockUI Component" header="Badge" description="BlockUI can either block other components or the whole page." :componentDocs="docs" :apiDocs="[{ name: 'BlockUI', pathname: '/modules/blockui.html' }]" />
 </template>
 
 <script>
@@ -53,11 +37,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'BlockUI', pathname: '/modules/blockui.html' }]
                 }
             ]
         };

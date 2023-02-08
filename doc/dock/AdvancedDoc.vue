@@ -2,7 +2,7 @@
     <DocSectionText v-bind="$attrs">
         <p>A sample macOS implementation using various components.</p>
     </DocSectionText>
-    <div class="card">
+    <div class="card dock-demo">
         <Toast position="top-center" group="tc" />
         <Menubar :model="menubarItems">
             <template #start>
@@ -244,40 +244,13 @@ export default {
             ],
             code: {
                 basic: `
-<Toast position="top-center" group="tc" />
-<Menubar :model="menubarItems">
-    <template #start>
-        <i class="pi pi-apple"></i>
+<Dock :model="items">
+    <template #item="{ item }">
+        <a v-tooltip.top="item.label" href="#" class="p-dock-link" @click="onDockItemClick($event, item)">
+            <img :alt="item.label" :src="item.icon" style="width: 100%" />
+        </a>
     </template>
-    <template #end>
-        <i class="pi pi-video" />
-        <i class="pi pi-wifi" />
-        <i class="pi pi-volume-up" />
-        <span>Fri 13:07</span>
-        <i class="pi pi-search" />
-        <i class="pi pi-bars" />
-    </template>
-</Menubar>
-<div class="dock-window dock-advanced">
-    <Dock :model="items">
-        <template #item="{ item }">
-            <a v-tooltip.top="item.label" href="#" class="p-dock-link" @click="onDockItemClick($event, item)">
-                <img :alt="item.label" :src="item.icon" style="width: 100%" />
-            </a>
-        </template>
-    </Dock>
-    <Dialog v-model:visible="displayTerminal" header="Terminal" :breakpoints="{ '960px': '50vw' }" :style="{ width: '40vw' }" :maximizable="true">
-        <Terminal welcomeMessage="Welcome to PrimeVue(cmd: 'date', 'greet {0}', 'random' and 'clear')" prompt="primevue $" />
-    </Dialog>
-    <Dialog v-model:visible="displayFinder" header="Finder" :breakpoints="{ '960px': '50vw' }" :style="{ width: '40vw' }" :maximizable="true">
-        <Tree :value="nodes" />
-    </Dialog>
-    <Galleria v-model:visible="displayPhotos" :value="images" :responsiveOptions="responsiveOptions" :numVisible="2" containerStyle="width: 400px" :circular="true" :fullScreen="true" :showThumbnails="false" :showItemNavigators="true">
-        <template #item="slotProps">
-            <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%" />
-        </template>
-    </Galleria>
-</div>`,
+</Dock>`,
                 options: `
 <template>
     <div class="card dock-demo">
@@ -930,3 +903,24 @@ const commandHandler = (text) => {
     }
 };
 </script>
+
+<style scoped>
+.dock-demo > .dock-window {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    background-image: url('https://primereact.org/images/dock/window.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.dock-demo > .p-dock {
+    z-index: 1000;
+}
+
+.dock-demo .p-menubar {
+    padding: 0;
+    border-radius: 0;
+}
+</style>

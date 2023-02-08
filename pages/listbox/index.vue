@@ -1,21 +1,5 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue Listbox Component</Title>
-            <Meta name="description" content="Listbox is used to select one or more values from a list of items." />
-        </Head>
-
-        <div class="doc">
-            <div class="doc-main">
-                <div class="doc-intro">
-                    <h1>Listbox</h1>
-                    <p>Listbox is used to select one or more values from a list of items.</p>
-                </div>
-                <DocSections :docs="docs" />
-            </div>
-            <DocSectionNav :docs="docs" />
-        </div>
-    </div>
+    <DocComponent title="Vue Listbox Component" header="Listbox" description="Listbox is used to select one or more values from a list of items." :componentDocs="docs" :apiDocs="[{ name: 'Listbox', pathname: '/modules/listbox.html' }]" />
 </template>
 
 <script>
@@ -89,11 +73,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Listbox', pathname: '/modules/listbox.html' }]
                 }
             ]
         };
