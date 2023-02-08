@@ -78,7 +78,7 @@ export default {
     </div>
 </template>
 
-<script>
+<script setup>
 import { ref } from "vue";
 
 const datetime12h = ref();
