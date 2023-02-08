@@ -2,13 +2,12 @@
     <DocSectionText id="accessibility" label="Accessibility" v-bind="$attrs">
         <h3>Screen Reader</h3>
         <p>
-            Slider element component uses <i>slider</i> role on the handle in addition to the <i>aria-orientation</i>, <i>aria-valuemin</i>, <i>aria-valuemax</i> and <i>aria-valuenow</i> attributes. Value to describe the component can be defined
-            using <i>aria-labelledby</i> and <i>aria-label</i> props.
+            SelectButton component uses hidden native checkbox role for multiple selection and hidden radio role for single selection that is only visible to screen readers. Value to describe the component can be provided via
+            <i>aria-labelledby</i> property.
         </p>
 
-        <DocSectionCode :code="code" hideToggleCode import hideCodeSandbox hideStackBlitz v-bind="$attrs" />
-
         <h3>Keyboard Support</h3>
+        <p>Keyboard interaction is derived from the native browser handling of checkboxs in a group.</p>
         <div class="doc-tablewrapper">
             <table class="doc-table">
                 <thead>
@@ -20,41 +19,29 @@
                 <tbody>
                     <tr>
                         <td><i>tab</i></td>
-                        <td>Moves focus to the slider.</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="inline-flex flex-column">
-                                <i class="mb-1">left arrow</i>
-                                <i>up arrow</i>
-                            </span>
-                        </td>
-                        <td>Decrements the value.</td>
+                        <td>Moves focus to the first selected option, if there is none then first option receives the focus.</td>
                     </tr>
                     <tr>
                         <td>
                             <span class="inline-flex flex-column">
                                 <i class="mb-1">right arrow</i>
+                                <i>up arrow</i>
+                            </span>
+                        </td>
+                        <td>Moves focus to the previous option.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="inline-flex flex-column">
+                                <i class="mb-1">left arrow</i>
                                 <i>down arrow</i>
                             </span>
                         </td>
-                        <td>Increments the value.</td>
+                        <td>Moves focus to the next option.</td>
                     </tr>
                     <tr>
-                        <td><i>home</i></td>
-                        <td>Set the minimum value.</td>
-                    </tr>
-                    <tr>
-                        <td><i>end</i></td>
-                        <td>Set the maximum value.</td>
-                    </tr>
-                    <tr>
-                        <td><i>page up</i></td>
-                        <td>Increments the value by 10 steps.</td>
-                    </tr>
-                    <tr>
-                        <td><i>page down</i></td>
-                        <td>Decrements the value by 10 steps.</td>
+                        <td><i>space</i></td>
+                        <td>Toggles the checked state of a button.</td>
                     </tr>
                 </tbody>
             </table>

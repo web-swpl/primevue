@@ -1,6 +1,6 @@
 <template>
     <DocSectionText id="accessibility" label="Accessibility" v-bind="$attrs">
-        <h6>Screen Reader</h6>
+        <h3>Screen Reader</h3>
         <p>
             Fieldset component uses the semantic <i>fieldset</i> element. When toggleable option is enabled, a clickable element with <i>button</i> role is included inside the <i>legend</i> element, this button has <i>aria-controls</i> to define the
             id of the content section along with <i>aria-expanded</i> for the visibility state. The value to read the button defaults to the value of the <i>legend</i> property and can be customized by defining an <i>aria-label</i> or

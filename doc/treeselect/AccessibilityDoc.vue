@@ -1,6 +1,6 @@
 <template>
     <DocSectionText id="accessibility" label="Accessibility" v-bind="$attrs">
-        <h6>Screen Reader</h6>
+        <h3>Screen Reader</h3>
         <p>
             Value to describe the component can either be provided with <i>aria-labelledby</i> or <i>aria-label</i> props. The treeselect element has a <i>combobox</i> role in addition to <i>aria-haspopup</i> and <i>aria-expanded</i> attributes. The
             relation between the combobox and the popup is created with <i>aria-controls</i> that refers to the id of the popup.
@@ -13,7 +13,7 @@
         </p>
         <DocSectionCode :code="code" hideToggleCode import hideCodeSandbox hideStackBlitz v-bind="$attrs" />
 
-        <h6>Closed State Keyboard Support</h6>
+        <h3>Closed State Keyboard Support</h3>
         <div class="doc-tablewrapper">
             <table class="doc-table">
                 <thead>

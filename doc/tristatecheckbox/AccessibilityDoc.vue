@@ -1,6 +1,6 @@
 <template>
     <DocSectionText id="accessibility" label="Accessibility" v-bind="$attrs">
-        <h6>Screen Reader</h6>
+        <h3>Screen Reader</h3>
         <p>
             TriStateCheckbox component uses an element with <i>checkbox</i> role. Value to describe the component can either be provided with <i>aria-labelledby</i> or <i>aria-label</i> props. Component adds an element with <i>aria-live</i> attribute
             that is only visible to screen readers to read the value displayed. Values to read are defined with the <i>trueLabel</i>, <i>falseLabel</i> and <i>nullLabel</i> keys of the <i>aria</i> property from the
@@ -8,7 +8,7 @@
         </p>
         <DocSectionCode :code="code" hideToggleCode import hideCodeSandbox hideStackBlitz v-bind="$attrs" />
 
-        <h6>Keyboard Support</h6>
+        <h3>Keyboard Support</h3>
         <div class="doc-tablewrapper">
             <table class="doc-table">
                 <thead>

@@ -1,6 +1,6 @@
 <template>
     <DocSectionText id="accessibility" label="Accessibility" v-bind="$attrs">
-        <h6>Screen Reader</h6>
+        <h3>Screen Reader</h3>
         <p>
             ToggleButton component uses a hidden native checkbox element as the switch element internally that is only visible to screen readers. Value to describe the component can be defined with <i>aria-labelledby</i> or <i>aria-label</i> props,
             it is highly suggested to use either of these props as the component changes the label displayed which will result in screen readers to read different labels when the component receives focus. To prevent this, always provide an aria label
@@ -9,7 +9,7 @@
 
         <DocSectionCode :code="code" hideToggleCode import hideCodeSandbox hideStackBlitz v-bind="$attrs" />
 
-        <h6>Keyboard Support</h6>
+        <h3>Keyboard Support</h3>
         <p>Keyboard interaction is derived from the native browser handling of checkboxs in a group.</p>
         <div class="doc-tablewrapper">
             <table class="doc-table">

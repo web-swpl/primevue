@@ -1,6 +1,6 @@
 <template>
     <DocSectionText id="accessibility" label="Accessibility" v-bind="$attrs">
-        <h6>Screen Reader</h6>
+        <h3>Screen Reader</h3>
         <p>
             Textarea component renders a native textarea element that implicitly includes any passed prop. Value to describe the component can either be provided via <i>label</i> tag combined with <i>id</i> prop or using <i>aria-labelledby</i>,
             <i>aria-label</i> props.
@@ -8,7 +8,7 @@
 
         <DocSectionCode :code="code" hideToggleCode import hideCodeSandbox hideStackBlitz v-bind="$attrs" />
 
-        <h6>Keyboard Support</h6>
+        <h3>Keyboard Support</h3>
         <div class="doc-tablewrapper">
             <table class="doc-table">
                 <thead>
