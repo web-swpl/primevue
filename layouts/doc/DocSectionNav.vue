@@ -1,5 +1,5 @@
 <template>
-    <ul class="hidden xl:block doc-section-nav">
+    <ul class="doc-section-nav">
         <li v-for="doc of docs" :key="doc.label" :class="['navbar-item', { 'active-navbar-item': activeTab === doc.id }]">
             <NuxtLink :to="'#' + doc.id">
                 <button class="p-link" @click="onButtonClick(doc)">{{ doc.label }}</button>
