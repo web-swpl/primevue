@@ -12,8 +12,6 @@ import TemplateDoc from '@/doc/breadcrumb/TemplateDoc';
 export default {
     data() {
         return {
-            home: { icon: 'pi pi-home', to: '/' },
-            items: [{ label: 'Computer' }, { label: 'Notebook' }, { label: 'Accessories' }, { label: 'Backpacks' }, { label: 'Item', to: '/breadcrumb' }],
             docs: [
                 {
                     id: 'import',

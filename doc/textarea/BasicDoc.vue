@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>A model can be bound using the standard v-model directive.</p>
+        <p>A model can be bound using the standard <i>v-model</i> directive.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
         <Textarea v-model="value" rows="5" cols="30" />

@@ -15,11 +15,13 @@ export default {
             checked1: false,
             code: {
                 basic: `
-<ToggleButton v-model="checked1" onIcon="pi pi-check" offIcon="pi pi-times" class="w-full sm:w-10rem" aria-label="Confirmation" />`,
+<ToggleButton v-model="checked1" onIcon="pi pi-check" offIcon="pi pi-times"
+    class="w-full sm:w-10rem" aria-label="Confirmation" />`,
                 options: `
 <template>
     <div class="card flex justify-content-center">
-        <ToggleButton v-model="checked1" onIcon="pi pi-check" offIcon="pi pi-times" class="w-full sm:w-10rem" aria-label="Confirmation" />
+        <ToggleButton v-model="checked1" onIcon="pi pi-check" offIcon="pi pi-times"
+            class="w-full sm:w-10rem" aria-label="Confirmation" />
     </div>
 </template>
 
@@ -35,7 +37,8 @@ export default {
                 composition: `
 <template>
     <div class="card flex justify-content-center">
-        <ToggleButton v-model="checked1" onIcon="pi pi-check" offIcon="pi pi-times" class="w-full sm:w-10rem" aria-label="Confirmation" />
+        <ToggleButton v-model="checked1" onIcon="pi pi-check" offIcon="pi pi-times"
+            class="w-full sm:w-10rem" aria-label="Confirmation" />
     </div>
 </template>
 

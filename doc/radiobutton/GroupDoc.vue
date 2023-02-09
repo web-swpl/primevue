@@ -1,24 +1,24 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Two-way value binding is defined using v-model.</p>
+        <p>Two-way value binding is defined using <i>v-model</i>.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
         <div class="flex flex-wrap gap-3">
             <div class="flex align-items-center">
                 <RadioButton v-model="ingredient" inputId="ingredient1" name="pizza" value="Cheese" />
-                <label htmlFor="ingredient1" class="ml-2">Cheese</label>
+                <label for="ingredient1" class="ml-2">Cheese</label>
             </div>
             <div class="flex align-items-center">
                 <RadioButton v-model="ingredient" inputId="ingredient2" name="pizza" value="Mushroom" />
-                <label htmlFor="ingredient2" class="ml-2">Mushroom</label>
+                <label for="ingredient2" class="ml-2">Mushroom</label>
             </div>
             <div class="flex align-items-center">
                 <RadioButton v-model="ingredient" inputId="ingredient3" name="pizza" value="Pepper" />
-                <label htmlFor="ingredient3" class="ml-2">Pepper</label>
+                <label for="ingredient3" class="ml-2">Pepper</label>
             </div>
             <div class="flex align-items-center">
                 <RadioButton v-model="ingredient" inputId="ingredient4" name="pizza" value="Onion" />
-                <label htmlFor="ingredient4" class="ml-2">Onion</label>
+                <label for="ingredient4" class="ml-2">Onion</label>
             </div>
         </div>
     </div>
@@ -35,19 +35,19 @@ export default {
 <div class="flex flex-wrap gap-3">
     <div class="flex align-items-center">
         <RadioButton v-model="ingredient" inputId="ingredient1" name="pizza" />
-        <label htmlFor="ingredient1" class="ml-2">Cheese</label>
+        <label for="ingredient1" class="ml-2">Cheese</label>
     </div>
     <div class="flex align-items-center">
         <RadioButton v-model="ingredient" inputId="ingredient2" name="pizza" />
-        <label htmlFor="ingredient2" class="ml-2">Mushroom</label>
+        <label for="ingredient2" class="ml-2">Mushroom</label>
     </div>
     <div class="flex align-items-center">
         <RadioButton v-model="ingredient" inputId="ingredient3" name="pizza" />
-        <label htmlFor="ingredient3" class="ml-2">Pepper</label>
+        <label for="ingredient3" class="ml-2">Pepper</label>
     </div>
     <div class="flex align-items-center">
         <RadioButton v-model="ingredient" inputId="ingredient4" name="pizza" />
-        <label htmlFor="ingredient4" class="ml-2">Onion</label>
+        <label for="ingredient4" class="ml-2">Onion</label>
     </div>
 </div>`,
                 options: `
@@ -56,19 +56,19 @@ export default {
         <div class="flex flex-wrap gap-3">
             <div class="flex align-items-center">
                 <RadioButton v-model="ingredient" inputId="ingredient1" name="pizza" />
-                <label htmlFor="ingredient1" class="ml-2">Cheese</label>
+                <label for="ingredient1" class="ml-2">Cheese</label>
             </div>
             <div class="flex align-items-center">
                 <RadioButton v-model="ingredient" inputId="ingredient2" name="pizza" />
-                <label htmlFor="ingredient2" class="ml-2">Mushroom</label>
+                <label for="ingredient2" class="ml-2">Mushroom</label>
             </div>
             <div class="flex align-items-center">
                 <RadioButton v-model="ingredient" inputId="ingredient3" name="pizza" />
-                <label htmlFor="ingredient3" class="ml-2">Pepper</label>
+                <label for="ingredient3" class="ml-2">Pepper</label>
             </div>
             <div class="flex align-items-center">
                 <RadioButton v-model="ingredient" inputId="ingredient4" name="pizza" />
-                <label htmlFor="ingredient4" class="ml-2">Onion</label>
+                <label for="ingredient4" class="ml-2">Onion</label>
             </div>
         </div>
     </div>
@@ -89,19 +89,19 @@ export default {
         <div class="flex flex-wrap gap-3">
             <div class="flex align-items-center">
                 <RadioButton v-model="ingredient" inputId="ingredient1" name="pizza" />
-                <label htmlFor="ingredient1" class="ml-2">Cheese</label>
+                <label for="ingredient1" class="ml-2">Cheese</label>
             </div>
             <div class="flex align-items-center">
                 <RadioButton v-model="ingredient" inputId="ingredient2" name="pizza" />
-                <label htmlFor="ingredient2" class="ml-2">Mushroom</label>
+                <label for="ingredient2" class="ml-2">Mushroom</label>
             </div>
             <div class="flex align-items-center">
                 <RadioButton v-model="ingredient" inputId="ingredient3" name="pizza" />
-                <label htmlFor="ingredient3" class="ml-2">Pepper</label>
+                <label for="ingredient3" class="ml-2">Pepper</label>
             </div>
             <div class="flex align-items-center">
                 <RadioButton v-model="ingredient" inputId="ingredient4" name="pizza" />
-                <label htmlFor="ingredient4" class="ml-2">Onion</label>
+                <label for="ingredient4" class="ml-2">Onion</label>
             </div>
         </div>
     </div>

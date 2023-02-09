@@ -15,27 +15,30 @@ export default {
             checked1: true,
             code: {
                 basic: `
-<ToggleButton v-model="checked1" onLabel="I confirm" offLabel="I reject" onIcon="pi pi-check" offIcon="pi pi-times" class="w-full sm:w-10rem" aria-label="do you confirm" />`,
+<ToggleButton v-model="checked1" onLabel="I confirm" offLabel="I reject"
+    onIcon="pi pi-check" offIcon="pi pi-times" class="w-full sm:w-10rem" aria-label="do you confirm" />`,
                 options: `
 <template>
     <div class="card flex justify-content-center">
-        <ToggleButton v-model="checked1" onLabel="I confirm" offLabel="I reject" onIcon="pi pi-check" offIcon="pi pi-times" class="w-full sm:w-10rem" aria-label="do you confirm" />
+        <ToggleButton v-model="checked1" onLabel="I confirm" offLabel="I reject"
+            onIcon="pi pi-check" offIcon="pi pi-times" class="w-full sm:w-10rem" aria-label="do you confirm" />
     </div>
 </template>
 
 <script>
 export default {
-  data() {
-      return {
-          checked1: true
-      }
-  }
+    data() {
+        return {
+            checked1: true
+        }
+    }
 };
 <\/script>`,
                 composition: `
 <template>
     <div class="card flex justify-content-center">
-        <ToggleButton v-model="checked1" onLabel="I confirm" offLabel="I reject" onIcon="pi pi-check" offIcon="pi pi-times" class="w-full sm:w-10rem" aria-label="do you confirm" />
+        <ToggleButton v-model="checked1" onLabel="I confirm" offLabel="I reject"
+            onIcon="pi pi-check" offIcon="pi pi-times" class="w-full sm:w-10rem" aria-label="do you confirm" />
     </div>
 </template>
 

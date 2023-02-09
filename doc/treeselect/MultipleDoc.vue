@@ -6,7 +6,7 @@
     <div class="card flex justify-content-center">
         <TreeSelect v-model="selectedValue" :options="nodes" selectionMode="multiple" placeholder="Select Items" class="md:w-20rem w-full" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" :service="['NodeService']" v-bind="$attrs" />
 </template>
 
 <script>
@@ -28,29 +28,29 @@ export default {
 <TreeSelect v-model="selectedValue" :options="nodes" selectionMode="multiple" placeholder="Select Item" class="md:w-20rem w-full" />`,
                 options: `
 <template>
-  <div class="card flex justify-content-center">
-      <TreeSelect v-model="selectedValue" :options="nodes" selectionMode="multiple" placeholder="Select Item" class="md:w-20rem w-full" />
-  </div>
+    <div class="card flex justify-content-center">
+        <TreeSelect v-model="selectedValue" :options="nodes" selectionMode="multiple" placeholder="Select Item" class="md:w-20rem w-full" />
+    </div>
 </template>
 
 <script>
 export default {
-  data() {
-      return {
-          nodes: null,
-          selectedValue: null,
-      }
-  },
-  mounted() {
-      NodeService.getTreeNodes().then((data) => (this.nodes = data));
-  }
+    data() {
+        return {
+            nodes: null,
+            selectedValue: null,
+        }
+    },
+    mounted() {
+        NodeService.getTreeNodes().then((data) => (this.nodes = data));
+    }
 }
 <\/script>`,
                 composition: `
 <template>
-  <div class="card flex justify-content-center">
-      <TreeSelect v-model="selectedValue" :options="nodes" selectionMode="multiple" placeholder="Select Item" class="md:w-20rem w-full" />
-  </div>
+    <div class="card flex justify-content-center">
+        <TreeSelect v-model="selectedValue" :options="nodes" selectionMode="multiple" placeholder="Select Item" class="md:w-20rem w-full" />
+    </div>
 </template>
 
 <script setup>
@@ -60,7 +60,7 @@ const nodes = ref(null);
 const selectedValue = ref(null);
 
 onMounted(() => {
-  NodeService.getTreeNodes().then((data) => (nodes.value = data));
+    NodeService.getTreeNodes().then((data) => (nodes.value = data));
 });
 <\/script>`
             }

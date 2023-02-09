@@ -3,10 +3,10 @@
         <p>RadioButtons can be generated using a list of values.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
-        <div class="flex flex-wrap gap-3">
+        <div class="flex flex-column gap-3">
             <div v-for="(category, index) in categories" :key="category.key" class="flex align-items-center">
                 <RadioButton v-model="selectedCategory" :inputId="category.key + index" name="pizza" :value="category.name" />
-                <label :htmlFor="category.key" class="ml-2">{{ category.name }}</label>
+                <label :for="category.key" class="ml-2">{{ category.name }}</label>
             </div>
         </div>
     </div>
@@ -28,16 +28,16 @@ export default {
                 basic: `
 <div v-for="(category, index) in categories" :key="category.key" class="flex align-items-center">
     <RadioButton v-model="selectedCategory" :inputId="category.key + index" name="pizza" :value="category.name" />
-    <label :htmlFor="category.key" class="ml-2">{{ category.name }}</label>
+    <label :for="category.key" class="ml-2">{{ category.name }}</label>
 </div>
 `,
                 options: `
 <template>
     <div class="card flex justify-content-center">
-        <div class="flex flex-wrap gap-3">
+        <div class="flex flex-column gap-3">
             <div v-for="(category, index) in categories" :key="category.key" class="flex align-items-center">
                 <RadioButton v-model="selectedCategory" :inputId="category.key + index" name="pizza" :value="category.name" />
-                <label :htmlFor="category.key" class="ml-2">{{ category.name }}</label>
+                <label :for="category.key" class="ml-2">{{ category.name }}</label>
             </div>
         </div>
     </div>
@@ -55,10 +55,10 @@ export default {
                 composition: `
 <template>
     <div class="card flex justify-content-center">
-        <div class="flex flex-wrap gap-3">
+        <div class="flex flex-column gap-3">
             <div v-for="(category, index) in categories" :key="category.key" class="flex align-items-center">
                 <RadioButton v-model="selectedCategory" :inputId="category.key + index" name="pizza" :value="category.name" />
-                <label :htmlFor="category.key" class="ml-2">{{ category.name }}</label>
+                <label :for="category.key" class="ml-2">{{ category.name }}</label>
             </div>
         </div>
     </div>

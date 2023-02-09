@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Custom icons are used to override the default icons with <i>onIcon</i>, <i>offIcon</i> and <i>cancelIcon</i> properties.</p>
+        <p>Custom icons are used to override the default icons with <i>onicon</i>, <i>officon</i> and <i>cancelicon</i> slots.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
         <Rating v-model="value">
@@ -55,11 +55,11 @@ export default {
 
 <script>
 export default {
-  data() {
-      return {
-          value: null
-      }
-  }
+    data() {
+        return {
+            value: null
+        }
+    }
 };
 <\/script>`,
                 composition: `

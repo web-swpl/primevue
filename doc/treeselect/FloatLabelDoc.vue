@@ -8,7 +8,7 @@
             <label>Tree Select</label>
         </span>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" :service="['NodeService']" />
+    <DocSectionCode :code="code" :service="['NodeService']" v-bind="$attrs" />
 </template>
 
 <script>

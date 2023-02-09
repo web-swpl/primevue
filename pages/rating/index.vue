@@ -28,6 +28,11 @@ export default {
                     component: BasicDoc
                 },
                 {
+                    id: 'withoutcancel',
+                    label: 'Without Cancel',
+                    component: WithoutCancelDoc
+                },
+                {
                     id: 'numberofstars',
                     label: 'Number of Stars',
                     component: NumberOfStarsDoc
@@ -38,19 +43,14 @@ export default {
                     component: TemplateDoc
                 },
                 {
-                    id: 'disabled',
-                    label: 'Disabled',
-                    component: DisabledDoc
-                },
-                {
                     id: 'readonly',
-                    label: 'Readonly',
+                    label: 'ReadOnly',
                     component: ReadOnlyDoc
                 },
                 {
-                    id: 'withoutcancel',
-                    label: 'Without Cancel',
-                    component: WithoutCancelDoc
+                    id: 'disabled',
+                    label: 'Disabled',
+                    component: DisabledDoc
                 },
                 {
                     id: 'style',

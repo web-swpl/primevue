@@ -12,31 +12,31 @@
 export default {
     data() {
         return {
-            value: null,
+            value: 5,
             code: {
                 basic: `
 <Rating v-model="value" readonly />`,
                 options: `
 <template>
-  <div class="card flex justify-content-center">
-      <Rating v-model="value" readonly />
-  </div>
+    <div class="card flex justify-content-center">
+        <Rating v-model="value" readonly />
+    </div>
 </template>
 
 <script>
 export default {
-  data() {
-      return {
-          value: null
-      }
-  }
+    data() {
+        return {
+            value: null
+        }
+    }
 };
 <\/script>`,
                 composition: `
 <template>
-  <div class="card flex justify-content-center">
-      <Rating v-model="value" readonly />
-  </div>
+    <div class="card flex justify-content-center">
+        <Rating v-model="value" readonly />
+    </div>
 </template>
 
 <script setup>

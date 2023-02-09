@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <TreeSelect v-model="selectedValue" disabled class="md:w-20rem w-full" :options="nodes" placeholder="TreeSelect" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" :service="['NodeService']" v-bind="$attrs" />
 </template>
 
 <script>

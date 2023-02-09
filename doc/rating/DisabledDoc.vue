@@ -12,37 +12,37 @@
 export default {
     data() {
         return {
-            value: null,
+            value: 5,
             code: {
                 basic: `
 <Rating v-model="value" disabled />`,
                 options: `
 <template>
-  <div class="card flex justify-content-center">
-      <Rating v-model="value" disabled />
-  </div>
+    <div class="card flex justify-content-center">
+        <Rating v-model="value" disabled />
+    </div>
 </template>
 
 <script>
 export default {
-  data() {
-      return {
-          value: null
-      }
-  }
+    data() {
+        return {
+            value: 5
+        }
+    }
 };
 <\/script>`,
                 composition: `
 <template>
-  <div class="card flex justify-content-center">
-      <Rating v-model="value" disabled />
-  </div>
+    <div class="card flex justify-content-center">
+        <Rating v-model="value" disabled />
+    </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
 
-const value = ref(null);
+const value = ref(5);
 <\/script>`
             }
         };

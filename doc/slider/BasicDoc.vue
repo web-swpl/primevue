@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Two-way binding is defined using the standard v-model directive.</p>
+        <p>Two-way binding is defined using the standard <i>v-model</i> directive.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
         <Slider v-model="value" class="w-14rem" />
