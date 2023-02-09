@@ -3,13 +3,13 @@
 </template>
 
 <script>
-import AccessibilityDoc from '@/doc/chip/accessibilitydoc';
-import BasicDoc from '@/doc/chip/basicdoc';
-import IconDoc from '@/doc/chip/icondoc';
-import ImageDoc from '@/doc/chip/imagedoc';
-import ImportDoc from '@/doc/chip/importdoc';
-import StyleDoc from '@/doc/chip/styledoc';
-import TemplateDoc from '@/doc/chip/templatedoc';
+import AccessibilityDoc from '@/doc/chip/AccessibilityDoc';
+import BasicDoc from '@/doc/chip/BasicDoc';
+import IconDoc from '@/doc/chip/IconDoc';
+import ImageDoc from '@/doc/chip/ImageDoc';
+import ImportDoc from '@/doc/chip/ImportDoc';
+import StyleDoc from '@/doc/chip/StyleDoc';
+import TemplateDoc from '@/doc/chip/TemplateDoc';
 
 export default {
     data() {
