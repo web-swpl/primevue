@@ -60,7 +60,7 @@ export default {
 <script setup>
 import { ref } from 'vue';
 
-const value = ref();
+const value = ref(null);
 <\/script>
                 `
             }

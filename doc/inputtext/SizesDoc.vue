@@ -54,9 +54,9 @@ export default {
 <script setup>
 import { ref } from 'vue';
 
-const value1 = ref();
-const value2 = ref();
-const value3 = ref();
+const value1 = ref(null);
+const value2 = ref(null);
+const value3 = ref(null);
 <\/script>`
             }
         };
