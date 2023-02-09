@@ -12,29 +12,30 @@
 export default {
     data() {
         return {
+            value: null,
             code: {
                 basic: `<TriStateCheckbox v-model="value" />`,
                 options: `
 <template>
     <div class="card flex flex-column align-items-center gap-3">
-      <TriStateCheckbox v-model="value" disabled />
+        <TriStateCheckbox v-model="value" disabled />
     </div>  
 </template>
 
 <script>
 export default {
-  data() {
-      return {
-          value: null
-      }
-  }
+    data() {
+        return {
+            value: null
+        }
+    }
 }
 <\/script>`,
                 composition: `
 <template>
-  <div class="card flex flex-column align-items-center gap-3">
-      <TriStateCheckbox v-model="value" disabled />
-  </div>  
+    <div class="card flex flex-column align-items-center gap-3">
+        <TriStateCheckbox v-model="value" disabled />
+    </div>  
 </template>
 
 <script setup>

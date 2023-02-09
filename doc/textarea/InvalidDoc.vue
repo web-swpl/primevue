@@ -25,11 +25,11 @@ export default {
 
 <script>
 export default {
-  data() {
-      return {
-          value: ''
-      }
-  }
+    data() {
+        return {
+            value: ''
+        }
+    }
 };
 <\/script>`,
                 composition: `
