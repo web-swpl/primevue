@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import AccessibilityDoc from '/doc/tristatecheckbox/AccessibilityDoc';
-import BasicDoc from '/doc/tristatecheckbox/BasicDoc';
-import DisabledDoc from '/doc/tristatecheckbox/DisabledDoc';
-import ImportDoc from '/doc/tristatecheckbox/ImportDoc';
-import InvalidDoc from '/doc/tristatecheckbox/InvalidDoc';
-import StyleDoc from '/doc/tristatecheckbox/StyleDoc';
+import AccessibilityDoc from '@/doc/tristatecheckbox/AccessibilityDoc';
+import BasicDoc from '@/doc/tristatecheckbox/BasicDoc';
+import DisabledDoc from '@/doc/tristatecheckbox/DisabledDoc';
+import ImportDoc from '@/doc/tristatecheckbox/ImportDoc';
+import InvalidDoc from '@/doc/tristatecheckbox/InvalidDoc';
+import StyleDoc from '@/doc/tristatecheckbox/StyleDoc';
 
 export default {
     data() {

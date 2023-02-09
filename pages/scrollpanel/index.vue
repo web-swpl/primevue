@@ -8,11 +8,11 @@
     />
 </template>
 <script>
-import AccessibilityDoc from '/doc/scrollpanel/AccessibilityDoc';
-import BasicDoc from '/doc/scrollpanel/BasicDoc';
-import CustomDoc from '/doc/scrollpanel/CustomDoc';
-import ImportDoc from '/doc/scrollpanel/ImportDoc';
-import StyleDoc from '/doc/scrollpanel/StyleDoc';
+import AccessibilityDoc from '@/doc/scrollpanel/AccessibilityDoc';
+import BasicDoc from '@/doc/scrollpanel/BasicDoc';
+import CustomDoc from '@/doc/scrollpanel/CustomDoc';
+import ImportDoc from '@/doc/scrollpanel/ImportDoc';
+import StyleDoc from '@/doc/scrollpanel/StyleDoc';
 
 export default {
     data() {

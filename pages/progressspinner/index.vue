@@ -3,11 +3,11 @@
 </template>
 
 <script>
-import AccessibilityDoc from '/doc/progressspinner/AccessibilityDoc';
-import BasicDoc from '/doc/progressspinner/BasicDoc';
-import ImportDoc from '/doc/progressspinner/ImportDoc';
-import StyleDoc from '/doc/progressspinner/StyleDoc';
-import CustomDoc from '/doc/progressspinner/customDoc';
+import AccessibilityDoc from '@/doc/progressspinner/AccessibilityDoc';
+import BasicDoc from '@/doc/progressspinner/BasicDoc';
+import ImportDoc from '@/doc/progressspinner/ImportDoc';
+import StyleDoc from '@/doc/progressspinner/StyleDoc';
+import CustomDoc from '@/doc/progressspinner/customDoc';
 
 export default {
     data() {

@@ -3,10 +3,10 @@
 </template>
 
 <script>
-import AccessibilityDoc from '/doc/terminal/AccessibilityDoc';
-import BasicDoc from '/doc/terminal/BasicDoc';
-import ImportDoc from '/doc/terminal/ImportDoc';
-import StyleDoc from '/doc/terminal/StyleDoc';
+import AccessibilityDoc from '@/doc/terminal/AccessibilityDoc';
+import BasicDoc from '@/doc/terminal/BasicDoc';
+import ImportDoc from '@/doc/terminal/ImportDoc';
+import StyleDoc from '@/doc/terminal/StyleDoc';
 
 export default {
     data() {

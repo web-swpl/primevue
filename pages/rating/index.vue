@@ -3,15 +3,15 @@
 </template>
 
 <script>
-import AccessibilityDoc from '/doc/rating/AccessibilityDoc.vue';
-import BasicDoc from '/doc/rating/BasicDoc.vue';
-import DisabledDoc from '/doc/rating/DisabledDoc.vue';
-import ImportDoc from '/doc/rating/ImportDoc.vue';
-import NumberOfStarsDoc from '/doc/rating/NumberOfStarsDoc.vue';
-import ReadOnlyDoc from '/doc/rating/ReadOnlyDoc.vue';
-import StyleDoc from '/doc/rating/StyleDoc.vue';
-import TemplateDoc from '/doc/rating/TemplateDoc.vue';
-import WithoutCancelDoc from '/doc/rating/WithoutCancelDoc.vue';
+import AccessibilityDoc from '@/doc/rating/AccessibilityDoc.vue';
+import BasicDoc from '@/doc/rating/BasicDoc.vue';
+import DisabledDoc from '@/doc/rating/DisabledDoc.vue';
+import ImportDoc from '@/doc/rating/ImportDoc.vue';
+import NumberOfStarsDoc from '@/doc/rating/NumberOfStarsDoc.vue';
+import ReadOnlyDoc from '@/doc/rating/ReadOnlyDoc.vue';
+import StyleDoc from '@/doc/rating/StyleDoc.vue';
+import TemplateDoc from '@/doc/rating/TemplateDoc.vue';
+import WithoutCancelDoc from '@/doc/rating/WithoutCancelDoc.vue';
 
 export default {
     data() {

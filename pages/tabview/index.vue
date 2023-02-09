@@ -3,15 +3,15 @@
 </template>
 
 <script>
-import AccessibilityDoc from '/doc/tabview/AccessibilityDoc.vue';
-import BasicDoc from '/doc/tabview/BasicDoc.vue';
-import ControlledDoc from '/doc/tabview/ControlledDoc.vue';
-import DisabledDoc from '/doc/tabview/DisabledDoc.vue';
-import DynamicDoc from '/doc/tabview/DynamicDoc.vue';
-import ImportDoc from '/doc/tabview/ImportDoc.vue';
-import ScrollableDoc from '/doc/tabview/ScrollableDoc.vue';
-import StyleDoc from '/doc/tabview/StyleDoc.vue';
-import TemplateDoc from '/doc/tabview/TemplateDoc.vue';
+import AccessibilityDoc from '@/doc/tabview/AccessibilityDoc.vue';
+import BasicDoc from '@/doc/tabview/BasicDoc.vue';
+import ControlledDoc from '@/doc/tabview/ControlledDoc.vue';
+import DisabledDoc from '@/doc/tabview/DisabledDoc.vue';
+import DynamicDoc from '@/doc/tabview/DynamicDoc.vue';
+import ImportDoc from '@/doc/tabview/ImportDoc.vue';
+import ScrollableDoc from '@/doc/tabview/ScrollableDoc.vue';
+import StyleDoc from '@/doc/tabview/StyleDoc.vue';
+import TemplateDoc from '@/doc/tabview/TemplateDoc.vue';
 export default {
     data() {
         return {

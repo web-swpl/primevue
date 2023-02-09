@@ -9,13 +9,13 @@
 </template>
 
 <script>
-import AccessibilityDoc from '/doc/togglebutton/AccessibilityDoc.vue';
-import BasicDoc from '/doc/togglebutton/BasicDoc.vue';
-import CustomizedDoc from '/doc/togglebutton/CustomizedDoc.vue';
-import DisabledDoc from '/doc/togglebutton/DisabledDoc.vue';
-import ImportDoc from '/doc/togglebutton/ImportDoc.vue';
-import InvalidDoc from '/doc/togglebutton/InvalidDoc.vue';
-import StyleDoc from '/doc/togglebutton/StyleDoc.vue';
+import AccessibilityDoc from '@/doc/togglebutton/AccessibilityDoc.vue';
+import BasicDoc from '@/doc/togglebutton/BasicDoc.vue';
+import CustomizedDoc from '@/doc/togglebutton/CustomizedDoc.vue';
+import DisabledDoc from '@/doc/togglebutton/DisabledDoc.vue';
+import ImportDoc from '@/doc/togglebutton/ImportDoc.vue';
+import InvalidDoc from '@/doc/togglebutton/InvalidDoc.vue';
+import StyleDoc from '@/doc/togglebutton/StyleDoc.vue';
 
 export default {
     data() {

@@ -9,13 +9,13 @@
 </template>
 
 <script>
-import AccessibilityDoc from '/doc/radiobutton/AccessibilityDoc.vue';
-import DisabledDoc from '/doc/radiobutton/DisabledDoc.vue';
-import DynamicDoc from '/doc/radiobutton/DynamicDoc.vue';
-import GroupDoc from '/doc/radiobutton/GroupDoc.vue';
-import ImportDoc from '/doc/radiobutton/ImportDoc.vue';
-import InvalidDoc from '/doc/radiobutton/InvalidDoc.vue';
-import StyleDoc from '/doc/radiobutton/StyleDoc.vue';
+import AccessibilityDoc from '@/doc/radiobutton/AccessibilityDoc.vue';
+import DisabledDoc from '@/doc/radiobutton/DisabledDoc.vue';
+import DynamicDoc from '@/doc/radiobutton/DynamicDoc.vue';
+import GroupDoc from '@/doc/radiobutton/GroupDoc.vue';
+import ImportDoc from '@/doc/radiobutton/ImportDoc.vue';
+import InvalidDoc from '@/doc/radiobutton/InvalidDoc.vue';
+import StyleDoc from '@/doc/radiobutton/StyleDoc.vue';
 
 export default {
     data() {

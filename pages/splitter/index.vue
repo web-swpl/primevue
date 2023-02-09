@@ -3,13 +3,13 @@
 </template>
 
 <script>
-import AccessibilityDoc from '/doc/splitter/AccessibilityDoc';
-import HorizontalDoc from '/doc/splitter/HorizontalDoc.vue';
-import ImportDoc from '/doc/splitter/ImportDoc';
-import NestedDoc from '/doc/splitter/NestedDoc.vue';
-import SizeDoc from '/doc/splitter/SizeDoc.vue';
-import StyleDoc from '/doc/splitter/StyleDoc';
-import VerticalDoc from '/doc/splitter/VerticalDoc.vue';
+import AccessibilityDoc from '@/doc/splitter/AccessibilityDoc';
+import HorizontalDoc from '@/doc/splitter/HorizontalDoc.vue';
+import ImportDoc from '@/doc/splitter/ImportDoc';
+import NestedDoc from '@/doc/splitter/NestedDoc.vue';
+import SizeDoc from '@/doc/splitter/SizeDoc.vue';
+import StyleDoc from '@/doc/splitter/StyleDoc';
+import VerticalDoc from '@/doc/splitter/VerticalDoc.vue';
 
 export default {
     data() {

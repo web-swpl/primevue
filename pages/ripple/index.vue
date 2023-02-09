@@ -3,11 +3,11 @@
 </template>
 
 <script>
-import AccessibilityDoc from '/doc/ripple/AccessibilityDoc';
-import CustomDoc from '/doc/ripple/CustomDoc';
-import DefaultDoc from '/doc/ripple/DefaultDoc';
-import ImportDoc from '/doc/ripple/ImportDoc';
-import StyleDoc from '/doc/ripple/StyleDoc';
+import AccessibilityDoc from '@/doc/ripple/AccessibilityDoc';
+import CustomDoc from '@/doc/ripple/CustomDoc';
+import DefaultDoc from '@/doc/ripple/DefaultDoc';
+import ImportDoc from '@/doc/ripple/ImportDoc';
+import StyleDoc from '@/doc/ripple/StyleDoc';
 
 export default {
     data() {

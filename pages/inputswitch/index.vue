@@ -3,13 +3,13 @@
 </template>
 
 <script>
-import AccessibilityDoc from '/doc/inputswitch/AccessibilityDoc.vue';
-import BasicDoc from '/doc/inputswitch/BasicDoc.vue';
-import DisabledDoc from '/doc/inputswitch/DisabledDoc.vue';
-import ImportDoc from '/doc/inputswitch/ImportDoc.vue';
-import InvalidDoc from '/doc/inputswitch/InvalidDoc.vue';
-import PreselectionDoc from '/doc/inputswitch/PreselectionDoc.vue';
-import StyleDoc from '/doc/inputswitch/StyleDoc.vue';
+import AccessibilityDoc from '@/doc/inputswitch/AccessibilityDoc.vue';
+import BasicDoc from '@/doc/inputswitch/BasicDoc.vue';
+import DisabledDoc from '@/doc/inputswitch/DisabledDoc.vue';
+import ImportDoc from '@/doc/inputswitch/ImportDoc.vue';
+import InvalidDoc from '@/doc/inputswitch/InvalidDoc.vue';
+import PreselectionDoc from '@/doc/inputswitch/PreselectionDoc.vue';
+import StyleDoc from '@/doc/inputswitch/StyleDoc.vue';
 
 export default {
     data() {

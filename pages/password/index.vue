@@ -3,17 +3,17 @@
 </template>
 
 <script>
-import AccessibilityDoc from '/doc/password/AccessibilityDoc.vue';
-import BasicDoc from '/doc/password/BasicDoc.vue';
-import DisabledDoc from '/doc/password/DisabledDoc.vue';
-import FloatLabelDoc from '/doc/password/FloatLabelDoc.vue';
-import ImportDoc from '/doc/password/ImportDoc.vue';
-import InvalidDoc from '/doc/password/InvalidDoc.vue';
-import LocaleDoc from '/doc/password/LocaleDoc.vue';
-import MeterDoc from '/doc/password/MeterDoc.vue';
-import StyleDoc from '/doc/password/StyleDoc.vue';
-import TemplateDoc from '/doc/password/TemplateDoc.vue';
-import ToggleMaskDoc from '/doc/password/ToggleMaskDoc.vue';
+import AccessibilityDoc from '@/doc/password/AccessibilityDoc.vue';
+import BasicDoc from '@/doc/password/BasicDoc.vue';
+import DisabledDoc from '@/doc/password/DisabledDoc.vue';
+import FloatLabelDoc from '@/doc/password/FloatLabelDoc.vue';
+import ImportDoc from '@/doc/password/ImportDoc.vue';
+import InvalidDoc from '@/doc/password/InvalidDoc.vue';
+import LocaleDoc from '@/doc/password/LocaleDoc.vue';
+import MeterDoc from '@/doc/password/MeterDoc.vue';
+import StyleDoc from '@/doc/password/StyleDoc.vue';
+import TemplateDoc from '@/doc/password/TemplateDoc.vue';
+import ToggleMaskDoc from '@/doc/password/ToggleMaskDoc.vue';
 
 export default {
     data() {

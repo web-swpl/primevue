@@ -3,14 +3,14 @@
 </template>
 
 <script>
-import AccessibilityDoc from '/doc/slider/AccessibilityDoc';
-import BasicDoc from '/doc/slider/BasicDoc';
-import ImportDoc from '/doc/slider/ImportDoc';
-import InputDoc from '/doc/slider/InputDoc';
-import RangeDoc from '/doc/slider/RangeDoc';
-import StepDoc from '/doc/slider/StepDoc';
-import StyleDoc from '/doc/slider/StyleDoc';
-import VerticalDoc from '/doc/slider/VerticalDoc';
+import AccessibilityDoc from '@/doc/slider/AccessibilityDoc';
+import BasicDoc from '@/doc/slider/BasicDoc';
+import ImportDoc from '@/doc/slider/ImportDoc';
+import InputDoc from '@/doc/slider/InputDoc';
+import RangeDoc from '@/doc/slider/RangeDoc';
+import StepDoc from '@/doc/slider/StepDoc';
+import StyleDoc from '@/doc/slider/StyleDoc';
+import VerticalDoc from '@/doc/slider/VerticalDoc';
 
 export default {
     data() {

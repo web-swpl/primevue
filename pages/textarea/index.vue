@@ -9,14 +9,14 @@
 </template>
 
 <script>
-import AccessibilityDoc from '/doc/textarea/AccessibilityDoc';
-import AutoResizeDoc from '/doc/textarea/AutoResizeDoc';
-import BasicDoc from '/doc/textarea/BasicDoc';
-import DisabledDoc from '/doc/textarea/DisabledDoc';
-import FloatLabelDoc from '/doc/textarea/FloatLabelDoc';
-import ImportDoc from '/doc/textarea/ImportDoc';
-import InvalidDoc from '/doc/textarea/InvalidDoc';
-import StyleDoc from '/doc/textarea/StyleDoc';
+import AccessibilityDoc from '@/doc/textarea/AccessibilityDoc';
+import AutoResizeDoc from '@/doc/textarea/AutoResizeDoc';
+import BasicDoc from '@/doc/textarea/BasicDoc';
+import DisabledDoc from '@/doc/textarea/DisabledDoc';
+import FloatLabelDoc from '@/doc/textarea/FloatLabelDoc';
+import ImportDoc from '@/doc/textarea/ImportDoc';
+import InvalidDoc from '@/doc/textarea/InvalidDoc';
+import StyleDoc from '@/doc/textarea/StyleDoc';
 
 export default {
     data() {

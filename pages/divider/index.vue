@@ -3,14 +3,14 @@
 </template>
 
 <script>
-import AccessibilityDoc from '/doc/divider/AccessibilityDoc.vue';
-import BasicDoc from '/doc/divider/BasicDoc.vue';
-import ContentDoc from '/doc/divider/ContentDoc.vue';
-import ImportDoc from '/doc/divider/ImportDoc.vue';
-import LoginDoc from '/doc/divider/LoginDoc.vue';
-import StyleDoc from '/doc/divider/StyleDoc.vue';
-import TypeDoc from '/doc/divider/TypeDoc.vue';
-import VerticalDoc from '/doc/divider/VerticalDoc.vue';
+import AccessibilityDoc from '@/doc/divider/AccessibilityDoc.vue';
+import BasicDoc from '@/doc/divider/BasicDoc.vue';
+import ContentDoc from '@/doc/divider/ContentDoc.vue';
+import ImportDoc from '@/doc/divider/ImportDoc.vue';
+import LoginDoc from '@/doc/divider/LoginDoc.vue';
+import StyleDoc from '@/doc/divider/StyleDoc.vue';
+import TypeDoc from '@/doc/divider/TypeDoc.vue';
+import VerticalDoc from '@/doc/divider/VerticalDoc.vue';
 
 export default {
     data() {

@@ -3,14 +3,14 @@
 </template>
 
 <script>
-import AccessibilityDoc from '/doc/accordion/AccessibilityDoc';
-import BasicDoc from '/doc/accordion/BasicDoc';
-import ControlledDoc from '/doc/accordion/ControlledDoc.vue';
-import Disabled from '/doc/accordion/DisabledDoc.vue';
-import ImportDoc from '/doc/accordion/ImportDoc';
-import MultipleDoc from '/doc/accordion/MultipleDoc.vue';
-import StyleDoc from '/doc/accordion/StyleDoc';
-import TemplateDoc from '/doc/accordion/TemplateDoc.vue';
+import AccessibilityDoc from '@/doc/accordion/AccessibilityDoc';
+import BasicDoc from '@/doc/accordion/BasicDoc';
+import ControlledDoc from '@/doc/accordion/ControlledDoc.vue';
+import Disabled from '@/doc/accordion/DisabledDoc.vue';
+import ImportDoc from '@/doc/accordion/ImportDoc';
+import MultipleDoc from '@/doc/accordion/MultipleDoc.vue';
+import StyleDoc from '@/doc/accordion/StyleDoc';
+import TemplateDoc from '@/doc/accordion/TemplateDoc.vue';
 
 export default {
     data() {
