@@ -16,7 +16,8 @@ const core_dependencies = {
     vite: '^4.0.0',
     primevue: PrimeVue.version || 'latest',
     primeflex: app_dependencies['primeflex'] || 'latest',
-    primeicons: app_dependencies['primeicons'] || 'latest'
+    primeicons: app_dependencies['primeicons'] || 'latest',
+    quill: app_dependencies['quill'] || 'latest'
 };
 
 // create-vue -> https://github.com/vuejs/create-vue
@@ -131,6 +132,7 @@ import Divider from 'primevue/divider';
 import Dock from 'primevue/dock';
 import Dropdown from 'primevue/dropdown';
 import DynamicDialog from 'primevue/dynamicdialog';
+import Editor from 'primevue/editor';
 import Fieldset from 'primevue/fieldset';
 import FileUpload from 'primevue/fileupload';
 import FocusTrap from 'primevue/focustrap';
@@ -239,6 +241,7 @@ app.component('Divider', Divider);
 app.component('Dock', Dock);
 app.component('Dropdown', Dropdown);
 app.component('DynamicDialog', DynamicDialog);
+app.component('Editor', Editor);
 app.component('Fieldset', Fieldset);
 app.component('FileUpload', FileUpload);
 app.component('Galleria', Galleria);
