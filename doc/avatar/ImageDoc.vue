@@ -6,9 +6,9 @@
         <div class="flex flex-wrap gap-5">
             <div class="flex-auto">
                 <h5>Image</h5>
-                <Avatar image="/images/avatar/amyelsner.png" class="mr-2" size="xlarge" shape="circle" />
-                <Avatar image="/images/avatar/asiyajavayant.png" class="mr-2" size="large" shape="circle" />
-                <Avatar image="/images/avatar/onyamalimba.png" shape="circle" />
+                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="mr-2" size="xlarge" shape="circle" />
+                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/asiyajavayant.png" class="mr-2" size="large" shape="circle" />
+                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/onyamalimba.png" shape="circle" />
             </div>
 
             <div class="flex-auto">
@@ -44,14 +44,14 @@ export default {
         <div class="flex flex-wrap gap-5">
             <div class="flex-auto">
                 <h5>Image</h5>
-                <Avatar image="/images/avatar/amyelsner.png" class="mr-2" size="xlarge" shape="circle" />
-                <Avatar image="/images/avatar/asiyajavayant.png" class="mr-2" size="large" shape="circle" />
-                <Avatar image="/images/avatar/onyamalimba.png" shape="circle" />
+                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="mr-2" size="xlarge" shape="circle" />
+                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/asiyajavayant.png" class="mr-2" size="large" shape="circle" />
+                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/onyamalimba.png" shape="circle" />
             </div>
 
             <div class="flex-auto">
                 <h5>Badge</h5>
-                <Avatar v-badge.danger="4" class="p-overlay-badge" image="/images/organization/walter.jpg" size="xlarge" />
+                <Avatar v-badge.danger="4" class="p-overlay-badge" image="https://primefaces.org/cdn/primevue/images/organization/walter.jpg" size="xlarge" />
             </div>
 
             <div class="flex-auto">
@@ -71,14 +71,14 @@ export default {
         <div class="flex flex-wrap gap-5">
             <div class="flex-auto">
                 <h5>Image</h5>
-                <Avatar image="/images/avatar/amyelsner.png" class="mr-2" size="xlarge" shape="circle" />
-                <Avatar image="/images/avatar/asiyajavayant.png" class="mr-2" size="large" shape="circle" />
-                <Avatar image="/images/avatar/onyamalimba.png" shape="circle" />
+                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="mr-2" size="xlarge" shape="circle" />
+                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/asiyajavayant.png" class="mr-2" size="large" shape="circle" />
+                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/onyamalimba.png" shape="circle" />
             </div>
 
             <div class="flex-auto">
                 <h5>Badge</h5>
-                <Avatar v-badge.danger="4" class="p-overlay-badge" image="/images/organization/walter.jpg" size="xlarge" />
+                <Avatar v-badge.danger="4" class="p-overlay-badge" image="https://primefaces.org/cdn/primevue/images/organization/walter.jpg" size="xlarge" />
             </div>
 
             <div class="flex-auto">
