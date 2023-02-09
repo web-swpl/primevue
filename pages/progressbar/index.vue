@@ -3,13 +3,13 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/progressbar/AccessibilityDoc';
-import BasicDoc from '../../doc/progressbar/BasicDoc';
-import DynamicDoc from '../../doc/progressbar/DynamicDoc';
-import ImportDoc from '../../doc/progressbar/ImportDoc';
-import IndeterminateDoc from '../../doc/progressbar/IndeterminateDoc';
-import StyleDoc from '../../doc/progressbar/StyleDoc';
-import TemplateDoc from '../../doc/progressbar/TemplateDoc';
+import AccessibilityDoc from '@/doc/progressbar/AccessibilityDoc';
+import BasicDoc from '@/doc/progressbar/BasicDoc';
+import DynamicDoc from '@/doc/progressbar/DynamicDoc';
+import ImportDoc from '@/doc/progressbar/ImportDoc';
+import IndeterminateDoc from '@/doc/progressbar/IndeterminateDoc';
+import StyleDoc from '@/doc/progressbar/StyleDoc';
+import TemplateDoc from '@/doc/progressbar/TemplateDoc';
 
 export default {
     data() {

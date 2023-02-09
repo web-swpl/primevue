@@ -3,11 +3,11 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/breadcrumb/AccessibilityDoc';
-import BasicDoc from '../../doc/breadcrumb/BasicDoc';
-import ImportDoc from '../../doc/breadcrumb/ImportDoc';
-import StyleDoc from '../../doc/breadcrumb/StyleDoc';
-import TemplateDoc from '../../doc/breadcrumb/TemplateDoc';
+import AccessibilityDoc from '@/doc/breadcrumb/AccessibilityDoc';
+import BasicDoc from '@/doc/breadcrumb/BasicDoc';
+import ImportDoc from '@/doc/breadcrumb/ImportDoc';
+import StyleDoc from '@/doc/breadcrumb/StyleDoc';
+import TemplateDoc from '@/doc/breadcrumb/TemplateDoc';
 
 export default {
     data() {

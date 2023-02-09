@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/contextmenu/AccessibilityDoc';
-import BasicDoc from '../../doc/contextmenu/BasicDoc';
-import DocumentDoc from '../../doc/contextmenu/DocumentDoc';
-import ImportDoc from '../../doc/contextmenu/ImportDoc';
-import StyleDoc from '../../doc/contextmenu/StyleDoc';
+import AccessibilityDoc from '@/doc/contextmenu/AccessibilityDoc';
+import BasicDoc from '@/doc/contextmenu/BasicDoc';
+import DocumentDoc from '@/doc/contextmenu/DocumentDoc';
+import ImportDoc from '@/doc/contextmenu/ImportDoc';
+import StyleDoc from '@/doc/contextmenu/StyleDoc';
 
 export default {
     data() {

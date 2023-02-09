@@ -3,17 +3,17 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/listbox/AccessibilityDoc';
-import BasicDoc from '../../doc/listbox/BasicDoc';
-import DisabledDoc from '../../doc/listbox/DisabledDoc';
-import FilterDoc from '../../doc/listbox/FilterDoc';
-import GroupDoc from '../../doc/listbox/GroupDoc';
-import ImportDoc from '../../doc/listbox/ImportDoc';
-import InvalidDoc from '../../doc/listbox/InvalidDoc';
-import MultipleDoc from '../../doc/listbox/MultipleDoc';
-import StyleDoc from '../../doc/listbox/StyleDoc';
-import TemplateDoc from '../../doc/listbox/TemplateDoc';
-import VirtualScrollDoc from '../../doc/listbox/VirtualScrollDoc';
+import AccessibilityDoc from '@/doc/listbox/AccessibilityDoc';
+import BasicDoc from '@/doc/listbox/BasicDoc';
+import DisabledDoc from '@/doc/listbox/DisabledDoc';
+import FilterDoc from '@/doc/listbox/FilterDoc';
+import GroupDoc from '@/doc/listbox/GroupDoc';
+import ImportDoc from '@/doc/listbox/ImportDoc';
+import InvalidDoc from '@/doc/listbox/InvalidDoc';
+import MultipleDoc from '@/doc/listbox/MultipleDoc';
+import StyleDoc from '@/doc/listbox/StyleDoc';
+import TemplateDoc from '@/doc/listbox/TemplateDoc';
+import VirtualScrollDoc from '@/doc/listbox/VirtualScrollDoc';
 
 export default {
     data() {

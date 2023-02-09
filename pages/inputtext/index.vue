@@ -3,15 +3,15 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/inputtext/AccessibilityDoc.vue';
-import BasicDoc from '../../doc/inputtext/BasicDoc.vue';
-import DisabledDoc from '../../doc/inputtext/DisabledDoc.vue';
-import FloatLabelDoc from '../../doc/inputtext/FloatLabelDoc.vue';
-import IconDoc from '../../doc/inputtext/IconDoc.vue';
-import ImportDoc from '../../doc/inputtext/ImportDoc.vue';
-import InvalidDoc from '../../doc/inputtext/InvalidDoc.vue';
-import SizesDoc from '../../doc/inputtext/SizesDoc.vue';
-import StyleDoc from '../../doc/inputtext/StyleDoc.vue';
+import AccessibilityDoc from '@/doc/inputtext/AccessibilityDoc.vue';
+import BasicDoc from '@/doc/inputtext/BasicDoc.vue';
+import DisabledDoc from '@/doc/inputtext/DisabledDoc.vue';
+import FloatLabelDoc from '@/doc/inputtext/FloatLabelDoc.vue';
+import IconDoc from '@/doc/inputtext/IconDoc.vue';
+import ImportDoc from '@/doc/inputtext/ImportDoc.vue';
+import InvalidDoc from '@/doc/inputtext/InvalidDoc.vue';
+import SizesDoc from '@/doc/inputtext/SizesDoc.vue';
+import StyleDoc from '@/doc/inputtext/StyleDoc.vue';
 
 export default {
     data() {

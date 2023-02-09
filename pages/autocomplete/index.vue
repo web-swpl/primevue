@@ -9,20 +9,20 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/autocomplete/AccessibilityDoc';
-import BasicDoc from '../../doc/autocomplete/BasicDoc';
-import DisabledDoc from '../../doc/autocomplete/DisabledDoc';
-import DropdownDoc from '../../doc/autocomplete/DropdownDoc';
-import FloatLabelDoc from '../../doc/autocomplete/FloatLabelDoc';
-import ForceSelectionDoc from '../../doc/autocomplete/ForceSelectionDoc';
-import GroupDoc from '../../doc/autocomplete/GroupDoc';
-import ImportDoc from '../../doc/autocomplete/ImportDoc';
-import InvalidDoc from '../../doc/autocomplete/InvalidDoc';
-import MultipleDoc from '../../doc/autocomplete/MultipleDoc';
-import ObjectsDoc from '../../doc/autocomplete/ObjectsDoc';
-import StyleDoc from '../../doc/autocomplete/StyleDoc';
-import TemplateDoc from '../../doc/autocomplete/TemplateDoc';
-import VirtualScrollDoc from '../../doc/autocomplete/VirtualScrollDoc';
+import AccessibilityDoc from '@/doc/autocomplete/AccessibilityDoc';
+import BasicDoc from '@/doc/autocomplete/BasicDoc';
+import DisabledDoc from '@/doc/autocomplete/DisabledDoc';
+import DropdownDoc from '@/doc/autocomplete/DropdownDoc';
+import FloatLabelDoc from '@/doc/autocomplete/FloatLabelDoc';
+import ForceSelectionDoc from '@/doc/autocomplete/ForceSelectionDoc';
+import GroupDoc from '@/doc/autocomplete/GroupDoc';
+import ImportDoc from '@/doc/autocomplete/ImportDoc';
+import InvalidDoc from '@/doc/autocomplete/InvalidDoc';
+import MultipleDoc from '@/doc/autocomplete/MultipleDoc';
+import ObjectsDoc from '@/doc/autocomplete/ObjectsDoc';
+import StyleDoc from '@/doc/autocomplete/StyleDoc';
+import TemplateDoc from '@/doc/autocomplete/TemplateDoc';
+import VirtualScrollDoc from '@/doc/autocomplete/VirtualScrollDoc';
 
 export default {
     data() {

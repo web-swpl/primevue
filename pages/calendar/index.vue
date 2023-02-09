@@ -9,27 +9,27 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/calendar/AccessibilityDoc';
-import BasicDoc from '../../doc/calendar/BasicDoc';
-import ButtonBarDoc from '../../doc/calendar/ButtonBarDoc';
-import DateTemplateDoc from '../../doc/calendar/DateTemplateDoc';
-import DisabledDoc from '../../doc/calendar/DisabledDoc';
-import FloatLabelDoc from '../../doc/calendar/FloatLabelDoc';
-import FormatDoc from '../../doc/calendar/FormatDoc';
-import IconDoc from '../../doc/calendar/IconDoc';
-import ImportDoc from '../../doc/calendar/ImportDoc';
-import InlineDoc from '../../doc/calendar/InlineDoc';
-import InvalidDoc from '../../doc/calendar/InvalidDoc';
-import LocaleDoc from '../../doc/calendar/LocaleDoc';
-import MinMaxDoc from '../../doc/calendar/MinMaxDoc';
-import MonthPickerDoc from '../../doc/calendar/MonthPickerDoc';
-import MultipleDoc from '../../doc/calendar/MultipleDoc';
-import MultipleMonthsDoc from '../../doc/calendar/MultipleMonthsDoc';
-import RangeDoc from '../../doc/calendar/RangeDoc';
-import StyleDoc from '../../doc/calendar/StyleDoc';
-import TimeDoc from '../../doc/calendar/TimeDoc';
-import TouchUIDoc from '../../doc/calendar/TouchUIDoc';
-import YearPickerDoc from '../../doc/calendar/YearPickerDoc';
+import AccessibilityDoc from '@/doc/calendar/AccessibilityDoc';
+import BasicDoc from '@/doc/calendar/BasicDoc';
+import ButtonBarDoc from '@/doc/calendar/ButtonBarDoc';
+import DateTemplateDoc from '@/doc/calendar/DateTemplateDoc';
+import DisabledDoc from '@/doc/calendar/DisabledDoc';
+import FloatLabelDoc from '@/doc/calendar/FloatLabelDoc';
+import FormatDoc from '@/doc/calendar/FormatDoc';
+import IconDoc from '@/doc/calendar/IconDoc';
+import ImportDoc from '@/doc/calendar/ImportDoc';
+import InlineDoc from '@/doc/calendar/InlineDoc';
+import InvalidDoc from '@/doc/calendar/InvalidDoc';
+import LocaleDoc from '@/doc/calendar/LocaleDoc';
+import MinMaxDoc from '@/doc/calendar/MinMaxDoc';
+import MonthPickerDoc from '@/doc/calendar/MonthPickerDoc';
+import MultipleDoc from '@/doc/calendar/MultipleDoc';
+import MultipleMonthsDoc from '@/doc/calendar/MultipleMonthsDoc';
+import RangeDoc from '@/doc/calendar/RangeDoc';
+import StyleDoc from '@/doc/calendar/StyleDoc';
+import TimeDoc from '@/doc/calendar/TimeDoc';
+import TouchUIDoc from '@/doc/calendar/TouchUIDoc';
+import YearPickerDoc from '@/doc/calendar/YearPickerDoc';
 
 export default {
     data() {

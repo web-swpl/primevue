@@ -3,12 +3,12 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/megamenu/AccessibilityDoc';
-import BasicDoc from '../../doc/megamenu/BasicDoc';
-import ImportDoc from '../../doc/megamenu/ImportDoc';
-import StyleDoc from '../../doc/megamenu/StyleDoc';
-import TemplateDoc from '../../doc/megamenu/TemplateDoc';
-import VerticalDoc from '../../doc/megamenu/VerticalDoc';
+import AccessibilityDoc from '@/doc/megamenu/AccessibilityDoc';
+import BasicDoc from '@/doc/megamenu/BasicDoc';
+import ImportDoc from '@/doc/megamenu/ImportDoc';
+import StyleDoc from '@/doc/megamenu/StyleDoc';
+import TemplateDoc from '@/doc/megamenu/TemplateDoc';
+import VerticalDoc from '@/doc/megamenu/VerticalDoc';
 
 export default {
     data() {

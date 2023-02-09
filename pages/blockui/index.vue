@@ -3,11 +3,11 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/blockui/AccessibilityDoc.vue';
-import BasicDoc from '../../doc/blockui/BasicDoc.vue';
-import DocumentDoc from '../../doc/blockui/DocumentDoc.vue';
-import ImportDoc from '../../doc/blockui/ImportDoc.vue';
-import StyleDoc from '../../doc/blockui/StyleDoc.vue';
+import AccessibilityDoc from '@/doc/blockui/AccessibilityDoc.vue';
+import BasicDoc from '@/doc/blockui/BasicDoc.vue';
+import DocumentDoc from '@/doc/blockui/DocumentDoc.vue';
+import ImportDoc from '@/doc/blockui/ImportDoc.vue';
+import StyleDoc from '@/doc/blockui/StyleDoc.vue';
 
 export default {
     data() {

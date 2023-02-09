@@ -9,19 +9,19 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/multiselect/AccessibilityDoc';
-import BasicDoc from '../../doc/multiselect/BasicDoc';
-import ChipsDoc from '../../doc/multiselect/ChipsDoc';
-import DisabledDoc from '../../doc/multiselect/DisabledDoc';
-import FilterDoc from '../../doc/multiselect/FilterDoc';
-import FloatLabelDoc from '../../doc/multiselect/FloatLabelDoc';
-import GroupDoc from '../../doc/multiselect/GroupDoc';
-import ImportDoc from '../../doc/multiselect/ImportDoc';
-import InvalidDoc from '../../doc/multiselect/InvalidDoc';
-import LoadingStateDoc from '../../doc/multiselect/LoadingStateDoc';
-import StyleDoc from '../../doc/multiselect/StyleDoc';
-import TemplateDoc from '../../doc/multiselect/TemplateDoc';
-import VirtualScrollDoc from '../../doc/multiselect/VirtualScrollDoc';
+import AccessibilityDoc from '@/doc/multiselect/AccessibilityDoc';
+import BasicDoc from '@/doc/multiselect/BasicDoc';
+import ChipsDoc from '@/doc/multiselect/ChipsDoc';
+import DisabledDoc from '@/doc/multiselect/DisabledDoc';
+import FilterDoc from '@/doc/multiselect/FilterDoc';
+import FloatLabelDoc from '@/doc/multiselect/FloatLabelDoc';
+import GroupDoc from '@/doc/multiselect/GroupDoc';
+import ImportDoc from '@/doc/multiselect/ImportDoc';
+import InvalidDoc from '@/doc/multiselect/InvalidDoc';
+import LoadingStateDoc from '@/doc/multiselect/LoadingStateDoc';
+import StyleDoc from '@/doc/multiselect/StyleDoc';
+import TemplateDoc from '@/doc/multiselect/TemplateDoc';
+import VirtualScrollDoc from '@/doc/multiselect/VirtualScrollDoc';
 
 export default {
     data() {

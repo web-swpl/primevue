@@ -9,13 +9,13 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/inplace/AccessibilityDoc';
-import BasicDoc from '../../doc/inplace/BasicDoc';
-import ImageDoc from '../../doc/inplace/ImageDoc';
-import ImportDoc from '../../doc/inplace/ImportDoc';
-import InputDoc from '../../doc/inplace/InputDoc';
-import LazyDoc from '../../doc/inplace/LazyDoc';
-import StyleDoc from '../../doc/inplace/StyleDoc';
+import AccessibilityDoc from '@/doc/inplace/AccessibilityDoc';
+import BasicDoc from '@/doc/inplace/BasicDoc';
+import ImageDoc from '@/doc/inplace/ImageDoc';
+import ImportDoc from '@/doc/inplace/ImportDoc';
+import InputDoc from '@/doc/inplace/InputDoc';
+import LazyDoc from '@/doc/inplace/LazyDoc';
+import StyleDoc from '@/doc/inplace/StyleDoc';
 
 export default {
     data() {

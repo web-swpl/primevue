@@ -3,14 +3,14 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/badge/AccessibilityDoc.vue';
-import BasicDoc from '../../doc/badge/BasicDoc.vue';
-import ButtonDoc from '../../doc/badge/ButtonDoc.vue';
-import ImportDoc from '../../doc/badge/ImportDoc.vue';
-import PositionDoc from '../../doc/badge/PositionDoc.vue';
-import SeverityDoc from '../../doc/badge/SeverityDoc.vue';
-import SizeDoc from '../../doc/badge/SizeDoc.vue';
-import StyleDoc from '../../doc/badge/StyleDoc.vue';
+import AccessibilityDoc from '@/doc/badge/AccessibilityDoc.vue';
+import BasicDoc from '@/doc/badge/BasicDoc.vue';
+import ButtonDoc from '@/doc/badge/ButtonDoc.vue';
+import ImportDoc from '@/doc/badge/ImportDoc.vue';
+import PositionDoc from '@/doc/badge/PositionDoc.vue';
+import SeverityDoc from '@/doc/badge/SeverityDoc.vue';
+import SizeDoc from '@/doc/badge/SizeDoc.vue';
+import StyleDoc from '@/doc/badge/StyleDoc.vue';
 
 export default {
     data() {

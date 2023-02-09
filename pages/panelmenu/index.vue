@@ -3,11 +3,11 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/panelmenu/AccessibilityDoc';
-import BasicDoc from '../../doc/panelmenu/BasicDoc';
-import ImportDoc from '../../doc/panelmenu/ImportDoc';
-import ProgrammaticDoc from '../../doc/panelmenu/ProgrammaticDoc';
-import StyleDoc from '../../doc/panelmenu/StyleDoc';
+import AccessibilityDoc from '@/doc/panelmenu/AccessibilityDoc';
+import BasicDoc from '@/doc/panelmenu/BasicDoc';
+import ImportDoc from '@/doc/panelmenu/ImportDoc';
+import ProgrammaticDoc from '@/doc/panelmenu/ProgrammaticDoc';
+import StyleDoc from '@/doc/panelmenu/StyleDoc';
 
 export default {
     data() {

@@ -3,11 +3,11 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/dock/AccessibilityDoc';
-import AdvancedDoc from '../../doc/dock/AdvancedDoc';
-import BasicDoc from '../../doc/dock/BasicDoc';
-import ImportDoc from '../../doc/dock/ImportDoc';
-import StyleDoc from '../../doc/dock/StyleDoc';
+import AccessibilityDoc from '@/doc/dock/AccessibilityDoc';
+import AdvancedDoc from '@/doc/dock/AdvancedDoc';
+import BasicDoc from '@/doc/dock/BasicDoc';
+import ImportDoc from '@/doc/dock/ImportDoc';
+import StyleDoc from '@/doc/dock/StyleDoc';
 
 export default {
     data() {

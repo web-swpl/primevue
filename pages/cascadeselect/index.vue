@@ -9,15 +9,15 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/cascadeselect/AccessibilityDoc';
-import BasicDoc from '../../doc/cascadeselect/BasicDoc';
-import DisabledDoc from '../../doc/cascadeselect/DisabledDoc';
-import FloatLabelDoc from '../../doc/cascadeselect/FloatLabelDoc';
-import ImportDoc from '../../doc/cascadeselect/ImportDoc';
-import InvalidDoc from '../../doc/cascadeselect/InvalidDoc';
-import LoadingStateDoc from '../../doc/cascadeselect/LoadingStateDoc';
-import StyleDoc from '../../doc/cascadeselect/StyleDoc';
-import TemplateDoc from '../../doc/cascadeselect/TemplateDoc';
+import AccessibilityDoc from '@/doc/cascadeselect/AccessibilityDoc';
+import BasicDoc from '@/doc/cascadeselect/BasicDoc';
+import DisabledDoc from '@/doc/cascadeselect/DisabledDoc';
+import FloatLabelDoc from '@/doc/cascadeselect/FloatLabelDoc';
+import ImportDoc from '@/doc/cascadeselect/ImportDoc';
+import InvalidDoc from '@/doc/cascadeselect/InvalidDoc';
+import LoadingStateDoc from '@/doc/cascadeselect/LoadingStateDoc';
+import StyleDoc from '@/doc/cascadeselect/StyleDoc';
+import TemplateDoc from '@/doc/cascadeselect/TemplateDoc';
 
 export default {
     data() {

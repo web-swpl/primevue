@@ -9,21 +9,21 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/dropdown/AccessibilityDoc';
-import BasicDoc from '../../doc/dropdown/BasicDoc';
-import ClearIconDoc from '../../doc/dropdown/ClearIconDoc';
-import DisabledDoc from '../../doc/dropdown/DisabledDoc';
-import EditableDoc from '../../doc/dropdown/EditableDoc';
-import FilterDoc from '../../doc/dropdown/FilterDoc';
-import FloatLabelDoc from '../../doc/dropdown/FloatLabelDoc';
-import GroupDoc from '../../doc/dropdown/GroupDoc';
-import ImportDoc from '../../doc/dropdown/ImportDoc';
-import InvalidDoc from '../../doc/dropdown/InvalidDoc';
-import LazyVirtualScrollDoc from '../../doc/dropdown/LazyVirtualScrollDoc';
-import LoadingStateDoc from '../../doc/dropdown/LoadingStateDoc';
-import StyleDoc from '../../doc/dropdown/StyleDoc';
-import TemplateDoc from '../../doc/dropdown/TemplateDoc';
-import VirtualScrollDoc from '../../doc/dropdown/VirtualScrollDoc';
+import AccessibilityDoc from '@/doc/dropdown/AccessibilityDoc';
+import BasicDoc from '@/doc/dropdown/BasicDoc';
+import ClearIconDoc from '@/doc/dropdown/ClearIconDoc';
+import DisabledDoc from '@/doc/dropdown/DisabledDoc';
+import EditableDoc from '@/doc/dropdown/EditableDoc';
+import FilterDoc from '@/doc/dropdown/FilterDoc';
+import FloatLabelDoc from '@/doc/dropdown/FloatLabelDoc';
+import GroupDoc from '@/doc/dropdown/GroupDoc';
+import ImportDoc from '@/doc/dropdown/ImportDoc';
+import InvalidDoc from '@/doc/dropdown/InvalidDoc';
+import LazyVirtualScrollDoc from '@/doc/dropdown/LazyVirtualScrollDoc';
+import LoadingStateDoc from '@/doc/dropdown/LoadingStateDoc';
+import StyleDoc from '@/doc/dropdown/StyleDoc';
+import TemplateDoc from '@/doc/dropdown/TemplateDoc';
+import VirtualScrollDoc from '@/doc/dropdown/VirtualScrollDoc';
 
 export default {
     data() {

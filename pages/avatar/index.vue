@@ -3,14 +3,14 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/avatar/accessibilitydoc';
-import AvatarGroupDoc from '../../doc/avatar/avatargroupdoc';
-import IconDoc from '../../doc/avatar/icondoc';
-import ImageDoc from '../../doc/avatar/imagedoc';
-import ImportDoc from '../../doc/avatar/importdoc';
-import LabelDoc from '../../doc/avatar/labeldoc';
-import StylingAvatarDoc from '../../doc/avatar/stylingavatardoc';
-import StylingAvatarGroupDoc from '../../doc/avatar/stylingavatargroupdoc';
+import AccessibilityDoc from '@/doc/avatar/accessibilitydoc';
+import AvatarGroupDoc from '@/doc/avatar/avatargroupdoc';
+import IconDoc from '@/doc/avatar/icondoc';
+import ImageDoc from '@/doc/avatar/imagedoc';
+import ImportDoc from '@/doc/avatar/importdoc';
+import LabelDoc from '@/doc/avatar/labeldoc';
+import StylingAvatarDoc from '@/doc/avatar/stylingavatardoc';
+import StylingAvatarGroupDoc from '@/doc/avatar/stylingavatargroupdoc';
 
 export default {
     data() {

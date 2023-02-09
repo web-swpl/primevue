@@ -3,8 +3,8 @@
 </template>
 
 <script>
-import BasicDoc from '../../doc/focustrap/BasicDoc.vue';
-import ImportDoc from '../../doc/focustrap/ImportDoc.vue';
+import BasicDoc from '@/doc/focustrap/BasicDoc.vue';
+import ImportDoc from '@/doc/focustrap/ImportDoc.vue';
 
 export default {
     data() {

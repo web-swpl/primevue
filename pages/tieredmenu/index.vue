@@ -3,11 +3,11 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/tieredmenu/AccessibilityDoc';
-import BasicDoc from '../../doc/tieredmenu/BasicDoc';
-import ImportDoc from '../../doc/tieredmenu/ImportDoc';
-import PopupDoc from '../../doc/tieredmenu/PopupDoc';
-import StyleDoc from '../../doc/tieredmenu/StyleDoc';
+import AccessibilityDoc from '@/doc/tieredmenu/AccessibilityDoc';
+import BasicDoc from '@/doc/tieredmenu/BasicDoc';
+import ImportDoc from '@/doc/tieredmenu/ImportDoc';
+import PopupDoc from '@/doc/tieredmenu/PopupDoc';
+import StyleDoc from '@/doc/tieredmenu/StyleDoc';
 
 export default {
     data() {

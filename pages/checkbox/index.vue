@@ -3,14 +3,14 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/checkbox/AccessibilityDoc';
-import BasicDoc from '../../doc/checkbox/BasicDoc';
-import DisabledDoc from '../../doc/checkbox/DisabledDoc';
-import DynamicDoc from '../../doc/checkbox/DynamicDoc';
-import GroupDoc from '../../doc/checkbox/GroupDoc';
-import ImportDoc from '../../doc/checkbox/ImportDoc';
-import InvalidDoc from '../../doc/checkbox/InvalidDoc';
-import StyleDoc from '../../doc/checkbox/StyleDoc';
+import AccessibilityDoc from '@/doc/checkbox/AccessibilityDoc';
+import BasicDoc from '@/doc/checkbox/BasicDoc';
+import DisabledDoc from '@/doc/checkbox/DisabledDoc';
+import DynamicDoc from '@/doc/checkbox/DynamicDoc';
+import GroupDoc from '@/doc/checkbox/GroupDoc';
+import ImportDoc from '@/doc/checkbox/ImportDoc';
+import InvalidDoc from '@/doc/checkbox/InvalidDoc';
+import StyleDoc from '@/doc/checkbox/StyleDoc';
 
 export default {
     data() {

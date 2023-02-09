@@ -3,13 +3,13 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/menu/AccessibilityDoc';
-import BasicDoc from '../../doc/menu/BasicDoc';
-import GroupDoc from '../../doc/menu/GroupDoc';
-import ImportDoc from '../../doc/menu/ImportDoc';
-import PopupDoc from '../../doc/menu/PopupDoc';
-import StyleDoc from '../../doc/menu/StyleDoc';
-import TemplateDoc from '../../doc/menu/TemplateDoc';
+import AccessibilityDoc from '@/doc/menu/AccessibilityDoc';
+import BasicDoc from '@/doc/menu/BasicDoc';
+import GroupDoc from '@/doc/menu/GroupDoc';
+import ImportDoc from '@/doc/menu/ImportDoc';
+import PopupDoc from '@/doc/menu/PopupDoc';
+import StyleDoc from '@/doc/menu/StyleDoc';
+import TemplateDoc from '@/doc/menu/TemplateDoc';
 
 export default {
     data() {

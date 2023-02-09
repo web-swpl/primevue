@@ -3,11 +3,11 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../../doc/menubar/accessibilitydoc';
-import BasicDoc from '../../doc/menubar/basicdoc';
-import ImportDoc from '../../doc/menubar/importdoc';
-import StyleDoc from '../../doc/menubar/styledoc';
-import TemplateDoc from '../../doc/menubar/templatedoc';
+import AccessibilityDoc from '@/doc/menubar/accessibilitydoc';
+import BasicDoc from '@/doc/menubar/basicdoc';
+import ImportDoc from '@/doc/menubar/importdoc';
+import StyleDoc from '@/doc/menubar/styledoc';
+import TemplateDoc from '@/doc/menubar/templatedoc';
 
 export default {
     data() {
