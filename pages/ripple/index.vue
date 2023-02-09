@@ -4,6 +4,7 @@
 
 <script>
 import AccessibilityDoc from '@/doc/ripple/AccessibilityDoc';
+import ConfigurationDoc from '@/doc/ripple/ConfigurationDoc.vue';
 import CustomDoc from '@/doc/ripple/CustomDoc';
 import DefaultDoc from '@/doc/ripple/DefaultDoc';
 import ImportDoc from '@/doc/ripple/ImportDoc';
@@ -17,6 +18,11 @@ export default {
                     id: 'import',
                     label: 'Import',
                     component: ImportDoc
+                },
+                {
+                    id: 'configuration',
+                    label: 'ConfigurationDoc',
+                    component: ConfigurationDoc
                 },
                 {
                     id: 'default',

@@ -40,14 +40,14 @@ export default {
                     component: MaskDoc
                 },
                 {
-                    id: 'slotchar',
-                    label: 'SlotChar',
-                    component: SlotCharDoc
-                },
-                {
                     id: 'optional',
                     label: 'Optional',
                     component: OptionalDoc
+                },
+                {
+                    id: 'slotchar',
+                    label: 'SlotChar',
+                    component: SlotCharDoc
                 },
                 {
                     id: 'floatlabel',
