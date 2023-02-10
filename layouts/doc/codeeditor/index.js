@@ -1,9 +1,9 @@
 import sdk from '@stackblitz/sdk';
 import { getVueApp } from './templates';
 
-const useCodeSandbox = (language, code, service, extPages) => {
+const useCodeSandbox = (language, code, service, extPages, dependencies, component) => {
     const getSandboxParameters = (sourceType) => {
-        const { files, dependencies, sourceFileName } = getVueApp({ code, service, extPages }, sourceType);
+        const { files, dependenciesDemo, sourceFileName } = getVueApp({ code, service, extPages, dependencies, component }, sourceType);
 
         files['sandbox.config.json'] = {
             content: {
@@ -11,7 +11,7 @@ const useCodeSandbox = (language, code, service, extPages) => {
             }
         };
 
-        return { files, dependencies, sourceFileName };
+        return { files, dependenciesDemo, sourceFileName };
     };
 
     const sandboxParameters = getSandboxParameters(language);
@@ -28,14 +28,14 @@ const useCodeSandbox = (language, code, service, extPages) => {
         .then((data) => window.open(`https://codesandbox.io/s/${data.sandbox_id}`, '_blank'));
 };
 
-const useStackBlitz = (language, code, service, extPages) => {
+const useStackBlitz = (language, code, service, extPages, dependencies, component) => {
     const getStackBlitzParameters = (sourceType) => {
-        const { files, dependencies, sourceFileName } = getVueApp({ code, service, extPages }, sourceType);
+        const { files, dependenciesDemo, sourceFileName } = getVueApp({ code, service, extPages, dependencies, component }, sourceType);
 
-        return { files, dependencies, sourceFileName };
+        return { files, dependenciesDemo, sourceFileName };
     };
 
-    const stackBlitzParameters = getStackBlitzParameters(language);
+    const stackBlitzParameters = getStackBlitzParameters({ language });
 
     let files = {};
 

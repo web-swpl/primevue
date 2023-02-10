@@ -142,6 +142,14 @@ export default {
         hideStackBlitz: {
             type: Boolean,
             default: false
+        },
+        dependencies: {
+            type: null,
+            default: null
+        },
+        component: {
+            type: String,
+            default: null
         }
     },
     data() {
@@ -162,10 +170,10 @@ export default {
             await navigator.clipboard.writeText(this.code[this.codeLang]);
         },
         showCodesandbox() {
-            useCodeSandbox(this.codeLang, this.code[this.codeLang === 'data' ? 'options' : this.codeLang], this.service, this.code.pages);
+            useCodeSandbox(this.codeLang, this.code[this.codeLang === 'data' ? 'options' : this.codeLang], this.service, this.code.pages, this.dependencies, this.component);
         },
         showStackblitz() {
-            useStackBlitz(this.codeLang, this.code[this.codeLang === 'data' ? 'options' : this.codeLang], this.service, this.code.pages);
+            useStackBlitz(this.codeLang, this.code[this.codeLang === 'data' ? 'options' : this.codeLang], this.service, this.code.pages, this.dependencies, this.component);
         }
     }
 };

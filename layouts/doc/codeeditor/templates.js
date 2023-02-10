@@ -16,20 +16,20 @@ const core_dependencies = {
     vite: '^4.0.0',
     primevue: PrimeVue.version || 'latest',
     primeflex: app_dependencies['primeflex'] || 'latest',
-    primeicons: app_dependencies['primeicons'] || 'latest',
-    quill: app_dependencies['quill'] || 'latest'
+    primeicons: app_dependencies['primeicons'] || 'latest'
 };
 
 // create-vue -> https://github.com/vuejs/create-vue
 const getVueApp = (props = {}) => {
     const path = 'src/';
-    const { code: sources, title = 'primevue_demo', description = '', service, extPages } = props;
-    const dependencies = { ...core_dependencies };
+    const { code: sources, title = 'primevue_demo', description = '', service, extPages, dependencies: deps = '', component = '' } = props;
+    const dependencies = { ...core_dependencies, ...deps };
 
     const fileExtension = '.vue';
     const mainFileName = 'App';
     const sourceFileName = `${path}${mainFileName}${fileExtension}`;
-
+    let element = '';
+    let imports = '';
     let extFiles = {};
 
     sources.extFiles &&
@@ -38,6 +38,11 @@ const getVueApp = (props = {}) => {
                 content: value
             };
         });
+
+    if (deps !== '' && component !== '') {
+        imports += `import ${component} from 'primevue/${component.toLowerCase()}';`;
+        element += `app.component('${component}', ${component});`;
+    }
 
     const files = {
         'package.json': {
@@ -132,7 +137,6 @@ import Divider from 'primevue/divider';
 import Dock from 'primevue/dock';
 import Dropdown from 'primevue/dropdown';
 import DynamicDialog from 'primevue/dynamicdialog';
-import Editor from 'primevue/editor';
 import Fieldset from 'primevue/fieldset';
 import FileUpload from 'primevue/fileupload';
 import FocusTrap from 'primevue/focustrap';
@@ -195,6 +199,7 @@ import TreeSelect from 'primevue/treeselect';
 import TreeTable from 'primevue/treetable';
 import TriStateCheckbox from 'primevue/tristatecheckbox';
 import VirtualScroller from 'primevue/virtualscroller';
+${imports}
 
 const app = createApp(App);
 
@@ -241,7 +246,6 @@ app.component('Divider', Divider);
 app.component('Dock', Dock);
 app.component('Dropdown', Dropdown);
 app.component('DynamicDialog', DynamicDialog);
-app.component('Editor', Editor);
 app.component('Fieldset', Fieldset);
 app.component('FileUpload', FileUpload);
 app.component('Galleria', Galleria);
@@ -299,6 +303,7 @@ app.component('TreeSelect', TreeSelect);
 app.component('TreeTable', TreeTable);
 app.component('TriStateCheckbox', TriStateCheckbox);
 app.component('VirtualScroller', VirtualScroller);
+${element}
 
 app.mount("#app");
 `
