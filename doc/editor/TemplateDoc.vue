@@ -13,14 +13,14 @@
             </template>
         </Editor>
     </div>
-    <DocSectionCode :code="code" />
+    <DocSectionCode :code="code" :dependencies="{ quill: '1.3.7' }" component="Editor" />
 </template>
 
 <script>
 export default {
     data() {
         return {
-            value: '<div>Hello World!</div><div>PrimeReact <b>Editor</b> Rocks</div><div><br></div>',
+            value: '<div>Hello World!</div><div>PrimeVue <b>Editor</b> Rocks</div><div><br></div>',
             code: {
                 basic: `
 <Editor v-model="value" editorStyle="height: 320px">
@@ -34,7 +34,7 @@ export default {
 </Editor>`,
                 options: `
 <template>
-  <div class="card">
+    <div class="card">
         <Editor v-model="value" editorStyle="height: 320px">
             <template v-slot:toolbar>
                 <span class="ql-formats">
@@ -49,11 +49,11 @@ export default {
 
 <script>
 export default {
-  data() {
-      return {
-          value: '<div>Hello World!</div><div>PrimeReact <b>Editor</b> Rocks</div><div><br></div>'
-      }
-  }
+    data() {
+        return {
+            value: '<div>Hello World!</div><div>PrimeVue <b>Editor</b> Rocks</div><div><br></div>'
+        }
+    }
 }
 <\/script>`,
                 composition: `
@@ -74,7 +74,7 @@ export default {
 <script setup>
 import { ref } from "vue";
 
-const value = ref('<div>Hello World!</div><div>PrimeReact <b>Editor</b> Rocks</div><div><br></div>');
+const value = ref('<div>Hello World!</div><div>PrimeVue <b>Editor</b> Rocks</div><div><br></div>');
 <\/script>`
             }
         };
