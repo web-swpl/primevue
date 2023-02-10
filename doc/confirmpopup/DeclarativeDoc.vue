@@ -22,6 +22,7 @@ export default {
         return {
             code: {
                 basic: `
+<Toast />
 <ConfirmPopup group="demo">
     <template #message="slotProps">
         <div class="flex p-4">
@@ -35,6 +36,7 @@ export default {
 </div>`,
                 options: `
 <template>
+    <Toast />
     <ConfirmPopup group="demo">
         <template #message="slotProps">
             <div class="flex p-4">
@@ -72,10 +74,17 @@ export default {
 <\/script>`,
                 composition: `
 <template>
-    <ConfirmPopup></ConfirmPopup>
+    <Toast />
+    <ConfirmPopup group="demo">
+        <template #message="slotProps">
+            <div class="flex p-4">
+                <i :class="slotProps.message.icon" style="font-size: 1.5rem"></i>
+                <p class="pl-2">{{ slotProps.message.message }}</p>
+            </div>
+        </template>
+    </ConfirmPopup>
     <div class="card flex flex-wrap gap-2 justify-content-center">
-        <Button @click="confirm1($event)" icon="pi pi-check" label="Confirm" class="mr-2"></Button>
-        <Button @click="confirm2($event)" icon="pi pi-times" label="Delete" class="p-button-danger p-button-outlined"></Button>
+        <Button @click="showTemplate($event)" icon="pi pi-check" label="Terms and Conditions"></Button>
     </div>
 </template>
 
