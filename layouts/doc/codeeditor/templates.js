@@ -22,7 +22,7 @@ const core_dependencies = {
 // create-vue -> https://github.com/vuejs/create-vue
 const getVueApp = (props = {}) => {
     const path = 'src/';
-    const { code: sources, title = 'primevue_demo', description = '', service, extPages, dependencies: deps = '', component = '' } = props;
+    const { code: sources, title = 'primevue_demo', description = '', service, extPages, dependencies: deps, component } = props;
     const dependencies = { ...core_dependencies, ...deps };
 
     const fileExtension = '.vue';
@@ -39,7 +39,7 @@ const getVueApp = (props = {}) => {
             };
         });
 
-    if (deps !== '' && component !== '') {
+    if (deps !== null && component !== null) {
         imports += `import ${component} from 'primevue/${component.toLowerCase()}';`;
         element += `app.component('${component}', ${component});`;
     }
