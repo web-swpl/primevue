@@ -1,5 +1,5 @@
 <template>
-    <div class="doc-component">
+    <div :class="['doc-component', className]">
         <Head>
             <Title>{{ title }}</Title>
             <Meta name="description" :content="description" />
@@ -39,7 +39,7 @@
 
 <script>
 export default {
-    props: ['title', 'header', 'description', 'componentDocs', 'apiDocs'],
+    props: ['title', 'header', 'description', 'componentDocs', 'apiDocs', 'className'],
     data() {
         return {
             tab: 0
