@@ -79,4 +79,5 @@ export default {
 <style lang="scss">
 @import '@/assets/styles/landing/landing.scss';
 @import '@/assets/styles/app/app.scss';
+@import '@/assets/styles/demo/demo.scss';
 </style>
