@@ -146,7 +146,7 @@ export default {
                 options: `
 <template>
     <div class="card flex md:justify-content-center">
-        <img alt="Logo" src="https://primereact.org/images/nature/nature3.jpg" @contextmenu="onImageRightClick" class="w-full md:w-auto" aria-haspopup="true" />
+        <img alt="Logo" src="https://primevue.org/images/nature/nature3.jpg" @contextmenu="onImageRightClick" class="w-full md:w-auto" aria-haspopup="true" />
         <ContextMenu ref="menu" :model="items" />
     </div>
 </template>
@@ -293,7 +293,7 @@ export default {
                 composition: `
 <template>
     <div>
-        <img alt="Logo" src="https://primereact.org/images/nature/nature3.jpg" @contextmenu="onImageRightClick" class="w-full md:w-auto" aria-haspopup="true" />
+        <img alt="Logo" src="https://primevue.org/images/nature/nature3.jpg" @contextmenu="onImageRightClick" class="w-full md:w-auto" aria-haspopup="true" />
         <ContextMenu ref="menu" :model="items" />
     </div>
 </template>
