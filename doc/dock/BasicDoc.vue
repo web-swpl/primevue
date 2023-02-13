@@ -94,19 +94,19 @@ export default {
             items: [
                 {
                     label: 'Finder',
-                    icon: 'https://primereact.org/images/dock/finder.svg'
+                    icon: 'https://primevue.org/images/dock/finder.svg'
                 },
                 {
                     label: 'App Store',
-                    icon: 'https://primereact.org/images/dock/appstore.svg'
+                    icon: 'https://primevue.org/images/dock/appstore.svg'
                 },
                 {
                     label: 'Photos',
-                    icon: 'https://primereact.org/images/dock/photos.svg'
+                    icon: 'https://primevue.org/images/dock/photos.svg'
                 },
                 {
                     label: 'Trash',
-                    icon: 'https://primereact.org/images/dock/trash.png'
+                    icon: 'https://primevue.org/images/dock/trash.png'
                 }
             ],
             position: 'bottom',
@@ -138,7 +138,7 @@ export default {
     width: 100%;
     height: 450px;
     position: relative;
-    background-image: url("https://primereact.org/images/dock/window.jpg");
+    background-image: url("https://primevue.org/images/dock/window.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -157,7 +157,7 @@ export default {
                 <label :for="pos.label" class="ml-2"> {{ pos.label }} </label>
             </div>
         </div>
-        <div class="dock-window" style="backgroundimage: 'url(https://primereact.org/images/dock/window.jpg))'">
+        <div class="dock-window" style="backgroundimage: 'url(https://primevue.org/images/dock/window.jpg))'">
             <Dock :model="items" :position="position">
                 <template #icon="{ item }">
                     <img :alt="item.label" :src="item.icon" style="width: 100%" />
@@ -173,19 +173,19 @@ import { ref } from "vue";
 const items = ref([
     {
         label: 'Finder',
-        icon: 'https://primereact.org/images/dock/finder.svg'
+        icon: 'https://primevue.org/images/dock/finder.svg'
     },
     {
         label: 'App Store',
-        icon: 'https://primereact.org/images/dock/appstore.svg'
+        icon: 'https://primevue.org/images/dock/appstore.svg'
     },
     {
         label: 'Photos',
-        icon: 'https://primereact.org/images/dock/photos.svg'
+        icon: 'https://primevue.org/images/dock/photos.svg'
     },
     {
         label: 'Trash',
-        icon: 'https://primereact.org/images/dock/trash.png'
+        icon: 'https://primevue.org/images/dock/trash.png'
     }
 ]);
 const position = ref('bottom');
@@ -215,7 +215,7 @@ const positions = ref([
     width: 100%;
     height: 450px;
     position: relative;
-    background-image: url("https://primereact.org/images/dock/window.jpg");
+    background-image: url("https://primevue.org/images/dock/window.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -236,7 +236,7 @@ const positions = ref([
     width: 100%;
     height: 450px;
     position: relative;
-    background-image: url('https://primereact.org/images/dock/window.jpg');
+    background-image: url('https://primevue.org/images/dock/window.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
