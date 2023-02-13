@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Text to display is defined with the <i>text</i> property.</p>
+        <p>InlineMessage component requires a content to display.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
         <InlineMessage severity="info">Username is required</InlineMessage>
