@@ -442,7 +442,7 @@
                 },
                 {
                     "name": "Visual Editor",
-                    "href": "https://designer.primereact.org"
+                    "href": "https://designer.primevue.org"
                 },
                 {
                     "name": "Colors",
@@ -472,7 +472,7 @@
         {
             "name": "PrimeBlocks",
             "icon": "pi pi-server",
-            "href": "https://blocks.primereact.org"
+            "href": "https://blocks.primevue.org"
         },
         {
             "name": "PrimeFlex CSS",
