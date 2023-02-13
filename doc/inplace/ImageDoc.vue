@@ -40,7 +40,7 @@ export default {
                 <span style="margin-left: 0.5rem; vertical-align: middle">View Picture</span>
             </template>
             <template #content>
-                <img c src="https://primereact.org/images/nature/nature1.jpg"/>
+                <img c src="https://primevue.org/images/nature/nature1.jpg"/>
             </template>
         </Inplace>
     </div>
@@ -57,7 +57,7 @@ export default {
                 <span style="margin-left: 0.5rem; vertical-align: middle">View Picture</span>
             </template>
             <template #content>
-                <img alt="Nature" src="https://primereact.org/images/nature/nature1.jpg" />
+                <img alt="Nature" src="https://primevue.org/images/nature/nature1.jpg" />
             </template>
         </Inplace>
     </div>
