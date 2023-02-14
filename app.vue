@@ -77,7 +77,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/styles/landing/landing.scss';
-@import '@/assets/styles/app/app.scss';
+@import '@/assets/styles/layout/landing/landing.scss';
+@import '@/assets/styles/layout/layout.scss';
 @import '@/assets/styles/demo/demo.scss';
 </style>
