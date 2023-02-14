@@ -1,6 +1,6 @@
 <template>
     <DocSectionText id="accessibility" label="Accessibility" v-bind="$attrs">
-        <h6>Screen Reader</h6>
+        <h3>Screen Reader</h3>
         <p>
             Galleria uses <i>region</i> role and since any attribute is passed to the main container element, attributes such as <i>aria-label</i> and <i>aria-roledescription</i> can be used as well. The slides container has
             <i>aria-live</i> attribute set as "polite" if galleria is not in autoplay mode, otherwise "off" would be the value in autoplay.
@@ -23,7 +23,7 @@
 
         <p>In full screen mode, modal element uses <i>dialog</i> role with <i>aria-modal</i> enabled. The close button retrieves <i>aria-label</i> from the <i>aria.close</i> property of the <NuxtLink to="/locale">locale</NuxtLink> API.</p>
 
-        <h6>Next/Prev Keyboard Support</h6>
+        <h3>Next/Prev Keyboard Support</h3>
         <div class="doc-tablewrapper">
             <table class="doc-table">
                 <thead>
@@ -55,7 +55,7 @@
             </table>
         </div>
 
-        <h6>Quick Navigation Keyboard Support</h6>
+        <h3>Quick Navigation Keyboard Support</h3>
         <div class="doc-tablewrapper">
             <table class="doc-table">
                 <thead>
