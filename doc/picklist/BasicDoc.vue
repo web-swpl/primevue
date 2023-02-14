@@ -41,7 +41,7 @@ export default {
     <template #item="slotProps">
         <div class="product-item">
             <div class="image-container">
-                <img :src="'images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
+                <img :src="'https://primevue.org/images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
             </div>
             <div class="product-list-detail">
                 <h6 class="mb-2">{{ slotProps.item.name }}</h6>
@@ -64,7 +64,7 @@ export default {
             <template #item="slotProps">
                 <div class="product-item">
                     <div class="image-container">
-                        <img :src="'images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
+                        <img :src="'https://primevue.org/images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
                     </div>
                     <div class="product-list-detail">
                         <h6 class="mb-2">{{ slotProps.item.name }}</h6>
@@ -82,6 +82,7 @@ export default {
 </template>
 
 <script>
+import { ProductService } from './service/ProductService'
 export default {
     data() {
         return {
@@ -92,7 +93,52 @@ export default {
         ProductService.getProductsSmall().then((data) => (this.products = [data, []]));
     }
 };
-<\/script>`,
+<\/script>
+
+<style scoped>
+.product-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+}
+.product-item img {
+    width: 75px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin-right: 1rem;
+}
+.product-item .product-list-detail {
+    flex: 1 1 0;
+}
+.product-item .product-list-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.product-item .product-category-icon {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    font-size: 0.875rem;
+}
+.product-item .product-category {
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 0.875rem;
+}
+@media screen and (max-width: 576px) {
+    .product-item {
+        flex-wrap: wrap;
+    }
+    .product-item .image-container {
+        width: 100%;
+        text-align: center;
+    }
+    .product-item img {
+        margin: 0 0 1rem 0;
+        width: 100px;
+    }
+}
+</style>`,
                 composition: `
 <template>
     <div class="card">
@@ -102,7 +148,7 @@ export default {
             <template #item="slotProps">
                 <div class="product-item">
                     <div class="image-container">
-                        <img :src="'images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
+                        <img :src="'https://primevue.org/images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
                     </div>
                     <div class="product-list-detail">
                         <h6 class="mb-2">{{ slotProps.item.name }}</h6>
@@ -121,13 +167,59 @@ export default {
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import { ProductService } from './service/ProductService'
 
 const products = ref(null);
 
 onMounted(() => {
     ProductService.getProductsSmall().then((data) => (products.value = [data, []]));
 });
-<\/script>`
+<\/script>
+
+<style scoped>
+.product-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+}
+.product-item img {
+    width: 75px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin-right: 1rem;
+}
+.product-item .product-list-detail {
+    flex: 1 1 0;
+}
+.product-item .product-list-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.product-item .product-category-icon {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    font-size: 0.875rem;
+}
+.product-item .product-category {
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 0.875rem;
+}
+@media screen and (max-width: 576px) {
+    .product-item {
+        flex-wrap: wrap;
+    }
+    .product-item .image-container {
+        width: 100%;
+        text-align: center;
+    }
+    .product-item img {
+        margin: 0 0 1rem 0;
+        width: 100px;
+    }
+}
+</style>`
             }
         };
     },
