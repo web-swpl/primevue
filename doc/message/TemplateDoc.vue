@@ -37,7 +37,7 @@ export default {
     severity="info"
 >
     <div class="flex align-items-center">
-        <img alt="logo" src="https://primefaces.org/cdn/primevue/images/logo.png" width="32" />
+        <img alt="logo" src="https://www.primevue.org/images/logo.svg" width="32" />
         <div class="ml-2">Always bet on Prime.</div>
     </div>
 </Message>`,
@@ -54,7 +54,7 @@ export default {
             severity="info"
         >
             <div class="flex align-items-center">
-                <img alt="logo" src="https://primefaces.org/cdn/primevue/images/logo.png" width="32" />
+                <img alt="logo" src="https://www.primevue.org/images/logo.svg" width="32" />
                 <div class="ml-2">Always bet on Prime.</div>
             </div>
         </Message>
@@ -76,7 +76,7 @@ export default {
             severity="info"
         >
             <div class="flex align-items-center">
-                <img alt="logo" src="https://primefaces.org/cdn/primevue/images/logo.png" width="32" />
+                <img alt="logo" src="https://www.primevue.org/images/logo.svg" width="32" />
                 <div class="ml-2">Always bet on Prime.</div>
             </div>
         </Message>
