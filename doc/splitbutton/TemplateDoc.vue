@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <SplitButton :model="items" class="bg-primary border-round">
             <Button @click="save">
-                <img alt="logo" src="images/logo.svg" style="width: 1rem" />
+                <img alt="logo" src="/images/logo.svg" style="width: 1rem" />
                 <span class="ml-2 flex align-items-center font-bold">PrimeVue</span>
             </Button>
         </SplitButton>
@@ -46,7 +46,7 @@ export default {
 <Toast />
 <SplitButton :model="items" class="bg-primary border-round">
     <Button @click="save">
-        <img alt="logo" src="https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png" style="width: 1rem" />
+        <img alt="logo" src="https://www.primevue.org/images/logo.svg" style="width: 1rem" />
         <span class="ml-2 flex align-items-center font-bold">PrimeVue</span>
     </Button>
 </SplitButton>`,
@@ -56,7 +56,7 @@ export default {
         <Toast />
         <SplitButton :model="items" class="bg-primary border-round">
             <Button @click="save">
-                <img alt="logo" src="https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png" style="width: 1rem" />
+                <img alt="logo" src="https://www.primevue.org/images/logo.svg" style="width: 1rem" />
                 <span class="ml-2 flex align-items-center font-bold">PrimeVue</span>
             </Button>
         </SplitButton>
@@ -106,7 +106,7 @@ export default {
         <Toast />
         <SplitButton :model="items" class="bg-primary border-round">
             <Button @click="save">
-                <img alt="logo" src="https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png" style="width: 1rem" />
+                <img alt="logo" src="https://www.primevue.org/images/logo.svg" style="width: 1rem" />
                 <span class="ml-2 flex align-items-center font-bold">PrimeVue</span>
             </Button>
         </SplitButton>
