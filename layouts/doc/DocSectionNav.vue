@@ -43,7 +43,10 @@ export default {
         const id = hasHash ? hash : (this.docs[0] || {}).id;
 
         this.activeId = id;
-        hasHash && this.scrollToLabelById(id);
+        hasHash &&
+            setTimeout(() => {
+                this.scrollToLabelById(id);
+            }, 1);
 
         window.addEventListener('scroll', this.onScroll, { passive: true });
     },
