@@ -29,7 +29,7 @@
             </template>
         </Timeline>
     </div>
-    <DocSectionCode :code="code" />
+    <DocSectionCode :code="code" :dependencies="{ sass: '1.45.0', 'sass-loader': '8.0.2' }" />
 </template>
 
 <script>
@@ -113,7 +113,29 @@ export default {
         };
     }
 };
-<\/script>`,
+<\/script>
+
+<style lang="scss" scoped>
+@media screen and (max-width: 960px) {
+    ::v-deep(.customized-timeline) {
+        .p-timeline-event:nth-child(even) {
+            flex-direction: row !important;
+
+            .p-timeline-event-content {
+                text-align: left !important;
+            }
+        }
+
+        .p-timeline-event-opposite {
+            flex: 0;
+        }
+
+        .p-card {
+            margin-top: 1rem;
+        }
+    }
+}
+</style>`,
                 composition: `
 <template>
     <div class="card">
@@ -155,7 +177,29 @@ const events = ref([
     { status: 'Delivered', date: '16/10/2020 10:00', icon: 'pi pi-check', color: '#607D8B' }
 ]);
 
-<\/script>`
+<\/script>
+
+<style lang="scss" scoped>
+@media screen and (max-width: 960px) {
+    ::v-deep(.customized-timeline) {
+        .p-timeline-event:nth-child(even) {
+            flex-direction: row !important;
+
+            .p-timeline-event-content {
+                text-align: left !important;
+            }
+        }
+
+        .p-timeline-event-opposite {
+            flex: 0;
+        }
+
+        .p-card {
+            margin-top: 1rem;
+        }
+    }
+}
+</style>`
             }
         };
     }
