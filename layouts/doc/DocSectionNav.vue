@@ -1,17 +1,22 @@
 <template>
-    <ul class="doc-section-nav">
-        <li v-for="doc of docs" :key="doc.label" :class="['navbar-item', { 'active-navbar-item': activeTab === doc.id }]">
-            <NuxtLink :to="'#' + doc.id">
-                <button class="p-link" @click="onButtonClick(doc)">{{ doc.label }}</button>
-            </NuxtLink>
+    <ul ref="nav" class="doc-section-nav">
+        <li v-for="doc of docs" :key="doc.label" :class="['navbar-item', { 'active-navbar-item': activeId === doc.id }]">
+            <div class="navbar-item-content">
+                <NuxtLink :to="`/${$router.currentRoute.value.name}/#${doc.id}`">
+                    <button class="p-link" @click="onButtonClick(doc)">{{ doc.label }}</button>
+                </NuxtLink>
+            </div>
+
             <template v-if="doc.children">
                 <ul>
-                    <li v-for="child of doc.children" :key="child.label" :class="['navbar-child-item', { 'active-navbar-child-item': activeTab === child.id }]">
-                        <NuxtLink :to="$router.currentRoute.value.path + '#' + child.id">
-                            <button class="p-link" @click="onButtonClick(child)">
-                                {{ child.label }}
-                            </button>
-                        </NuxtLink>
+                    <li v-for="child of doc.children" :key="child.label" :class="['navbar-item', { 'active-navbar-item': activeId === child.id }]">
+                        <div class="navbar-item-content">
+                            <NuxtLink :to="`/${$router.currentRoute.value.name}/#${child.id}`">
+                                <button class="p-link" @click="onButtonClick(child)">
+                                    {{ child.label }}
+                                </button>
+                            </NuxtLink>
+                        </div>
                     </li>
                 </ul>
             </template>
@@ -20,26 +25,25 @@
 </template>
 
 <script>
+import { DomHandler, ObjectUtils } from 'primevue/utils';
+
 export default {
     props: ['docs'],
     data() {
         return {
-            activeTab: null
+            activeId: null,
+            isScrollBlocked: false,
+            scrollEndTimer: null,
+            topbarHeight: 0
         };
     },
     mounted() {
-        const sections = document.querySelectorAll('section'); // Get all sections on the page
-        const hash = window.location.hash.substring(1); // Get the initial hash
+        const hash = window.location.hash.substring(1);
+        const hasHash = ObjectUtils.isNotEmpty(hash);
+        const id = hasHash ? hash : (this.docs[0] || {}).id;
 
-        // Set the active tab to the initial hash and scroll into view if it exists
-        if (hash) {
-            this.activeTab = hash;
-            // Scroll to the section with the current hash
-            this.scrollToTheSection(hash);
-        } else if (window.scrollY + window.innerHeight >= document.body.offsetHeight) {
-            // Set the active tab to the first section
-            this.activeTab = this.getIdOfTheSection(sections[0].querySelector('.doc-section-label'));
-        }
+        this.activeId = id;
+        hasHash && this.scrollToLabelById(id);
 
         window.addEventListener('scroll', this.onScroll, { passive: true });
     },
@@ -47,40 +51,52 @@ export default {
         window.removeEventListener('scroll', this.onScroll, { passive: true });
     },
     methods: {
-        onScroll() {
-            const sections = document.querySelectorAll('section'); // Get all sections on the page
-            const topbarEl = document.getElementsByClassName('layout-topbar')[0]; // Get the topbar element
+        onScroll(event) {
+            if (!this.isScrollBlocked) {
+                const labels = DomHandler.find(event.target, ':is(h1,h2,h3).doc-section-label');
+                const windowScrollTop = DomHandler.getWindowScrollTop();
 
-            sections.forEach((section) => {
-                const sectionLabelEl = section.querySelectorAll('.doc-section-label'); //Get all labels on the currrent section
-                // Check if the section is currently scrolled to center of the screen
-                const isScrolledTo = (section) => window.scrollY >= section.offsetTop - topbarEl.clientHeight - 20 && window.scrollY < section.offsetTop + section.offsetHeight - topbarEl.clientHeight - 20;
+                labels.forEach((label) => {
+                    const { top } = DomHandler.getOffset(label);
+                    const threshold = this.getThreshold(label);
 
-                if (isScrolledTo(section)) {
-                    // Check if the section has multiple child elements
-                    if (sectionLabelEl.length > 1) {
-                        sectionLabelEl.forEach((child) => {
-                            // Check if the child element is currently scrolled to
-                            if (isScrolledTo(child)) {
-                                // Set the active tab to the id of the currently scrolled to child element
-                                this.activeTab = this.getIdOfTheSection(child);
-                            }
-                        });
-                    } else {
-                        this.activeTab = this.getIdOfTheSection(sectionLabelEl[0]);
+                    if (top - threshold <= windowScrollTop) {
+                        const link = DomHandler.findSingle(label, 'a');
+
+                        this.activeId = link.id;
                     }
-                }
-            });
+                });
+            }
+
+            clearTimeout(this.scrollEndTimer);
+            this.scrollEndTimer = setTimeout(() => {
+                this.isScrollBlocked = false;
+
+                const activeItem = DomHandler.findSingle(this.$refs.nav, '.active-navbar-item');
+
+                activeItem && activeItem.scrollIntoView({ block: 'nearest', inline: 'start' });
+            }, 50);
+        },
+        scrollToLabelById(id, behavior = 'smooth') {
+            const label = document.getElementById(id);
+
+            label && label.parentElement.scrollIntoView({ block: 'start', behavior });
         },
         onButtonClick(doc) {
-            // Scroll to the clicked button's parent element
-            this.scrollToTheSection(doc.id, 'smooth');
+            this.activeId = doc.id;
+            setTimeout(() => {
+                this.scrollToLabelById(doc.id, 'smooth');
+                this.isScrollBlocked = true;
+            }, 1);
         },
-        scrollToTheSection(id, behavior) {
-            document.getElementById(id).parentElement.scrollIntoView({ block: 'start', behavior });
-        },
-        getIdOfTheSection(section) {
-            return section.querySelector('a').getAttribute('id');
+        getThreshold(label) {
+            if (!this.topbarHeight) {
+                const topbar = DomHandler.findSingle(document.body, '.layout-topbar');
+
+                this.topbarHeight = topbar ? DomHandler.getHeight(topbar) : 0;
+            }
+
+            return this.topbarHeight + DomHandler.getHeight(label) * 1.5;
         }
     }
 };
