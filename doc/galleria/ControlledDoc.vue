@@ -163,7 +163,17 @@ const next = () => {
 const prev = () => {
     activeIndex.value = activeIndex.value === 0 ? 0 : images.value.length - 1;
 };
-<\/script>`
+<\/script>`,
+                data: `
+/* PhotoService */
+{
+    itemImageSrc: 'https://primefaces.org/cdn/primevue/images/galleria/galleria1.jpg',
+    thumbnailImageSrc: 'https://primefaces.org/cdn/primevue/images/galleria/galleria1s.jpg',
+    alt: 'Description for Image 1',
+    title: 'Title 1'
+},
+...
+        `
             }
         };
     },
