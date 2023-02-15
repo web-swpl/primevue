@@ -8,7 +8,7 @@
             <nav class="scalein origin-top">
                 <ol class="list-none m-0 p-0 flex flex-column lg:flex-row flex-wrap lg:flex-nowrap lg:align-items-center font-semibold">
                     <li class="mr-0 lg:mr-2">
-                        <router-link to="/setup">
+                        <router-link to="/installation">
                             <img src="/images/landing/core-icon.svg" alt="primevue core" />
                             <span>Components</span>
                         </router-link>

@@ -1,12 +1,16 @@
 {
     "data": [
         {
-            "name": "Overview",
+            "name": "Getting Started",
             "icon": "pi pi-home",
             "children": [
                 {
-                    "name": "Get Started",
-                    "to": "/setup"
+                    "name": "Installation",
+                    "to": "/installation"
+                },
+                {
+                    "name": "Configuration",
+                    "to": "/configuration"
                 },
                 {
                     "name": "Locale",
@@ -428,11 +432,6 @@
             ]
         },
         {
-            "name": "Component API",
-            "icon": "pi pi-list",
-            "href": "https://primefaces.github.io/primereact"
-        },
-        {
             "name": "Theming",
             "icon": "pi pi-palette",
             "children": [
@@ -442,7 +441,7 @@
                 },
                 {
                     "name": "Theme Designer",
-                    "href": "https://www.primefaces.org/designer/primereact"
+                    "href": "https://www.primefaces.org/designer/primevue"
                 },
                 {
                     "name": "Visual Editor",
@@ -454,7 +453,7 @@
                 },
                 {
                     "name": "SASS API",
-                    "href": "https://www.primefaces.org/designer/api/primereact/8.1.0"
+                    "href": "https://www.primefaces.org/designer/api/primevue/3.9.0"
                 }
             ]
         },
@@ -497,11 +496,11 @@
                 },
                 {
                     "name": "Source Code",
-                    "href": "https://github.com/primefaces/primereact"
+                    "href": "https://github.com/primefaces/primevue"
                 },
                 {
                     "name": "Changelog",
-                    "href": "https://github.com/primefaces/primereact/blob/master/CHANGELOG.md"
+                    "href": "https://github.com/primefaces/primevue/blob/master/CHANGELOG.md"
                 },
                 {
                     "name": "Store",
@@ -509,7 +508,7 @@
                 },
                 {
                     "name": "Twitter",
-                    "href": "https://twitter.com/primereact?lang=en"
+                    "href": "https://twitter.com/primevue?lang=en"
                 },
                 {
                     "name": "Newsletter",
