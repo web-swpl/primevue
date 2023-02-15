@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue PickListComponent" header="PickList" description="PickList is used to reorder items between different lists." :componentDocs="docs" :apiDocs="[{ name: 'PickList', pathname: '/modules/picklist.html' }]" />
+    <DocComponent title="Vue PickList Component" header="PickList" description="PickList is used to reorder items between different lists." :componentDocs="docs" :apiDocs="[{ name: 'PickList', pathname: '/modules/picklist.html' }]" />
 </template>
 
 <script>

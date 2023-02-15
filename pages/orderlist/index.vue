@@ -1,66 +1,43 @@
 <template>
-    <div>
-        <Head>
-            <Title>Vue OrderList Component</Title>
-            <Meta name="description" content="OrderList is used to sort a collection." />
-        </Head>
-
-        <div class="content-section introduction">
-            <div class="feature-intro">
-                <h1>OrderList</h1>
-                <p>OrderList is used to managed the order of a collection.</p>
-            </div>
-            <AppDemoActions />
-        </div>
-
-        <div class="content-section implementation">
-            <div class="card">
-                <OrderList v-model="products" listStyle="height:auto" dataKey="id">
-                    <template #header> List of Products </template>
-                    <template #item="slotProps">
-                        <div class="product-item">
-                            <div class="image-container">
-                                <img :src="'images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
-                            </div>
-                            <div class="product-list-detail">
-                                <h6 class="mb-2">{{ slotProps.item.name }}</h6>
-                                <i class="pi pi-tag product-category-icon"></i>
-                                <span class="product-category">{{ slotProps.item.category }}</span>
-                            </div>
-                            <div class="product-list-action">
-                                <h6 class="mb-2">${{ slotProps.item.price }}</h6>
-                                <span :class="'product-badge status-' + slotProps.item.inventoryStatus.toLowerCase()">{{ slotProps.item.inventoryStatus }}</span>
-                            </div>
-                        </div>
-                    </template>
-                </OrderList>
-            </div>
-        </div>
-
-        <OrderListDoc />
-    </div>
+    <DocComponent title="Vue OrderList Component" header="OrderList" description="OrderList is used to sort a collection." :componentDocs="docs" :apiDocs="[{ name: 'OrderList', pathname: '/modules/orderlist.html' }]" />
 </template>
 
 <script>
-import { ProductService } from '../../service/ProductService';
-import OrderListDoc from './OrderListDoc';
-
+import AccessibilityDoc from '@/doc/orderlist/AccessibilityDoc.vue';
+import BasicDoc from '@/doc/orderlist/BasicDoc.vue';
+import ImportDoc from '@/doc/orderlist/ImportDoc.vue';
+import StyleDoc from '@/doc/orderlist/StyleDoc.vue';
 export default {
     data() {
         return {
-            products: null
+            docs: [
+                {
+                    id: 'import',
+                    label: 'Import',
+                    component: ImportDoc
+                },
+                {
+                    id: 'basic',
+                    label: 'Basic',
+                    component: BasicDoc
+                },
+                {
+                    id: 'style',
+                    label: 'Style',
+                    component: StyleDoc
+                },
+                {
+                    id: 'accessibility',
+                    label: 'Accessibility',
+                    component: AccessibilityDoc
+                }
+            ]
         };
-    },
-    mounted() {
-        ProductService.getProductsSmall().then((data) => (this.products = data));
-    },
-    components: {
-        OrderListDoc: OrderListDoc
     }
 };
 </script>
 
-<style lang="scss" scoped>
+<!-- <style lang="scss" scoped>
 .product-item {
     display: flex;
     align-items: center;
@@ -111,4 +88,4 @@ export default {
         }
     }
 }
-</style>
+</style> -->
