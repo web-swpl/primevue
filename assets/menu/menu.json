@@ -160,10 +160,6 @@
                             "to": "/dataview"
                         },
                         {
-                            "name": "VirtualScroller",
-                            "to": "/virtualscroller"
-                        },
-                        {
                             "name": "OrderList",
                             "to": "/orderlist"
                         },
@@ -190,6 +186,10 @@
                         {
                             "name": "Timeline",
                             "to": "/timeline"
+                        },
+                        {
+                            "name": "VirtualScroller",
+                            "to": "/virtualscroller"
                         }
                     ]
                 },
@@ -416,16 +416,16 @@
                             "to": "/ripple"
                         },
                         {
+                            "name": "StyleClass",
+                            "to": "/styleclass"
+                        },
+                        {
                             "name": "Tag",
                             "to": "/tag"
                         },
                         {
                             "name": "Terminal",
                             "to": "/terminal"
-                        },
-                        {
-                            "name": "StyleClass",
-                            "to": "/styleclass"
                         }
                     ]
                 }
