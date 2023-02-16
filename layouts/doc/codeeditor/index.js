@@ -46,7 +46,7 @@ const useStackBlitz = (language, code, service, extPages, dependencies, componen
             title: 'PrimeVue Demo',
             template: 'node',
             description:
-                '**\n PrimeVue is an open source UI library for Vue featuring a rich set of 90+ components, a theme designer, various theme alternatives such as Material, Bootstrap, Tailwind, premium templates and professional support. In addition, it integrates with PrimeBlock, which has 370+ ready to use UI blocks to build spectacular applications in no time.',
+                '**\n PrimeVue is an open source UI library for Vue featuring a rich set of 90+ components, a theme designer, various theme alternatives such as Material, Bootstrap, Tailwind, premium templates and professional support. In addition, it integrates with PrimeBlock, which has 400+ ready to use UI blocks to build spectacular applications in no time.',
             dependencies: stackBlitzParameters.dependencies,
             files
         },
