@@ -203,7 +203,7 @@ export default {
             radioValue: 'C',
             nodes: null,
             switchValue: true,
-            selectButtonValue: 1,
+            selectButtonValue: { name: 'Prime', value: 1 },
             dateValue: null,
             rangeValues: [20, 80],
             items: [
