@@ -1,9 +1,9 @@
 <template>
     <aside class="layout-sidebar" :class="{ active: active }">
-        <nuxt-link to="/" class="logo" aria-label="PrimeVue logo"> <img alt="logo" :src="`/images/primevue-logo${darkTheme ? '-light' : '-dark'}.svg`" /></nuxt-link>
+        <NuxtLink to="/" class="logo" aria-label="PrimeVue logo"> <img alt="logo" :src="`https://primefaces.org/cdn/primevue/images/primevue-logo${darkTheme ? '-light' : '-dark'}.svg`" /></NuxtLink>
         <nav>
             <ol class="layout-menu">
-                <app-menu-item :menu="menu"></app-menu-item>
+                <AppMenuItem :menu="menu"></AppMenuItem>
             </ol>
         </nav>
     </aside>

@@ -14,17 +14,17 @@
             </div>
             {{ menuitem.name }}
         </a>
-        <nuxt-link v-if="menuitem.to" :to="menuitem.to" :class="{ 'router-link-active': menuitem.to === $route.fullPath }">
+        <NuxtLink v-if="menuitem.to" :to="menuitem.to" :class="{ 'router-link-active': menuitem.to === $route.fullPath }">
             <div v-if="menuitem.icon && root" class="menu-icon">
                 <i :class="menuitem.icon"></i>
             </div>
             {{ menuitem.name }}
-        </nuxt-link>
+        </NuxtLink>
 
         <span v-if="!root && menuitem.children" class="menu-child-category">{{ menuitem.name }}</span>
-        <div class="overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out" :class="{ hidden: menuitem.children && root }">
+        <div class="overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out" :class="{ hidden: menuitem.children && root && isActiveRootmenuItem(menuitem) }">
             <ol>
-                <app-menu-item :root="false" :menu="menuitem.children"></app-menu-item>
+                <AppMenuItem :root="false" :menu="menuitem.children"></AppMenuItem>
             </ol>
         </div>
     </li>
@@ -40,6 +40,11 @@ export default {
         menu: {
             type: Object,
             default: null
+        }
+    },
+    methods: {
+        isActiveRootmenuItem(menuitem) {
+            return menuitem.children && !menuitem.children.some((item) => item.to === this.$route.fullPath || (item.children && item.children.some((it) => it.to === this.$route.fullPath)));
         }
     }
 };
