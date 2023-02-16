@@ -169,7 +169,7 @@
                         <span class="white-space-nowrap">Lara Teal</span>
                     </div>
                     <div class="col-3 flex flex-column align-items-center gap-2">
-                        <button class="p-link" @click="changeTheme('lara-dark-indigo')">
+                        <button class="p-link" @click="changeTheme('lara-dark-indigo', true)">
                             <img src="/images/themes/lara-dark-indigo.png" alt="Lara Dark Indigo" class="w-3rem border-round" />
                         </button>
                         <span class="white-space-nowrap">Lara Indigo</span>
