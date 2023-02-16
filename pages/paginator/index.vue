@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Paginator Component" header="Paginator" description="Paginator is a generic widget to display content in paged format." :componentDocs="docs" :apiDocs="[{ name: 'Paginator', pathname: '/modules/paginator.html' }]" />
+    <DocComponent title="Vue Paginator Component" header="Paginator" description="Paginator is a generic widget to display content in paged format." :componentDocs="docs" :apiDocs="['Paginator']" />
 </template>
 
 <script>

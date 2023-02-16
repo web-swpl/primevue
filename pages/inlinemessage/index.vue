@@ -1,11 +1,5 @@
 <template>
-    <DocComponent
-        title="Vue InlineMessage Component"
-        header="InlineMessage"
-        description="Messages is used to display inline messages with various severities."
-        :componentDocs="docs"
-        :apiDocs="[{ name: 'InlineMessage', pathname: '/modules/inlinemessage.html' }]"
-    />
+    <DocComponent title="Vue InlineMessage Component" header="InlineMessage" description="Messages is used to display inline messages with various severities." :componentDocs="docs" :apiDocs="['InlineMessage']" />
 </template>
 
 <script>

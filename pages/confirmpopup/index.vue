@@ -1,11 +1,5 @@
 <template>
-    <DocComponent
-        title="Vue Confirmation Popup Component"
-        header="ConfirmPopup"
-        description="ConfirmPopup displays a confirmation overlay displayed relatively to its target."
-        :componentDocs="docs"
-        :apiDocs="[{ name: 'ConfirmPopup', pathname: '/modules/confirmpopup.html' }]"
-    />
+    <DocComponent title="Vue Confirmation Popup Component" header="ConfirmPopup" description="ConfirmPopup displays a confirmation overlay displayed relatively to its target." :componentDocs="docs" :apiDocs="['ConfirmPopup']" />
 </template>
 
 <script>

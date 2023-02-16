@@ -1,11 +1,5 @@
 <template>
-    <DocComponent
-        title="Vue RadioButton Component"
-        header="RadioButton"
-        description="RadioButton is an extension to standard radio button element with theming."
-        :componentDocs="docs"
-        :apiDocs="[{ name: 'RadioButton', pathname: '/modules/radiobutton.html' }]"
-    />
+    <DocComponent title="Vue RadioButton Component" header="RadioButton" description="RadioButton is an extension to standard radio button element with theming." :componentDocs="docs" :apiDocs="['RadioButton']" />
 </template>
 
 <script>

@@ -1,11 +1,5 @@
 <template>
-    <DocComponent
-        title="Vue ScrollPanel Component"
-        header="ScrollPanel"
-        description="ScrollPanel is a cross browser, lightweight and skinnable alternative to native browser scrollbar."
-        :componentDocs="docs"
-        :apiDocs="[{ name: 'ScrollPanel', pathname: '/modules/scrollpanel.html' }]"
-    />
+    <DocComponent title="Vue ScrollPanel Component" header="ScrollPanel" description="ScrollPanel is a cross browser, lightweight and skinnable alternative to native browser scrollbar." :componentDocs="docs" :apiDocs="['ScrollPanel']" />
 </template>
 <script>
 import AccessibilityDoc from '@/doc/scrollpanel/AccessibilityDoc';

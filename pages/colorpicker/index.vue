@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue ColorPicker Component" header="ColorPicker" description="ColorPicker is an input component to select a color." :componentDocs="docs" :apiDocs="[{ name: 'ColorPicker', pathname: '/modules/colorpicker.html' }]" />
+    <DocComponent title="Vue ColorPicker Component" header="ColorPicker" description="ColorPicker is an input component to select a color." :componentDocs="docs" :apiDocs="['ColorPicker']" />
 </template>
 
 <script>

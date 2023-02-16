@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Chip Component" header="Chip" description="Chip represents entities using icons, labels and images." :componentDocs="docs" :apiDocs="[{ name: 'Chip', pathname: '/modules/chip.html' }]" />
+    <DocComponent title="Vue Chip Component" header="Chip" description="Chip represents entities using icons, labels and images." :componentDocs="docs" :apiDocs="['Chip']" />
 </template>
 
 <script>

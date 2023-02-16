@@ -1,11 +1,5 @@
 <template>
-    <DocComponent
-        title="Vue CascadeSelect Component"
-        header="CascadeSelect"
-        description="CascadeSelect is a form component to select a value from a nested structure of options."
-        :componentDocs="docs"
-        :apiDocs="[{ name: 'CascadeSelect', pathname: '/modules/cascadeselect.html' }]"
-    />
+    <DocComponent title="Vue CascadeSelect Component" header="CascadeSelect" description="CascadeSelect is a form component to select a value from a nested structure of options." :componentDocs="docs" :apiDocs="['CascadeSelect']" />
 </template>
 
 <script>

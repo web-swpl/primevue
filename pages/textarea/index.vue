@@ -1,11 +1,5 @@
 <template>
-    <DocComponent
-        title="Vue Textarea Component"
-        header="Textarea"
-        description="Textarea adds styling, key filtering and autoResize functionality to standard textarea element."
-        :componentDocs="docs"
-        :apiDocs="[{ name: 'Textarea', pathname: '/modules/textarea.html' }]"
-    />
+    <DocComponent title="Vue Textarea Component" header="Textarea" description="Textarea adds styling, key filtering and autoResize functionality to standard textarea element." :componentDocs="docs" :apiDocs="['Textarea']" />
 </template>
 
 <script>

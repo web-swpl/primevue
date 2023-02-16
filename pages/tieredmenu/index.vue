@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue TieredMenu Component" header="TieredMenu" description="TieredMenu displays submenus in nested overlays." :componentDocs="docs" :apiDocs="[{ name: 'TieredMenu', pathname: '/modules/tieredmenu.html' }]" />
+    <DocComponent title="Vue TieredMenu Component" header="TieredMenu" description="TieredMenu displays submenus in nested overlays." :componentDocs="docs" :apiDocs="['TieredMenu']" />
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Tag Component" header="Tag" description="Tag component is used to categorize content." :componentDocs="docs" :apiDocs="[{ name: 'Tag', pathname: '/modules/tag.html' }]" />
+    <DocComponent title="Vue Tag Component" header="Tag" description="Tag component is used to categorize content." :componentDocs="docs" :apiDocs="['Tag']" />
 </template>
 
 <script>

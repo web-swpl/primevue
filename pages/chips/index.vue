@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Chips Component" header="Chips" description="Chips is used to enter multiple values on an input field." :componentDocs="docs" :apiDocs="[{ name: 'Chips', pathname: '/modules/chips.html' }]" />
+    <DocComponent title="Vue Chips Component" header="Chips" description="Chips is used to enter multiple values on an input field." :componentDocs="docs" :apiDocs="['Chips']" />
 </template>
 
 <script>

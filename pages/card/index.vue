@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Card Component" header="Card" description="Card is a flexible container component." :componentDocs="docs" :apiDocs="[{ name: 'Card', pathname: '/modules/card.html' }]" />
+    <DocComponent title="Vue Card Component" header="Card" description="Card is a flexible container component." :componentDocs="docs" :apiDocs="['Card']" />
 </template>
 
 <script>

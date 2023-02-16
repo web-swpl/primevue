@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue OrderList Component" header="OrderList" description="OrderList is used to sort a collection." :componentDocs="docs" :apiDocs="[{ name: 'OrderList', pathname: '/modules/orderlist.html' }]" />
+    <DocComponent title="Vue OrderList Component" header="OrderList" description="OrderList is used to sort a collection." :componentDocs="docs" :apiDocs="['OrderList']" />
 </template>
 
 <script>

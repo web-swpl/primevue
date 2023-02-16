@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue SelectButton Component" header="SelectButton" description="Slider is a component to provide input with a drag handle." :componentDocs="docs" :apiDocs="[{ name: 'SelectButton', pathname: '/modules/selectbutton.html' }]" />
+    <DocComponent title="Vue SelectButton Component" header="SelectButton" description="Slider is a component to provide input with a drag handle." :componentDocs="docs" :apiDocs="['SelectButton']" />
 </template>
 
 <script>

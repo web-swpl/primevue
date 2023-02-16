@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Knob Component" header="Knob" description="Knob is a form component to define number inputs with a dial." :componentDocs="docs" :apiDocs="[{ name: 'Knob', pathname: '/modules/knob.html' }]" />
+    <DocComponent title="Vue Knob Component" header="Knob" description="Knob is a form component to define number inputs with a dial." :componentDocs="docs" :apiDocs="['Knob']" />
 </template>
 
 <script>

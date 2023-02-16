@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Divider Component" header="Divider" description="Divider is used to separate contents." :componentDocs="docs" :apiDocs="[{ name: 'Divider', pathname: '/modules/divider.html' }]" />
+    <DocComponent title="Vue Divider Component" header="Divider" description="Divider is used to separate contents." :componentDocs="docs" :apiDocs="['Divider']" />
 </template>
 
 <script>

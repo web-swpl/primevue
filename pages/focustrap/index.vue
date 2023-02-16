@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue FocusTrap Directive" header="Focus Trap" description="Focus Trap keeps focus within a certain DOM element while tabbing." :componentDocs="docs" :apiDocs="[{ name: 'FocusTrap', pathname: '/modules/focustrap.html' }]" />
+    <DocComponent title="Vue FocusTrap Directive" header="Focus Trap" description="Focus Trap keeps focus within a certain DOM element while tabbing." :componentDocs="docs" :apiDocs="['FocusTrap']" />
 </template>
 
 <script>

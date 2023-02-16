@@ -1,11 +1,5 @@
 <template>
-    <DocComponent
-        title="Vue ToggleButton Component"
-        header="ToggleButton"
-        description="ToggleButton is used to select a boolean value using a button."
-        :componentDocs="docs"
-        :apiDocs="[{ name: 'ToggleButton', pathname: '/modules/togglebutton.html' }]"
-    />
+    <DocComponent title="Vue ToggleButton Component" header="ToggleButton" description="ToggleButton is used to select a boolean value using a button." :componentDocs="docs" :apiDocs="['ToggleButton']" />
 </template>
 
 <script>

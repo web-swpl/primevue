@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Image Component" header="Image" description="Displays a single image with preview and tranformation options." :componentDocs="docs" :apiDocs="[{ name: 'Image', pathname: '/modules/image.html' }]" />
+    <DocComponent title="Vue Image Component" header="Image" description="Displays a single image with preview and tranformation options." :componentDocs="docs" :apiDocs="['Image']" />
 </template>
 
 <script>

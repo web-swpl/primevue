@@ -1,11 +1,5 @@
 <template>
-    <DocComponent
-        title="Vue Select Component"
-        header="Dropdown"
-        description="Dropdown also known as Select, is used to choose an item from a collection of options."
-        :componentDocs="docs"
-        :apiDocs="[{ name: 'Dropdown', pathname: '/modules/dropdown.html' }]"
-    />
+    <DocComponent title="Vue Select Component" header="Dropdown" description="Dropdown also known as Select, is used to choose an item from a collection of options." :componentDocs="docs" :apiDocs="['Dropdown']" />
 </template>
 
 <script>

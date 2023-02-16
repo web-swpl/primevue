@@ -1,11 +1,5 @@
 <template>
-    <DocComponent
-        title="Vue ContextMenu Component"
-        header="ContextMenu"
-        description="ContextMenu displays an overlay menu on right click of its target."
-        :componentDocs="docs"
-        :apiDocs="[{ name: 'ContextMenu', pathname: '/modules/contextmenu.html' }]"
-    />
+    <DocComponent title="Vue ContextMenu Component" header="ContextMenu" description="ContextMenu displays an overlay menu on right click of its target." :componentDocs="docs" :apiDocs="['ContextMenu']" />
 </template>
 
 <script>

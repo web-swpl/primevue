@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue TabMenu Component" header="TabMenu" description="TabMenu is a navigation/command component that displays items as tab headers." :componentDocs="docs" :apiDocs="[{ name: 'TabMenu', pathname: '/modules/tabmenu.html' }]" />
+    <DocComponent title="Vue TabMenu Component" header="TabMenu" description="TabMenu is a navigation/command component that displays items as tab headers." :componentDocs="docs" :apiDocs="['TabMenu', 'MenuItem']" />
 </template>
 
 <script>

@@ -1,11 +1,5 @@
 <template>
-    <DocComponent
-        title="Vue MultiSelect Component"
-        header="MultiSelect"
-        description="MultiSelect is used to select multiple items from a collection."
-        :componentDocs="docs"
-        :apiDocs="[{ name: 'MultiSelect', pathname: '/modules/multiselect.html' }]"
-    />
+    <DocComponent title="Vue MultiSelect Component" header="MultiSelect" description="MultiSelect is used to select multiple items from a collection." :componentDocs="docs" :apiDocs="['MultiSelect']" />
 </template>
 
 <script>

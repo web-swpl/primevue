@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Panel Component" header="Panel" description="Panel is a grouping component providing with content toggle feature." :componentDocs="docs" :apiDocs="[{ name: 'Panel', pathname: '/modules/panel.html' }]" />
+    <DocComponent title="Vue Panel Component" header="Panel" description="Panel is a grouping component providing with content toggle feature." :componentDocs="docs" :apiDocs="['Panel']" />
 </template>
 <script>
 import AccessibilityDoc from '@/doc/panel/AccessibilityDoc.vue';

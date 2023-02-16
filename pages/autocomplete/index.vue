@@ -1,11 +1,5 @@
 <template>
-    <DocComponent
-        title="Vue AutoComplete Component"
-        header="AutoComplete"
-        description="AutoComplete is an input component that provides real-time suggestions when being typed."
-        :componentDocs="docs"
-        :apiDocs="[{ name: 'AutoComplete', pathname: '/modules/autocomplete.html' }]"
-    />
+    <DocComponent title="Vue AutoComplete Component" header="AutoComplete" description="AutoComplete is an input component that provides real-time suggestions when being typed." :componentDocs="docs" :apiDocs="['AutoComplete']" />
 </template>
 
 <script>

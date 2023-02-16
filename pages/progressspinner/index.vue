@@ -1,13 +1,13 @@
 <template>
-    <DocComponent title="Vue ProgressBar Component" header="ProgressBar" description="ProgressBar is a process status indicator." :componentDocs="docs" :apiDocs="[{ name: 'ProgressBar', pathname: '/modules/progressbar.html' }]" />
+    <DocComponent title="Vue ProgressBar Component" header="ProgressBar" description="ProgressBar is a process status indicator." :componentDocs="docs" :apiDocs="['ProgressBar']" />
 </template>
 
 <script>
 import AccessibilityDoc from '@/doc/progressspinner/AccessibilityDoc';
 import BasicDoc from '@/doc/progressspinner/BasicDoc';
+import CustomDoc from '@/doc/progressspinner/customDoc';
 import ImportDoc from '@/doc/progressspinner/ImportDoc';
 import StyleDoc from '@/doc/progressspinner/StyleDoc';
-import CustomDoc from '@/doc/progressspinner/customDoc';
 
 export default {
     data() {

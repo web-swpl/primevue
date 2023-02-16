@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Toolbar Component" header="Toolbar" description="Toolbar is a grouping component for buttons and other content." :componentDocs="docs" :apiDocs="[{ name: 'Toolbar', pathname: '/modules/toolbar.html' }]" />
+    <DocComponent title="Vue Toolbar Component" header="Toolbar" description="Toolbar is a grouping component for buttons and other content." :componentDocs="docs" :apiDocs="['Toolbar']" />
 </template>
 <script>
 import AccessibilityDoc from '@/doc/toolbar/AccessibilityDoc';

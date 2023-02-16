@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue InputNumber Component" header="InputNumber" description="InputNumber is an input component to provide numerical input." :componentDocs="docs" :apiDocs="[{ name: 'InputNumber', pathname: '/modules/inputnumber.html' }]" />
+    <DocComponent title="Vue InputNumber Component" header="InputNumber" description="InputNumber is an input component to provide numerical input." :componentDocs="docs" :apiDocs="['InputNumber']" />
 </template>
 
 <script>

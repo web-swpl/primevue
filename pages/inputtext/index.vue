@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue InputText Component" header="InputText" description="InputText is an extension to standard input element with theming." :componentDocs="docs" :apiDocs="[{ name: 'InputText', pathname: '/modules/inputtext.html' }]" />
+    <DocComponent title="Vue InputText Component" header="InputText" description="InputText is an extension to standard input element with theming." :componentDocs="docs" :apiDocs="['InputText']" />
 </template>
 
 <script>

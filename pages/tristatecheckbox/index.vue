@@ -1,11 +1,5 @@
 <template>
-    <DocComponent
-        title="Vue TriStateCheckbox Component"
-        header="TriStateCheckbox"
-        description="TriStateCheckbox is used to select either true, false or null as the value."
-        :componentDocs="docs"
-        :apiDocs="[{ name: 'TriStateCheckbox', pathname: '/modules/tristatecheckbox.html' }]"
-    />
+    <DocComponent title="Vue TriStateCheckbox Component" header="TriStateCheckbox" description="TriStateCheckbox is used to select either true, false or null as the value." :componentDocs="docs" :apiDocs="['TriStateCheckbox']" />
 </template>
 
 <script>

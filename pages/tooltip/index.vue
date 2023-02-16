@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Tooltip Component" header="Tooltip" description="Tooltip directive provides advisory information for a component." :componentDocs="docs" :apiDocs="[{ name: 'Tooltip', pathname: '/modules/tooltip.html' }]" />
+    <DocComponent title="Vue Tooltip Component" header="Tooltip" description="Tooltip directive provides advisory information for a component." :componentDocs="docs" :apiDocs="['Tooltip']" />
 </template>
 
 <script>

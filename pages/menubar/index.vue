@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Navbar Component" header="Navbar" description="Menubar also known as Navbar, is a horizontal menu component." :componentDocs="docs" :apiDocs="[{ name: 'Menubar', pathname: '/modules/menubar.html' }]" />
+    <DocComponent title="Vue Navbar Component" header="Navbar" description="Menubar also known as Navbar, is a horizontal menu component." :componentDocs="docs" :apiDocs="['Menubar']" />
 </template>
 
 <script>

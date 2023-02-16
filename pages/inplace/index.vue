@@ -1,11 +1,5 @@
 <template>
-    <DocComponent
-        title="Vue Inplace Component"
-        header="Inplace"
-        description="Inplace provides an easy to do editing and display at the same time where clicking the output displays the actual content."
-        :componentDocs="docs"
-        :apiDocs="[{ name: 'Inplace', pathname: '/modules/inplace.html' }]"
-    />
+    <DocComponent title="Vue Inplace Component" header="Inplace" description="Inplace provides an easy to do editing and display at the same time where clicking the output displays the actual content." :componentDocs="docs" :apiDocs="['Inplace']" />
 </template>
 
 <script>

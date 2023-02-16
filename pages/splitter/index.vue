@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Splitter Component" header="Splitter" description="Splitter is utilized to separate and resize panels." :componentDocs="docs" :apiDocs="[{ name: 'Splitter', pathname: '/modules/splitter.html' }]" />
+    <DocComponent title="Vue Splitter Component" header="Splitter" description="Splitter is utilized to separate and resize panels." :componentDocs="docs" :apiDocs="['Splitter', 'SplitterPanel']" />
 </template>
 
 <script>

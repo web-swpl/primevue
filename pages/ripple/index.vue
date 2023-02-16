@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Ripple Component" header="Ripple" description="Ripple component adds ripple effect to the host element." :componentDocs="docs" :apiDocs="[{ name: 'Ripple', pathname: '/modules/ripple.html' }]" />
+    <DocComponent title="Vue Ripple Component" header="Ripple" description="Ripple component adds ripple effect to the host element." :componentDocs="docs" :apiDocs="['Ripple']" />
 </template>
 
 <script>

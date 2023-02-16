@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Accordion Component" header="Accordion" description="Accordion groups a collection of contents in tabs." :componentDocs="docs" :apiDocs="[{ name: 'Accordion', pathname: '/modules/accordion.html' }]" />
+    <DocComponent title="Vue Accordion Component" header="Accordion" description="Accordion groups a collection of contents in tabs." :componentDocs="docs" :apiDocs="['Accordion', 'AccordionTab']" />
 </template>
 
 <script>

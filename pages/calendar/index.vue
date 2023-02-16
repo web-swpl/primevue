@@ -1,11 +1,5 @@
 <template>
-    <DocComponent
-        title="Vue Calendar Component"
-        header="Calendar"
-        description="Calendar, also known as DatePicker, is a form component to work with dates."
-        :componentDocs="docs"
-        :apiDocs="[{ name: 'Calendar', pathname: '/modules/calendar.html' }]"
-    />
+    <DocComponent title="Vue Calendar Component" header="Calendar" description="Calendar, also known as DatePicker, is a form component to work with dates." :componentDocs="docs" :apiDocs="['Calendar']" />
 </template>
 
 <script>

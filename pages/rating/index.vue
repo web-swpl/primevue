@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Rating Component" header="Rating" description="Rating component is a star based selection input." :componentDocs="docs" :apiDocs="[{ name: 'Rating', pathname: '/modules/rating.html' }]" />
+    <DocComponent title="Vue Rating Component" header="Rating" description="Rating component is a star based selection input." :componentDocs="docs" :apiDocs="['Rating']" />
 </template>
 
 <script>

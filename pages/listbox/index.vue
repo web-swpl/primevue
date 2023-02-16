@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Listbox Component" header="Listbox" description="Listbox is used to select one or more values from a list of items." :componentDocs="docs" :apiDocs="[{ name: 'Listbox', pathname: '/modules/listbox.html' }]" />
+    <DocComponent title="Vue Listbox Component" header="Listbox" description="Listbox is used to select one or more values from a list of items." :componentDocs="docs" :apiDocs="['Listbox']" />
 </template>
 
 <script>

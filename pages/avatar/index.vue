@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Avatar Component" header="Avatar" description="Avatar represents people using icons, labels and images." :componentDocs="docs" :apiDocs="[{ name: 'Avatar', pathname: '/modules/avatar.html' }]" />
+    <DocComponent title="Vue Avatar Component" header="Avatar" description="Avatar represents people using icons, labels and images." :componentDocs="docs" :apiDocs="['Avatar']" />
 </template>
 
 <script>

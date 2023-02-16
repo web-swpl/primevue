@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Dock Component" header="Dock" description="Dock is a navigation component consisting of menuitems." :componentDocs="docs" :apiDocs="[{ name: 'Dock', pathname: '/modules/dock.html' }]" />
+    <DocComponent title="Vue Dock Component" header="Dock" description="Dock is a navigation component consisting of menuitems." :componentDocs="docs" :apiDocs="['Dock']" />
 </template>
 
 <script>

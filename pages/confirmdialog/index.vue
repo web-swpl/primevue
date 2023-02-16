@@ -1,11 +1,5 @@
 <template>
-    <DocComponent
-        title="Vue Confirmation Dialog Component"
-        header="ConfirmDialog"
-        description="ConfirmDialog uses a Dialog UI that is integrated with the Confirmation API."
-        :componentDocs="docs"
-        :apiDocs="[{ name: 'ConfirmDialog', pathname: '/modules/confirmdialog.html' }]"
-    />
+    <DocComponent title="Vue Confirmation Dialog Component" header="ConfirmDialog" description="ConfirmDialog uses a Dialog UI that is integrated with the Confirmation API." :componentDocs="docs" :apiDocs="['ConfirmDialog']" />
 </template>
 
 <script>

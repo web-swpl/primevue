@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Message Component" header="Message" description="Messages is used to display inline messages with various severities." :componentDocs="docs" :apiDocs="[{ name: 'Message', pathname: '/modules/message.html' }]" />
+    <DocComponent title="Vue Message Component" header="Message" description="Messages is used to display inline messages with various severities." :componentDocs="docs" :apiDocs="['Message']" />
 </template>
 
 <script>

@@ -4,7 +4,7 @@
         header="StyleClass"
         description="StyleClass manages css classes declaratively to during enter/leave animations or just to toggle classes on an element."
         :componentDocs="docs"
-        :apiDocs="[{ name: 'StyleClass', pathname: '/modules/styleclass.html' }]"
+        :apiDocs="['StyleClass']"
     />
 </template>
 

@@ -4,7 +4,7 @@
         header="File Upload"
         description="FileUpload is an advanced uploader with dragdrop support, multi file uploads, auto uploading, progress tracking and validations."
         :componentDocs="docs"
-        :apiDocs="[{ name: 'FileUpload', pathname: '/modules/fileUpload.html' }]"
+        :apiDocs="['FileUpload']"
     />
 </template>
 

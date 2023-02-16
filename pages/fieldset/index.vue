@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Fieldset Component" header="Fieldset" description="Fieldset is a grouping component with a content toggle feature." :componentDocs="docs" :apiDocs="[{ name: 'Fieldset', pathname: '/modules/fieldset.html' }]" />
+    <DocComponent title="Vue Fieldset Component" header="Fieldset" description="Fieldset is a grouping component with a content toggle feature." :componentDocs="docs" :apiDocs="['Fieldset']" />
 </template>
 
 <script>

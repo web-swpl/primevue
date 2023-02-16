@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Skeleton Component" header="Skeleton" description="Skeleton is a placeholder to display instead of the actual content." :componentDocs="docs" :apiDocs="[{ name: 'Skeleton', pathname: '/modules/skeleton.html' }]" />
+    <DocComponent title="Vue Skeleton Component" header="Skeleton" description="Skeleton is a placeholder to display instead of the actual content." :componentDocs="docs" :apiDocs="['Skeleton']" />
 </template>
 
 <script>

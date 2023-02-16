@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Editor Component" header="Editor" description="Editor is rich text editor component based on Quill." :componentDocs="docs" :apiDocs="[{ name: 'Editor', pathname: '/modules/editor.html' }]" />
+    <DocComponent title="Vue Editor Component" header="Editor" description="Editor is rich text editor component based on Quill." :componentDocs="docs" :apiDocs="['Editor']" />
 </template>
 
 <script>

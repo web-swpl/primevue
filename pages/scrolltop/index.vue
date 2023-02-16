@@ -1,11 +1,5 @@
 <template>
-    <DocComponent
-        title="Vue ScrollTop Component"
-        header="ScrollTop"
-        description="ScrollTop gets displayed after a certain scroll position and used to navigates to the top of the page quickly."
-        :componentDocs="docs"
-        :apiDocs="[{ name: 'ScrollTop', pathname: '/modules/scrolltop.html' }]"
-    />
+    <DocComponent title="Vue ScrollTop Component" header="ScrollTop" description="ScrollTop gets displayed after a certain scroll position and used to navigates to the top of the page quickly." :componentDocs="docs" :apiDocs="['ScrollTop']" />
 </template>
 
 <script>
