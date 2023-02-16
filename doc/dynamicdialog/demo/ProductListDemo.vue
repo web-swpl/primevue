@@ -8,7 +8,7 @@
             <Column field="name" header="Name"></Column>
             <Column header="Image">
                 <template #body="slotProps">
-                    <img :src="'images/product/' + slotProps.data.image" :alt="slotProps.data.name" class="shadow-2 w-4rem" />
+                    <img :src="'https://primefaces.org/cdn/primevue/images/product/' + slotProps.data.image" :alt="slotProps.data.name" class="shadow-2 w-4rem" />
                 </template>
             </Column>
             <Column field="category" header="Category"></Column>
@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import { ProductService } from '../../service/ProductService';
+import { ProductService } from '@/service/ProductService';
 import InfoDemo from './InfoDemo.vue';
 
 export default {
