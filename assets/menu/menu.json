@@ -280,10 +280,6 @@
                     "name": "Menu",
                     "children": [
                         {
-                            "name": "MenuModel",
-                            "to": "/menumodel"
-                        },
-                        {
                             "name": "Breadcrumb",
                             "to": "/breadcrumb"
                         },
