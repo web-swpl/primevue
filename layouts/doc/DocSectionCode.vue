@@ -150,6 +150,10 @@ export default {
         component: {
             type: String,
             default: null
+        },
+        extFiles: {
+            type: null,
+            default: null
         }
     },
     data() {
@@ -170,10 +174,10 @@ export default {
             await navigator.clipboard.writeText(this.code[this.codeLang]);
         },
         showCodesandbox() {
-            useCodeSandbox(this.codeLang, this.code[this.codeLang === 'data' ? 'options' : this.codeLang], this.service, this.code.pages, this.dependencies, this.component);
+            useCodeSandbox(this.codeLang, this.code[this.codeLang === 'data' ? 'options' : this.codeLang], this.service, this.code.pages, this.dependencies, this.component, this.extFiles);
         },
         showStackblitz() {
-            useStackBlitz(this.codeLang, this.code[this.codeLang === 'data' ? 'options' : this.codeLang], this.service, this.code.pages, this.dependencies, this.component);
+            useStackBlitz(this.codeLang, this.code[this.codeLang === 'data' ? 'options' : this.codeLang], this.service, this.code.pages, this.dependencies, this.component, this.extFiles);
         }
     }
 };

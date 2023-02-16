@@ -20,9 +20,10 @@ const core_dependencies = {
 };
 
 // create-vue -> https://github.com/vuejs/create-vue
-const getVueApp = (props = {}) => {
+const getVueApp = (props = {}, sourceType) => {
+    console.log(sourceType);
     const path = 'src/';
-    const { code: sources, title = 'primevue_demo', description = '', service, extPages, dependencies: deps, component } = props;
+    const { code: sources, title = 'primevue_demo', description = '', service, extPages, dependencies: deps, component, extFiles } = props;
     const dependencies = { ...core_dependencies, ...deps };
 
     const fileExtension = '.vue';
@@ -30,14 +31,22 @@ const getVueApp = (props = {}) => {
     const sourceFileName = `${path}${mainFileName}${fileExtension}`;
     let element = '';
     let imports = '';
-    let extFiles = {};
+    let routeFiles = {};
 
-    sources.extFiles &&
-        Object.entries(sources.extFiles).forEach(([key, value]) => {
-            extFiles[`${path + key}`] = {
+    sources.routeFiles &&
+        Object.entries(sources.routeFiles).forEach(([key, value]) => {
+            routeFiles[`${path + key}`] = {
                 content: value
             };
         });
+
+    let extFilesSource = extFiles
+        ? extFiles[sourceType.language]
+            ? { ...extFiles[sourceType.language] }
+            : Object.keys(extFiles)
+                  .filter((k) => !sourceTypes.includes(k))
+                  .reduce((result, current) => (result[current] = extFiles[current]) && result, {})
+        : {};
 
     if (deps !== null && component !== null) {
         imports += `import ${component} from 'primevue/${component.toLowerCase()}';`;
@@ -343,7 +352,8 @@ routes: [{ path: "/", component: ${mainFileName} }]
         [`${sourceFileName}`]: {
             content: sources.replaceAll('<\\/script>', '</script>')
         },
-        ...extFiles
+        ...routeFiles,
+        ...extFilesSource
     };
 
     if (extPages && extPages.length >= 1) {
