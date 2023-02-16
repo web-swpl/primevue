@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue PanelMenu Component" header="PanelMenu" description="PanelMenu is a hybrid of accordion-tree components." :componentDocs="docs" :apiDocs="['PanelMenu']" />
+    <DocComponent title="Vue PanelMenu Component" header="PanelMenu" description="PanelMenu is a hybrid of accordion-tree components." :componentDocs="docs" :apiDocs="['PanelMenu', 'MenuItem']" />
 </template>
 
 <script>

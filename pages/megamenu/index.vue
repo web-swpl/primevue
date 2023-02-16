@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue MegaMenu Component" header="MegaMenu" description="MegaMenu is navigation component that displays submenus together." :componentDocs="docs" :apiDocs="['MegaMenu']" />
+    <DocComponent title="Vue MegaMenu Component" header="MegaMenu" description="MegaMenu is navigation component that displays submenus together." :componentDocs="docs" :apiDocs="['MegaMenu', 'MenuItem']" />
 </template>
 
 <script>
