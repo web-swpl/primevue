@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import AccessibilityDoc from '@/doc/dynamicdialog/AccessibilityDoc';
 import BasicDoc from '@/doc/dynamicdialog/BasicDoc';
 import CloseDialogDoc from '@/doc/dynamicdialog/CloseDialogDoc';
 import CustomizingDialogDoc from '@/doc/dynamicdialog/CustomizingDialogDoc';
@@ -49,6 +50,11 @@ export default {
                     id: 'customizingdata',
                     label: 'Customizing Dialog',
                     component: CustomizingDialogDoc
+                },
+                {
+                    id: 'accessibility',
+                    label: 'Accessibility',
+                    component: AccessibilityDoc
                 }
             ]
         };
