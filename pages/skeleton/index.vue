@@ -49,11 +49,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: Accessibility
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'Skeleton', pathname: '/modules/skeleton.html' }]
                 }
             ]
         };
