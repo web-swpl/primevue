@@ -1,10 +1,11 @@
 <template>
-    <DocComponent title="Vue Paginator Component" header="Paginator" description="Paginator is a generic widget to display content in paged format." :componentDocs="docs" :apiDocs="['Paginator']" />
+    <DocComponent title="Vue Paginator Component" header="Paginator" description="Paginator displays data in paged format and provides navigation between pages." :componentDocs="docs" :apiDocs="['Paginator']" />
 </template>
 
 <script>
 import AccessibilityDoc from '@/doc/paginator/AccessibilityDoc.vue';
 import BasicDoc from '@/doc/paginator/BasicDoc.vue';
+import ImportDoc from '@/doc/paginator/ImportDoc.vue';
 import ResponsiveDoc from '@/doc/paginator/ResponsiveDoc.vue';
 import StyleDoc from '@/doc/paginator/StyleDoc.vue';
 import TemplateDoc from '@/doc/paginator/TemplateDoc.vue';
@@ -13,6 +14,11 @@ export default {
     data() {
         return {
             docs: [
+                {
+                    id: 'import',
+                    label: 'Import',
+                    component: ImportDoc
+                },
                 {
                     id: 'basic',
                     label: 'Basic',
