@@ -3,9 +3,9 @@
         <p>SplitButton provides <i>small</i> and <i>large</i> sizes as alternatives to the standard.</p>
     </DocSectionText>
     <div class="card flex align-items-center justify-content-center flex-wrap gap-3">
-        <SplitButton label="Small" :model="items" class="p-button-sm"></SplitButton>
-        <SplitButton label="Normal" :model="items"></SplitButton>
-        <SplitButton label="Large" :model="items" class="p-button-lg"></SplitButton>
+        <SplitButton label="Save" :model="items" icon="pi pi-plus" class="p-button-sm"></SplitButton>
+        <SplitButton label="Save" :model="items" icon="pi pi-plus"></SplitButton>
+        <SplitButton label="Save" :model="items" icon="pi pi-plus" class="p-button-lg"></SplitButton>
     </div>
     <DocSectionCode :code="code" v-bind="$attrs" />
 </template>
@@ -40,17 +40,16 @@ export default {
             ],
             code: {
                 basic: `
-<Toast />
-<SplitButton label="Small" :model="items" class="p-button-sm mb-2"></SplitButton>
-<SplitButton label="Normal" :model="items" class="mb-2"></SplitButton>
-<SplitButton label="Large" :model="items" class="p-button-lg mb-2"></SplitButton>`,
+<SplitButton label="Save" :model="items" icon="pi pi-plus" class="p-button-sm mb-2"></SplitButton>
+<SplitButton label="Save" :model="items" icon="pi pi-plus" class="mb-2"></SplitButton>
+<SplitButton label="Save" :model="items" icon="pi pi-plus" class="p-button-lg mb-2"></SplitButton>`,
                 options: `
 <template>
     <div class="card flex align-items-center justify-content-center flex-wrap gap-3">
         <Toast />
-        <SplitButton label="Small" :model="items" class="p-button-sm mb-2"></SplitButton>
-        <SplitButton label="Normal" :model="items" class="mb-2"></SplitButton>
-        <SplitButton label="Large" :model="items" class="p-button-lg mb-2"></SplitButton>
+        <SplitButton label="Save" :model="items" icon="pi pi-plus" class="p-button-sm mb-2"></SplitButton>
+        <SplitButton label="Save" :model="items" icon="pi pi-plus" class="mb-2"></SplitButton>
+        <SplitButton label="Save" :model="items" icon="pi pi-plus" class="p-button-lg mb-2"></SplitButton>
     </div>
 </template>
 
@@ -95,9 +94,9 @@ export default {
 <template>
     <div class="card flex align-items-center justify-content-center flex-wrap gap-3">
         <Toast />
-        <SplitButton label="Small" :model="items" class="p-button-sm mb-2"></SplitButton>
-        <SplitButton label="Normal" :model="items" class="mb-2"></SplitButton>
-        <SplitButton label="Large" :model="items" class="p-button-lg mb-2"></SplitButton>
+        <SplitButton label="Save" :model="items" icon="pi pi-plus" class="p-button-sm mb-2"></SplitButton>
+        <SplitButton label="Save" :model="items" icon="pi pi-plus" class="mb-2"></SplitButton>
+        <SplitButton label="Save" :model="items" icon="pi pi-plus" class="p-button-lg mb-2"></SplitButton>
     </div>
 </template>
 

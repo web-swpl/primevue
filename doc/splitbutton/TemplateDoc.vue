@@ -3,7 +3,7 @@
         <p>SplitButton has a default command button and a collection of additional options defined by the <i>model</i> property.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
-        <SplitButton :model="items" class="bg-primary border-round">
+        <SplitButton :model="items" icon="pi pi-plus" class="bg-primary border-round">
             <Button @click="save">
                 <img alt="logo" src="/images/logo.svg" style="width: 1rem" />
                 <span class="ml-2 flex align-items-center font-bold">PrimeVue</span>
@@ -43,8 +43,7 @@ export default {
             ],
             code: {
                 basic: `
-<Toast />
-<SplitButton :model="items" class="bg-primary border-round">
+<SplitButton :model="items" icon="pi pi-plus" class="bg-primary border-round">
     <Button @click="save">
         <img alt="logo" src="https://www.primevue.org/images/logo.svg" style="width: 1rem" />
         <span class="ml-2 flex align-items-center font-bold">PrimeVue</span>
@@ -54,7 +53,7 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <Toast />
-        <SplitButton :model="items" class="bg-primary border-round">
+        <SplitButton :model="items" icon="pi pi-plus" class="bg-primary border-round">
             <Button @click="save">
                 <img alt="logo" src="https://www.primevue.org/images/logo.svg" style="width: 1rem" />
                 <span class="ml-2 flex align-items-center font-bold">PrimeVue</span>
@@ -104,7 +103,7 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <Toast />
-        <SplitButton :model="items" class="bg-primary border-round">
+        <SplitButton :model="items" icon="pi pi-plus" class="bg-primary border-round">
             <Button @click="save">
                 <img alt="logo" src="https://www.primevue.org/images/logo.svg" style="width: 1rem" />
                 <span class="ml-2 flex align-items-center font-bold">PrimeVue</span>

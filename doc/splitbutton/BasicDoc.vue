@@ -3,7 +3,7 @@
         <p>SplitButton has a default command button and a collection of additional options defined by the <i>model</i> property.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
-        <SplitButton label="Save" icon="pi pi-plus" @click="save" :model="items" :buttonProps="{ 'aria-label': 'Default Action' }" :menuButtonProps="{ 'aria-label': 'More Options' }"></SplitButton>
+        <SplitButton label="Save" icon="pi pi-plus" @click="save" :model="items" />
     </div>
     <DocSectionCode :code="code" v-bind="$attrs" />
 </template>
@@ -38,13 +38,12 @@ export default {
             ],
             code: {
                 basic: `
-<Toast />
-<SplitButton label="Save" icon="pi pi-plus" @click="save" :model="items" :buttonProps="{ 'aria-label': 'Default Action' }" :menuButtonProps="{ 'aria-label': 'More Options' }"></SplitButton>`,
+<SplitButton label="Save" icon="pi pi-plus" @click="save" :model="items" />`,
                 options: `
 <template>
     <div class="card flex justify-content-center">
         <Toast />
-        <SplitButton label="Save" icon="pi pi-plus" @click="save" :model="items" :buttonProps="{ 'aria-label': 'Default Action' }" :menuButtonProps="{ 'aria-label': 'More Options' }"></SplitButton>
+        <SplitButton label="Save" icon="pi pi-plus" @click="save" :model="items" />
     </div>
 </template>
 
@@ -89,7 +88,7 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <Toast />
-        <SplitButton label="Save" icon="pi pi-plus" @click="save" :model="items" :buttonProps="{ 'aria-label': 'Default Action' }" :menuButtonProps="{ 'aria-label': 'More Options' }"></SplitButton>
+        <SplitButton label="Save" icon="pi pi-plus" @click="save" :model="items" />
     </div>
 </template>
 

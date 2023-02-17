@@ -3,7 +3,7 @@
         <p>When <i>disabled</i> is present, the element cannot be edited and focused.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
-        <SplitButton label="Save" icon="pi pi-plus" @click="save" :model="items" :buttonProps="{ 'aria-label': 'Default Action' }" :menuButtonProps="{ 'aria-label': 'More Options' }" disabled></SplitButton>
+        <SplitButton label="Save" icon="pi pi-plus" @click="save" :model="items" disabled />
     </div>
     <DocSectionCode :code="code" v-bind="$attrs" />
 </template>
@@ -38,13 +38,12 @@ export default {
             ],
             code: {
                 basic: `
-<Toast />
-<SplitButton label="Save" icon="pi pi-plus" @click="save" :model="items" :buttonProps="{ 'aria-label': 'Default Action' }" :menuButtonProps="{ 'aria-label': 'More Options' }" disabled></SplitButton>`,
+<SplitButton label="Save" icon="pi pi-plus" @click="save" :model="items" disabled />`,
                 options: `
 <template>
     <div class="card flex justify-content-center">
         <Toast />
-        <SplitButton label="Save" icon="pi pi-plus" @click="save" :model="items" :buttonProps="{ 'aria-label': 'Default Action' }" :menuButtonProps="{ 'aria-label': 'More Options' }" disabled></SplitButton>
+        <SplitButton label="Save" icon="pi pi-plus" @click="save" :model="items" disabled />
     </div>
 </template>
 
@@ -88,7 +87,7 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <Toast />
-        <SplitButton label="Save" icon="pi pi-plus" @click="save" :model="items" :buttonProps="{ 'aria-label': 'Default Action' }" :menuButtonProps="{ 'aria-label': 'More Options' }" disabled></SplitButton>
+        <SplitButton label="Save" icon="pi pi-plus" @click="save" :model="items" disabled />
     </div>
 </template>
 
