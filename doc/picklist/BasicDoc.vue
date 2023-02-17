@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>PickList requires a multidimensional array as its value bound with the v-model directive and a template for its content that gets the item instance and the index via slotProps.</p>
+        <p>PickList requires a multidimensional array as its value bound with the <i>v-model </i>directive and a template for its content that gets the <i>item</i> instance and the index via slotProps.</p>
     </DocSectionText>
     <div class="card">
         <PickList v-model="products" listStyle="height:342px" dataKey="id">
@@ -9,7 +9,7 @@
             <template #item="slotProps">
                 <div class="product-item">
                     <div class="image-container">
-                        <img :src="'/images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
+                        <img :src="'https://primefaces.org/cdn/primevue/images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
                     </div>
                     <div class="product-list-detail">
                         <h6 class="mb-2">{{ slotProps.item.name }}</h6>
@@ -29,6 +29,7 @@
 
 <script>
 import { ProductService } from '@/service/ProductService';
+
 export default {
     data() {
         return {
@@ -41,7 +42,7 @@ export default {
     <template #item="slotProps">
         <div class="product-item">
             <div class="image-container">
-                <img :src="'https://primevue.org/images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
+                <img :src="'/images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
             </div>
             <div class="product-list-detail">
                 <h6 class="mb-2">{{ slotProps.item.name }}</h6>
@@ -64,7 +65,7 @@ export default {
             <template #item="slotProps">
                 <div class="product-item">
                     <div class="image-container">
-                        <img :src="'https://primevue.org/images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
+                        <img :src="'https://primefaces.org/cdn/primevue/images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
                     </div>
                     <div class="product-list-detail">
                         <h6 class="mb-2">{{ slotProps.item.name }}</h6>
@@ -148,7 +149,7 @@ export default {
             <template #item="slotProps">
                 <div class="product-item">
                     <div class="image-container">
-                        <img :src="'https://primevue.org/images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
+                        <img :src="'https://primefaces.org/cdn/primevue/images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
                     </div>
                     <div class="product-list-detail">
                         <h6 class="mb-2">{{ slotProps.item.name }}</h6>

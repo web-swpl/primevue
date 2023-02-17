@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>OrderList requires an array as its value bound with the v-model directive and a template for its content.</p>
+        <p>OrderList requires an array as its value bound with the <i>v-model</i> directive and <i>item</i> template for its content.</p>
     </DocSectionText>
     <div class="card xl:flex xl:justify-content-center">
         <OrderList v-model="products" listStyle="height:auto" dataKey="id">
@@ -8,7 +8,7 @@
             <template #item="slotProps">
                 <div class="product-item">
                     <div class="image-container">
-                        <img :src="'images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
+                        <img :src="'https://primefaces.org/cdn/primevue/images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
                     </div>
                     <div class="product-list-detail">
                         <h6 class="mb-2">{{ slotProps.item.name }}</h6>
@@ -61,7 +61,7 @@ export default {
             <template #item="slotProps">
                 <div class="product-item">
                     <div class="image-container">
-                        <img :src="'images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
+                        <img :src="'https://primefaces.org/cdn/primevue/images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
                     </div>
                     <div class="product-list-detail">
                         <h6 class="mb-2">{{ slotProps.item.name }}</h6>
@@ -144,7 +144,7 @@ export default {
             <template #item="slotProps">
                 <div class="product-item">
                     <div class="image-container">
-                        <img :src="'images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
+                        <img :src="'https://primefaces.org/cdn/primevue/images/product/' + slotProps.item.image" :alt="slotProps.item.name" />
                     </div>
                     <div class="product-list-detail">
                         <h6 class="mb-2">{{ slotProps.item.name }}</h6>
