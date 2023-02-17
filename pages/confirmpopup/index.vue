@@ -5,9 +5,9 @@
 <script>
 import AccessibilityDoc from '@/doc/confirmpopup/AccessibilityDoc.vue';
 import BasicDoc from '@/doc/confirmpopup/BasicDoc.vue';
-import DeclarativeDoc from '@/doc/confirmpopup/DeclarativeDoc.vue';
 import ImportDoc from '@/doc/confirmpopup/ImportDoc.vue';
 import StyleDoc from '@/doc/confirmpopup/StyleDoc.vue';
+import TemplateDoc from '@/doc/confirmpopup/TemplateDoc.vue';
 
 export default {
     data() {
@@ -24,9 +24,9 @@ export default {
                     component: BasicDoc
                 },
                 {
-                    id: 'declarative',
-                    label: 'Declarative',
-                    component: DeclarativeDoc
+                    id: 'template',
+                    label: 'Template',
+                    component: TemplateDoc
                 },
                 {
                     id: 'style',
