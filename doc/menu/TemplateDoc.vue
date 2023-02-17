@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Menu requires a collection of menuitems as its <i>model</i>.</p>
+        <p>Two slots named "start" and "end" are provided to embed content before or after the menu. In additon Menu, offers item customization with the <i>item</i> template that receives the menuitem instance from the model as a parameter.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
         <Menu :model="items">
