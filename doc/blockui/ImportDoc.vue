@@ -8,7 +8,8 @@ export default {
     data() {
         return {
             code: {
-                basic: `import BlockUI from 'primevue/blockui';`
+                basic: `
+import BlockUI from 'primevue/blockui';`
             }
         };
     }
