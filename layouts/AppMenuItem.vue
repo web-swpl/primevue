@@ -44,7 +44,7 @@ export default {
     },
     methods: {
         isActiveRootmenuItem(menuitem) {
-            return menuitem.children && !menuitem.children.some((item) => item.to === this.$route.fullPath || (item.children && item.children.some((it) => it.to === this.$route.fullPath)));
+            return menuitem.children && !menuitem.children.some((item) => item.to === `/${this.$router.currentRoute.value.name}` || (item.children && item.children.some((it) => it.to === `/${this.$router.currentRoute.value.name}`)));
         }
     }
 };
