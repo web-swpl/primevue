@@ -2,8 +2,8 @@
     <DocSectionText v-bind="$attrs">
         <p>Galleria can be controlled programmatically using a binding to <i>activeIndex</i>.</p>
     </DocSectionText>
-    <div class="card flex flex-column align-items-center">
-        <div class="mb-3">
+    <div class="card flex flex-column md:align-items-center">
+        <div class="mb-3 align-self-center">
             <Button icon="pi pi-minus" @click="prev" />
             <Button icon="pi pi-plus" @click="next" class="p-button-secondary ml-2" />
         </div>
@@ -59,8 +59,8 @@ export default {
 </Galleria>`,
                 options: `
 <template>
-    <div class="card">
-        <div class="mb-3">
+    <div class="card flex flex-column md:align-items-center">
+        <div class="mb-3 align-self-center">
             <Button icon="pi pi-minus" @click="prev" />
             <Button icon="pi pi-plus" @click="next" class="p-button-secondary ml-2" />
         </div>
@@ -115,8 +115,8 @@ export default {
 <\/script>`,
                 composition: `
 <template>
-    <div class="card">
-        <div class="mb-3">
+    <div class="card flex flex-column md:align-items-center">
+        <div class="mb-3 align-self-center">
             <Button icon="pi pi-minus" @click="prev" />
             <Button icon="pi pi-plus" @click="next" class="p-button-secondary ml-2" />
         </div>

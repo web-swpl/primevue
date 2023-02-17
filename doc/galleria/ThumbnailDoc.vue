@@ -2,8 +2,8 @@
     <DocSectionText v-bind="$attrs">
         <p>Thumbnails represent a smaller version of the actual content.</p>
     </DocSectionText>
-    <div class="card flex flex-column align-items-center">
-        <div class="flex flex-wrap gap-3 mb-5">
+    <div class="card flex flex-column md:align-items-center">
+        <div class="flex flex-wrap gap-3 mb-5 align-self-center">
             <div class="flex flex-wrap gap-3 mb-5">
                 <div v-for="option in positionOptions" :key="option.label" class="flex align-items-center">
                     <RadioButton v-model="position" :inputId="option.label" name="option" :value="option.value" />
@@ -79,8 +79,8 @@ export default {
 </Galleria>`,
                 options: `
 <template>
-    <div class="card">
-        <div class="flex flex-wrap gap-3 mb-5">
+    <div class="card card flex flex-column md:align-items-center">
+        <div class="flex flex-wrap gap-3 mb-5 align-self-center">
             <div class="flex flex-wrap gap-3 mb-5">
                 <div v-for="option in positionOptions" :key="option.label" class="flex align-items-center">
                     <RadioButton v-model="position" :inputId="option.label" name="option" :value="option.value" />
@@ -150,8 +150,8 @@ export default {
 <\/script>`,
                 composition: `
 <template>
-    <div class="card">
-        <div class="flex flex-wrap gap-3 mb-5">
+    <div class="card flex flex-column md:align-items-center">
+        <div class="flex flex-wrap gap-3 mb-5 align-self-center">
             <div class="flex flex-wrap gap-3 mb-5">
                 <div v-for="option in positionOptions" :key="option.label" class="flex align-items-center">
                     <RadioButton v-model="position" :inputId="option.label" name="option" :value="option.value" />
