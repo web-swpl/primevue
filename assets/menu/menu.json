@@ -139,12 +139,12 @@
                             "to": "/button"
                         },
                         {
-                            "name": "SplitButton",
-                            "to": "/splitbutton"
-                        },
-                        {
                             "name": "Speed Dial",
                             "to": "/speeddial"
+                        },
+                        {
+                            "name": "SplitButton",
+                            "to": "/splitbutton"
                         }
                     ]
                 },
