@@ -54,31 +54,30 @@ export default {
         window.removeEventListener('scroll', this.onScroll, { passive: true });
     },
     methods: {
-        onScroll(event) {
-            if (!this.isScrollBlocked) {
-                const labels = DomHandler.find(event.target, ':is(h1,h2,h3).doc-section-label');
-                const windowScrollTop = DomHandler.getWindowScrollTop();
+        onScroll() {
+            const sections = document.querySelectorAll('section');
+            const topbarEl = document.getElementsByClassName('layout-topbar')[0];
 
-                labels.forEach((label) => {
-                    const { top } = DomHandler.getOffset(label);
-                    const threshold = this.getThreshold(label);
+            sections.forEach((section) => {
+                const sectionLabelEl = section.querySelectorAll('.doc-section-label'); //Get all labels on the currrent section
+                // Check if the section is currently scrolled to center of the screen
+                const isScrolledTo = (section) => window.scrollY >= section.offsetTop - topbarEl.clientHeight - 20 && window.scrollY < section.offsetTop + section.offsetHeight - topbarEl.clientHeight - 20;
 
-                    if (top - threshold <= windowScrollTop) {
-                        const link = DomHandler.findSingle(label, 'a');
-
-                        this.activeId = link.id;
+                if (isScrolledTo(section)) {
+                    // Check if the section has multiple child elements
+                    if (sectionLabelEl.length > 1) {
+                        sectionLabelEl.forEach((child) => {
+                            // Check if the child element is currently scrolled to
+                            if (isScrolledTo(child)) {
+                                // Set the active tab to the id of the currently scrolled to child element
+                                this.activeId = this.getIdOfTheSection(child);
+                            }
+                        });
+                    } else {
+                        this.activeId = this.getIdOfTheSection(sectionLabelEl[0]);
                     }
-                });
-            }
-
-            clearTimeout(this.scrollEndTimer);
-            this.scrollEndTimer = setTimeout(() => {
-                this.isScrollBlocked = false;
-
-                const activeItem = DomHandler.findSingle(this.$refs.nav, '.active-navbar-item');
-
-                activeItem && activeItem.scrollIntoView({ block: 'nearest', inline: 'start' });
-            }, 50);
+                }
+            });
         },
         scrollToLabelById(id, behavior = 'smooth') {
             const label = document.getElementById(id);
@@ -100,6 +99,9 @@ export default {
             }
 
             return this.topbarHeight + DomHandler.getHeight(label) * 1.5;
+        },
+        getIdOfTheSection(section) {
+            return section.querySelector('a').getAttribute('id');
         }
     }
 };
