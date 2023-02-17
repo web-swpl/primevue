@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Steps requires a collection of menuitems as its <i>model</i>. In order to add interactivity to the component, disable <i>readonly</i> to control the Steps.</p>
+        <p>In order to add interactivity to the component, disable <i>readonly</i> to control the Steps.</p>
     </DocSectionText>
     <div class="card">
         <Steps :model="items" aria-label="Form Steps" />
@@ -11,6 +11,7 @@
             <component :is="Component" />
         </keep-alive>
     </NuxtPage>
+    <br class="mt-4" />
     <DocSectionCode :code="code" />
 </template>
 
@@ -54,7 +55,7 @@ export default {
         <Toast />
         
         <div class="card">
-            <Steps :model="items" :readonly="true" aria-label="Form Steps" />
+            <Steps :model="items" aria-label="Form Steps" />
         </div>
 
         <router-view v-slot="{Component}" :formData="formObject" @prevPage="prevPage($event)" @nextPage="nextPage($event)" @complete="complete">
@@ -123,7 +124,7 @@ export default {
         <Toast />
 
         <div class="card">
-            <Steps :model="items" :readonly="true" aria-label="Form Steps" />
+            <Steps :model="items" aria-label="Form Steps" />
         </div>
 
         <router-view v-slot="{Component}" :formData="formObject" @prevPage="prevPage($event)" @nextPage="nextPage($event)" @complete="complete">
