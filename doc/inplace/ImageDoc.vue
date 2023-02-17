@@ -3,13 +3,13 @@
         <p>Any content such as an image can be placed inside an Inplace.</p>
     </DocSectionText>
     <div class="card">
-        <Inplace>
+        <Inplace class="w-full">
             <template #display>
                 <span class="pi pi-search" style="vertical-align: middle"></span>
                 <span style="margin-left: 0.5rem; vertical-align: middle">View Picture</span>
             </template>
             <template #content>
-                <img alt="Nature" src="/images/nature/nature1.jpg" />
+                <img class="w-full" alt="Nature" src="/images/nature/nature1.jpg" />
             </template>
         </Inplace>
     </div>
@@ -28,7 +28,7 @@ export default {
         <span style="margin-left: 0.5rem; vertical-align: middle">View Picture</span>
     </template>
     <template #content>
-        <img alt="Nature" src="/images/nature/nature1.jpg" />
+        <img class="w-full" alt="Nature" src="/images/nature/nature1.jpg" />
     </template>
 </Inplace>`,
                 options: `
@@ -40,7 +40,7 @@ export default {
                 <span style="margin-left: 0.5rem; vertical-align: middle">View Picture</span>
             </template>
             <template #content>
-                <img c src="https://primevue.org/images/nature/nature1.jpg"/>
+                <img class="w-full" src="https://primevue.org/images/nature/nature1.jpg"/>
             </template>
         </Inplace>
     </div>
@@ -57,7 +57,7 @@ export default {
                 <span style="margin-left: 0.5rem; vertical-align: middle">View Picture</span>
             </template>
             <template #content>
-                <img alt="Nature" src="https://primevue.org/images/nature/nature1.jpg" />
+                <img class="w-full" alt="Nature" src="https://primevue.org/images/nature/nature1.jpg" />
             </template>
         </Inplace>
     </div>
