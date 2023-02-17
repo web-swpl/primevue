@@ -8,7 +8,8 @@ export default {
     data() {
         return {
             code: {
-                basic: `import Chip from 'primevue/chip';`
+                basic: `
+import Chip from 'primevue/chip';`
             }
         };
     }
