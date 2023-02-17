@@ -13,7 +13,7 @@
                 </div>
             </div>
             <Skeleton width="100%" height="150px"></Skeleton>
-            <div class="flex justify-content-center mt-3">
+            <div class="flex justify-content-between mt-3">
                 <Skeleton width="4rem" height="2rem"></Skeleton>
                 <Skeleton width="4rem" height="2rem"></Skeleton>
             </div>
@@ -38,7 +38,7 @@ export default {
         </div>
     </div>
     <Skeleton width="100%" height="150px"></Skeleton>
-    <div class="flex justify-content-center mt-3">
+    <div class="flex justify-content-between mt-3">
         <Skeleton width="4rem" height="2rem"></Skeleton>
         <Skeleton width="4rem" height="2rem"></Skeleton>
     </div>
@@ -56,7 +56,7 @@ export default {
                 </div>
             </div>
             <Skeleton width="100%" height="150px"></Skeleton>
-            <div class="flex justify-content-center mt-3">
+            <div class="flex justify-content-between mt-3">
                 <Skeleton width="4rem" height="2rem"></Skeleton>
                 <Skeleton width="4rem" height="2rem"></Skeleton>
             </div>
@@ -79,7 +79,7 @@ export default {
                 </div>
             </div>
             <Skeleton width="100%" height="150px"></Skeleton>
-            <div class="flex justify-content-center mt-3">
+            <div class="flex justify-content-between mt-3">
                 <Skeleton width="4rem" height="2rem"></Skeleton>
                 <Skeleton width="4rem" height="2rem"></Skeleton>
             </div>

@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Various shapes and sizes can be created using styling properties like <i>shape</i>, <i>width</i>, <i>height</i>, <i>borderRadius</i> and <i>className</i>.</p>
+        <p>Various shapes and sizes can be created using styling properties like <i>shape</i>, <i>width</i>, <i>height</i>, <i>borderRadius</i> and <i>class</i>.</p>
     </DocSectionText>
     <div class="card">
         <div class="flex flex-wrap">
@@ -63,20 +63,16 @@ export default {
 <Skeleton width="10rem" height="4rem" borderRadius="16px"></Skeleton>
 
 <h5 class="mt-3">Square</h5>
-<div class="flex align-items-end">
-    <Skeleton size="2rem" class="mr-2"></Skeleton>
-    <Skeleton size="3rem" class="mr-2"></Skeleton>
-    <Skeleton size="4rem" class="mr-2"></Skeleton>
-    <Skeleton size="5rem"></Skeleton>
-</div>
+<Skeleton size="2rem" class="mr-2"></Skeleton>
+<Skeleton size="3rem" class="mr-2"></Skeleton>
+<Skeleton size="4rem" class="mr-2"></Skeleton>
+<Skeleton size="5rem"></Skeleton>
 
 <h5 class="mt-3">Circle</h5>
-<div class="flex align-items-end">
-    <Skeleton shape="circle" size="2rem" class="mr-2"></Skeleton>
-    <Skeleton shape="circle" size="3rem" class="mr-2"></Skeleton>
-    <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
-    <Skeleton shape="circle" size="5rem"></Skeleton>
-</div>`,
+<Skeleton shape="circle" size="2rem" class="mr-2"></Skeleton>
+<Skeleton shape="circle" size="3rem" class="mr-2"></Skeleton>
+<Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
+<Skeleton shape="circle" size="5rem"></Skeleton>`,
                 options: `
 <template>
     <div class="card">

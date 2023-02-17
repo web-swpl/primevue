@@ -4,11 +4,11 @@
     </DocSectionText>
     <div class="card">
         <div class="border-round border-1 surface-border p-4 surface-card">
-            <ul class="m-0 p-0">
+            <ul class="m-0 p-0 list-none">
                 <li class="mb-3">
                     <div class="flex">
                         <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
-                        <div style="flex: 1">
+                        <div class="align-self-center" style="flex: 1">
                             <Skeleton width="100%" class="mb-2"></Skeleton>
                             <Skeleton width="75%"></Skeleton>
                         </div>
@@ -17,7 +17,7 @@
                 <li class="mb-3">
                     <div class="flex">
                         <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
-                        <div style="flex: 1">
+                        <div class="align-self-center" style="flex: 1">
                             <Skeleton width="100%" class="mb-2"></Skeleton>
                             <Skeleton width="75%"></Skeleton>
                         </div>
@@ -26,7 +26,7 @@
                 <li class="mb-3">
                     <div class="flex">
                         <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
-                        <div style="flex: 1">
+                        <div class="align-self-center" style="flex: 1">
                             <Skeleton width="100%" class="mb-2"></Skeleton>
                             <Skeleton width="75%"></Skeleton>
                         </div>
@@ -35,7 +35,7 @@
                 <li>
                     <div class="flex">
                         <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
-                        <div style="flex: 1">
+                        <div class="align-self-center" style="flex: 1">
                             <Skeleton width="100%" class="mb-2"></Skeleton>
                             <Skeleton width="75%"></Skeleton>
                         </div>
@@ -54,11 +54,11 @@ export default {
             code: {
                 basic: `
 <div class="border-round border-1 surface-border p-4 surface-card">
-    <ul class="m-0 p-0">
+    <ul class="m-0 p-0 list-none">
         <li class="mb-3">
             <div class="flex">
                 <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
-                <div style="flex: 1">
+                <div class="align-self-center" style="flex: 1">
                     <Skeleton width="100%" class="mb-2"></Skeleton>
                     <Skeleton width="75%"></Skeleton>
                 </div>
@@ -67,7 +67,7 @@ export default {
         <li class="mb-3">
             <div class="flex">
                 <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
-                <div style="flex: 1">
+                <div class="align-self-center" style="flex: 1">
                     <Skeleton width="100%" class="mb-2"></Skeleton>
                     <Skeleton width="75%"></Skeleton>
                 </div>
@@ -76,7 +76,7 @@ export default {
         <li class="mb-3">
             <div class="flex">
                 <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
-                <div style="flex: 1">
+                <div class="align-self-center" style="flex: 1">
                     <Skeleton width="100%" class="mb-2"></Skeleton>
                     <Skeleton width="75%"></Skeleton>
                 </div>
@@ -85,7 +85,7 @@ export default {
         <li>
             <div class="flex">
                 <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
-                <div style="flex: 1">
+                <div class="align-self-center" style="flex: 1">
                     <Skeleton width="100%" class="mb-2"></Skeleton>
                     <Skeleton width="75%"></Skeleton>
                 </div>
@@ -96,11 +96,11 @@ export default {
                 options: `
 <template>
     <div class="border-round border-1 surface-border p-4 surface-card">
-        <ul class="m-0 p-0">
+        <ul class="m-0 p-0 list-none">
             <li class="mb-3">
                 <div class="flex">
                     <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
-                    <div style="flex: 1">
+                    <div class="align-self-center" style="flex: 1">
                         <Skeleton width="100%" class="mb-2"></Skeleton>
                         <Skeleton width="75%"></Skeleton>
                     </div>
@@ -109,7 +109,7 @@ export default {
             <li class="mb-3">
                 <div class="flex">
                     <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
-                    <div style="flex: 1">
+                    <div class="align-self-center" style="flex: 1">
                         <Skeleton width="100%" class="mb-2"></Skeleton>
                         <Skeleton width="75%"></Skeleton>
                     </div>
@@ -118,7 +118,7 @@ export default {
             <li class="mb-3">
                 <div class="flex">
                     <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
-                    <div style="flex: 1">
+                    <div class="align-self-center" style="flex: 1">
                         <Skeleton width="100%" class="mb-2"></Skeleton>
                         <Skeleton width="75%"></Skeleton>
                     </div>
@@ -127,7 +127,7 @@ export default {
             <li>
                 <div class="flex">
                     <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
-                    <div style="flex: 1">
+                    <div class="align-self-center" style="flex: 1">
                         <Skeleton width="100%" class="mb-2"></Skeleton>
                         <Skeleton width="75%"></Skeleton>
                     </div>
@@ -142,11 +142,11 @@ export default {
                 composition: `
 <template>
     <div class="border-round border-1 surface-border p-4 surface-card">
-        <ul class="m-0 p-0">
+        <ul class="m-0 p-0 list-none">
             <li class="mb-3">
                 <div class="flex">
                     <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
-                    <div style="flex: 1">
+                    <div class="align-self-center" style="flex: 1">
                         <Skeleton width="100%" class="mb-2"></Skeleton>
                         <Skeleton width="75%"></Skeleton>
                     </div>
@@ -155,7 +155,7 @@ export default {
             <li class="mb-3">
                 <div class="flex">
                     <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
-                    <div style="flex: 1">
+                    <div class="align-self-center" style="flex: 1">
                         <Skeleton width="100%" class="mb-2"></Skeleton>
                         <Skeleton width="75%"></Skeleton>
                     </div>
@@ -164,7 +164,7 @@ export default {
             <li class="mb-3">
                 <div class="flex">
                     <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
-                    <div style="flex: 1">
+                    <div class="align-self-center" style="flex: 1">
                         <Skeleton width="100%" class="mb-2"></Skeleton>
                         <Skeleton width="75%"></Skeleton>
                     </div>
@@ -173,7 +173,7 @@ export default {
             <li>
                 <div class="flex">
                     <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
-                    <div style="flex: 1">
+                    <div class="align-self-center" style="flex: 1">
                         <Skeleton width="100%" class="mb-2"></Skeleton>
                         <Skeleton width="75%"></Skeleton>
                     </div>
