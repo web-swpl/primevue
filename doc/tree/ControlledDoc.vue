@@ -17,11 +17,12 @@
 
 <script>
 import { NodeService } from '@/service/NodeService';
+
 export default {
     data() {
         return {
             nodes: null,
-            expandedKeys: null,
+            expandedKeys: {},
             code: {
                 basic: `
 <div class="flex flex-wrap gap-2 mb-4">
@@ -47,7 +48,7 @@ export default {
     data() {
         return {
             nodes: null,
-            expandedKeys: null
+            expandedKeys: {}
         };
     },
     mounted() {
@@ -88,13 +89,13 @@ export default {
 </template>
 
 <script setup>
-import { ref, mounted } from 'vue';
+import { ref, onMounted } from 'vue';
 import { NodeService } from './service/NodeService';
 
 const nodes = ref(null);
-const expandedKeys = ref(null);
+const expandedKeys = ref({});
 
-mounted(() => {
+onMounted(() => {
     NodeService.getTreeNodes().then((data) => (nodes.value = data));
 });
 

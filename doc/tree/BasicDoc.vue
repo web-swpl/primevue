@@ -46,12 +46,12 @@ export default {
 </template>
 
 <script setup>
-import { ref, mounted } from 'vue';
+import { ref, onMounted } from 'vue';
 import { NodeService } from './service/NodeService';
 
 const nodes = ref(null);
 
-mounted(() => {
+onMounted(() => {
     NodeService.getTreeNodes().then((data) => (nodes.value = data));
 });
 <\/script>`

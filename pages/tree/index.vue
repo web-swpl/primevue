@@ -9,11 +9,11 @@ import EventsDoc from '@/doc/tree/EventsDoc.vue';
 import FilterDoc from '@/doc/tree/FilterDoc.vue';
 import ImportDoc from '@/doc/tree/ImportDoc.vue';
 import LazyDoc from '@/doc/tree/LazyDoc.vue';
-import StyleDoc from '@/doc/tree/StyleDoc.vue';
-import TemplateDoc from '@/doc/tree/TemplateDoc.vue';
 import CheckboxDoc from '@/doc/tree/selection/CheckboxDoc.vue';
 import MultipleDoc from '@/doc/tree/selection/MultipleDoc.vue';
 import SingleDoc from '@/doc/tree/selection/SingleDoc.vue';
+import StyleDoc from '@/doc/tree/StyleDoc.vue';
+import TemplateDoc from '@/doc/tree/TemplateDoc.vue';
 
 export default {
     data() {
@@ -33,16 +33,6 @@ export default {
                     id: 'controlled',
                     label: 'Controlled',
                     component: ControlledDoc
-                },
-                {
-                    id: 'lazy',
-                    label: 'Lazy',
-                    component: LazyDoc
-                },
-                {
-                    id: 'filter',
-                    label: 'Filter',
-                    component: FilterDoc
                 },
                 {
                     id: 'selection',
@@ -71,9 +61,19 @@ export default {
                     component: EventsDoc
                 },
                 {
+                    id: 'lazy',
+                    label: 'Lazy',
+                    component: LazyDoc
+                },
+                {
                     id: 'template',
                     label: 'Template',
                     component: TemplateDoc
+                },
+                {
+                    id: 'filter',
+                    label: 'Filter',
+                    component: FilterDoc
                 },
                 {
                     id: 'style',

@@ -3,7 +3,17 @@
         <p>An event is provided for each type of user interaction such as expand, collapse and selection.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
-        <Tree v-model:selectionKeys="selectedKey" :value="nodes" selectionMode="single" :metaKeySelection="false" @node-select="onNodeSelect" @node-unselect="onNodeUnselect" class="w-full md:w-30rem"></Tree>
+        <Tree
+            v-model:selectionKeys="selectedKey"
+            :value="nodes"
+            selectionMode="single"
+            :metaKeySelection="false"
+            @node-select="onNodeSelect"
+            @node-unselect="onNodeUnselect"
+            @node-expand="onNodeExpand"
+            @node-collapse="onNodeCollapse"
+            class="w-full md:w-30rem"
+        ></Tree>
     </div>
     <DocSectionCode :code="code" v-bind="$attrs" :service="['NodeService']" />
 </template>
@@ -17,13 +27,14 @@ export default {
             selectedKey: null,
             code: {
                 basic: `
-<Toast />
-<Tree v-model:selectionKeys="selectedKey" :value="nodes" selectionMode="single" :metaKeySelection="false" @node-select="onNodeSelect" @node-unselect="onNodeUnselect" class="w-full md:w-30rem"></Tree>`,
+<Tree v-model:selectionKeys="selectedKey" :value="nodes" selectionMode="single" :metaKeySelection="false" class="w-full md:w-30rem"
+    @node-select="onNodeSelect" @node-unselect="onNodeUnselect" @node-expand="onNodeExpand" @node-collapse="onNodeCollapse" class="w-full md:w-30rem"></Tree>`,
                 options: `
 <template>
     <div class="card flex justify-content-center">
         <Toast />
-        <Tree v-model:selectionKeys="selectedKey" :value="nodes" selectionMode="single" :metaKeySelection="false" @node-select="onNodeSelect" @node-unselect="onNodeUnselect" class="w-full md:w-30rem"></Tree>
+        <Tree v-model:selectionKeys="selectedKey" :value="nodes" selectionMode="single" :metaKeySelection="false"
+            @node-select="onNodeSelect" @node-unselect="onNodeUnselect" @node-expand="onNodeExpand" @node-collapse="onNodeCollapse" class="w-full md:w-30rem"></Tree>
     </div>
 </template>
 
@@ -44,7 +55,13 @@ export default {
             this.$toast.add({ severity: 'success', summary: 'Node Selected', detail: node.label, life: 3000 });
         },
         onNodeUnselect(node) {
-            this.$toast.add({ severity: 'success', summary: 'Node Unselected', detail: node.label, life: 3000 });
+            this.$toast.add({ severity: 'warn', summary: 'Node Unselected', detail: node.label, life: 3000 });
+        },
+        onNodeExpand(node) {
+            this.$toast.add({ severity: 'info', summary: 'Node Expanded', detail: node.label, life: 3000 });
+        },
+        onNodeCollapse(node) {
+            this.$toast.add({ severity: 'error', summary: 'Node Collapsed', detail: node.label, life: 3000 });
         }
     }
 }
@@ -53,12 +70,13 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <Toast />
-        <Tree v-model:selectionKeys="selectedKey" :value="nodes" selectionMode="single" :metaKeySelection="false" @node-select="onNodeSelect" @node-unselect="onNodeUnselect" class="w-full md:w-30rem"></Tree>
+        <Tree v-model:selectionKeys="selectedKey" :value="nodes" selectionMode="single" :metaKeySelection="false"
+            @node-select="onNodeSelect" @node-unselect="onNodeUnselect" @node-expand="onNodeExpand" @node-collapse="onNodeCollapse" class="w-full md:w-30rem"></Tree>
     </div>
 </template>
 
 <script setup>
-import { ref, mounted } from 'vue';
+import { ref, onMounted } from 'vue';
 import { NodeService } from './service/NodeService';
 import { useToast } from "primevue/usetoast";
 
@@ -66,7 +84,7 @@ const nodes = ref(null);
 const selectedKey = ref(null);
 const toast = useToast();
 
-mounted(() => {
+onMounted(() => {
     NodeService.getTreeNodes().then((data) => (nodes.value = data));
 });
 
@@ -75,7 +93,15 @@ const onNodeSelect = (node) => {
 };
 
 const onNodeUnselect = (node) => {
-    toast.add({ severity: 'success', summary: 'Node Unselected', detail: node.label, life: 3000 });
+    toast.add({ severity: 'warn', summary: 'Node Unselected', detail: node.label, life: 3000 });
+};
+
+const onNodeExpand = (node) => {
+    toast.add({ severity: 'info', summary: 'Node Expanded', detail: node.label, life: 3000 });
+};
+
+const onNodeCollapse (node) => {
+    toast.add({ severity: 'error', summary: 'Node Collapsed', detail: node.label, life: 3000 });
 };
 <\/script>`
             }
@@ -89,7 +115,13 @@ const onNodeUnselect = (node) => {
             this.$toast.add({ severity: 'success', summary: 'Node Selected', detail: node.label, life: 3000 });
         },
         onNodeUnselect(node) {
-            this.$toast.add({ severity: 'success', summary: 'Node Unselected', detail: node.label, life: 3000 });
+            this.$toast.add({ severity: 'warn', summary: 'Node Unselected', detail: node.label, life: 3000 });
+        },
+        onNodeExpand(node) {
+            this.$toast.add({ severity: 'info', summary: 'Node Expanded', detail: node.label, life: 3000 });
+        },
+        onNodeCollapse(node) {
+            this.$toast.add({ severity: 'error', summary: 'Node Collapsed', detail: node.label, life: 3000 });
         }
     }
 };
