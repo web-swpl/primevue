@@ -4,7 +4,7 @@
     </DocSectionText>
     <div class="card flex flex-column align-items-center gap-3">
         <Button v-styleclass="{ selector: '@next', toggleClass: 'p-disabled' }" label="Toggle p-disabled" />
-        <InputText class="block" />
+        <InputText />
     </div>
     <DocSectionCode :code="code" v-bind="$attrs" />
 </template>
@@ -16,19 +16,23 @@ export default {
             code: {
                 basic: `
 <Button v-styleclass="{ selector: '@next', toggleClass: 'p-disabled' }" label="Toggle p-disabled" />
-<InputText class="block mt-3" />`,
+<InputText />`,
                 options: `
 <template>
-    <Button v-styleclass="{ selector: '@next', toggleClass: 'p-disabled' }" label="Toggle p-disabled" />
-    <InputText class="block" />
+    <div class="card flex flex-column align-items-center gap-3">
+        <Button v-styleclass="{ selector: '@next', toggleClass: 'p-disabled' }" label="Toggle p-disabled" />
+        <InputText />
+    </div>
 </template>
 
 <script>
 <\/script>`,
                 composition: `
 <template>
-    <Button v-styleclass="{ selector: '@next', toggleClass: 'p-disabled' }" label="Toggle p-disabled" />
-    <InputText class="block" />
+    <div class="card flex flex-column align-items-center gap-3">
+        <Button v-styleclass="{ selector: '@next', toggleClass: 'p-disabled' }" label="Toggle p-disabled" />
+        <InputText />
+    </div>
 </template>
 
 <script setup>
