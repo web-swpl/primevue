@@ -16,7 +16,7 @@ export default {
             const parentElement = event.currentTarget.parentElement;
             const hash = window.location.hash.substring(1);
 
-            hash === $attrs.id && event.preventDefault();
+            hash === this.$attrs.id && event.preventDefault();
 
             setTimeout(() => {
                 parentElement.scrollIntoView({ block: 'start' });
