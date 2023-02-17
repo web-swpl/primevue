@@ -43,11 +43,6 @@ export default {
                     id: 'accessibility',
                     label: 'Accessibility',
                     component: AccessibilityDoc
-                },
-                {
-                    id: 'api',
-                    label: 'API',
-                    doc: [{ name: 'DeferredContent', pathname: '/modules/defferredcontent.html' }]
                 }
             ]
         };
