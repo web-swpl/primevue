@@ -5,10 +5,10 @@
 <script>
 import AccessibilityDoc from '@/doc/confirmdialog/AccessibilityDoc.vue';
 import BasicDoc from '@/doc/confirmdialog/BasicDoc.vue';
-import DeclarativeDoc from '@/doc/confirmdialog/DeclarativeDoc.vue';
 import ImportDoc from '@/doc/confirmdialog/ImportDoc.vue';
 import PositionDoc from '@/doc/confirmdialog/PositionDoc.vue';
 import StyleDoc from '@/doc/confirmdialog/StyleDoc.vue';
+import TemplateDoc from '@/doc/confirmdialog/TemplateDoc.vue';
 
 export default {
     data() {
@@ -30,9 +30,9 @@ export default {
                     component: PositionDoc
                 },
                 {
-                    id: 'declarative',
-                    label: 'Declarative',
-                    component: DeclarativeDoc
+                    id: 'template',
+                    label: 'Template',
+                    component: TemplateDoc
                 },
                 {
                     id: 'style',
