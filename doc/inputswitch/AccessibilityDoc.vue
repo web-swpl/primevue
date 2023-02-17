@@ -37,7 +37,7 @@ export default {
         return {
             code: {
                 basic: `
-<label htmlFor="switch1">Remember Me</label>
+<label for="switch1">Remember Me</label>
 <InputSwitch inputId="switch1" />
 
 <span id="switch2">Remember Me</span>

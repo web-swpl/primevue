@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <span class="p-float-label">
             <Password v-model="value" inputId="password" />
-            <label htmlFor="password">Password</label>
+            <label for="password">Password</label>
         </span>
     </div>
     <DocSectionCode :code="code" v-bind="$attrs" />
@@ -20,14 +20,14 @@ export default {
                 basic: `
 <span class="p-float-label">
     <Password v-model="value" inputId="password" />
-    <label htmlFor="password">Password</label>
+    <label for="password">Password</label>
 </span>`,
                 options: `
 <template>
     <div class="card flex justify-content-center">
         <span class="p-float-label">
             <Password v-model="value" inputId="password" />
-            <label htmlFor="password">Password</label>
+            <label for="password">Password</label>
         </span>
     </div>
 </template>
@@ -46,7 +46,7 @@ export default {
     <div class="card flex justify-content-center">
         <span class="p-float-label">
             <Password v-model="value" inputId="password" />
-            <label htmlFor="password">Password</label>
+            <label for="password">Password</label>
         </span>
     </div>
 </template>
