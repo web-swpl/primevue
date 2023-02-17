@@ -4,8 +4,7 @@
     </DocSectionText>
     <div class="card flex justify-content-center">
         <Button class="bg-bluegray-600 hover:bg-bluegray-400 border-bluegray-700">
-            <img alt="logo" src="/images/logo.svg" class="h-2rem" />
-            <div class="ml-2">PrimeVue</div>
+            <img alt="logo" src="https://primefaces.org/cdn/primevue/images/primevue-logo-light.svg" class="h-2rem" />
         </Button>
     </div>
     <DocSectionCode :code="code" v-bind="$attrs" />
@@ -24,7 +23,7 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <Button class="bg-bluegray-600 hover:bg-bluegray-400 border-bluegray-700">
-            <img alt="logo" src="/images/logo.svg" class="h-2rem" />
+            <img alt="logo" src="https://primefaces.org/cdn/primevue/images/primevue-logo-light.svg" class="h-2rem" />
         </Button>
     </div>
 </template>
@@ -35,7 +34,7 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <Button class="bg-bluegray-600 hover:bg-bluegray-400 border-bluegray-700">
-            <img alt="logo" src="/images/logo.svg" class="h-2rem" />
+            <img alt="logo" src="https://primefaces.org/cdn/primevue/images/primevue-logo-light.svg" class="h-2rem" />
         </Button>
     </div>
 </template>

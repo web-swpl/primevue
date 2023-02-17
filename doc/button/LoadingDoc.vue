@@ -15,11 +15,11 @@ export default {
             loading: false,
             code: {
                 basic: `
-<Button type="button" label="Search" icon="pi pi-search" :loading="loading[0]" @click="load(0)" />`,
+<Button type="button" label="Search" icon="pi pi-search" :loading="loading" @click="load" />`,
                 options: `
 <template>
     <div class="card flex justify-content-center">
-        <Button type="button" label="Search" icon="pi pi-search" :loading="loading[0]" @click="load(0)" />
+        <Button type="button" label="Search" icon="pi pi-search" :loading="loading" @click="load" />
     </div>
 </template>
 
@@ -35,7 +35,7 @@ export default {
             this.loading = true;
             setTimeout(() => {
                 this.loading = false;
-            }, 3000);
+            }, 2000);
         }
     }
 };
@@ -43,7 +43,7 @@ export default {
                 composition: `
 <template>
     <div class="card flex justify-content-center">
-        <Button type="button" label="Search" icon="pi pi-search" :loading="loading[0]" @click="load(0)" />
+        <Button type="button" label="Search" icon="pi pi-search" :loading="loading" @click="load" />
     </div>
 </template>
 
@@ -56,7 +56,7 @@ const load = () => {
     loading.value = true;
     setTimeout(() => {
         loading.value = false;
-    }, 3000);
+    }, 2000);
 };
 <\/script>`
             }
@@ -67,7 +67,7 @@ const load = () => {
             this.loading = true;
             setTimeout(() => {
                 this.loading = false;
-            }, 3000);
+            }, 2000);
         }
     }
 };
