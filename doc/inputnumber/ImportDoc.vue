@@ -8,7 +8,8 @@ export default {
     data() {
         return {
             code: {
-                basic: `import InputNumber from 'primevue/inputnumber';`
+                basic: `
+import InputNumber from 'primevue/inputnumber';`
             }
         };
     }

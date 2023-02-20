@@ -7,7 +7,8 @@ import AccessibilityDoc from '@/doc/inputtext/AccessibilityDoc.vue';
 import BasicDoc from '@/doc/inputtext/BasicDoc.vue';
 import DisabledDoc from '@/doc/inputtext/DisabledDoc.vue';
 import FloatLabelDoc from '@/doc/inputtext/FloatLabelDoc.vue';
-import IconDoc from '@/doc/inputtext/IconDoc.vue';
+import HelpTextDoc from '@/doc/inputtext/HelpTextDoc.vue';
+import IconsDoc from '@/doc/inputtext/IconsDoc.vue';
 import ImportDoc from '@/doc/inputtext/ImportDoc.vue';
 import InvalidDoc from '@/doc/inputtext/InvalidDoc.vue';
 import SizesDoc from '@/doc/inputtext/SizesDoc.vue';
@@ -28,14 +29,19 @@ export default {
                     component: BasicDoc
                 },
                 {
-                    id: 'icon',
-                    label: 'Icon',
-                    component: IconDoc
+                    id: 'icons',
+                    label: 'Icons',
+                    component: IconsDoc
                 },
                 {
                     id: 'sizes',
                     label: 'Sizes',
                     component: SizesDoc
+                },
+                {
+                    id: 'helptext',
+                    label: 'HelpText',
+                    component: HelpTextDoc
                 },
                 {
                     id: 'floatlabel',
