@@ -6,6 +6,7 @@
 import AccessibilityDoc from '@/doc/message/AccessibilityDoc.vue';
 import BasicDoc from '@/doc/message/BasicDoc.vue';
 import ClosabledDoc from '@/doc/message/ClosableDoc.vue';
+import CustomIconDoc from '@/doc/message/CustomIconDoc.vue';
 import DynamicDoc from '@/doc/message/DynamicDoc.vue';
 import ImportDoc from '@/doc/message/ImportDoc.vue';
 import SeverityDoc from '@/doc/message/SeverityDoc.vue';
@@ -46,6 +47,11 @@ export default {
                     id: 'sticky',
                     label: 'Sticky',
                     component: StickyDoc
+                },
+                {
+                    id: 'custom-icon',
+                    label: 'Custom Icon',
+                    component: CustomIconDoc
                 },
                 {
                     id: 'template',
