@@ -2,7 +2,7 @@
     <DocSectionText v-bind="$attrs">
         <p>To start with, Ripple needs to be enabled globally. See the <nuxt-link to="/ripple">Configuration API</nuxt-link> for details.</p>
     </DocSectionText>
-    <DocSectionCode :code="code" hideToggleCode import hideCodeSandbox hideStackBlitz />
+    <DocSectionCode :code="code" import hideCodeSandbox hideStackBlitz />
 </template>
 
 <script>
@@ -11,7 +11,19 @@ export default {
         return {
             code: {
                 basic: `
-PrimeVue.ripple = true;`
+mounted() {
+    this.$primevue.config.ripple = true;
+}`,
+                options: `
+mounted() {
+    this.$primevue.config.ripple = true;
+}`,
+                composition: `
+import { usePrimeVue } from 'primevue/config';
+
+const PrimeVue = usePrimeVue();
+
+PrimeVue.config.ripple = true;`
             }
         };
     }
