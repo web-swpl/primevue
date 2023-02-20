@@ -9,9 +9,11 @@
 </template>
 
 <script>
+import AccessibilityDoc from '@/doc/fileupload/AccessibilityDoc.vue';
 import AdvancedDoc from '@/doc/fileupload/AdvancedDoc.vue';
 import AutoDoc from '@/doc/fileupload/AutoDoc.vue';
 import BasicDoc from '@/doc/fileupload/BasicDoc.vue';
+import CustomUploadDoc from '@/doc/fileupload/CustomUploadDoc.vue';
 import ImportDoc from '@/doc/fileupload/ImportDoc.vue';
 import StyleDoc from '@/doc/fileupload/StyleDoc.vue';
 import TemplateDoc from '@/doc/fileupload/TemplateDoc.vue';
@@ -46,9 +48,19 @@ export default {
                     component: TemplateDoc
                 },
                 {
+                    id: 'custom-upload',
+                    label: 'Custom Upload',
+                    component: CustomUploadDoc
+                },
+                {
                     id: 'style',
                     label: 'Style',
                     component: StyleDoc
+                },
+                {
+                    id: 'accessibility',
+                    label: 'Accessibility',
+                    component: AccessibilityDoc
                 }
             ]
         };
