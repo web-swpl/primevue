@@ -55,29 +55,39 @@ export default {
     },
     methods: {
         onScroll() {
-            const sections = document.querySelectorAll('section');
-            const topbarEl = document.getElementsByClassName('layout-topbar')[0];
+            if (!this.isScrollBlocked) {
+                const labels = document.querySelectorAll(':is(h1,h2,h3).doc-section-label');
+                const windowScrollTop = DomHandler.getWindowScrollTop();
 
-            sections.forEach((section) => {
-                const sectionLabelEl = section.querySelectorAll('.doc-section-label'); //Get all labels on the currrent section
-                // Check if the section is currently scrolled to center of the screen
-                const isScrolledTo = (section) => window.scrollY >= section.offsetTop - topbarEl.clientHeight - 20 && window.scrollY < section.offsetTop + section.offsetHeight - topbarEl.clientHeight - 20;
+                labels.forEach((label) => {
+                    const { top } = DomHandler.getOffset(label);
+                    const threshold = this.getThreshold(label);
 
-                if (isScrolledTo(section)) {
-                    // Check if the section has multiple child elements
-                    if (sectionLabelEl.length > 1) {
-                        sectionLabelEl.forEach((child) => {
-                            // Check if the child element is currently scrolled to
-                            if (isScrolledTo(child)) {
-                                // Set the active tab to the id of the currently scrolled to child element
-                                this.activeId = this.getIdOfTheSection(child);
-                            }
-                        });
-                    } else {
-                        this.activeId = this.getIdOfTheSection(sectionLabelEl[0]);
+                    if (top - threshold <= windowScrollTop) {
+                        const link = DomHandler.findSingle(label, 'a');
+
+                        this.activeId = link.id;
                     }
-                }
-            });
+                });
+            }
+
+            clearTimeout(this.scrollEndTimer);
+            this.scrollEndTimer = setTimeout(() => {
+                this.isScrollBlocked = false;
+
+                const activeItem = DomHandler.findSingle(this.$refs.nav, '.active-navbar-item');
+
+                activeItem && activeItem.scrollIntoView({ block: 'nearest', inline: 'start' });
+            }, 50);
+        },
+        getThreshold(label) {
+            if (!this.topbarHeight) {
+                const topbar = DomHandler.findSingle(document.body, '.layout-topbar');
+
+                this.topbarHeight = topbar ? DomHandler.getHeight(topbar) : 0;
+            }
+
+            return this.topbarHeight + DomHandler.getHeight(label) * 1.5;
         },
         scrollToLabelById(id, behavior = 'smooth') {
             const label = document.getElementById(id);
