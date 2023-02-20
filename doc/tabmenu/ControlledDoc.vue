@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>In controlled mode, a binding to <i>activeIndex</i> property along with <i>onTabChange</i> event are needed to manage the active item.</p>
+        <p>Visibility of the content is specified with the <i>activeIndex</i> property that supports one or two-way binding.</p>
     </DocSectionText>
     <div class="card">
         <Button @click="active = 0" class="p-button-text mb-2" label="Activate 1st" />
