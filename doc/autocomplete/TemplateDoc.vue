@@ -1,8 +1,8 @@
 <template>
     <DocSectionText v-bind="$attrs">
         <p>
-            Custom content can be displayed as an option using <i>option</i> template that references a function with a suggestion option as a parameter and returns an element. Similarly <i>selectedItemTemplate</i> property is available to customize
-            the chips in multiple mode using the same approach. Note that <i>selectedItemTemplate</i> is only available in multiple mode at the moment.
+            Item template allows displaying custom content inside the suggestions panel. The slotProps variable passed to the template provides an item property to represent an item in the suggestions collection. In addition <i>optiongroup</i>,
+            <i>chip</i>, <i>header</i> and <i>footer</i> slots are provided for further customization
         </p>
     </DocSectionText>
     <div class="card flex justify-content-center">
