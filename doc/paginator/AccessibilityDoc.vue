@@ -56,7 +56,7 @@
             </table>
         </div>
 
-        <h6>Rows Per Page Dropdown Keyboard Support</h6>
+        <h3>Rows Per Page Dropdown Keyboard Support</h3>
         <p>Refer to the <nuxt-link to="/dropdown">dropdown</nuxt-link> documentation for more details about keyboard support.</p>
     </DocSectionText>
 </template>

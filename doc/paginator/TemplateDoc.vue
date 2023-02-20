@@ -4,7 +4,7 @@
             Paginator elements can be customized using the <i>template</i> property using the predefined keys, default value is "FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown". Here are the available elements that
             can be placed inside a paginator in any order.
         </p>
-        <ul>
+        <ul class="mb-4 line-height-4">
             <li>FirstPageLink</li>
             <li>PrevPageLink</li>
             <li>PageLinks</li>
@@ -17,17 +17,10 @@
         </ul>
     </DocSectionText>
     <div class="card">
-        <Paginator v-model:first="first" :rows="1" :totalRecords="12" template="FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink">
-            <template #start>
-                <Button type="button" icon="pi pi-refresh" @click="reset()" />
-            </template>
-            <template #end>
-                <Button type="button" icon="pi pi-search" />
-            </template>
-        </Paginator>
+        <Paginator v-model:first="first" :rows="1" :totalRecords="12" template="FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink" />
 
-        <div class="image-gallery">
-            <img :src="'images/nature/' + image + '.jpg'" />
+        <div class="p-3 text-center">
+            <img :src="`https://primefaces.org/cdn/primevue/images/nature/nature${first + 1}.jpg`" :alt="first" class="shadow-2 border-round w-full sm:w-30rem" />
         </div>
     </div>
     <DocSectionCode :code="code" v-bind="$attrs" />
@@ -40,32 +33,18 @@ export default {
             first: 0,
             code: {
                 basic: `
-<Paginator v-model:first="first" :rows="1" :totalRecords="1" template="FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink">
-    <template #start>
-        <Button type="button" icon="pi pi-refresh" @click="reset()" />
-    </template>
-    <template #end>
-        <Button type="button" icon="pi pi-search" />
-    </template>
-</Paginator>
+<Paginator v-model:first="first" :rows="1" :totalRecords="1" template="FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink" />
 
-<div class="image-gallery">
-    <img :src="'images/nature/' + image + '.jpg'" />
+<div class="p-3 text-center">
+    <img :src="\`https://primefaces.org/cdn/primevue/images/nature/nature\${first + 1}.jpg\`" :alt="first" class="shadow-2 border-round w-full sm:w-30rem" />
 </div>`,
                 options: `
 <template>
     <div class="card">
-        <Paginator v-model:first="first" :rows="1" :totalRecords="12" template="FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink">
-            <template #start>
-                <Button type="button" icon="pi pi-refresh" @click="reset()" />
-            </template>
-            <template #end>
-                <Button type="button" icon="pi pi-search" />
-            </template>
-        </Paginator>
+        <Paginator v-model:first="first" :rows="1" :totalRecords="12" template="FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink" />
 
-        <div class="image-gallery">
-            <img :src="'images/nature/' + image + '.jpg'" />
+        <div class="p-3 text-center">
+            <img :src="\`https://primefaces.org/cdn/primevue/images/nature/nature\${first + 1}.jpg\`" :alt="first" class="shadow-2 border-round w-full sm:w-30rem" />
         </div>
     </div>
 </template>
@@ -76,46 +55,27 @@ export default {
         return {
             first: 0
         };
-    },
-    computed: {
-        image() {
-            return 'nature' + (this.first + 1);
-        }
     }
 };
 <\/script>`,
                 composition: `
 <template>
     <div class="card">
-        <Paginator v-model:first="first" :rows="1" :totalRecords="12" template="FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink">
-            <template #start>
-                <Button type="button" icon="pi pi-refresh" @click="reset()" />
-            </template>
-            <template #end>
-                <Button type="button" icon="pi pi-search" />
-            </template>
-        </Paginator>
+        <Paginator v-model:first="first" :rows="1" :totalRecords="12" template="FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink" />
 
-        <div class="image-gallery">
-            <img :src="'images/nature/' + image + '.jpg'" />
+        <div class="p-3 text-center">
+            <img :src="\`https://primefaces.org/cdn/primevue/images/nature/nature\${first + 1}.jpg\`" :alt="first" class="shadow-2 border-round w-full sm:w-30rem" />
         </div>
     </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref } from 'vue';
 
 const first = ref(0);
-
-const image = computed(() => 'nature' + (first.value + 1));
 <\/script>`
             }
         };
-    },
-    computed: {
-        image() {
-            return 'nature' + (this.first + 1);
-        }
     }
 };
 </script>
