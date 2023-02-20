@@ -16,7 +16,6 @@ export default {
         return {
             code: {
                 basic: `
-<Toast />
 <ConfirmPopup></ConfirmPopup>
 <div class="card flex flex-wrap gap-2 justify-content-center">
     <Button @click="confirm1($event)" icon="pi pi-check" label="Confirm"></Button>

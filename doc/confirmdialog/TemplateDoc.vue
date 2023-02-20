@@ -22,7 +22,6 @@ export default {
         return {
             code: {
                 basic: `
-<Toast />
 <ConfirmDialog group="templating">
     <template #message="slotProps">
         <div class="flex p-4">

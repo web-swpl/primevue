@@ -21,7 +21,7 @@ export default {
                 },
                 {
                     id: 'configuration',
-                    label: 'ConfigurationDoc',
+                    label: 'Configuration',
                     component: ConfigurationDoc
                 },
                 {

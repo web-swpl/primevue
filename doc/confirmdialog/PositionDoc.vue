@@ -28,7 +28,6 @@ export default {
         return {
             code: {
                 basic: `
-<Toast />
 <ConfirmDialog group="positionDialog"></ConfirmDialog>
 <div class="flex flex-wrap justify-content-center gap-2 mb-2">
     <Button @click="confirmPosition('left')" icon="pi pi-arrow-right" label="Left" class="p-button-help mr-2"></Button>

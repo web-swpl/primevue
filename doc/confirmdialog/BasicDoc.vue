@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>ConfirmPopup is displayed by calling the <i>require</i> method of the <i>$confirm</i> instance by passing the options to customize the Popup. <i>target</i> attribute is mandatory to align the popup to its caller.</p>
+        <p>ConfirmPopup is displayed by calling the <i>require</i> method of the <i>$confirm</i> instance by passing the options to customize the Dialog. <i>target</i> attribute is mandatory to align the popup to its caller.</p>
     </DocSectionText>
     <ConfirmDialog></ConfirmDialog>
     <div class="card flex flex-wrap gap-2 justify-content-center">
@@ -16,8 +16,7 @@ export default {
         return {
             code: {
                 basic: `
-<Toast />
-<ConfirmDialog></ConfirmDialog>
+<ConfirmDialog></ConfirmDialog>>
 <Button @click="confirm1()" icon="pi pi-check" label="Confirm"></Button>
 <Button @click="confirm2()" icon="pi pi-times" label="Delete"></Button>`,
                 options: `
