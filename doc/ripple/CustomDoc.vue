@@ -1,11 +1,11 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Styling Demo Content.</p>
+        <p>Default styling of the animation adds a shade of white. This can easily be customized using css that changes the color of <i>p-ink</i> element.</p>
     </DocSectionText>
-    <div class="card card-container flex justify-content-center align-items-center gap-2">
-        <div v-ripple class="card shadow-2 p-ripple styled-box-green">Green</div>
-        <div v-ripple class="card shadow-2 styled-box-orange p-ripple">Orange</div>
-        <div v-ripple class="card shadow-2 styled-box-purple p-ripple">Purple</div>
+    <div class="card flex justify-content-center align-items-center gap-2">
+        <div v-ripple class="p-ripple card shadow-2 styled-box-green">Green</div>
+        <div v-ripple class="p-ripple card shadow-2 styled-box-orange">Orange</div>
+        <div v-ripple class="p-ripple card shadow-2 styled-box-purple">Purple</div>
     </div>
     <DocSectionCode :code="code" v-bind="$attrs" />
 </template>
@@ -16,15 +16,15 @@ export default {
         return {
             code: {
                 basic: `
-<div v-ripple class="card styled-box-green p-ripple">Green</div>
-<div v-ripple class="card styled-box-orange p-ripple">Orange</div>
-<div v-ripple class="card styled-box-purple p-ripple">Purple</div>`,
+<div v-ripple class="p-ripple card shadow-2 styled-box-green">Green</div>
+<div v-ripple class="p-ripple card shadow-2 styled-box-orange">Orange</div>
+<div v-ripple class="p-ripple card shadow-2 styled-box-purple">Purple</div>`,
                 options: `
 <template>
-    <div class="card card-container flex justify-content-center align-items-center">
-        <div v-ripple class="card styled-box-green p-ripple">Green</div>
-        <div v-ripple class="card styled-box-orange p-ripple">Orange</div>
-        <div v-ripple class="card styled-box-purple p-ripple">Purple</div>
+    <div class="flex justify-content-center align-items-center">
+        <div v-ripple class="p-ripple card shadow-2 styled-box-green">Green</div>
+        <div v-ripple class="p-ripple card shadow-2 styled-box-orange">Orange</div>
+        <div v-ripple class="p-ripple card shadow-2 styled-box-purple">Purple</div>
     </div>
 </template>
 
@@ -45,10 +45,10 @@ export default {
 </style>`,
                 composition: `
 <template>
-    <div class="card card-container flex justify-content-center align-items-center">
-        <div v-ripple class="card styled-box-green p-ripple">Green</div>
-        <div v-ripple class="card styled-box-orange p-ripple">Orange</div>
-        <div v-ripple class="card styled-box-purple p-ripple">Purple</div>
+    <div class="flex justify-content-center align-items-center">
+        <div v-ripple class="p-ripple card shadow-2 styled-box-green">Green</div>
+        <div v-ripple class="p-ripple card shadow-2 styled-box-orange">Orange</div>
+        <div v-ripple class="p-ripple card shadow-2 styled-box-purple">Purple</div>
     </div>
 </template>
 

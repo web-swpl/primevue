@@ -1,9 +1,9 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Default Demo Content.</p>
+        <p>Ripple is enabled by adding add <i>p-ripple</i> class to the target and attach the directive with the v- prefix..</p>
     </DocSectionText>
-    <div class="card card-container flex justify-content-center align-items-center">
-        <div v-ripple class="card text-primary bg-primary flex select-none justify-content-center align-items-center shadow-2 p-ripple">Default</div>
+    <div class="card flex justify-content-center align-items-center">
+        <div v-ripple class="p-ripple bg-primary flex select-none justify-content-center align-items-center shadow-2 border-round p-6 font-bold">Default</div>
     </div>
     <DocSectionCode :code="code" v-bind="$attrs" />
 </template>
@@ -14,11 +14,11 @@ export default {
         return {
             code: {
                 basic: `
-<div v-ripple class="card text-primary bg-primary flex select-none justify-content-center align-items-center shadow-2">Default</div>`,
+<div v-ripple class="p-ripple bg-primary flex select-none justify-content-center align-items-center shadow-2 border-round p-6 font-bold">Default</div>`,
                 options: `
 <template>
     <div class="card card-container flex justify-content-center align-items-center">
-        <div v-ripple class="card text-primary bg-primary flex select-none justify-content-center align-items-center shadow-2">Default</div>
+        <div v-ripple class="p-ripple bg-primary flex select-none justify-content-center align-items-center shadow-2 border-round p-6 font-bold">Default</div>
     </div>
 </template>
 
@@ -27,7 +27,7 @@ export default {
                 composition: `
 <template>
     <div class="card card-container flex justify-content-center align-items-center">
-        <div v-ripple class="card text-primary bg-primary flex select-none justify-content-center align-items-center shadow-2">Default</div>
+        <div v-ripple class="p-ripple bg-primary flex select-none justify-content-center align-items-center shadow-2 border-round p-6 font-bold">Default</div>
     </div>
 </template>
 
