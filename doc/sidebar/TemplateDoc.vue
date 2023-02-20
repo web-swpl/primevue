@@ -17,7 +17,7 @@
                 </div>
             </template>
         </Sidebar>
-        <Button icon="pi pi-arrow-right" @click="visible = true" />
+        <Button icon="pi pi-plus" @click="visible = true" />
     </div>
     <DocSectionCode :code="code" />
 </template>
@@ -44,7 +44,7 @@ export default {
             </div>
         </template>
     </Sidebar>
-    <Button icon="pi pi-arrow-right" @click="visible = true" />
+    <Button icon="pi pi-plus" @click="visible = true" />
 </div>`,
                 options: `
 <template>
@@ -63,7 +63,7 @@ export default {
                 </div>
             </template>
         </Sidebar>
-        <Button icon="pi pi-arrow-right" @click="visible = true" />
+        <Button icon="pi pi-plus" @click="visible = true" />
     </div>
 </template>
 
@@ -93,7 +93,7 @@ export default {
                 </div>
             </template>
         </Sidebar>
-        <Button icon="pi pi-arrow-right" @click="visible = true" />
+        <Button icon="pi pi-plus" @click="visible = true" />
     </div>
 </template>
 
