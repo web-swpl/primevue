@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Responsive Doc</p>
+        <p>Galleria responsiveness is defined with the <i>responsiveOptions</i> property.</p>
     </DocSectionText>
     <div class="card md:flex md:justify-content-center">
         <div>
