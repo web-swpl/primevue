@@ -5,11 +5,11 @@
 <script>
 import AccessibilityDoc from '@/doc/confirmdialog/AccessibilityDoc.vue';
 import BasicDoc from '@/doc/confirmdialog/BasicDoc.vue';
+import ConfirmationServiceDoc from '@/doc/confirmdialog/ConfirmationServiceDoc.vue';
 import ImportDoc from '@/doc/confirmdialog/ImportDoc.vue';
 import PositionDoc from '@/doc/confirmdialog/PositionDoc.vue';
 import StyleDoc from '@/doc/confirmdialog/StyleDoc.vue';
 import TemplateDoc from '@/doc/confirmdialog/TemplateDoc.vue';
-
 export default {
     data() {
         return {
@@ -18,6 +18,11 @@ export default {
                     id: 'import',
                     label: 'Import',
                     component: ImportDoc
+                },
+                {
+                    id: 'confirmation-service',
+                    label: 'Confirmation Service',
+                    component: ConfirmationServiceDoc
                 },
                 {
                     id: 'basic',

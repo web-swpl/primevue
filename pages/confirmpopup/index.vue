@@ -5,6 +5,7 @@
 <script>
 import AccessibilityDoc from '@/doc/confirmpopup/AccessibilityDoc.vue';
 import BasicDoc from '@/doc/confirmpopup/BasicDoc.vue';
+import ConfirmationServiceDoc from '@/doc/confirmpopup/ConfirmationServiceDoc.vue';
 import ImportDoc from '@/doc/confirmpopup/ImportDoc.vue';
 import StyleDoc from '@/doc/confirmpopup/StyleDoc.vue';
 import TemplateDoc from '@/doc/confirmpopup/TemplateDoc.vue';
@@ -17,6 +18,11 @@ export default {
                     id: 'import',
                     label: 'Import',
                     component: ImportDoc
+                },
+                {
+                    id: 'confirmation-service',
+                    label: 'Confirmation Service',
+                    component: ConfirmationServiceDoc
                 },
                 {
                     id: 'basic',
