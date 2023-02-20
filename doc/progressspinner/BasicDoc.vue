@@ -3,7 +3,7 @@
         <p>An infinite spin animation is displayed by default.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
-        <ProgressSpinner aria-label="Basic ProgressSpinner" />
+        <ProgressSpinner />
     </div>
     <DocSectionCode :code="code" v-bind="$attrs" />
 </template>
@@ -13,11 +13,11 @@ export default {
     data() {
         return {
             code: {
-                basic: `<ProgressSpinner aria-label="Basic ProgressSpinner" />`,
+                basic: `<ProgressSpinner />`,
                 options: `
 <template>
     <div class="card flex justify-content-center">
-        <ProgressSpinner aria-label="Basic ProgressSpinner" />
+        <ProgressSpinner />
     </div>
 </template>
 
@@ -26,7 +26,7 @@ export default {
                 composition: `
 <template>
     <div class="card flex justify-content-center">
-        <ProgressSpinner aria-label="Basic ProgressSpinner" />
+        <ProgressSpinner />
     </div>
 </template>
 

@@ -14,11 +14,13 @@ export default {
         return {
             code: {
                 basic: `
-<ProgressSpinner style="width: 50px; height: 50px" strokeWidth="8" fill="var(--surface-ground)" animationDuration=".5s" aria-label="Custom ProgressSpinner" />`,
+<ProgressSpinner style="width: 50px; height: 50px" strokeWidth="8" fill="var(--surface-ground)"
+    animationDuration=".5s" aria-label="Custom ProgressSpinner" />`,
                 options: `
 <template>
     <div class="card">
-        <ProgressSpinner style="width: 50px; height: 50px" strokeWidth="8" fill="var(--surface-ground)" animationDuration=".5s" aria-label="Custom ProgressSpinner" />
+        <ProgressSpinner style="width: 50px; height: 50px" strokeWidth="8" fill="var(--surface-ground)"
+            animationDuration=".5s" aria-label="Custom ProgressSpinner" />
     </div>
 </template>
 
@@ -27,7 +29,8 @@ export default {
                 composition: `
 <template>
     <div class="card">
-        <ProgressSpinner style="width: 50px; height: 50px" strokeWidth="8" fill="var(--surface-ground)" animationDuration=".5s" aria-label="Custom ProgressSpinner" />
+        <ProgressSpinner style="width: 50px; height: 50px" strokeWidth="8" fill="var(--surface-ground)"
+            animationDuration=".5s" aria-label="Custom ProgressSpinner" />
     </div>
 </template>
 
