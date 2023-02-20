@@ -3,12 +3,12 @@
         <p>Header of the panel is either defined with the header property or the header template.</p>
     </DocSectionText>
     <div class="card">
-        <Panel header="Header" :toggleable="true">
+        <Panel header="Header" toggleable>
             <template #icons>
                 <button class="p-panel-header-icon p-link mr-2" @click="toggle">
                     <span class="pi pi-cog"></span>
                 </button>
-                <Menu ref="menu" id="config_menu" :model="items" :popup="true" />
+                <Menu ref="menu" id="config_menu" :model="items" popup />
             </template>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -61,12 +61,13 @@ export default {
             ],
             code: {
                 basic: `
-<Panel header="Header" :toggleable="true">
+<Toast />
+<Panel header="Header" toggleable>
     <template #icons>
         <button class="p-panel-header-icon p-link mr-2" @click="toggle">
             <span class="pi pi-cog"></span>
         </button>
-        <Menu ref="menu" id="config_menu" :model="items" :popup="true" />
+        <Menu ref="menu" id="config_menu" :model="items" popup />
     </template>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -77,12 +78,12 @@ export default {
 <template>
     <div class="card">
         <Toast />
-        <Panel header="Header" :toggleable="true">
+        <Panel header="Header" toggleable>
             <template #icons>
                 <button class="p-panel-header-icon p-link mr-2" @click="toggle">
                     <span class="pi pi-cog"></span>
                 </button>
-                <Menu ref="menu" id="config_menu" :model="items" :popup="true" />
+                <Menu ref="menu" id="config_menu" :model="items" popup />
             </template>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -147,12 +148,13 @@ export default {
                 composition: `
 <template>
     <div class="card">
-        <Panel header="Header" :toggleable="true">
+        <Toast />
+        <Panel header="Header" toggleable>
             <template #icons>
                 <button class="p-panel-header-icon p-link mr-2" @click="toggle">
                     <span class="pi pi-cog"></span>
                 </button>
-                <Menu ref="menu" id="config_menu" :model="items" :popup="true" />
+                <Menu ref="menu" id="config_menu" :model="items" popup />
             </template>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -164,10 +166,14 @@ export default {
 
 <script setup>
 import { ref } from 'vue';
-import ToastService from 'primevue/toastservice';
+import { useToast } from "primevue/usetoast";
+import { useRouter } from 'vue-router';
 import Menu from 'primevue/menu';
 
 const menu = ref(null);
+const toast = useToast();
+const router = useRouter();
+
 const items = ref([
     {
         label: 'Options',
