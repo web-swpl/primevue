@@ -12,6 +12,7 @@ import SeverityDoc from '@/doc/toast/SeverityDoc.vue';
 import StickyDoc from '@/doc/toast/StickyDoc.vue';
 import StyleDoc from '@/doc/toast/StyleDoc.vue';
 import TemplateDoc from '@/doc/toast/TemplateDoc.vue';
+import ToastServiceDoc from '@/doc/toast/ToastServiceDoc.vue';
 
 export default {
     data() {
@@ -21,6 +22,11 @@ export default {
                     id: 'import',
                     label: 'Import',
                     component: ImportDoc
+                },
+                {
+                    id: 'toast-service',
+                    label: 'Toast Service',
+                    component: ToastServiceDoc
                 },
                 {
                     id: 'basic',
