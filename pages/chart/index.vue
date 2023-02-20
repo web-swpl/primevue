@@ -17,6 +17,7 @@ import PieChartDoc from '@/doc/chart/PieChartDoc';
 import PolarAreaDoc from '@/doc/chart/PolarAreaDoc';
 import RadarDoc from '@/doc/chart/RadarDoc';
 import StackedBarDoc from '@/doc/chart/StackedBarDoc';
+import StyleDoc from '@/doc/chart/StyleDoc';
 import VerticalBarDoc from '@/doc/chart/VerticalBarDoc';
 
 export default {
@@ -92,6 +93,11 @@ export default {
                     id: 'combo',
                     label: 'Combo',
                     component: ComboDoc
+                },
+                {
+                    id: 'style',
+                    label: 'Style',
+                    component: StyleDoc
                 },
                 {
                     id: 'accessibility',
