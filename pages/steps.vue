@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import AccessibilityDoc from '../doc/steps/AccessibilityDoc';
-import BasicDoc from '../doc/steps/BasicDoc';
-import ImportDoc from '../doc/steps/ImportDoc';
-import InteractiveDoc from '../doc/steps/InteractiveDoc';
-import StyleDoc from '../doc/steps/StyleDoc';
+import AccessibilityDoc from '@/doc/steps/AccessibilityDoc';
+import BasicDoc from '@/doc/steps/BasicDoc';
+import ImportDoc from '@/doc/steps/ImportDoc';
+import InteractiveDoc from '@/doc/steps/InteractiveDoc';
+import StyleDoc from '@/doc/steps/StyleDoc';
 
 export default {
     data() {
