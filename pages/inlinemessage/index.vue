@@ -5,9 +5,11 @@
 <script>
 import AccessibilityDoc from '@/doc/inlinemessage/AccessibilityDoc.vue';
 import BasicDoc from '@/doc/inlinemessage/BasicDoc.vue';
+import FormDoc from '@/doc/inlinemessage/FormDoc.vue';
 import ImportDoc from '@/doc/inlinemessage/ImportDoc.vue';
 import SeverityDoc from '@/doc/inlinemessage/SeverityDoc.vue';
 import StyleDoc from '@/doc/inlinemessage/StyleDoc.vue';
+import TemplateDoc from '@/doc/inlinemessage/TemplateDoc.vue';
 
 export default {
     data() {
@@ -27,6 +29,16 @@ export default {
                     id: 'severity',
                     label: 'Severity',
                     component: SeverityDoc
+                },
+                {
+                    id: 'form',
+                    label: 'Form',
+                    component: FormDoc
+                },
+                {
+                    id: 'template',
+                    label: 'Template',
+                    component: TemplateDoc
                 },
                 {
                     id: 'style',

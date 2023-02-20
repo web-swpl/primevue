@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Text to display is defined with the <i>text</i> property.</p>
+        <p>Message component is handy when displaying error messages next to form elements.</p>
     </DocSectionText>
     <div class="card">
         <div class="flex flex-wrap align-items-center mb-3 gap-2">
