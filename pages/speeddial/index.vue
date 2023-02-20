@@ -5,6 +5,7 @@
 <script>
 import AccessibilityDoc from '@/doc/speeddial/AccessibilityDoc.vue';
 import CircleDoc from '@/doc/speeddial/CircleDoc.vue';
+import CustomDoc from '@/doc/speeddial/CustomDoc.vue';
 import ImportDoc from '@/doc/speeddial/ImportDoc.vue';
 import LinearDoc from '@/doc/speeddial/LinearDoc.vue';
 import MaskDoc from '@/doc/speeddial/MaskDoc.vue';
@@ -23,6 +24,7 @@ export default {
                 { id: 'quarter-circle', label: 'Quarter Circle', component: QuarterCircleDoc },
                 { id: 'tooltip', label: 'Tooltip', component: TooltipDoc },
                 { id: 'mask', label: 'Mask', component: MaskDoc },
+                { id: 'custom', label: 'Custom', component: CustomDoc },
                 { id: 'accessibility', label: 'Accessibility', component: AccessibilityDoc }
             ]
         };
