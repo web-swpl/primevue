@@ -221,12 +221,12 @@
                             "to": "/panel"
                         },
                         {
-                            "name": "Splitter",
-                            "to": "/splitter"
-                        },
-                        {
                             "name": "ScrollPanel",
                             "to": "/scrollpanel"
+                        },
+                        {
+                            "name": "Splitter",
+                            "to": "/splitter"
                         },
                         {
                             "name": "TabView",

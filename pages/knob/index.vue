@@ -32,13 +32,18 @@ export default {
                 },
                 {
                     id: 'minmax',
-                    label: 'MinMax',
+                    label: 'Min/Max',
                     component: MinMaxDoc
                 },
                 {
                     id: 'step',
                     label: 'Step',
                     component: StepDoc
+                },
+                {
+                    id: 'template',
+                    label: 'Template',
+                    component: TemplateDoc
                 },
                 {
                     id: 'stroke',
@@ -54,11 +59,6 @@ export default {
                     id: 'color',
                     label: 'Color',
                     component: ColorDoc
-                },
-                {
-                    id: 'template',
-                    label: 'Template',
-                    component: TemplateDoc
                 },
                 {
                     id: 'reactive',

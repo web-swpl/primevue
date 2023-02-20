@@ -30,6 +30,11 @@ export default {
                     component: BasicDoc
                 },
                 {
+                    id: 'meter',
+                    label: 'Meter',
+                    component: MeterDoc
+                },
+                {
                     id: 'locale',
                     label: 'Locale',
                     component: LocaleDoc
@@ -43,11 +48,6 @@ export default {
                     id: 'template',
                     label: 'Template',
                     component: TemplateDoc
-                },
-                {
-                    id: 'meter',
-                    label: 'Meter',
-                    component: MeterDoc
                 },
                 {
                     id: 'floatlabel',
