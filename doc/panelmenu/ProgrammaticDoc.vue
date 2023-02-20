@@ -1,6 +1,9 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Only one single root menuitem can be active by default, enable <i>expandedKeys</i> property to be able to open more than one items.</p>
+        <p>
+            If the menuitem has a <i>key</i> defined, PanelMenu state can be controlled programmatically with the <i>expandedKeys</i> property that defines the keys that are expanded. This property is a Map instance whose key is the key of a node and
+            value is a boolean. Note that <i>expandedKeys</i> also supports two-way binding with the v-model directive.
+        </p>
     </DocSectionText>
     <div class="card flex flex-column align-items-center">
         <div class="mb-3">
