@@ -1,9 +1,8 @@
 <template>
     <DocSectionText v-bind="$attrs">
         <p>
-            MultiSelect is used as a controlled component with <i>v-model</i> property along with an <i>options</i> collection. Label and value of an option are defined with the <i>optionLabel</i> and <i>optionValue</i> properties respectively.
-            Default property name for the <i>optionLabel</i> is <i>label</i> and <i>value</i> for the <i>optionValue</i>. If <i>optionValue</i> is omitted and the object has no <i>value</i> property, the object itself becomes the value of an option.
-            Note that, when options are simple primitive values such as a string array, no <i>optionLabel</i> and <i>optionValue</i> would be necessary.
+            Filtering allows searching items in the list using an input field at the header. In order to use filtering, enable <i>filter</i> property. By default, optionLabel is used when searching and <i>filterFields</i> can be used to customize the
+            fields being utilized. Furthermore, <i>filterMatchMode</i> is available to define the search algorithm. Valid values are "contains" (default), "startsWith" and "endsWith".
         </p>
     </DocSectionText>
     <div class="card flex justify-content-center">

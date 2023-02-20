@@ -1,6 +1,9 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Available options and the selected options support templating with <i>option</i> and <i>value</i> properties respectively. In addition, header, footer, filter, optiongroup, chip and indicator sections can be templated as well.</p>
+        <p>
+            Label of an option is used as the display text of an item by default, for custom content support define an <i>option</i> template that gets the option instance as a parameter. In addition <i>value</i>, <i>optiongroup</i>, <i>chip</i>,
+            <i>header</i>, <i>footer</i>, <i>emptyfilter</i> and <i>empty</i> slots are provided for further customization.
+        </p>
     </DocSectionText>
     <div class="card flex justify-content-center">
         <MultiSelect v-model="selectedCountries" :options="countries" optionLabel="name" placeholder="Select Countries" display="chip" class="w-full md:w-20rem">

@@ -8,7 +8,8 @@ export default {
     data() {
         return {
             code: {
-                basic: `import Listbox from 'primevue/listbox';`
+                basic: `
+import Listbox from 'primevue/listbox';`
             }
         };
     }
