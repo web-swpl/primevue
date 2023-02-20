@@ -80,15 +80,6 @@ export default {
                 activeItem && activeItem.scrollIntoView({ block: 'nearest', inline: 'start' });
             }, 50);
         },
-        getThreshold(label) {
-            if (!this.topbarHeight) {
-                const topbar = DomHandler.findSingle(document.body, '.layout-topbar');
-
-                this.topbarHeight = topbar ? DomHandler.getHeight(topbar) : 0;
-            }
-
-            return this.topbarHeight + DomHandler.getHeight(label) * 1.5;
-        },
         scrollToLabelById(id, behavior = 'smooth') {
             const label = document.getElementById(id);
 
