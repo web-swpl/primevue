@@ -1,10 +1,10 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>TieredMenu requires a collection of menuitems as its <i>model</i>.</p>
+        <p>TieredMenu is inline by default whereas popup mode is supported by enabling <i>popup</i> property and calling toggle method with an event of the target.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
         <Button type="button" label="Toggle" @click="toggle" aria-haspopup="true" aria-controls="overlay_tmenu" />
-        <TieredMenu ref="menu" id="overlay_tmenu" :model="items" :popup="true" />
+        <TieredMenu ref="menu" id="overlay_tmenu" :model="items" popup />
     </div>
     <DocSectionCode :code="code" />
 </template>
@@ -142,12 +142,12 @@ export default {
             code: {
                 basic: `
 <Button type="button" label="Toggle" @click="toggle" aria-haspopup="true" aria-controls="overlay_tmenu" />
-<TieredMenu ref="menu" id="overlay_tmenu" :model="items" :popup="true" />`,
+<TieredMenu ref="menu" id="overlay_tmenu" :model="items" popup />`,
                 options: `
 <template>
     <div class="card flex justify-content-center">
         <Button type="button" label="Toggle" @click="toggle" aria-haspopup="true" aria-controls="overlay_tmenu" />
-        <TieredMenu ref="menu" id="overlay_tmenu" :model="items" :popup="true" />
+        <TieredMenu ref="menu" id="overlay_tmenu" :model="items" popup />
     </div>
 </template>
 
@@ -294,7 +294,7 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <Button type="button" label="Toggle" @click="toggle" aria-haspopup="true" aria-controls="overlay_tmenu" />
-        <TieredMenu ref="menu" id="overlay_tmenu" :model="items" :popup="true" />
+        <TieredMenu ref="menu" id="overlay_tmenu" :model="items" popup />
     </div>
 </template>
 
