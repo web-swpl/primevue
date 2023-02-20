@@ -12,7 +12,7 @@
 export default {
     data() {
         return {
-            value: null,
+            value: 20,
             code: {
                 basic: `
 <Slider v-model="value" :step="20" class="w-14rem" />`,

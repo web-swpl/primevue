@@ -3,7 +3,7 @@
         <p>Boundaries are configured with the <i>min</i> and <i>max</i> values whose defaults are 0 and 100 respectively.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
-        <Knob v-model="value" :min="-50" :max="10" />
+        <Knob v-model="value" :min="-50" :max="50" />
     </div>
     <DocSectionCode :code="code" v-bind="$attrs" />
 </template>
@@ -19,7 +19,7 @@ export default {
                 options: `
 <template>
     <div class="card flex justify-content-center">
-        <Knob v-model="value" :min="-50" :max="10" />
+        <Knob v-model="value" :min="-50" :max="50" />
     </div>
 </template>
 
@@ -35,7 +35,7 @@ export default {
                 composition: `
 <template>
     <div class="card flex justify-content-center">
-        <Knob v-model="value" :min="-50" :max="10" />
+        <Knob v-model="value" :min="-50" :max="50" />
     </div>
 </template>
 

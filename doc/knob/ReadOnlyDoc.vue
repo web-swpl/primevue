@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>When <i>readOnly</i> present, value cannot be edited.</p>
+        <p>When <i>readonly</i> present, value cannot be edited.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
         <Knob v-model="value" readonly />

@@ -12,10 +12,10 @@
 export default {
     data() {
         return {
-            value: '',
+            value: 'Disabled',
             code: {
                 basic: `
-<Textarea v-model="value" rows="5" cols="30" />`,
+<Textarea v-model="value" rows="5" cols="30" disabled />`,
                 options: `
 <template>
     <div class="card flex justify-content-center">
@@ -27,7 +27,7 @@ export default {
 export default {
     data() {
         return {
-            value: ''
+            value: 'Disabled'
         }
     }
 };
@@ -42,7 +42,7 @@ export default {
 <script setup>
 import { ref } from 'vue';
 
-const value = ref('');
+const value = ref('Disabled');
 <\/script>`
             }
         };
