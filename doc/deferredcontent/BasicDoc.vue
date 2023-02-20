@@ -37,7 +37,7 @@ export default {
 export default {
     methods: {
         onImageLoad() {
-            this.$toast.add({ severity: 'success', summary: 'Image Initialized', detail: 'Scroll down to load the datatable' });
+            this.$toast.add({ severity: 'success', summary: 'Image Initialized', detail: 'Scroll down to load the datatable', life: 2000 });
         }
     }
 };
@@ -58,7 +58,7 @@ export default {
 import { ref } from 'vue';
 
 const onImageLoad = () => {
-    toast.add({ severity: 'success', summary: 'Image Initialized', detail: 'Scroll down to load the datatable' });
+    toast.add({ severity: 'success', summary: 'Image Initialized', detail: 'Scroll down to load the datatable', life: 2000 });
 };
 <\/script>`
             }
@@ -66,7 +66,7 @@ const onImageLoad = () => {
     },
     methods: {
         onImageLoad() {
-            this.$toast.add({ severity: 'success', summary: 'Success', detail: 'Image loaded' });
+            this.$toast.add({ severity: 'success', summary: 'Success', detail: 'Image loaded', life: 2000 });
         }
     }
 };
