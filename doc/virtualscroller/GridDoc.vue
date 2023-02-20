@@ -1,9 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>
-            VirtualScroller requires <i>items</i> as the data to display, <i>itemSize</i> for the dimensions of an item and <i>item</i> slot to define the content per item. Size of the viewport is configured using <i>scrollWidth</i>,
-            <i>scrollHeight</i> properties directly or with CSS <i>width</i> and <i>height</i> styles.
-        </p>
+        <p>Scrolling can be enabled vertically and horizontally when <i>orientation</i> is set as <i>both</i>. In this mode, <i>itemSize</i> should be an array where first value is the height of an item and second is the width.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
         <VirtualScroller :items="items" :itemSize="[50, 100]" orientation="both" class="border-1 surface-border border-round" style="width: 200px; height: 200px">

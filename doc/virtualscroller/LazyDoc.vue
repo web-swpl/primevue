@@ -1,8 +1,8 @@
 <template>
     <DocSectionText v-bind="$attrs">
         <p>
-            VirtualScroller requires <i>items</i> as the data to display, <i>itemSize</i> for the dimensions of an item and <i>item</i> slot to define the content per item. Size of the viewport is configured using <i>scrollWidth</i>,
-            <i>scrollHeight</i> properties directly or with CSS <i>width</i> and <i>height</i> styles.
+            Lazy mode is handy to deal with large datasets, instead of loading the entire data, small chunks of data is loaded on demand. To implement lazy loading, enable the <i>lazy</i>property and implement <i>onLazyLoad</i> callback to return
+            data.
         </p>
     </DocSectionText>
     <div class="card flex justify-content-center">
