@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>There are two templates available named <i>left</i> and <i>right</i> to add custom content to these locations. Both templates get a state object as a slot property to provide the current page, first index and the rows.</p>
+        <p>There are two templates available named <i>start</i> and <i>end</i> to add custom content to these locations. Both templates get a state object as a slot property to provide the current page, first index and the rows.</p>
     </DocSectionText>
     <div class="card">
         <Paginator :rows="10" :totalRecords="120" :rowsPerPageOptions="[10, 20, 30]">
