@@ -1,6 +1,7 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>TreeSelect component requires an array of TreeNode objects as its <i>options</i> and keys of the nodes as its value.</p>
+        <p>TreeSelect is used as a controlled component with <i>v-model</i> directive along with an <i>options</i> collection. Internally <NuxtLink to="tree">Tree</NuxtLink> component is used so the options model is based on TreeNode API.</p>
+        <p>In single selection mode, value binding should be the <i>key</i> value of a node.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
         <TreeSelect v-model="selectedValue" :options="nodes" placeholder="Select Item" class="md:w-20rem w-full" />
