@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Chips is used as a controlled input with <i>v-model</i> property where it should be an array.</p>
+        <p>A floating label appears on top of the input field when focused.</p>
     </DocSectionText>
     <div class="card p-fluid">
         <span class="p-float-label">
