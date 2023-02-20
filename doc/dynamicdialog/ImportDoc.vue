@@ -1,7 +1,5 @@
 <template>
-    <DocSectionText v-bind="$attrs">
-        <p>Dynamic dialogs require the <i>DialogService</i> to be configured globally.</p>
-    </DocSectionText>
+    <DocSectionText v-bind="$attrs" />
     <DocSectionCode :code="code" hideToggleCode import hideCodeSandbox hideStackBlitz />
 </template>
 
@@ -11,13 +9,7 @@ export default {
         return {
             code: {
                 basic: `
-import {createApp} from 'vue';
-import DialogService from 'primevue/dialogservice';
-import DynamicDialog from 'primevue/dynamicdialog';
-
-const app = createApp(App);
-app.use(DialogService);
-app.component('DynamicDialog', DynamicDialog);`
+import DynamicDialog from 'primevue/dynamicdialog';`
             }
         };
     }

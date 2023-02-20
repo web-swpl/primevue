@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Dynamic Dialog Component" header="Dialog" description="Dynamic Dialog  is a Dialog container to display content in an overlay window" :componentDocs="docs" :apiDocs="['DynamicDialog', 'Dialog']" />
+    <DocComponent title="Vue Dynamic Dialog Component" header="Dialog" description="Dynamic Dialog is a Dialog container to display content in an overlay window." :componentDocs="docs" :apiDocs="['DynamicDialog', 'Dialog']" />
 </template>
 
 <script>
@@ -7,6 +7,7 @@ import AccessibilityDoc from '@/doc/dynamicdialog/AccessibilityDoc';
 import BasicDoc from '@/doc/dynamicdialog/BasicDoc';
 import CloseDialogDoc from '@/doc/dynamicdialog/CloseDialogDoc';
 import CustomizingDialogDoc from '@/doc/dynamicdialog/CustomizingDialogDoc';
+import DialogServiceDoc from '@/doc/dynamicdialog/DialogServiceDoc';
 import ImportDoc from '@/doc/dynamicdialog/ImportDoc';
 import OpenDialogDoc from '@/doc/dynamicdialog/OpenDialogDoc';
 import PassingDataDoc from '@/doc/dynamicdialog/PassingDataDoc';
@@ -22,14 +23,19 @@ export default {
                     component: ImportDoc
                 },
                 {
-                    id: 'basic',
-                    label: 'Basic',
-                    component: BasicDoc
+                    id: 'dialogservice',
+                    label: 'Dialog Service',
+                    component: DialogServiceDoc
                 },
                 {
                     id: 'usage',
                     label: 'Usage',
                     component: UsageDoc
+                },
+                {
+                    id: 'basic',
+                    label: 'Basic',
+                    component: BasicDoc
                 },
                 {
                     id: 'opendialog',
