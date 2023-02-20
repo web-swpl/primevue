@@ -3,7 +3,7 @@
         <p>Icons and Labels can be customized using <i>onLabel</i>, <i>offLabel</i>, <i>onIcon</i> and <i>offIcon</i> properties.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
-        <ToggleButton v-model="checked" onLabel="I confirm" offLabel="I reject" onIcon="pi pi-check" offIcon="pi pi-times" class="w-full sm:w-10rem" aria-label="do you confirm" />
+        <ToggleButton v-model="checked" onLabel="I confirm" offLabel="I reject" onIcon="pi pi-check" offIcon="pi pi-times" class="w-9rem" aria-label="do you confirm" />
     </div>
     <DocSectionCode :code="code" v-bind="$attrs" />
 </template>
@@ -12,16 +12,16 @@
 export default {
     data() {
         return {
-            checked: true,
+            checked: false,
             code: {
                 basic: `
 <ToggleButton v-model="checked1" onLabel="I confirm" offLabel="I reject"
-    onIcon="pi pi-check" offIcon="pi pi-times" class="w-full sm:w-10rem" aria-label="do you confirm" />`,
+    onIcon="pi pi-check" offIcon="pi pi-times" class="w-9rem" />`,
                 options: `
 <template>
     <div class="card flex justify-content-center">
-        <ToggleButton v-model="checked1" onLabel="I confirm" offLabel="I reject"
-            onIcon="pi pi-check" offIcon="pi pi-times" class="w-full sm:w-10rem" aria-label="do you confirm" />
+        <ToggleButton v-model="checked" onLabel="I confirm" offLabel="I reject"
+            onIcon="pi pi-check" offIcon="pi pi-times" class="w-9rem" />
     </div>
 </template>
 
@@ -29,7 +29,7 @@ export default {
 export default {
     data() {
         return {
-            checked: true
+            checked: false
         }
     }
 };
@@ -37,8 +37,8 @@ export default {
                 composition: `
 <template>
     <div class="card flex justify-content-center">
-        <ToggleButton v-model="checked1" onLabel="I confirm" offLabel="I reject"
-            onIcon="pi pi-check" offIcon="pi pi-times" class="w-full sm:w-10rem" aria-label="do you confirm" />
+        <ToggleButton v-model="checked" onLabel="I confirm" offLabel="I reject"
+            onIcon="pi pi-check" offIcon="pi pi-times" class="w-9rem" />
     </div>
 </template>
 

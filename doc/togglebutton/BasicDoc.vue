@@ -3,7 +3,7 @@
         <p>Two-way binding to a boolean property is defined using the standard v-model directive.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
-        <ToggleButton v-model="checked" onIcon="pi pi-check" offIcon="pi pi-times" class="w-full sm:w-10rem" aria-label="Confirmation" />
+        <ToggleButton v-model="checked" class="w-8rem" />
     </div>
     <DocSectionCode :code="code" v-bind="$attrs" />
 </template>
@@ -15,13 +15,11 @@ export default {
             checked: false,
             code: {
                 basic: `
-<ToggleButton v-model="checked" onIcon="pi pi-check" offIcon="pi pi-times"
-    class="w-full sm:w-10rem" aria-label="Confirmation" />`,
+<ToggleButton v-model="checked" />`,
                 options: `
 <template>
     <div class="card flex justify-content-center">
-        <ToggleButton v-model="checked1" onIcon="pi pi-check" offIcon="pi pi-times"
-            class="w-full sm:w-10rem" aria-label="Confirmation" />
+        <ToggleButton v-model="checked" class="w-8rem" />
     </div>
 </template>
 
@@ -37,8 +35,7 @@ export default {
                 composition: `
 <template>
     <div class="card flex justify-content-center">
-        <ToggleButton v-model="checked" onIcon="pi pi-check" offIcon="pi pi-times"
-            class="w-full sm:w-10rem" aria-label="Confirmation" />
+        <ToggleButton v-model="checked" class="w-8rem" />
     </div>
 </template>
 
