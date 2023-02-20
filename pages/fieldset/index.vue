@@ -14,14 +14,14 @@ export default {
         return {
             docs: [
                 {
-                    id: 'basic',
-                    label: 'Basic',
-                    component: BasicDoc
-                },
-                {
                     id: 'import',
                     label: 'Import',
                     component: ImportDoc
+                },
+                {
+                    id: 'basic',
+                    label: 'Basic',
+                    component: BasicDoc
                 },
                 {
                     id: 'toggleable',
