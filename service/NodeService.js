@@ -81,7 +81,7 @@ export const NodeService = {
                     {
                         key: '0-0',
                         data: {
-                            name: 'React',
+                            name: 'Vue',
                             size: '25kb',
                             type: 'Folder'
                         },
@@ -89,7 +89,7 @@ export const NodeService = {
                             {
                                 key: '0-0-0',
                                 data: {
-                                    name: 'react.app',
+                                    name: 'vue.app',
                                     size: '10kb',
                                     type: 'Application'
                                 }
