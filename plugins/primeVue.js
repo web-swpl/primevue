@@ -105,8 +105,10 @@ import AppDoc from '@/layouts/AppDocumentation';
 import AppInputStyleSwitch from '@/layouts/AppInputStyleSwitch';
 import DevelopmentSection from '@/layouts/DevelopmentSection';
 
+import laraLight from '../themes/lara-light';
+
 export default defineNuxtPlugin((nuxtApp) => {
-    nuxtApp.vueApp.use(PrimeVue, { ripple: true });
+    nuxtApp.vueApp.use(PrimeVue, { ripple: true, theme: laraLight });
 
     nuxtApp.vueApp.use(ToastService);
     nuxtApp.vueApp.use(ConfirmationService);

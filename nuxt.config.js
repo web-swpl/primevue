@@ -33,11 +33,6 @@ export default defineNuxtConfig({
                     rel: 'stylesheet',
                     href: baseUrl + 'styles/landing/themes/lara-light-blue/theme.css'
                 },
-                {
-                    id: 'theme-link',
-                    rel: 'stylesheet',
-                    href: baseUrl + 'themes/lara-light-blue/theme.css'
-                },
                 { rel: 'icon', href: baseUrl + 'favicon.ico' }
             ],
             script: [
@@ -68,7 +63,7 @@ export default defineNuxtConfig({
             contextPath: baseUrl
         }
     },
-    css: ['@/assets/styles/primevue.css', '/node_modules/primeflex/primeflex.css', '/node_modules/primeicons/primeicons.css', '@/assets/styles/flags.css'],
+    css: ['/node_modules/primeflex/primeflex.css', '/node_modules/primeicons/primeicons.css', '@/assets/styles/flags.css'],
     vite: {
         plugins: [vueJsx()],
         resolve: {

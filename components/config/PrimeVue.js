@@ -1,5 +1,6 @@
 import { FilterMatchMode } from 'primevue/api';
 import { inject, reactive } from 'vue';
+import CommonStyle from './CommonStyle.vue';
 
 const defaultOptions = {
     ripple: false,
@@ -145,14 +146,51 @@ export function usePrimeVue() {
     return PrimeVue;
 }
 
+function camelToKebab(str) {
+    if (str != str.toLowerCase()) {
+        str = str.replace(/[A-Z]/g, m => "-" + m.toLowerCase());
+    }
+
+    return str;
+ }
+
 export default {
     install: (app, options) => {
         let configOptions = options ? { ...defaultOptions, ...options } : { ...defaultOptions };
         const PrimeVue = {
             config: reactive(configOptions)
         };
+        
+        try {
+            let root = document.documentElement;
+
+            for (const key in PrimeVue.config.theme) {
+                for (const prop in PrimeVue.config.theme[key]) {
+                    let propName = key === 'general' ? prop : key + '-' + prop;
+                    let propValue = PrimeVue.config.theme[key][prop];
+                    let variableName, variableValue;
+
+                    if (typeof propValue === 'object') {
+                        for (const nestedProp in propValue) {
+                            variableName = '--p-' + propName + '-' + nestedProp;
+                            variableValue = propValue[nestedProp];
+                            root.style.setProperty(camelToKebab(variableName), variableValue);
+                        }
+                    }
+                    else {
+                        variableName = '--p-' + camelToKebab(propName);
+                        variableValue = PrimeVue.config.theme[key][prop];
+                        root.style.setProperty(variableName, variableValue);
+                    }
+                }
+            }
+        } catch (error) {
+
+        }
+        
 
         app.config.globalProperties.$primevue = PrimeVue;
+        app.component('PrimeVueCommonStyle', CommonStyle);
         app.provide(PrimeVueSymbol, PrimeVue);
     }
 };
