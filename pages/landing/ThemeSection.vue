@@ -88,8 +88,8 @@
 </template>
 
 <script>
+import { CustomerService } from '@/service/CustomerService';
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
-import { CustomerService } from '../../service/CustomerService';
 
 export default {
     emits: ['table-theme-change'],

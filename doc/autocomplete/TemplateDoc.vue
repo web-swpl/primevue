@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { CountryService } from '../../service/CountryService';
+import { CountryService } from '@/service/CountryService';
 export default {
     data() {
         return {
@@ -51,7 +51,7 @@ export default {
 </template>
 
 <script>
-import { CountryService } from './service/CountryService';
+import { CountryService } from '@/service/CountryService';
 
 export default {
     data() {
@@ -95,7 +95,7 @@ export default {
 
 <script setup>
 import { ref, onMounted } from "vue";
-import { CountryService } from "./service/CountryService";
+import { CountryService } from "@/service/CountryService";
 
 onMounted(() => {
     CountryService.getCountries().then((data) => (countries.value = data));

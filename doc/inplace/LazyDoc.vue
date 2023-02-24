@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { ProductService } from '../../service/ProductService';
+import { ProductService } from '@/service/ProductService';
 
 export default {
     data() {
@@ -56,7 +56,7 @@ export default {
 </template>
 
 <script>
-import {ProductService} from './service/ProductService';
+import {ProductService} from '@/service/ProductService';
 
 export default {
     data() {
@@ -90,7 +90,7 @@ export default {
 
 <script setup>
 import { ref } from "vue";
-import {ProductService} from "./service/ProductService";
+import {ProductService} from "@/service/ProductService";
 
 
 const products = ref();

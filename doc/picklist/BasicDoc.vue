@@ -74,7 +74,7 @@ export default {
 </template>
 
 <script>
-import { ProductService } from './service/ProductService'
+import { ProductService } from '@/service/ProductService'
 export default {
     data() {
         return {
@@ -111,7 +111,7 @@ export default {
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import { ProductService } from './service/ProductService'
+import { ProductService } from '@/service/ProductService'
 
 const products = ref(null);
 

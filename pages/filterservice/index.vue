@@ -45,8 +45,8 @@
 </template>
 
 <script>
+import { CustomerService } from '@/service/CustomerService';
 import { FilterMatchMode, FilterService } from 'primevue/api';
-import { CustomerService } from '../../service/CustomerService';
 
 const YOUR_FILTER = 'YOUR FILTER';
 

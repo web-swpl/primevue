@@ -46,9 +46,9 @@
 </template>
 
 <script>
+import { NodeService } from '@/service/NodeService';
+import { PhotoService } from '@/service/PhotoService';
 import TerminalService from 'primevue/terminalservice';
-import { NodeService } from '../../service/NodeService';
-import { PhotoService } from '../../service/PhotoService';
 
 export default {
     data() {
@@ -297,8 +297,8 @@ export default {
 
 <script>
 import TerminalService from 'primevue/terminalservice';
-import { NodeService } from './service/NodeService';
-import { PhotoService } from './service/PhotoService';
+import { NodeService } from '@/service/NodeService';
+import { PhotoService } from '@/service/PhotoService';
 
 export default {
     data() {
@@ -596,8 +596,8 @@ export default {
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 import { useToast } from 'primevue/usetoast';
 import TerminalService from 'primevue/terminalservice';
-import { NodeService } from './service/NodeService';
-import { PhotoService } from './service/PhotoService';
+import { NodeService } from '@/service/NodeService';
+import { PhotoService } from '@/service/PhotoService';
 
 onMounted(() => {
     PhotoService.getImages().then(data => images.value = data);

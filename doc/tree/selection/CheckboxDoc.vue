@@ -32,7 +32,7 @@ export default {
 </template>
 
 <script>
-import { NodeService } from './service/NodeService';
+import { NodeService } from '@/service/NodeService';
 
 export default {
 data() {
@@ -62,7 +62,7 @@ methods: {
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import { NodeService } from './service/NodeService';
+import { NodeService } from '@/service/NodeService';
 import { useToast } from "primevue/usetoast";
 
 const nodes = ref(null);
