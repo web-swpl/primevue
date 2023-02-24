@@ -16,6 +16,7 @@ import PaginatorTemplateDoc from '@/doc/treetable/paginator/PaginatorTemplateDoc
 import ExpandModeDoc from '@/doc/treetable/resize/ExpandModeDoc';
 import FitModeDoc from '@/doc/treetable/resize/FitModeDoc';
 import ResponsiveDoc from '@/doc/treetable/ResponsiveDoc';
+import FlexibleScrollDoc from '@/doc/treetable/scroll/FlexibleScrollDoc';
 import FrozenColumnsDoc from '@/doc/treetable/scroll/FrozenColumnsDoc';
 import HorizontalScrollDoc from '@/doc/treetable/scroll/HorizontalScrollDoc';
 import VerticalScrollDoc from '@/doc/treetable/scroll/VerticalScrollDoc';
@@ -23,6 +24,7 @@ import CheckboxRowSelectionDoc from '@/doc/treetable/selection/CheckboxRowSelect
 import MultipleRowsSelectionDoc from '@/doc/treetable/selection/MultipleRowsSelectionDoc';
 import RowSelectionEventsDoc from '@/doc/treetable/selection/RowSelectionEventsDoc';
 import SingleRowSelectionDoc from '@/doc/treetable/selection/SingleRowSelectionDoc';
+import SizeDoc from '@/doc/treetable/SizeDoc';
 import MultipleColumnsDoc from '@/doc/treetable/sort/MultipleColumnsDoc';
 import RemovableSortDoc from '@/doc/treetable/sort/RemovableSortDoc';
 import SingleColumnDoc from '@/doc/treetable/sort/SingleColumnDoc';
@@ -57,6 +59,11 @@ export default {
                     id: 'template',
                     label: 'Template',
                     component: TemplateDoc
+                },
+                {
+                    id: 'size',
+                    label: 'Size',
+                    component: SizeDoc
                 },
                 {
                     id: 'paginator',
@@ -139,6 +146,11 @@ export default {
                             id: 'vertical_scroll',
                             label: 'Vertical',
                             component: VerticalScrollDoc
+                        },
+                        {
+                            id: 'flex_scroll',
+                            label: 'Flexible',
+                            component: FlexibleScrollDoc
                         },
                         {
                             id: 'horizontal_scroll',
