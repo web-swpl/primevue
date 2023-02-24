@@ -6,7 +6,7 @@
         <div style="height: 800px">Scroll down to lazy load a DataTable.</div>
 
         <DeferredContent @load="onDataLoad" role="region" aria-live="polite" aria-label="Content loaded after page scrolled down">
-            <DataTable :value="products" responsiveLayout="scroll">
+            <DataTable :value="products">
                 <Column field="code" header="Code"></Column>
                 <Column field="name" header="Name"></Column>
                 <Column field="category" header="Category"></Column>
@@ -25,7 +25,7 @@ export default {
             code: {
                 basic: `
 <DeferredContent @load="onDataLoad" role="region" aria-live="polite" aria-label="Content loaded after page scrolled down">
-    <DataTable :value="products" responsiveLayout="scroll">
+    <DataTable :value="products">
         <Column field="code" header="Code"></Column>
         <Column field="name" header="Name"></Column>
         <Column field="category" header="Category"></Column>
@@ -39,7 +39,7 @@ export default {
         <div style="height: 800px">Scroll down to lazy load a DataTable.</div>
         
         <DeferredContent @load="onDataLoad" role="region" aria-live="polite" aria-label="Content loaded after page scrolled down">
-            <DataTable :value="products" responsiveLayout="scroll">
+            <DataTable :value="products">
                 <Column field="code" header="Code"></Column>
                 <Column field="name" header="Name"></Column>
                 <Column field="category" header="Category"></Column>
@@ -73,7 +73,7 @@ export default {
         <div style="height: 800px">Scroll down to lazy load a DataTable.</div>
 
         <DeferredContent @load="onDataLoad" role="region" aria-live="polite" aria-label="Content loaded after page scrolled down">
-            <DataTable :value="products" responsiveLayout="scroll">
+            <DataTable :value="products">
                 <Column field="code" header="Code"></Column>
                 <Column field="name" header="Name"></Column>
                 <Column field="category" header="Category"></Column>
