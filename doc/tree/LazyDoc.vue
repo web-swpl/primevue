@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <Tree :value="nodes" @node-expand="onNodeExpand" :loading="loading" class="w-full md:w-30rem"></Tree>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

@@ -13,7 +13,7 @@
     <div class="card flex flex-wrap gap-2 justify-content-center">
         <Button @click="showTemplate($event)" icon="pi pi-check" label="Terms and Conditions"></Button>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

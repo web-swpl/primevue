@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <ToggleButton v-model="checked" onIcon="pi pi-check" offIcon="pi pi-times" class="p-invalid w-full sm:w-10rem" aria-label="Confirmation" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

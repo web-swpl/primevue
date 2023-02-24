@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <ToggleButton v-model="checked" class="w-8rem" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

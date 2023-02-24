@@ -8,7 +8,7 @@
         <InlineMessage severity="warn">Warning Content</InlineMessage>
         <InlineMessage severity="error">Error Content</InlineMessage>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

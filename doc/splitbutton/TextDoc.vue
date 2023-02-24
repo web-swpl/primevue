@@ -11,7 +11,7 @@
         <SplitButton label="Save" :model="items" @click="save" class="p-button-text p-button-help mb-2"></SplitButton>
         <SplitButton label="Save" :model="items" @click="save" class="p-button-text p-button-danger mb-2"></SplitButton>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

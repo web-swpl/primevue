@@ -10,7 +10,7 @@
             <Button label="Error" class="p-button-danger" @click="showError" />
         </div>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

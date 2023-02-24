@@ -5,7 +5,7 @@
     <div class="card">
         <Message :closable="false">Message Content</Message>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

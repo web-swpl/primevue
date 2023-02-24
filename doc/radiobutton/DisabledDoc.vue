@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <RadioButton v-model="checked" disabled :value="checked" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

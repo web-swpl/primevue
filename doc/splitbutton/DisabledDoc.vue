@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <SplitButton label="Save" icon="pi pi-plus" @click="save" :model="items" disabled />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

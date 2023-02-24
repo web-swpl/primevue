@@ -6,7 +6,7 @@
         <SelectButton v-model="value" :options="options1" disabled />
         <SelectButton v-model="value2" :options="options2" optionDisabled="constant" optionLabel="name" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

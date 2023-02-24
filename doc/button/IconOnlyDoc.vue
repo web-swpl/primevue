@@ -53,7 +53,7 @@
             <Button icon="pi pi-times" class="p-button-danger p-button-rounded p-button-text" aria-label="Cancel" />
         </div>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

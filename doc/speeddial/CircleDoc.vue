@@ -7,7 +7,7 @@
             <SpeedDial :model="items" :radius="80" type="circle" buttonClass="p-button-warning" />
         </div>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

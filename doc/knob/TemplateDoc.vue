@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <Knob v-model="value" valueTemplate="{value}%" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

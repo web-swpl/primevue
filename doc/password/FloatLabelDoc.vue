@@ -8,7 +8,7 @@
             <label for="password">Password</label>
         </span>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

@@ -7,7 +7,7 @@
             <SpeedDial :model="items" direction="up" mask :style="{ right: 0, bottom: 0 }" />
         </div>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

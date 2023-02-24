@@ -7,7 +7,7 @@
             <img alt="logo" src="https://primefaces.org/cdn/primevue/images/primevue-logo-light.svg" class="h-2rem" />
         </Button>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

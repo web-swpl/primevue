@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <Textarea v-model="value" rows="5" cols="30" disabled />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

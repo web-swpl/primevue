@@ -7,7 +7,7 @@
         <div v-ripple class="p-ripple card shadow-2 styled-box-orange">Orange</div>
         <div v-ripple class="p-ripple card shadow-2 styled-box-purple">Purple</div>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

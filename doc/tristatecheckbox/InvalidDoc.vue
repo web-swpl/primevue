@@ -6,7 +6,7 @@
         <TriStateCheckbox v-model="value" class="p-invalid" />
         <label for="checkbox">{{ value == null ? 'null' : value }}</label>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

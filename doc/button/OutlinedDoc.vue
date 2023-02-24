@@ -11,7 +11,7 @@
         <Button label="Help" class="p-button-outlined p-button-help" />
         <Button label="Danger" class="p-button-outlined p-button-danger" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

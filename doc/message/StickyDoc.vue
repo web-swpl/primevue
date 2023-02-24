@@ -11,7 +11,7 @@
         <Message severity="warn" sticky>Warning Message Content</Message>
         <Message severity="error" sticky>Error Message Content</Message>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

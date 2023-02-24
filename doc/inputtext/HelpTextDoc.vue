@@ -9,7 +9,7 @@
             <small id="username-help">Enter your username to reset your password.</small>
         </div>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

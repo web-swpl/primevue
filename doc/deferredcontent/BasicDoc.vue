@@ -9,7 +9,7 @@
             <img src="/images/nature/nature4.jpg" alt="Nature" />
         </DeferredContent>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

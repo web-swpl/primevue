@@ -9,7 +9,7 @@
             <Button label="Bottom Right" class="p-button-success" @click="showBottomRight" />
         </div>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

@@ -5,7 +5,7 @@
     <div class="card flex flex-column align-items-center gap-3">
         <TriStateCheckbox v-model="value" disabled />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

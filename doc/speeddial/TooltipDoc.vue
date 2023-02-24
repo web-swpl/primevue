@@ -8,7 +8,7 @@
             <SpeedDial :model="items" direction="up" class="left-0 bottom-0" buttonClass="p-button-danger" :tooltipOptions="{ position: 'left' }" />
         </div>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

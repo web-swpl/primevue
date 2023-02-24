@@ -5,7 +5,7 @@
     <div class="card">
         <Message severity="info" icon="pi-send">Info Message Content</Message>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

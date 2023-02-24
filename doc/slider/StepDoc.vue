@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <Slider v-model="value" :step="20" class="w-14rem" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

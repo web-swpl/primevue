@@ -7,7 +7,7 @@
         <Button label="Submit" icon="pi pi-check" />
         <Button label="Submit" icon="pi pi-check" iconPos="right" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

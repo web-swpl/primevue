@@ -21,7 +21,7 @@
             <InputMask id="serial" v-model="value3" mask="a*-999-a999" placeholder="a*-999-a999" />
         </div>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

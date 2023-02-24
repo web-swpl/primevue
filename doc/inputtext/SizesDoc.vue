@@ -7,7 +7,7 @@
         <InputText v-model="value2" type="text" placeholder="Normal" />
         <InputText v-model="value3" type="text" class="p-inputtext-lg" placeholder="Large" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

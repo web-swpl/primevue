@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <InputMask mask="99-999999" placeholder="99-999999" disabled />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

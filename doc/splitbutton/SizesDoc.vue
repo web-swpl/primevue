@@ -7,7 +7,7 @@
         <SplitButton label="Save" :model="items" icon="pi pi-plus"></SplitButton>
         <SplitButton label="Save" :model="items" icon="pi pi-plus" class="p-button-lg"></SplitButton>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

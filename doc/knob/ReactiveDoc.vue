@@ -9,7 +9,7 @@
             <Button icon="pi pi-minus" @click="value--" :disabled="value <= 0" />
         </div>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

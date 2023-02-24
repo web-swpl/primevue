@@ -7,7 +7,7 @@
         <Button @click="confirm1($event)" icon="pi pi-check" label="Confirm"></Button>
         <Button @click="confirm2($event)" icon="pi pi-times" label="Delete" class="p-button-danger p-button-outlined"></Button>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

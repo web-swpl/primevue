@@ -9,7 +9,7 @@
     <div class="card flex justify-content-center">
         <SelectButton v-model="value" :options="options" aria-labelledby="basic" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

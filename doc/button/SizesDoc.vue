@@ -7,7 +7,7 @@
         <Button label="Normal" icon="pi pi-check" class="p-button" />
         <Button label="Large" icon="pi pi-check" class="p-button-lg" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

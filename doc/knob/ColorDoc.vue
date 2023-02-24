@@ -8,7 +8,7 @@
     <div class="card flex justify-content-center">
         <Knob v-model="value" valueColor="SlateGray" rangeColor="MediumTurquoise" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

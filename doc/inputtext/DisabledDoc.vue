@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <InputText v-model="value" disabled placeholder="Disabled" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

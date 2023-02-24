@@ -10,7 +10,7 @@
             <SpeedDial :model="items" :radius="80" type="semi-circle" direction="up" :style="{ left: 'calc(50% - 2rem)', bottom: 0 }" />
         </div>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

@@ -25,7 +25,7 @@
             <TabPanel header="Header IV" :disabled="true"></TabPanel>
         </TabView>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

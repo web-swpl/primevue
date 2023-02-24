@@ -8,7 +8,7 @@
             <Button label="Clear" @click="clear()" />
         </div>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

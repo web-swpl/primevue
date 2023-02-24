@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <Button type="button" label="Search" icon="pi pi-check" :loading="loading" @click="load" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

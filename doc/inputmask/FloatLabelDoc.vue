@@ -8,7 +8,7 @@
             <InputMask id="ssn" v-model="value" mask="999-99-9999" placeholder="999-99-9999" />
         </span>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

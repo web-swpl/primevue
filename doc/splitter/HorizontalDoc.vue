@@ -8,7 +8,7 @@
             <SplitterPanel class="flex align-items-center justify-content-center"> Panel 2 </SplitterPanel>
         </Splitter>
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>

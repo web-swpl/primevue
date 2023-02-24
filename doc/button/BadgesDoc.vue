@@ -6,7 +6,7 @@
         <Button type="button" label="Emails" badge="8" />
         <Button type="button" label="Messages" icon="pi pi-users" badge="8" badgeClass="p-badge-danger" class="p-button-outlined" />
     </div>
-    <DocSectionCode :code="code" v-bind="$attrs" />
+    <DocSectionCode :code="code" />
 </template>
 
 <script>
