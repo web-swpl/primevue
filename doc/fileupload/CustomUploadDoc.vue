@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Uploading implementation can be overridden by enabling <i>customMode</i> property and defining a custom upload handler event.</p>
+        <p>Uploading implementation can be overridden by enabling <i>customUpload</i> property and defining a custom <i>uploader</i> handler event.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
         <FileUpload mode="basic" name="demo[]" url="/api/upload" accept="image/*" customUpload @uploader="customBase64Uploader" />
@@ -33,7 +33,7 @@ export default {
             reader.readAsDataURL(blob);
 
             reader.onloadend = function () {
-              const base64data = reader.result;
+                const base64data = reader.result;
             };
         }
     }
