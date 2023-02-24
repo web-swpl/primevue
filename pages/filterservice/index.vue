@@ -41,15 +41,12 @@
                 </DataTable>
             </div>
         </div>
-
-        <FilterServiceDoc />
     </div>
 </template>
 
 <script>
 import { FilterMatchMode, FilterService } from 'primevue/api';
 import { CustomerService } from '../../service/CustomerService';
-import FilterServiceDoc from './FilterServiceDoc';
 
 const YOUR_FILTER = 'YOUR FILTER';
 
@@ -85,9 +82,6 @@ export default {
 
             return value.toString() === filter.toString();
         });
-    },
-    components: {
-        FilterServiceDoc: FilterServiceDoc
     }
 };
 </script>
