@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import News from '@/assets/data/news.json';
 import EventBus from '@/layouts/AppEventBus';
 
 export default {
@@ -13,7 +14,6 @@ export default {
     newsService: null,
     data() {
         return {
-            storageKey: 'primevue',
             layout: 'custom'
         };
     },
@@ -30,23 +30,20 @@ export default {
         }
     },
     mounted() {
-        /*this.newsActivate = () => {
-            NewsService.fetchNews().then((data) => {
-                this.$appState.announcement = data;
+        this.newsActivate = () => {
+            this.$appState.announcement = News;
+            const itemString = localStorage.getItem(this.$appState.storageKey);
 
-                const itemString = localStorage.getItem(this.storageKey);
+            if (itemString) {
+                const item = JSON.parse(itemString);
 
-                if (itemString) {
-                    const item = JSON.parse(itemString);
-
-                    if (item.hiddenNews && item.hiddenNews !== data.id) {
-                        this.$appState.newsActive = true;
-                    } else this.$appState.newsActive = false;
-                } else {
+                if (!item.hiddenNews || item.hiddenNews !== News.id) {
                     this.$appState.newsActive = true;
-                }
-            });
-        };*/
+                } else this.$appState.newsActive = false;
+            } else {
+                this.$appState.newsActive = true;
+            }
+        };
 
         this.themeChangeListener = (event) => {
             const elementId = 'theme-link';
@@ -67,11 +64,11 @@ export default {
         };
 
         EventBus.on('theme-change', this.themeChangeListener);
-        //EventBus.on('news-activate', this.newsActivate);
+        EventBus.on('news-activate', this.newsActivate);
     },
     beforeUnmount() {
         EventBus.off('theme-change', this.themeChangeListener);
-        //EventBus.off('news-activate', this.newsActivate);
+        EventBus.off('news-activate', this.newsActivate);
     }
 };
 </script>
