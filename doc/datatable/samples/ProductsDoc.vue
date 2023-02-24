@@ -87,10 +87,10 @@
             <Dropdown id="inventoryStatus" v-model="product.inventoryStatus" :options="statuses" optionLabel="label" placeholder="Select a Status">
                 <template #value="slotProps">
                     <div v-if="slotProps.value && slotProps.value.value">
-                        <span :class="'product-badge status-' + slotProps.value.value">{{ slotProps.value.label }}</span>
+                        <Tag :value="slotProps.value.value" :severity="getStatusLabel(slotProps.value.label)" />
                     </div>
                     <div v-else-if="slotProps.value && !slotProps.value.value">
-                        <span :class="'product-badge status-' + slotProps.value.toLowerCase()">{{ slotProps.value }}</span>
+                        <Tag :value="slotProps.value" :severity="getStatusLabel(slotProps.value)" />
                     </div>
                     <span v-else>
                         {{ slotProps.placeholder }}
@@ -231,7 +231,7 @@ export default {
     </Column>
     <Column field="inventoryStatus" header="Status" sortable style="min-width:12rem">
         <template #body="slotProps">
-            <span :class="'product-badge status-' + (slotProps.data.inventoryStatus ? slotProps.data.inventoryStatus.toLowerCase() : '')">{{slotProps.data.inventoryStatus}}</span>
+            <Tag :value="slotProps.data.inventoryStatus" :severity="getStatusLabel(slotProps.data.inventoryStatus)" />
         </template>
     </Column>
     <Column :exportable="false" style="min-width:8rem">
@@ -292,7 +292,7 @@ export default {
                 </Column>
                 <Column field="inventoryStatus" header="Status" sortable style="min-width:12rem">
                     <template #body="slotProps">
-                        <span :class="'product-badge status-' + (slotProps.data.inventoryStatus ? slotProps.data.inventoryStatus.toLowerCase() : '')">{{slotProps.data.inventoryStatus}}</span>
+                        <Tag :value="slotProps.data.inventoryStatus" :severity="getStatusLabel(slotProps.data.inventoryStatus)" />
                     </template>
                 </Column>
                 <Column :exportable="false" style="min-width:8rem">
@@ -321,11 +321,11 @@ export default {
 				<Dropdown id="inventoryStatus" v-model="product.inventoryStatus" :options="statuses" optionLabel="label" placeholder="Select a Status">
 					<template #value="slotProps">
 						<div v-if="slotProps.value && slotProps.value.value">
-							<span :class="'product-badge status-' +slotProps.value.value">{{slotProps.value.label}}</span>
-						</div>
-						<div v-else-if="slotProps.value && !slotProps.value.value">
-							<span :class="'product-badge status-' +slotProps.value.toLowerCase()">{{slotProps.value}}</span>
-						</div>
+                            <Tag :value="slotProps.value.value" :severity="getStatusLabel(slotProps.value.label)" />
+                        </div>
+                        <div v-else-if="slotProps.value && !slotProps.value.value">
+                            <Tag :value="slotProps.value" :severity="getStatusLabel(slotProps.value)" />
+                        </div>
 						<span v-else>
 							{{slotProps.placeholder}}
 						</span>
@@ -565,7 +565,7 @@ export default {
                 </Column>
                 <Column field="inventoryStatus" header="Status" sortable style="min-width:12rem">
                     <template #body="slotProps">
-                        <span :class="'product-badge status-' + (slotProps.data.inventoryStatus ? slotProps.data.inventoryStatus.toLowerCase() : '')">{{slotProps.data.inventoryStatus}}</span>
+                        <Tag :value="slotProps.data.inventoryStatus" :severity="getStatusLabel(slotProps.data.inventoryStatus)" />
                     </template>
                 </Column>
                 <Column :exportable="false" style="min-width:8rem">
@@ -594,11 +594,11 @@ export default {
 				<Dropdown id="inventoryStatus" v-model="product.inventoryStatus" :options="statuses" optionLabel="label" placeholder="Select a Status">
 					<template #value="slotProps">
 						<div v-if="slotProps.value && slotProps.value.value">
-							<span :class="'product-badge status-' +slotProps.value.value">{{slotProps.value.label}}</span>
-						</div>
-						<div v-else-if="slotProps.value && !slotProps.value.value">
-							<span :class="'product-badge status-' +slotProps.value.toLowerCase()">{{slotProps.value}}</span>
-						</div>
+                            <Tag :value="slotProps.value.value" :severity="getStatusLabel(slotProps.value.label)" />
+                        </div>
+                        <div v-else-if="slotProps.value && !slotProps.value.value">
+                            <Tag :value="slotProps.value" :severity="getStatusLabel(slotProps.value)" />
+                        </div>
 						<span v-else>
 							{{slotProps.placeholder}}
 						</span>

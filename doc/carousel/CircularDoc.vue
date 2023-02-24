@@ -4,22 +4,20 @@
     </DocSectionText>
 
     <div class="card">
-        <Carousel :value="products" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" class="custom-carousel" :circular="true" :autoplayInterval="3000">
+        <Carousel :value="products" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000">
             <template #item="slotProps">
-                <div class="product-item">
-                    <div class="product-item-content">
-                        <div class="mb-3">
-                            <img :src="'https://primefaces.org/cdn/primevue/images/product/' + slotProps.data.image" :alt="slotProps.data.name" class="product-image" />
-                        </div>
-                        <div>
-                            <h4 class="mb-1">{{ slotProps.data.name }}</h4>
-                            <h6 class="mt-0 mb-3">${{ slotProps.data.price }}</h6>
-                            <span :class="'product-badge status-' + slotProps.data.inventoryStatus.toLowerCase()">{{ slotProps.data.inventoryStatus }}</span>
-                            <div class="mt-5">
-                                <Button icon="pi pi-search" class="p-button p-button-rounded mr-2" />
-                                <Button icon="pi pi-star-fill" class="p-button-success p-button-rounded mr-2" />
-                                <Button icon="pi pi-cog" class="p-button-help p-button-rounded" />
-                            </div>
+                <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
+                    <div class="mb-3">
+                        <img :src="'https://primefaces.org/cdn/primevue/images/product/' + slotProps.data.image" :alt="slotProps.data.name" class="w-6 shadow-2" />
+                    </div>
+                    <div>
+                        <h4 class="mb-1">{{ slotProps.data.name }}</h4>
+                        <h6 class="mt-0 mb-3">${{ slotProps.data.price }}</h6>
+                        <Tag :value="slotProps.data.inventoryStatus" :severity="getSeverity(slotProps.data.inventoryStatus)" />
+                        <div class="mt-5">
+                            <Button icon="pi pi-search" class="p-button p-button-rounded mr-2" />
+                            <Button icon="pi pi-star-fill" class="p-button-success p-button-rounded mr-2" />
+                            <Button icon="pi pi-cog" class="p-button-help p-button-rounded" />
                         </div>
                     </div>
                 </div>
@@ -55,22 +53,20 @@ export default {
             ],
             code: {
                 basic: `
-<Carousel :value="products" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" class="custom-carousel" :circular="true" :autoplayInterval="3000">
+<Carousel :value="products" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000">
     <template #item="slotProps">
-        <div class="product-item">
-            <div class="product-item-content">
-                <div class="mb-3">
-                    <img :src="'https://primefaces.org/cdn/primevue/images/product/' + slotProps.data.image" :alt="slotProps.data.name" class="product-image" />
-                </div>
-                <div>
-                    <h4 class="mb-1">{{ slotProps.data.name }}</h4>
-                    <h6 class="mt-0 mb-3">\${{ slotProps.data.price }}</h6>
-                    <span :class="'product-badge status-' + slotProps.data.inventoryStatus.toLowerCase()">{{ slotProps.data.inventoryStatus }}</span>
-                    <div class="mt-5">
-                        <Button icon="pi pi-search" class="p-button p-button-rounded mr-2" />
-                        <Button icon="pi pi-star-fill" class="p-button-success p-button-rounded mr-2" />
-                        <Button icon="pi pi-cog" class="p-button-help p-button-rounded" />
-                    </div>
+        <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
+            <div class="mb-3">
+                <img :src="'https://primefaces.org/cdn/primevue/images/product/' + slotProps.data.image" :alt="slotProps.data.name" class="w-6 shadow-2" />
+            </div>
+            <div>
+                <h4 class="mb-1">{{ slotProps.data.name }}</h4>
+                <h6 class="mt-0 mb-3">\${{ slotProps.data.price }}</h6>
+                <Tag :value="slotProps.data.inventoryStatus" :severity="getSeverity(slotProps.data.inventoryStatus)" />
+                <div class="mt-5">
+                    <Button icon="pi pi-search" class="p-button p-button-rounded mr-2" />
+                    <Button icon="pi pi-star-fill" class="p-button-success p-button-rounded mr-2" />
+                    <Button icon="pi pi-cog" class="p-button-help p-button-rounded" />
                 </div>
             </div>
         </div>
@@ -79,22 +75,20 @@ export default {
                 options: `
 <template>
     <div class="card">
-        <Carousel :value="products" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" class="custom-carousel" :circular="true" :autoplayInterval="3000">
+        <Carousel :value="products" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000">
             <template #item="slotProps">
-                <div class="product-item">
-                    <div class="product-item-content">
-                        <div class="mb-3">
-                            <img :src="'https://primefaces.org/cdn/primevue/images/product/' + slotProps.data.image" :alt="slotProps.data.name" class="product-image" />
-                        </div>
-                        <div>
-                            <h4 class="mb-1">{{ slotProps.data.name }}</h4>
-                            <h6 class="mt-0 mb-3">\${{ slotProps.data.price }}</h6>
-                            <span :class="'product-badge status-' + slotProps.data.inventoryStatus.toLowerCase()">{{ slotProps.data.inventoryStatus }}</span>
-                            <div class="mt-5">
-                                <Button icon="pi pi-search" class="p-button p-button-rounded mr-2" />
-                                <Button icon="pi pi-star-fill" class="p-button-success p-button-rounded mr-2" />
-                                <Button icon="pi pi-cog" class="p-button-help p-button-rounded" />
-                            </div>
+                <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
+                    <div class="mb-3">
+                        <img :src="'https://primefaces.org/cdn/primevue/images/product/' + slotProps.data.image" :alt="slotProps.data.name" class="w-6 shadow-2" />
+                    </div>
+                    <div>
+                        <h4 class="mb-1">{{ slotProps.data.name }}</h4>
+                        <h6 class="mt-0 mb-3">\${{ slotProps.data.price }}</h6>
+                        <Tag :value="slotProps.data.inventoryStatus" :severity="getSeverity(slotProps.data.inventoryStatus)" />
+                        <div class="mt-5">
+                            <Button icon="pi pi-search" class="p-button p-button-rounded mr-2" />
+                            <Button icon="pi pi-star-fill" class="p-button-success p-button-rounded mr-2" />
+                            <Button icon="pi pi-cog" class="p-button-help p-button-rounded" />
                         </div>
                     </div>
                 </div>
@@ -131,28 +125,43 @@ export default {
     },
     mounted() {
         ProductService.getProductsSmall().then((data) => (this.products = data.slice(0, 9)));
+    },
+    methods: {
+        getSeverity(status) {
+            switch (status) {
+                case 'INSTOCK':
+                    return 'success';
+
+                case 'LOWSTOCK':
+                    return 'warning';
+
+                case 'OUTOFSTOCK':
+                    return 'danger';
+
+                default:
+                    return null;
+            }
+        }
     }
 };
 <\/script>`,
                 composition: `
 <template>
     <div class="card">
-        <Carousel :value="products" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" class="custom-carousel" :circular="true" :autoplayInterval="3000">
+        <Carousel :value="products" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000">
             <template #item="slotProps">
-                <div class="product-item">
-                    <div class="product-item-content">
-                        <div class="mb-3">
-                            <img :src="'https://primefaces.org/cdn/primevue/images/product/' + slotProps.data.image" :alt="slotProps.data.name" class="product-image" />
-                        </div>
-                        <div>
-                            <h4 class="mb-1">{{ slotProps.data.name }}</h4>
-                            <h6 class="mt-0 mb-3">\${{ slotProps.data.price }}</h6>
-                            <span :class="'product-badge status-' + slotProps.data.inventoryStatus.toLowerCase()">{{ slotProps.data.inventoryStatus }}</span>
-                            <div class="mt-5">
-                                <Button icon="pi pi-search" class="p-button p-button-rounded mr-2" />
-                                <Button icon="pi pi-star-fill" class="p-button-success p-button-rounded mr-2" />
-                                <Button icon="pi pi-cog" class="p-button-help p-button-rounded" />
-                            </div>
+                <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
+                    <div class="mb-3">
+                        <img :src="'https://primefaces.org/cdn/primevue/images/product/' + slotProps.data.image" :alt="slotProps.data.name" class="w-6 shadow-2" />
+                    </div>
+                    <div>
+                        <h4 class="mb-1">{{ slotProps.data.name }}</h4>
+                        <h6 class="mt-0 mb-3">\${{ slotProps.data.price }}</h6>
+                        <Tag :value="slotProps.data.inventoryStatus" :severity="getSeverity(slotProps.data.inventoryStatus)" />
+                        <div class="mt-5">
+                            <Button icon="pi pi-search" class="p-button p-button-rounded mr-2" />
+                            <Button icon="pi pi-star-fill" class="p-button-success p-button-rounded mr-2" />
+                            <Button icon="pi pi-cog" class="p-button-help p-button-rounded" />
                         </div>
                     </div>
                 </div>
@@ -187,6 +196,23 @@ const responsiveOptions = ref([
         numScroll: 1
     }
 ]);
+
+const getSeverity = (status) => {
+    switch (status) {
+        case 'INSTOCK':
+            return 'success';
+
+        case 'LOWSTOCK':
+            return 'warning';
+
+        case 'OUTOFSTOCK':
+            return 'danger';
+
+        default:
+            return null;
+    }
+};
+
 <\/script>`,
                 data: `
 /* ProductService */        
@@ -208,6 +234,23 @@ const responsiveOptions = ref([
     },
     mounted() {
         ProductService.getProductsSmall().then((data) => (this.products = data.slice(0, 9)));
+    },
+    methods: {
+        getSeverity(status) {
+            switch (status) {
+                case 'INSTOCK':
+                    return 'success';
+
+                case 'LOWSTOCK':
+                    return 'warning';
+
+                case 'OUTOFSTOCK':
+                    return 'danger';
+
+                default:
+                    return null;
+            }
+        }
     }
 };
 </script>

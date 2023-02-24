@@ -47,13 +47,13 @@
                     <Column field="country.name" header="Country" sortable style="min-width: 14rem">
                         <template #body="{ data }">
                             <img alt="flag" src="https://primefaces.org/cdn/primevue/images/flag/flag_placeholder.png" :class="`mr-2 flag flag-${data.country.code}`" style="width: 24px" />
-                            <span class="image-text">{{ data.country.name }}</span>
+                            <span>{{ data.country.name }}</span>
                         </template>
                     </Column>
                     <Column header="Agent" sortable sortField="representative.name" style="min-width: 14rem">
                         <template #body="{ data }">
                             <img :alt="data.representative.name" :src="'https://primefaces.org/cdn/primevue/images/avatar/' + data.representative.image" width="32" style="vertical-align: middle" />
-                            <span class="image-text">{{ data.representative.name }}</span>
+                            <span>{{ data.representative.name }}</span>
                         </template>
                     </Column>
                     <Column field="date" header="Date" sortable dataType="date" style="min-width: 8rem">
@@ -68,7 +68,7 @@
                     </Column>
                     <Column field="status" header="Status" sortable style="min-width: 10rem">
                         <template #body="{ data }">
-                            <span :class="'customer-badge status-' + data.status">{{ data.status }}</span>
+                            <Tag :value="data.status" :severity="getSeverity(data.status)" class="text-sm font-bold" />
                         </template>
                     </Column>
                     <Column field="activity" header="Activity" sortable style="min-width: 6rem">
@@ -136,6 +136,24 @@ export default {
         },
         formatCurrency(value) {
             return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+        },
+        getSeverity(status) {
+            switch (status) {
+                case 'unqualified':
+                    return 'danger';
+
+                case 'qualified':
+                    return 'success';
+
+                case 'new':
+                    return 'info';
+
+                case 'negotiation':
+                    return 'warning';
+
+                case 'renewal':
+                    return null;
+            }
         }
     }
 };

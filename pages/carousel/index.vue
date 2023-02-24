@@ -1,5 +1,5 @@
 <template>
-    <DocComponent title="Vue Carousel Component" header="Carousel" description="Carousel is a content slider featuring various customization options." :componentDocs="docs" :apiDocs="['Carousel']" className="carousel-demo" />
+    <DocComponent title="Vue Carousel Component" header="Carousel" description="Carousel is a content slider featuring various customization options." :componentDocs="docs" :apiDocs="['Carousel']" />
 </template>
 
 <script>
