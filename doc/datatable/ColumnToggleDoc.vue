@@ -6,7 +6,7 @@
         <DataTable :value="products" tableStyle="min-width: 50rem">
             <template #header>
                 <div style="text-align: left">
-                    <MultiSelect :modelValue="selectedColumns" :options="columns" optionLabel="header" @update:modelValue="onToggle" display="chip" placeholder="Select Columns" style="w-full sm:w-20rem" />
+                    <MultiSelect :modelValue="selectedColumns" :options="columns" optionLabel="header" @update:modelValue="onToggle" display="chip" placeholder="Select Columns" />
                 </div>
             </template>
             <Column field="code" header="Code" />
@@ -31,7 +31,7 @@ export default {
     <template #header>
         <div style="text-align:left">
             <MultiSelect :modelValue="selectedColumns" :options="columns" optionLabel="header" @update:modelValue="onToggle"    
-                display="chip" placeholder="Select Columns" style="w-full sm:w-20rem" />
+                display="chip" placeholder="Select Columns" />
         </div>
     </template>
     <Column field="code" header="Code" />
@@ -44,7 +44,7 @@ export default {
             <template #header>
                 <div style="text-align:left">
                     <MultiSelect :modelValue="selectedColumns" :options="columns" optionLabel="header" @update:modelValue="onToggle"    
-                        display="chip" placeholder="Select Columns" style="w-full sm:w-20rem" />
+                        display="chip" placeholder="Select Columns" />
                 </div>
             </template>
             <Column field="code" header="Code" />
@@ -90,7 +90,7 @@ export default {
             <template #header>
                 <div style="text-align:left">
                     <MultiSelect :modelValue="selectedColumns" :options="columns" optionLabel="header" @update:modelValue="onToggle"
-                        display="chip" placeholder="Select Columns" style="w-full sm:w-20rem" />
+                        display="chip" placeholder="Select Columns" />
                 </div>
             </template>
             <Column field="code" header="Code" />

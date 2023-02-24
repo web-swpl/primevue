@@ -23,7 +23,7 @@
                 <img :alt="slotProps.data.representative.name" :src="`https://primefaces.org/cdn/primevue/images/avatar/${slotProps.data.representative.image}`" width="32" style="vertical-align: middle" class="ml-2" />
                 <span class="vertical-align-middle ml-2 font-bold line-height-3">{{ slotProps.data.representative.name }}</span>
             </template>
-            <Column field="representative.name" header="Representative" style="width: 20%"></Column>
+            <Column field="representative.name" header="Representative"></Column>
             <Column field="name" header="Name" style="width: 20%"></Column>
             <Column field="country" header="Country" style="width: 20%">
                 <template #body="slotProps">
@@ -67,7 +67,7 @@ export default {
         <img :alt="slotProps.data.representative.name" :src="\`https://primefaces.org/cdn/primevue/images/avatar/\${slotProps.data.representative.image}\`" width="32" style="vertical-align: middle" class="ml-2" />
         <span class="vertical-align-middle ml-2 font-bold line-height-3">{{ slotProps.data.representative.name }}</span>
     </template>
-    <Column field="representative.name" header="Representative" style="width: 20%"></Column>
+    <Column field="representative.name" header="Representative"></Column>
     <Column field="name" header="Name" style="width: 20%"></Column>
     <Column field="country" header="Country" style="width: 20%">
         <template #body="slotProps">
@@ -100,7 +100,7 @@ export default {
                 <img :alt="slotProps.data.representative.name" :src="\`https://primefaces.org/cdn/primevue/images/avatar/\${slotProps.data.representative.image}\`" width="32" style="vertical-align: middle" class="ml-2" />
                 <span class="vertical-align-middle ml-2 font-bold line-height-3">{{ slotProps.data.representative.name }}</span>
             </template>
-            <Column field="representative.name" header="Representative" style="width: 20%"></Column>
+            <Column field="representative.name" header="Representative"></Column>
             <Column field="name" header="Name" style="width: 20%"></Column>
             <Column field="country" header="Country" style="width: 20%">
                 <template #body="slotProps">
@@ -191,7 +191,7 @@ export default {
                 <img :alt="slotProps.data.representative.name" :src="\`https://primefaces.org/cdn/primevue/images/avatar/\${slotProps.data.representative.image}\`" width="32" style="vertical-align: middle" class="ml-2" />
                 <span class="vertical-align-middle ml-2 font-bold line-height-3">{{ slotProps.data.representative.name }}</span>
             </template>
-            <Column field="representative.name" header="Representative" style="width: 20%"></Column>
+            <Column field="representative.name" header="Representative"></Column>
             <Column field="name" header="Name" style="width: 20%"></Column>
             <Column field="country" header="Country" style="width: 20%">
                 <template #body="slotProps">

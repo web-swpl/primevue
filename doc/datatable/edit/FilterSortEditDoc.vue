@@ -1,9 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>
-            Row editing is configured with setting <i>editMode</i> as <i>row</i>. Similarly with cell edit mode, defining input elements with <i>editor</i> templating of a Column and implementing <i>row-edit-save</i> are necessary to update the
-            state. The column to control the editing state should have <i>rowEditor</i> property applied.
-        </p>
+        <p>Cell Editing with Sorting and Filter</p>
     </DocSectionText>
     <div class="card p-fluid">
         <DataTable v-model:filters="filters" :value="products" editMode="cell" @cell-edit-complete="onCellEditComplete" filterDisplay="row" tableStyle="min-width: 50rem">

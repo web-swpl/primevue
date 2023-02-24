@@ -4,9 +4,9 @@
     </DocSectionText>
     <div class="card">
         <DataTable :value="customers" rowGroupMode="rowspan" groupRowsBy="representative.name" sortMode="single" sortField="representative.name" :sortOrder="1" tableStyle="min-width: 50rem">
-            <Column header="#" headerStyle="width:3em">
+            <Column header="#" headerStyle="width:3rem">
                 <template #body="slotProps">
-                    {{ slotProps.index }}
+                    {{ slotProps.index + 1 }}
                 </template>
             </Column>
             <Column field="representative.name" header="Representative" style="min-width: 200px">
@@ -49,9 +49,9 @@ export default {
             code: {
                 basic: `
 <DataTable :value="customers" rowGroupMode="rowspan" groupRowsBy="representative.name" sortMode="single" sortField="representative.name" :sortOrder="1" tableStyle="min-width: 50rem">
-    <Column header="#" headerStyle="width:3em">
+    <Column header="#" headerStyle="width:3rem">
         <template #body="slotProps">
-            {{ slotProps.index }}
+            {{ slotProps.index + 1 }}
         </template>
     </Column>
     <Column field="representative.name" header="Representative" style="min-width: 200px">
@@ -83,9 +83,9 @@ export default {
 <template>
     <div class="card">
         <DataTable :value="customers" rowGroupMode="rowspan" groupRowsBy="representative.name" sortMode="single" sortField="representative.name" :sortOrder="1" tableStyle="min-width: 50rem">
-            <Column header="#" headerStyle="width:3em">
+            <Column header="#" headerStyle="width:3rem">
                 <template #body="slotProps">
-                    {{ slotProps.index }}
+                    {{ slotProps.index + 1 }}
                 </template>
             </Column>
             <Column field="representative.name" header="Representative" style="min-width: 200px">
@@ -154,9 +154,9 @@ export default {
 <template>
     <div class="card">
         <DataTable :value="customers" rowGroupMode="rowspan" groupRowsBy="representative.name" sortMode="single" sortField="representative.name" :sortOrder="1" tableStyle="min-width: 50rem">
-            <Column header="#" headerStyle="width:3em">
+            <Column header="#" headerStyle="width:3rem">
                 <template #body="slotProps">
-                    {{ slotProps.index }}
+                    {{ slotProps.index + 1 }}
                 </template>
             </Column>
             <Column field="representative.name" header="Representative" style="min-width: 200px">

@@ -1,9 +1,9 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>DataTable provides <i>rowSelect</i> and <i>rowUnselect</i> events to listen selection events.</p>
+        <p>DataTable provides <i>row-select</i> and <i>row-unselect</i> events to listen selection events.</p>
     </DocSectionText>
     <div class="card">
-        <DataTable v-model:selection="selectedProduct" :value="products" selectionMode="single" dataKey="id" :metaKeySelection="false" @rowSelect="onRowSelect" @rowUnselect="onRowUnselect">
+        <DataTable v-model:selection="selectedProduct" :value="products" selectionMode="single" dataKey="id" :metaKeySelection="false" @rowSelect="onRowSelect" @rowUnselect="onRowUnselect" tableStyle="min-width: 50rem">
             <Column field="code" header="Code"></Column>
             <Column field="name" header="Name"></Column>
             <Column field="category" header="Category"></Column>
@@ -25,7 +25,7 @@ export default {
             code: {
                 basic: `
 <DataTable v-model:selection="selectedProduct" :value="products" selectionMode="single" dataKey="id" :metaKeySelection="false"
-        @rowSelect="onRowSelect" @rowUnselect="onRowUnselect">
+        @rowSelect="onRowSelect" @rowUnselect="onRowUnselect" tableStyle="min-width: 50rem">
     <Column selectionMode="single" headerStyle="width: 3rem"></Column>
     <Column field="code" header="Code"></Column>
     <Column field="name" header="Name"></Column>
@@ -36,7 +36,7 @@ export default {
 <template>
     <div class="card">
         <DataTable v-model:selection="selectedProduct" :value="products" selectionMode="single" dataKey="id" :metaKeySelection="false"
-                @rowSelect="onRowSelect" @rowUnselect="onRowUnselect">
+                @rowSelect="onRowSelect" @rowUnselect="onRowUnselect" tableStyle="min-width: 50rem">
             <Column field="code" header="Code"></Column>
             <Column field="name" header="Name"></Column>
             <Column field="category" header="Category"></Column>
@@ -73,7 +73,7 @@ export default {
 <template>
     <div class="card">
         <DataTable v-model:selection="selectedProduct" :value="products" selectionMode="single" dataKey="id" :metaKeySelection="false"
-                @rowSelect="onRowSelect" @rowUnselect="onRowUnselect">
+                @rowSelect="onRowSelect" @rowUnselect="onRowUnselect" tableStyle="min-width: 50rem">
             <Column field="code" header="Code"></Column>
             <Column field="name" header="Name"></Column>
             <Column field="category" header="Category"></Column>

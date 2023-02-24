@@ -16,8 +16,8 @@
             v-model:filters="filters"
             v-model:selection="selectedCustomers"
             :value="customers"
-            :lazy="true"
-            :paginator="true"
+            lazy
+            paginator
             :rows="10"
             dataKey="id"
             :totalRecords="totalRecords"
@@ -34,7 +34,7 @@
             @row-unselect="onRowUnselect"
             tableStyle="min-width: 75rem"
         >
-            <Column selectionMode="multiple" headerStyle="width: 3em"></Column>
+            <Column selectionMode="multiple" headerStyle="width: 3rem"></Column>
             <Column field="name" header="Name" filterMatchMode="startsWith" sortable>
                 <template #filter="{ filterModel, filterCallback }">
                     <InputText v-model="filterModel.value" type="text" @keydown.enter="filterCallback()" class="p-column-filter" placeholder="Search" />
@@ -98,27 +98,27 @@ export default {
             ],
             code: {
                 basic: `
-<DataTable :value="customers" :lazy="true" :paginator="true" :rows="10" v-model:filters="filters" ref="dt" dataKey="id"
+<DataTable :value="customers" lazy paginator :rows="10" v-model:filters="filters" ref="dt" dataKey="id"
         :totalRecords="totalRecords" :loading="loading" @page="onPage($event)" @sort="onSort($event)" @filter="onFilter($event)" filterDisplay="row"
         :globalFilterFields="['name','country.name', 'company', 'representative.name']" responsiveLayout="scroll"
         v-model:selection="selectedCustomers" :selectAll="selectAll" @select-all-change="onSelectAllChange" @row-select="onRowSelect" @row-unselect="onRowUnselect" tableStyle="min-width: 75rem">
-    <Column selectionMode="multiple" headerStyle="width: 3em"></Column>
-    <Column field="name" header="Name" filterMatchMode="startsWith"  sortable>
+    <Column selectionMode="multiple" headerStyle="width: 3rem"></Column>
+    <Column field="name" header="Name" filterMatchMode="startsWith" sortable>
         <template #filter="{filterModel,filterCallback}">
             <InputText type="text" v-model="filterModel.value" @keydown.enter="filterCallback()" class="p-column-filter" placeholder="Search"/>
         </template>
     </Column>
-    <Column field="country.name" header="Country" filterField="country.name" filterMatchMode="contains"  sortable>
+    <Column field="country.name" header="Country" filterField="country.name" filterMatchMode="contains" sortable>
         <template #filter="{filterModel,filterCallback}">
             <InputText type="text" v-model="filterModel.value" @keydown.enter="filterCallback()" class="p-column-filter" placeholder="Search"/>
         </template>
     </Column>
-    <Column field="company" header="Company" filterMatchMode="contains"  sortable>
+    <Column field="company" header="Company" filterMatchMode="contains" sortable>
         <template #filter="{filterModel,filterCallback}">
             <InputText type="text" v-model="filterModel.value" @keydown.enter="filterCallback()" class="p-column-filter" placeholder="Search"/>
         </template>
     </Column>
-    <Column field="representative.name" header="Representative" filterField="representative.name"  sortable>
+    <Column field="representative.name" header="Representative" filterField="representative.name" sortable>
         <template #filter="{filterModel,filterCallback}">
             <InputText type="text" v-model="filterModel.value" @keydown.enter="filterCallback()" class="p-column-filter" placeholder="Search"/>
         </template>
@@ -127,27 +127,27 @@ export default {
                 options: `
 <template>
 	<div class="card p-fluid">
-        <DataTable :value="customers" :lazy="true" :paginator="true" :rows="10" v-model:filters="filters" ref="dt" dataKey="id"
+        <DataTable :value="customers" lazy paginator :rows="10" v-model:filters="filters" ref="dt" dataKey="id"
                 :totalRecords="totalRecords" :loading="loading" @page="onPage($event)" @sort="onSort($event)" @filter="onFilter($event)" filterDisplay="row"
                 :globalFilterFields="['name','country.name', 'company', 'representative.name']" responsiveLayout="scroll"
                 v-model:selection="selectedCustomers" :selectAll="selectAll" @select-all-change="onSelectAllChange" @row-select="onRowSelect" @row-unselect="onRowUnselect" tableStyle="min-width: 75rem">
-            <Column selectionMode="multiple" headerStyle="width: 3em"></Column>
-            <Column field="name" header="Name" filterMatchMode="startsWith"  sortable>
+            <Column selectionMode="multiple" headerStyle="width: 3rem"></Column>
+            <Column field="name" header="Name" filterMatchMode="startsWith" sortable>
                 <template #filter="{filterModel,filterCallback}">
                     <InputText type="text" v-model="filterModel.value" @keydown.enter="filterCallback()" class="p-column-filter" placeholder="Search"/>
                 </template>
             </Column>
-            <Column field="country.name" header="Country" filterField="country.name" filterMatchMode="contains"  sortable>
+            <Column field="country.name" header="Country" filterField="country.name" filterMatchMode="contains" sortable>
                 <template #filter="{filterModel,filterCallback}">
                     <InputText type="text" v-model="filterModel.value" @keydown.enter="filterCallback()" class="p-column-filter" placeholder="Search"/>
                 </template>
             </Column>
-            <Column field="company" header="Company" filterMatchMode="contains"  sortable>
+            <Column field="company" header="Company" filterMatchMode="contains" sortable>
                 <template #filter="{filterModel,filterCallback}">
                     <InputText type="text" v-model="filterModel.value" @keydown.enter="filterCallback()" class="p-column-filter" placeholder="Search"/>
                 </template>
             </Column>
-            <Column field="representative.name" header="Representative" filterField="representative.name"  sortable>
+            <Column field="representative.name" header="Representative" filterField="representative.name" sortable>
                 <template #filter="{filterModel,filterCallback}">
                     <InputText type="text" v-model="filterModel.value" @keydown.enter="filterCallback()" class="p-column-filter" placeholder="Search"/>
                 </template>
@@ -250,27 +250,27 @@ export default {
                 composition: `
 <template>
 	<div class="card p-fluid">
-        <DataTable :value="customers" :lazy="true" :paginator="true" :rows="10" v-model:filters="filters" ref="dt" dataKey="id"
+        <DataTable :value="customers" lazy paginator :rows="10" v-model:filters="filters" ref="dt" dataKey="id"
             :totalRecords="totalRecords" :loading="loading" @page="onPage($event)" @sort="onSort($event)" @filter="onFilter($event)" filterDisplay="row"
             :globalFilterFields="['name','country.name', 'company', 'representative.name']" responsiveLayout="scroll"
             v-model:selection="selectedCustomers" :selectAll="selectAll" @select-all-change="onSelectAllChange" @row-select="onRowSelect" @row-unselect="onRowUnselect" tableStyle="min-width: 75rem">
-            <Column selectionMode="multiple" headerStyle="width: 3em"></Column>
-            <Column field="name" header="Name" filterMatchMode="startsWith"  sortable>
+            <Column selectionMode="multiple" headerStyle="width: 3rem"></Column>
+            <Column field="name" header="Name" filterMatchMode="startsWith" sortable>
                 <template #filter="{filterModel,filterCallback}">
                     <InputText type="text" v-model="filterModel.value" @keydown.enter="filterCallback()" class="p-column-filter" placeholder="Search"/>
                 </template>
             </Column>
-            <Column field="country.name" header="Country" filterField="country.name" filterMatchMode="contains"  sortable>
+            <Column field="country.name" header="Country" filterField="country.name" filterMatchMode="contains" sortable>
                 <template #filter="{filterModel,filterCallback}">
                     <InputText type="text" v-model="filterModel.value" @keydown.enter="filterCallback()" class="p-column-filter" placeholder="Search"/>
                 </template>
             </Column>
-            <Column field="company" header="Company" filterMatchMode="contains"  sortable>
+            <Column field="company" header="Company" filterMatchMode="contains" sortable>
                 <template #filter="{filterModel,filterCallback}">
                     <InputText type="text" v-model="filterModel.value" @keydown.enter="filterCallback()" class="p-column-filter" placeholder="Search"/>
                 </template>
             </Column>
-            <Column field="representative.name" header="Representative" filterField="representative.name"  sortable>
+            <Column field="representative.name" header="Representative" filterField="representative.name" sortable>
                 <template #filter="{filterModel,filterCallback}">
                     <InputText type="text" v-model="filterModel.value" @keydown.enter="filterCallback()" class="p-column-filter" placeholder="Search"/>
                 </template>

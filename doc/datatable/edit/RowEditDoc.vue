@@ -1,5 +1,10 @@
 <template>
-    <DocSectionText v-bind="$attrs"> </DocSectionText>
+    <DocSectionText v-bind="$attrs">
+        <p>
+            Row editing is configured with setting <i>editMode</i> as <i>row</i> and defining <i>editingRows</i> with the v-model directive to hold the reference of the editing rows. Similarly with cell edit mode, defining input elements with
+            <i>editor</i> slot of a Column and implementing <i>row-edit-save</i> are necessary to update the state. The column to control the editing state should have <i>editor</i> templating applied.
+        </p>
+    </DocSectionText>
     <div class="card p-fluid">
         <DataTable v-model:editingRows="editingRows" :value="products" editMode="row" dataKey="id" @row-edit-save="onRowEditSave" tableStyle="min-width: 50rem">
             <Column field="code" header="Code" style="width: 20%">

@@ -5,6 +5,7 @@
         </p>
     </DocSectionText>
     <div class="card">
+        <ContextMenu ref="cm" :model="menuModel" />
         <DataTable v-model:contextMenuSelection="selectedProduct" :value="products" contextMenu @row-contextmenu="onRowContextMenu" tableStyle="min-width: 50rem">
             <Column field="code" header="Code"></Column>
             <Column field="name" header="Name"></Column>
@@ -15,7 +16,6 @@
                 </template>
             </Column>
         </DataTable>
-        <ContextMenu ref="cm" :model="menuModel" />
     </div>
     <DocSectionCode :code="code" :service="['ProductService']" />
 </template>
@@ -34,6 +34,7 @@ export default {
             ],
             code: {
                 basic: `
+<ContextMenu ref="cm" :model="menuModel" />
 <DataTable v-model:contextMenuSelection="selectedProduct" :value="products" contextMenu
         @row-contextmenu="onRowContextMenu" tableStyle="min-width: 50rem">
     <Column field="code" header="Code"></Column>
@@ -44,11 +45,11 @@ export default {
             {{ formatCurrency(slotProps.data.price) }}
         </template>
     </Column>
-</DataTable>
-<ContextMenu ref="cm" :model="menuModel" />`,
+</DataTable>`,
                 options: `
 <template>
     <div>
+        <ContextMenu ref="cm" :model="menuModel" />
         <DataTable :value="products" contextMenu v-model:contextMenuSelection="selectedProduct" 
                 @rowContextmenu="onRowContextMenu" tableStyle="min-width: 50rem">
             <Column field="code" header="Code"></Column>
@@ -60,8 +61,6 @@ export default {
             </template>
             </Column>
         </DataTable>
-        
-        <ContextMenu :model="menuModel" ref="cm" />
         <Toast />
     </div>
 </template>
@@ -105,6 +104,7 @@ export default {
                 composition: `
 <template>
     <div>
+        <ContextMenu ref="cm" :model="menuModel" />
         <DataTable :value="products" contextMenu v-model:contextMenuSelection="selectedProduct"
                 @rowContextmenu="onRowContextMenu" tableStyle="min-width: 50rem">
             <Column field="code" header="Code"></Column>
@@ -116,8 +116,6 @@ export default {
                 </template>
                 </Column>
         </DataTable>
-        
-        <ContextMenu :model="menuModel" ref="cm" />
         <Toast />
     </div>
 </template>

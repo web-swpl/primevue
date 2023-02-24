@@ -1,9 +1,9 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>DataTable requires a <i>value</i> as data to display and <i>Column</i> components as children for the representation.</p>
+        <p>Columns can be created programmatically.</p>
     </DocSectionText>
     <div class="card">
-        <DataTable :value="products">
+        <DataTable :value="products" tableStyle="min-width: 50rem">
             <Column v-for="col of columns" :key="col.field" :field="col.field" :header="col.header"></Column>
         </DataTable>
     </div>
@@ -20,13 +20,13 @@ export default {
             columns: null,
             code: {
                 basic: `
-<DataTable :value="products">
+<DataTable :value="products" tableStyle="min-width: 50rem">
     <Column v-for="col of columns" :key="col.field" :field="col.field" :header="col.header"></Column>
 </DataTable>`,
                 options: `
 <template>
     <div class="card">
-        <DataTable :value="products">
+        <DataTable :value="products" tableStyle="min-width: 50rem">
             <Column v-for="col of columns" :key="col.field" :field="col.field" :header="col.header"></Column>
         </DataTable>
     </div>
@@ -58,7 +58,7 @@ export default {
                 composition: `
 <template>
     <div class="card">
-        <DataTable :value="products">
+        <DataTable :value="products" tableStyle="min-width: 50rem">
             <Column v-for="col of columns" :key="col.field" :field="col.field" :header="col.header"></Column>
         </DataTable>
     </div>

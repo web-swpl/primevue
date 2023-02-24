@@ -9,7 +9,7 @@
         <Button label="Show" icon="pi pi-external-link" @click="dialogVisible = true" />
 
         <Dialog v-model:visible="dialogVisible" header="Flex Scroll" :style="{ width: '75vw' }" maximizable modal :contentStyle="{ height: '300px' }">
-            <DataTable :value="customers" scrollable scrollHeight="flex">
+            <DataTable :value="customers" scrollable scrollHeight="flex" tableStyle="min-width: 50rem">
                 <Column field="name" header="Name"></Column>
                 <Column field="country.name" header="Country"></Column>
                 <Column field="representative.name" header="Representative"></Column>
@@ -35,7 +35,7 @@ export default {
                 basic: `
 <Button label="Show" icon="pi pi-external-link" @click="dialogVisible = true" />
 <Dialog v-model:visible="dialogVisible" header="Flex Scroll" :style="{ width: '75vw' }" maximizable modal :contentStyle="{ height: '300px' }">
-    <DataTable :value="customers" scrollable scrollHeight="flex">
+    <DataTable :value="customers" scrollable scrollHeight="flex" tableStyle="min-width: 50rem">
         <Column field="name" header="Name"></Column>
         <Column field="country.name" header="Country"></Column>
         <Column field="representative.name" header="Representative"></Column>
@@ -51,7 +51,7 @@ export default {
         <Button label="Show" icon="pi pi-external-link" @click="dialogVisible = true" />
 
         <Dialog v-model:visible="dialogVisible" header="Flex Scroll" :style="{ width: '75vw' }" maximizable modal :contentStyle="{ height: '300px' }">
-            <DataTable :value="customers" scrollable scrollHeight="flex">
+            <DataTable :value="customers" scrollable scrollHeight="flex" tableStyle="min-width: 50rem">
                 <Column field="name" header="Name"></Column>
                 <Column field="country.name" header="Country"></Column>
                 <Column field="representative.name" header="Representative"></Column>
@@ -87,7 +87,7 @@ export default {
         <Button label="Show" icon="pi pi-external-link" @click="dialogVisible = true" />
 
         <Dialog v-model:visible="dialogVisible" header="Flex Scroll" :style="{ width: '75vw' }" maximizable modal :contentStyle="{ height: '300px' }">
-            <DataTable :value="customers" scrollable scrollHeight="flex">
+            <DataTable :value="customers" scrollable scrollHeight="flex" tableStyle="min-width: 50rem">
                 <Column field="name" header="Name"></Column>
                 <Column field="country.name" header="Country"></Column>
                 <Column field="representative.name" header="Representative"></Column>

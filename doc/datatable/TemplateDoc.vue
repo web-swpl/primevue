@@ -3,7 +3,7 @@
         <p>Custom content at <i>header</i> and <i>footer</i> sections are supported via templating.</p>
     </DocSectionText>
     <div class="card">
-        <DataTable :value="products">
+        <DataTable :value="products" tableStyle="min-width: 50rem">
             <template #header>
                 <div class="flex flex-wrap align-items-center justify-content-between gap-2">
                     <span class="text-xl text-900 font-bold">Products</span>
@@ -47,7 +47,7 @@ export default {
             products: null,
             code: {
                 basic: `
-<DataTable :value="products">
+<DataTable :value="products" tableStyle="min-width: 50rem">
     <template #header>
         <div class="flex flex-wrap align-items-center justify-content-between gap-2">
             <span class="text-xl text-900 font-bold">Products</span>
@@ -81,7 +81,7 @@ export default {
                 options: `
 <template>
     <div class="card">
-        <DataTable :value="products">
+        <DataTable :value="products" tableStyle="min-width: 50rem">
             <template #header>
                 <div class="flex flex-wrap align-items-center justify-content-between gap-2">
                     <span class="text-xl text-900 font-bold">Products</span>
@@ -152,7 +152,7 @@ export default {
                 composition: `
 <template>
     <div class="card">
-        <DataTable :value="products">
+        <DataTable :value="products" tableStyle="min-width: 50rem">
             <template #header>
                 <div class="flex flex-wrap align-items-center justify-content-between gap-2">
                     <span class="text-xl text-900 font-bold">Products</span>

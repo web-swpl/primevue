@@ -3,7 +3,7 @@
         <p>Sorting on a column is enabled by adding the <i>sortable</i> property.</p>
     </DocSectionText>
     <div class="card">
-        <DataTable :value="products">
+        <DataTable :value="products" tableStyle="min-width: 50rem">
             <Column field="code" header="Code" sortable style="width: 25%"></Column>
             <Column field="name" header="Name" sortable style="width: 25%"></Column>
             <Column field="category" header="Category" sortable style="width: 25%"></Column>
@@ -22,7 +22,7 @@ export default {
             products: null,
             code: {
                 basic: `
-<DataTable :value="products">
+<DataTable :value="products" tableStyle="min-width: 50rem">
     <Column field="code" header="Code" sortable style="width: 25%"></Column>
     <Column field="name" header="Name" sortable style="width: 25%"></Column>
     <Column field="category" header="Category" sortable style="width: 25%"></Column>
@@ -31,7 +31,7 @@ export default {
                 options: `
 <template>
     <div class="card">
-        <DataTable :value="products">
+        <DataTable :value="products" tableStyle="min-width: 50rem">
             <Column field="code" header="Code" sortable style="width: 25%"></Column>
             <Column field="name" header="Name" sortable style="width: 25%"></Column>
             <Column field="category" header="Category" sortable style="width: 25%"></Column>
@@ -57,7 +57,7 @@ export default {
                 composition: `
 <template>
     <div class="card">
-        <DataTable :value="products">
+        <DataTable :value="products" tableStyle="min-width: 50rem">
             <Column field="code" header="Code" sortable style="width: 25%"></Column>
             <Column field="name" header="Name" sortable style="width: 25%"></Column>
             <Column field="category" header="Category" sortable style="width: 25%"></Column>

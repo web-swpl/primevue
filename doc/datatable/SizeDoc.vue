@@ -6,7 +6,7 @@
         <div class="flex justify-content-center mb-4">
             <SelectButton v-model="size" :options="sizeOptions" optionLabel="label" dataKey="label" />
         </div>
-        <DataTable :value="products" :class="`p-datatable-${size.class}`">
+        <DataTable :value="products" :class="`p-datatable-${size.class}`" tableStyle="min-width: 50rem">
             <Column field="code" header="Code"></Column>
             <Column field="name" header="Name"></Column>
             <Column field="category" header="Category"></Column>
@@ -32,7 +32,7 @@ export default {
             code: {
                 basic: `
 <SelectButton v-model="size" :options="sizeOptions" optionLabel="label" dataKey="label" />
-<DataTable :value="products" :class="\`p-datatable-\${size.class}\`">
+<DataTable :value="products" :class="\`p-datatable-\${size.class}\`" tableStyle="min-width: 50rem">
     <Column field="code" header="Code"></Column>
     <Column field="name" header="Name"></Column>
     <Column field="category" header="Category"></Column>
@@ -44,7 +44,7 @@ export default {
         <div class="flex justify-content-center mb-4">
             <SelectButton v-model="size" :options="sizeOptions" optionLabel="label" dataKey="label" />
         </div>
-        <DataTable :value="products" :class="\`p-datatable-\${size.class}\`">
+        <DataTable :value="products" :class="\`p-datatable-\${size.class}\`" tableStyle="min-width: 50rem">
             <Column field="code" header="Code"></Column>
             <Column field="name" header="Name"></Column>
             <Column field="category" header="Category"></Column>
@@ -79,7 +79,7 @@ export default {
         <div class="flex justify-content-center mb-4">
             <SelectButton v-model="size" :options="sizeOptions" optionLabel="label" dataKey="label" />
         </div>
-        <DataTable :value="products" :class="\`p-datatable-\${size.class}\`">
+        <DataTable :value="products" :class="\`p-datatable-\${size.class}\`" tableStyle="min-width: 50rem">
             <Column field="code" header="Code"></Column>
             <Column field="name" header="Name"></Column>
             <Column field="category" header="Category"></Column>

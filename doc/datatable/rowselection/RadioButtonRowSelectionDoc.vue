@@ -1,9 +1,12 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Specifying <i>selectionMode</i> as <i>single</i> on a Column, displays a radio button inside that column for selection.</p>
+        <p>
+            Specifying <i>selectionMode</i> as <i>single</i> on a Column, displays a radio button inside that column for selection. By default, row clicks also trigger selection, set <i>selectionMode</i> of DataTable to <i>radiobutton</i> to only
+            trigger selection using the radio buttons.
+        </p>
     </DocSectionText>
     <div class="card">
-        <DataTable v-model:selection="selectedProduct" :value="products" dataKey="id">
+        <DataTable v-model:selection="selectedProduct" :value="products" dataKey="id" tableStyle="min-width: 50rem">
             <Column selectionMode="single" headerStyle="width: 3rem"></Column>
             <Column field="code" header="Code"></Column>
             <Column field="name" header="Name"></Column>
@@ -25,7 +28,7 @@ export default {
             metaKey: true,
             code: {
                 basic: `
-<DataTable v-model:selection="selectedProduct" :value="products" dataKey="id">
+<DataTable v-model:selection="selectedProduct" :value="products" dataKey="id" tableStyle="min-width: 50rem">
     <Column selectionMode="single" headerStyle="width: 3rem"></Column>
     <Column field="code" header="Code"></Column>
     <Column field="name" header="Name"></Column>
@@ -35,7 +38,7 @@ export default {
                 options: `
 <template>
     <div class="card">
-        <DataTable v-model:selection="selectedProduct" :value="products" dataKey="id">
+        <DataTable v-model:selection="selectedProduct" :value="products" dataKey="id" tableStyle="min-width: 50rem">
             <Column selectionMode="single" headerStyle="width: 3rem"></Column>
             <Column field="code" header="Code"></Column>
             <Column field="name" header="Name"></Column>
@@ -64,7 +67,7 @@ export default {
                 composition: `
 <template>
     <div class="card">
-        <DataTable v-model:selection="selectedProduct" :value="products" dataKey="id">
+        <DataTable v-model:selection="selectedProduct" :value="products" dataKey="id" tableStyle="min-width: 50rem">
             <Column selectionMode="single" headerStyle="width: 3rem"></Column>
             <Column field="code" header="Code"></Column>
             <Column field="name" header="Name"></Column>

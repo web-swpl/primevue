@@ -3,7 +3,17 @@
         <p>DataTable with selection, pagination, filtering, sorting and templating.</p>
     </DocSectionText>
     <div class="card">
-        <DataTable v-model:filters="filters" :value="customers" paginator :rows="10" dataKey="id" filterDisplay="menu" responsiveLayout="scroll" :globalFilterFields="['name', 'country.name', 'representative.name', 'balance', 'status']">
+        <DataTable
+            v-model:filters="filters"
+            v-model:selection="selectedCustomers"
+            :value="customers"
+            paginator
+            :rows="10"
+            dataKey="id"
+            filterDisplay="menu"
+            responsiveLayout="scroll"
+            :globalFilterFields="['name', 'country.name', 'representative.name', 'balance', 'status']"
+        >
             <template #header>
                 <div class="flex justify-content-between">
                     <Button type="button" icon="pi pi-filter-slash" label="Clear" class="p-button-outlined" @click="clearFilter()" />
@@ -14,7 +24,8 @@
                 </div>
             </template>
             <template #empty> No customers found. </template>
-            <Column field="name" header="Name" sortable style="min-width: 12rem">
+            <Column selectionMode="multiple" headerStyle="width: 3rem"></Column>
+            <Column field="name" header="Name" sortable style="min-width: 14rem">
                 <template #body="{ data }">
                     {{ data.name }}
                 </template>
@@ -22,7 +33,7 @@
                     <InputText v-model="filterModel.value" type="text" class="p-column-filter" placeholder="Search by name" />
                 </template>
             </Column>
-            <Column header="Country" sortable sortField="country.name" filterField="country.name" style="min-width: 12rem">
+            <Column header="Country" sortable sortField="country.name" filterField="country.name" style="min-width: 14rem">
                 <template #body="{ data }">
                     <div class="flex align-items-center gap-2">
                         <img alt="flag" src="https://primefaces.org/cdn/primevue/images/flag/flag_placeholder.png" :class="`flag flag-${data.country.code}`" style="width: 24px" />
@@ -109,6 +120,7 @@ export default {
     data() {
         return {
             customers: null,
+            selectedCustomers: null,
             filters: null,
             representatives: [
                 { name: 'Amy Elsner', image: 'amyelsner.png' },
@@ -125,7 +137,7 @@ export default {
             statuses: ['unqualified', 'qualified', 'new', 'negotiation', 'renewal', 'proposal'],
             code: {
                 basic: `
-<DataTable v-model:filters="filters" :value="customers" paginator :rows="10" dataKey="id" filterDisplay="menu"
+<DataTable v-model:filters="filters" v-model:selection="selectedCustomers" :value="customers" paginator :rows="10" dataKey="id" filterDisplay="menu"
     :globalFilterFields="['name', 'country.name', 'representative.name', 'balance', 'status']">
     <template #header>
         <div class="flex justify-content-between">
@@ -137,7 +149,8 @@ export default {
         </div>
     </template>
     <template #empty> No customers found. </template>
-    <Column field="name" header="Name" sortable style="min-width: 12rem">
+    <Column selectionMode="multiple" headerStyle="width: 3rem"></Column>
+    <Column field="name" header="Name" sortable style="min-width: 14rem">
         <template #body="{ data }">
             {{ data.name }}
         </template>
@@ -145,7 +158,7 @@ export default {
             <InputText v-model="filterModel.value" type="text" class="p-column-filter" placeholder="Search by name" />
         </template>
     </Column>
-    <Column header="Country" sortable sortField="country.name" filterField="country.name" style="min-width: 12rem">
+    <Column header="Country" sortable sortField="country.name" filterField="country.name" style="min-width: 14rem">
         <template #body="{ data }">
             <div class="flex align-items-center gap-2">
                 <img alt="flag" src="https://primefaces.org/cdn/primevue/images/flag/flag_placeholder.png" :class="\`flag flag-\${data.country.code}\`" style="width: 24px" />
@@ -223,7 +236,7 @@ export default {
                 options: `
 <template>
     <div class="card">
-        <DataTable v-model:filters="filters" :value="customers" paginator :rows="10" dataKey="id" filterDisplay="menu"
+        <DataTable v-model:filters="filters" v-model:selection="selectedCustomers" :value="customers" paginator :rows="10" dataKey="id" filterDisplay="menu"
             :globalFilterFields="['name', 'country.name', 'representative.name', 'balance', 'status']">
             <template #header>
                 <div class="flex justify-content-between">
@@ -235,7 +248,8 @@ export default {
                 </div>
             </template>
             <template #empty> No customers found. </template>
-            <Column field="name" header="Name" sortable style="min-width: 12rem">
+            <Column selectionMode="multiple" headerStyle="width: 3rem"></Column>
+            <Column field="name" header="Name" sortable style="min-width: 14rem">
                 <template #body="{ data }">
                     {{ data.name }}
                 </template>
@@ -243,7 +257,7 @@ export default {
                     <InputText v-model="filterModel.value" type="text" class="p-column-filter" placeholder="Search by name" />
                 </template>
             </Column>
-            <Column header="Country" sortable sortField="country.name" filterField="country.name" style="min-width: 12rem">
+            <Column header="Country" sortable sortField="country.name" filterField="country.name" style="min-width: 14rem">
                 <template #body="{ data }">
                     <div class="flex align-items-center gap-2">
                         <img alt="flag" src="https://primefaces.org/cdn/primevue/images/flag/flag_placeholder.png" :class="\`flag flag-\${data.country.code}\`" style="width: 24px" />
@@ -329,6 +343,7 @@ export default {
     data() {
         return {
             customers: null,
+            selectedCustomers: null,
             filters: null,
             representatives: [
                 { name: 'Amy Elsner', image: 'amyelsner.png' },
@@ -411,7 +426,7 @@ export default {
                 composition: `
 <template>
     <div class="card">
-        <DataTable v-model:filters="filters" :value="customers" paginator :rows="10" dataKey="id" filterDisplay="menu"
+        <DataTable v-model:filters="filters" v-model:selection="selectedCustomers" :value="customers" paginator :rows="10" dataKey="id" filterDisplay="menu"
             :globalFilterFields="['name', 'country.name', 'representative.name', 'balance', 'status']">
             <template #header>
                 <div class="flex justify-content-between">
@@ -423,7 +438,8 @@ export default {
                 </div>
             </template>
             <template #empty> No customers found. </template>
-            <Column field="name" header="Name" sortable style="min-width: 12rem">
+            <Column selectionMode="multiple" headerStyle="width: 3rem"></Column>
+            <Column field="name" header="Name" sortable style="min-width: 14rem">
                 <template #body="{ data }">
                     {{ data.name }}
                 </template>
@@ -431,7 +447,7 @@ export default {
                     <InputText v-model="filterModel.value" type="text" class="p-column-filter" placeholder="Search by name" />
                 </template>
             </Column>
-            <Column header="Country" sortable sortField="country.name" filterField="country.name" style="min-width: 12rem">
+            <Column header="Country" sortable sortField="country.name" filterField="country.name" style="min-width: 14rem">
                 <template #body="{ data }">
                     <div class="flex align-items-center gap-2">
                         <img alt="flag" src="https://primefaces.org/cdn/primevue/images/flag/flag_placeholder.png" :class="\`flag flag-\${data.country.code}\`" style="width: 24px" />
@@ -515,6 +531,7 @@ import { CustomerService } from '@/service/CustomerService';
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
 
 const customers = ref();
+const selectedCustomers = ref();
 const filters = ref();
 const representatives = ref([
     { name: 'Amy Elsner', image: 'amyelsner.png' },
