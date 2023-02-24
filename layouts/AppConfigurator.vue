@@ -328,7 +328,7 @@ export default {
             scale: 14,
             scales: [12, 13, 14, 15, 16],
             inputStyle: 'filled',
-            ripple: false
+            ripple: true
         };
     },
     watch: {
