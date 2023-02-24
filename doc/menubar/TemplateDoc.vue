@@ -5,7 +5,7 @@
     <div class="card relative z-2">
         <Menubar :model="items">
             <template #start>
-                <img alt="logo" src="/images/logo.svg" height="40" class="mr-2" />
+                <img alt="logo" src="https://primefaces.org/cdn/primevue/images/logo.svg" height="40" class="mr-2" />
             </template>
             <template #end>
                 <InputText placeholder="Search" type="text" />
@@ -157,7 +157,7 @@ export default {
     <div class="card relative z-2">
         <Menubar :model="items">
             <template #start>
-                <img alt="logo" src="https://primevue.org/images/logo.png" height="40" class="mr-2" />
+                <img alt="logo" src="https://primefaces.org/cdn/primevue/images/logo.svg" height="40" class="mr-2" />
             </template>
             <template #end>
                 <InputText placeholder="Search" type="text" />
@@ -302,7 +302,7 @@ export default {
     <div class="card relative z-2">
         <Menubar :model="items">
             <template #start>
-                <img alt="logo" src="https://primevue.org/images/logo.png" height="40" class="mr-2" />
+                <img alt="logo" src="https://primefaces.org/cdn/primevue/images/logo.svg" height="40" class="mr-2" />
             </template>
             <template #end>
                 <InputText placeholder="Search" type="text" />

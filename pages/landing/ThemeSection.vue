@@ -8,7 +8,10 @@
             <button type="button" :class="['font-medium linkbox mr-3 mt-4', { active: theme && theme.startsWith('bootstrap4') }]" @click="changeTheme('bootstrap4', 'blue')">Bootstrap</button>
             <a type="button" class="font-medium p-link linkbox mt-4" href="https://www.primefaces.org/designer-vue">more...</a>
         </div>
-        <div class="themes-main flex mt-7 justify-content-center pad-section" :style="{ backgroundImage: `url('images/landing/wave-${$appState.darkTheme ? 'dark-alt' : 'light-alt'}.svg')`, backgroundSize: 'cover' }">
+        <div
+            class="themes-main flex mt-7 justify-content-center pad-section"
+            :style="{ backgroundImage: `url('https://primefaces.org/cdn/primevue/images/landing/wave-${$appState.darkTheme ? 'dark-alt' : 'light-alt'}.svg')`, backgroundSize: 'cover' }"
+        >
             <div class="box overflow-hidden z-1 p-5 table-container">
                 <DataTable
                     v-model:selection="selectedCustomers"
@@ -44,13 +47,13 @@
                     </Column>
                     <Column field="country.name" header="Country" sortable style="min-width: 14rem">
                         <template #body="{ data }">
-                            <img src="@/assets/images/flag_placeholder.png" :class="'flag flag-' + data.country.code" width="30" />
+                            <img alt="flag" src="https://primefaces.org/cdn/primevue/images/flag/flag_placeholder.png" :class="`mr-2 flag flag-${data.country.code}`" style="width: 24px" />
                             <span class="image-text">{{ data.country.name }}</span>
                         </template>
                     </Column>
                     <Column header="Agent" sortable sortField="representative.name" style="min-width: 14rem">
                         <template #body="{ data }">
-                            <img :alt="data.representative.name" :src="'images/avatar/' + data.representative.image" width="32" style="vertical-align: middle" />
+                            <img :alt="data.representative.name" :src="'https://primefaces.org/cdn/primevue/images/avatar/' + data.representative.image" width="32" style="vertical-align: middle" />
                             <span class="image-text">{{ data.representative.name }}</span>
                         </template>
                     </Column>

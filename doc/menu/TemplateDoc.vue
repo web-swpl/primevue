@@ -6,7 +6,7 @@
         <Menu :model="items">
             <template #start>
                 <button @click="profileClick" class="w-full p-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
-                    <Avatar image="/images/avatar/amyelsner.png" class="mr-2" shape="circle" />
+                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="mr-2" shape="circle" />
                     <div class="flex flex-column align">
                         <span class="font-bold">Amy Elsner</span>
                         <span class="text-sm">Agent</span>
@@ -34,7 +34,7 @@ export default {
 <Menu :model="items">
     <template #start>
         <button @click="profileClick" class="w-full p-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
-            <Avatar image="https://primevue.org/images/avatar/amyelsner.png" class="mr-2" shape="circle" />
+            <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="mr-2" shape="circle" />
             <div class="flex flex-column align">
                 <span class="font-bold">Amy Elsner</span>
                 <span class="text-sm">Agent</span>
@@ -54,7 +54,7 @@ export default {
         <Menu :model="items">
             <template #start>
                 <button @click="profileClick" class="w-full p-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
-                    <Avatar image="https://primevue.org/images/avatar/amyelsner.png" class="mr-2" shape="circle" />
+                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="mr-2" shape="circle" />
                     <div class="flex flex-column align">
                         <span class="font-bold">Amy Elsner</span>
                         <span class="text-sm">Agent</span>
@@ -97,7 +97,7 @@ export default {
         <Menu :model="items">
             <template #start>
                 <button @click="profileClick" class="w-full p-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
-                    <Avatar image="/images/avatar/amyelsner.png" class="mr-2" shape="circle" />
+                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="mr-2" shape="circle" />
                     <div class="flex flex-column align">
                         <span class="font-bold">Amy Elsner</span>
                         <span class="text-sm">Agent</span>

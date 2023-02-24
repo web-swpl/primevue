@@ -3,7 +3,7 @@
         <p>ContextMenu requires a collection of menuitems as its <i>model</i> and the <i>show</i> method needs to be called explicity using the <i>contextmenu</i> event of the target to display the menu.</p>
     </DocSectionText>
     <div class="card flex md:justify-content-center">
-        <img alt="Logo" src="/images/nature/nature3.jpg" class="w-full md:w-auto" @contextmenu="onImageRightClick" aria-haspopup="true" />
+        <img alt="Logo" src="https://primefaces.org/cdn/primevue/images/nature/nature3.jpg" class="w-full md:w-auto" @contextmenu="onImageRightClick" aria-haspopup="true" />
         <ContextMenu ref="menu" :model="items" />
     </div>
     <DocSectionCode :code="code" />
@@ -146,7 +146,7 @@ export default {
                 options: `
 <template>
     <div class="card flex md:justify-content-center">
-        <img alt="Logo" src="https://primevue.org/images/nature/nature3.jpg" @contextmenu="onImageRightClick" class="w-full md:w-auto" aria-haspopup="true" />
+        <img alt="Logo" src="https://primefaces.org/cdn/primevue/images/nature/nature3.jpg" @contextmenu="onImageRightClick" class="w-full md:w-auto" aria-haspopup="true" />
         <ContextMenu ref="menu" :model="items" />
     </div>
 </template>
@@ -293,7 +293,7 @@ export default {
                 composition: `
 <template>
     <div>
-        <img alt="Logo" src="https://primevue.org/images/nature/nature3.jpg" @contextmenu="onImageRightClick" class="w-full md:w-auto" aria-haspopup="true" />
+        <img alt="Logo" src="https://primefaces.org/cdn/primevue/images/nature/nature3.jpg" @contextmenu="onImageRightClick" class="w-full md:w-auto" aria-haspopup="true" />
         <ContextMenu ref="menu" :model="items" />
     </div>
 </template>

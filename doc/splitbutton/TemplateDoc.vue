@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <SplitButton :model="items" icon="pi pi-plus" class="bg-primary border-round">
             <Button @click="save">
-                <img alt="logo" src="/images/logo.svg" style="width: 1rem" />
+                <img alt="logo" src="https://primefaces.org/cdn/primevue/images/logo.svg" style="width: 1rem" />
                 <span class="ml-2 flex align-items-center font-bold">PrimeVue</span>
             </Button>
         </SplitButton>
@@ -45,7 +45,7 @@ export default {
                 basic: `
 <SplitButton :model="items" icon="pi pi-plus" class="bg-primary border-round">
     <Button @click="save">
-        <img alt="logo" src="https://www.primevue.org/images/logo.svg" style="width: 1rem" />
+        <img alt="logo" src="/images/logo.svg" style="width: 1rem" />
         <span class="ml-2 flex align-items-center font-bold">PrimeVue</span>
     </Button>
 </SplitButton>`,
@@ -55,7 +55,7 @@ export default {
         <Toast />
         <SplitButton :model="items" icon="pi pi-plus" class="bg-primary border-round">
             <Button @click="save">
-                <img alt="logo" src="https://www.primevue.org/images/logo.svg" style="width: 1rem" />
+                <img alt="logo" src="https://primefaces.org/cdn/primevue/images/logo.svg" style="width: 1rem" />
                 <span class="ml-2 flex align-items-center font-bold">PrimeVue</span>
             </Button>
         </SplitButton>
@@ -105,7 +105,7 @@ export default {
         <Toast />
         <SplitButton :model="items" icon="pi pi-plus" class="bg-primary border-round">
             <Button @click="save">
-                <img alt="logo" src="https://www.primevue.org/images/logo.svg" style="width: 1rem" />
+                <img alt="logo" src="https://primefaces.org/cdn/primevue/images/logo.svg" style="width: 1rem" />
                 <span class="ml-2 flex align-items-center font-bold">PrimeVue</span>
             </Button>
         </SplitButton>

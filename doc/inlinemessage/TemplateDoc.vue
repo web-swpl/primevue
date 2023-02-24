@@ -13,7 +13,7 @@
             class="border-primary w-full justify-content-start"
         >
             <div class="flex align-items-center">
-                <img alt="logo" src="/images/logo.svg" width="32" />
+                <img alt="logo" src="https://primefaces.org/cdn/primevue/images/logo.svg" width="32" />
                 <div class="ml-2">Always bet on Prime.</div>
             </div>
         </InlineMessage>
@@ -36,7 +36,7 @@ export default {
     severity="info"
     class="border-primary w-full justify-content-start">
     <div class="flex align-items-center">
-        <img alt="logo" src="https://www.primevue.org/images/logo.svg" width="32" />
+        <img alt="logo" src="https://primefaces.org/cdn/primevue/images/logo.svg" width="32" />
         <div class="ml-2">Always bet on Prime.</div>
     </div>
 </InlineMessage>`,
@@ -52,7 +52,7 @@ export default {
             severity="info"
             class="border-primary w-full justify-content-start">
             <div class="flex align-items-center">
-                <img alt="logo" src="https://www.primevue.org/images/logo.svg" width="32" />
+                <img alt="logo" src="https://primefaces.org/cdn/primevue/images/logo.svg" width="32" />
                 <div class="ml-2">Always bet on Prime.</div>
             </div>
         </InlineMessage>
@@ -74,7 +74,7 @@ export default {
             class="border-primary w-full justify-content-start"
         >
             <div class="flex align-items-center">
-                <img alt="logo" src="https://www.primevue.org/images/logo.svg" width="32" />
+                <img alt="logo" src="https://primefaces.org/cdn/primevue/images/logo.svg" width="32" />
                 <div class="ml-2">Always bet on Prime.</div>
             </div>
         </InlineMessage>
