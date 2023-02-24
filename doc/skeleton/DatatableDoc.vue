@@ -3,7 +3,7 @@
         <p>Sample DataTable implementation using different Skeleton components and PrimeFlex CSS utilities.</p>
     </DocSectionText>
     <div class="card">
-        <DataTable :value="products" responsiveLayout="scroll">
+        <DataTable :value="products">
             <Column field="code" header="Code">
                 <template #body>
                     <Skeleton></Skeleton>
@@ -35,7 +35,7 @@ export default {
         return {
             code: {
                 basic: `
-<DataTable :value="products" responsiveLayout="scroll">
+<DataTable :value="products">
     <Column field="code" header="Code">
         <template #body>
             <Skeleton></Skeleton>
@@ -60,7 +60,7 @@ export default {
                 options: `
 <template>
     <div class="card">
-        <DataTable :value="products" responsiveLayout="scroll">
+        <DataTable :value="products">
             <Column field="code" header="Code">
                 <template #body>
                     <Skeleton></Skeleton>
@@ -97,7 +97,7 @@ export default {
                 composition: `
 <template>
     <div class="card">
-        <DataTable :value="products" responsiveLayout="scroll">
+        <DataTable :value="products">
             <Column field="code" header="Code">
                 <template #body>
                     <Skeleton></Skeleton>

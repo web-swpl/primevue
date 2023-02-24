@@ -27,7 +27,6 @@
             @filter="onFilter($event)"
             filterDisplay="row"
             :globalFilterFields="['name', 'country.name', 'company', 'representative.name']"
-            responsiveLayout="scroll"
             :selectAll="selectAll"
             @select-all-change="onSelectAllChange"
             @row-select="onRowSelect"
@@ -100,7 +99,7 @@ export default {
                 basic: `
 <DataTable :value="customers" lazy paginator :rows="10" v-model:filters="filters" ref="dt" dataKey="id"
         :totalRecords="totalRecords" :loading="loading" @page="onPage($event)" @sort="onSort($event)" @filter="onFilter($event)" filterDisplay="row"
-        :globalFilterFields="['name','country.name', 'company', 'representative.name']" responsiveLayout="scroll"
+        :globalFilterFields="['name','country.name', 'company', 'representative.name']"
         v-model:selection="selectedCustomers" :selectAll="selectAll" @select-all-change="onSelectAllChange" @row-select="onRowSelect" @row-unselect="onRowUnselect" tableStyle="min-width: 75rem">
     <Column selectionMode="multiple" headerStyle="width: 3rem"></Column>
     <Column field="name" header="Name" filterMatchMode="startsWith" sortable>
@@ -129,7 +128,7 @@ export default {
 	<div class="card p-fluid">
         <DataTable :value="customers" lazy paginator :rows="10" v-model:filters="filters" ref="dt" dataKey="id"
                 :totalRecords="totalRecords" :loading="loading" @page="onPage($event)" @sort="onSort($event)" @filter="onFilter($event)" filterDisplay="row"
-                :globalFilterFields="['name','country.name', 'company', 'representative.name']" responsiveLayout="scroll"
+                :globalFilterFields="['name','country.name', 'company', 'representative.name']"
                 v-model:selection="selectedCustomers" :selectAll="selectAll" @select-all-change="onSelectAllChange" @row-select="onRowSelect" @row-unselect="onRowUnselect" tableStyle="min-width: 75rem">
             <Column selectionMode="multiple" headerStyle="width: 3rem"></Column>
             <Column field="name" header="Name" filterMatchMode="startsWith" sortable>
@@ -252,7 +251,7 @@ export default {
 	<div class="card p-fluid">
         <DataTable :value="customers" lazy paginator :rows="10" v-model:filters="filters" ref="dt" dataKey="id"
             :totalRecords="totalRecords" :loading="loading" @page="onPage($event)" @sort="onSort($event)" @filter="onFilter($event)" filterDisplay="row"
-            :globalFilterFields="['name','country.name', 'company', 'representative.name']" responsiveLayout="scroll"
+            :globalFilterFields="['name','country.name', 'company', 'representative.name']"
             v-model:selection="selectedCustomers" :selectAll="selectAll" @select-all-change="onSelectAllChange" @row-select="onRowSelect" @row-unselect="onRowUnselect" tableStyle="min-width: 75rem">
             <Column selectionMode="multiple" headerStyle="width: 3rem"></Column>
             <Column field="name" header="Name" filterMatchMode="startsWith" sortable>

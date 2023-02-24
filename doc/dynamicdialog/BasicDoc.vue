@@ -152,7 +152,7 @@ const showProducts = () => {
         <div class="flex justify-content-end mt-1 mb-3">
             <Button icon="pi pi-external-link" label="Nested Dialog" class="p-button-outlined p-button-success" @click="showInfo" />
         </div>
-        <DataTable :value="products" responsiveLayout="scroll">
+        <DataTable :value="products">
 			<Column field="code" header="Code"></Column>
 			<Column field="name" header="Name"></Column>
             <Column header="Image">
@@ -246,7 +246,7 @@ export default {
         <div class="flex justify-content-end mt-1 mb-3">
             <Button icon="pi pi-external-link" label="Nested Dialog" class="p-button-outlined p-button-success" @click="showInfo" />
         </div>
-        <DataTable :value="products" responsiveLayout="scroll">
+        <DataTable :value="products">
 			<Column field="code" header="Code"></Column>
 			<Column field="name" header="Name"></Column>
             <Column header="Image">

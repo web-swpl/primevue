@@ -7,7 +7,7 @@
         <p>The optional global filtering searches the data against a single value that is bound to the <i>global</i> key of the <i>filters</i> object. The fields to search against is defined with the <i>globalFilterFields</i>.</p>
     </DocSectionText>
     <div class="card">
-        <DataTable v-model:filters="filters" :value="customers" paginator :rows="10" dataKey="id" filterDisplay="row" :loading="loading" :globalFilterFields="['name', 'country.name', 'representative.name', 'status']" responsiveLayout="scroll">
+        <DataTable v-model:filters="filters" :value="customers" paginator :rows="10" dataKey="id" filterDisplay="row" :loading="loading" :globalFilterFields="['name', 'country.name', 'representative.name', 'status']">
             <template #header>
                 <div class="flex justify-content-end">
                     <span class="p-input-icon-left">
@@ -113,7 +113,7 @@ export default {
             code: {
                 basic: `
 <DataTable v-model:filters="filters" :value="customers" paginator :rows="10" dataKey="id" filterDisplay="row" :loading="loading"
-        :globalFilterFields="['name', 'country.name', 'representative.name', 'status']" responsiveLayout="scroll">
+        :globalFilterFields="['name', 'country.name', 'representative.name', 'status']">
     <template #header>
         <div class="flex justify-content-end">
             <span class="p-input-icon-left">
@@ -186,7 +186,7 @@ export default {
 <template>
     <div class="card">
         <DataTable v-model:filters="filters" :value="customers" paginator :rows="10" dataKey="id" filterDisplay="row" :loading="loading"
-                :globalFilterFields="['name', 'country.name', 'representative.name', 'status']" responsiveLayout="scroll">
+                :globalFilterFields="['name', 'country.name', 'representative.name', 'status']">
             <template #header>
                 <div class="flex justify-content-end">
                     <span class="p-input-icon-left">
@@ -339,7 +339,7 @@ export default {
 <template>
     <div class="card">
         <DataTable v-model:filters="filters" :value="customers" paginator :rows="10" dataKey="id" filterDisplay="row" :loading="loading"
-                :globalFilterFields="['name', 'country.name', 'representative.name', 'status']" responsiveLayout="scroll">
+                :globalFilterFields="['name', 'country.name', 'representative.name', 'status']">
             <template #header>
                 <div class="flex justify-content-end">
                     <span class="p-input-icon-left">

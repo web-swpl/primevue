@@ -26,7 +26,6 @@
                     paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
                     currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
                     :globalFilterFields="['name', 'country.name', 'representative.name', 'status']"
-                    responsiveLayout="scroll"
                 >
                     <template #header>
                         <div class="flex flex-column sm:flex-row sm:justify-content-between sm:align-items-center">

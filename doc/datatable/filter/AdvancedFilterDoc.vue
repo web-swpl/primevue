@@ -3,18 +3,7 @@
         <p>When <i>filterDisplay</i> is set as <i>menu</i>, filtering is done via popups with support for multiple constraints and advanced templating.</p>
     </DocSectionText>
     <div class="card">
-        <DataTable
-            v-model:filters="filters"
-            :value="customers"
-            paginator
-            showGridlines
-            :rows="10"
-            dataKey="id"
-            filterDisplay="menu"
-            :loading="loading"
-            responsiveLayout="scroll"
-            :globalFilterFields="['name', 'country.name', 'representative.name', 'balance', 'status']"
-        >
+        <DataTable v-model:filters="filters" :value="customers" paginator showGridlines :rows="10" dataKey="id" filterDisplay="menu" :loading="loading" :globalFilterFields="['name', 'country.name', 'representative.name', 'balance', 'status']">
             <template #header>
                 <div class="flex justify-content-between">
                     <Button type="button" icon="pi pi-filter-slash" label="Clear" class="p-button-outlined" @click="clearFilter()" />
@@ -152,7 +141,7 @@ export default {
             code: {
                 basic: `
 <DataTable v-model:filters="filters" :value="customers" paginator showGridlines :rows="10" dataKey="id"
-        filterDisplay="menu" :loading="loading" responsiveLayout="scroll" :globalFilterFields="['name', 'country.name', 'representative.name', 'balance', 'status']">
+        filterDisplay="menu" :loading="loading" :globalFilterFields="['name', 'country.name', 'representative.name', 'balance', 'status']">
     <template #header>
         <div class="flex justify-content-between">
             <Button type="button" icon="pi pi-filter-slash" label="Clear" class="p-button-outlined" @click="clearFilter()" />
@@ -264,7 +253,7 @@ export default {
 <template>
     <div class="card">
         <DataTable v-model:filters="filters" :value="customers" paginator showGridlines :rows="10" dataKey="id"
-                filterDisplay="menu" :loading="loading" responsiveLayout="scroll" :globalFilterFields="['name', 'country.name', 'representative.name', 'balance', 'status']">
+                filterDisplay="menu" :loading="loading" :globalFilterFields="['name', 'country.name', 'representative.name', 'balance', 'status']">
             <template #header>
                 <div class="flex justify-content-between">
                     <Button type="button" icon="pi pi-filter-slash" label="Clear" class="p-button-outlined" @click="clearFilter()" />
@@ -468,7 +457,7 @@ export default {
 <template>
     <div class="card">
         <DataTable v-model:filters="filters" :value="customers" paginator showGridlines :rows="10" dataKey="id"
-                filterDisplay="menu" :loading="loading" responsiveLayout="scroll" :globalFilterFields="['name', 'country.name', 'representative.name', 'balance', 'status']">
+                filterDisplay="menu" :loading="loading" :globalFilterFields="['name', 'country.name', 'representative.name', 'balance', 'status']">
             <template #header>
                 <div class="flex justify-content-between">
                     <Button type="button" icon="pi pi-filter-slash" label="Clear" class="p-button-outlined" @click="clearFilter()" />
