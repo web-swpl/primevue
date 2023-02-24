@@ -13,6 +13,10 @@
                     "to": "/configuration"
                 },
                 {
+                    "name": "FilterService",
+                    "to": "/filterservice"
+                },
+                {
                     "name": "Locale",
                     "to": "/locale"
                 },
