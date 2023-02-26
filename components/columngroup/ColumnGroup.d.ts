@@ -1,3 +1,6 @@
+/**
+ * @module columnGroup
+ */
 import { ClassComponent, GlobalComponentConstructor } from '../ts-helpers';
 
 type ColumnGroupType = 'header' | 'footer' | undefined;

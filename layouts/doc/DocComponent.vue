@@ -30,7 +30,7 @@
 
             <template v-else-if="tab === 1">
                 <div class="doc-tabpanel">
-                    <DocApiSection :doc="apiDocs" />
+                    <DocApiSection :doc="apiDocs" :header="header" />
                 </div>
             </template>
         </div>
