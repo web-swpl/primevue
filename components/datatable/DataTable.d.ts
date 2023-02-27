@@ -828,18 +828,18 @@ export interface DataTableSlots {
     empty: () => VNode[];
     /**
      * Custom group header template.
-     * @param {DataTableExportCSVOptions} [options] - Export options.
+     * @param {Object} scope - group header slot's params.
      */
-    groupheader({
+    groupheader: (scope: {
         /**
          * Row data
          */
-        data: any,
+        data: any;
         /**
          * Row index
          */
-        index: number
-    }): VNode[];
+        index: number;
+    }) => VNode[];
     /**
      * Custom group footer template.
      * @param {Object} scope - group footer slot's params.
