@@ -12,14 +12,6 @@
                     label="Composition API"
                     @click="codeLang = 'composition'"
                 ></Button>
-                <template v-if="code.php">
-                    <Button
-                        v-tooltip.bottom="{ value: 'PHP Code', class: 'doc-section-code-tooltip' }"
-                        :class="['p-button-rounded p-button-text p-button-plain h-2rem w-2rem p-0 inline-flex align-items-center justify-content-center', { 'doc-section-code-active text-primary': codeLang === 'php' }]"
-                        label="PHP"
-                        @click="codeLang = 'php'"
-                    ></Button>
-                </template>
             </template>
 
             <template v-if="!hideToggleCode">
@@ -81,29 +73,22 @@
         </div>
 
         <template v-if="codeMode === 'basic'">
-            <pre v-code.script><code>
-{{ (code.basic).toString() }}
+            <pre v-code><code>
+{{ code.basic }}
 
 </code></pre>
         </template>
 
         <template v-if="codeMode !== 'basic' && codeLang === 'options'">
-            <pre v-code.script><code>
+            <pre v-code><code>
 {{ code.options }}
 
 </code></pre>
         </template>
 
         <template v-if="codeMode !== 'basic' && codeLang === 'composition'">
-            <pre v-code.script><code>
+            <pre v-code><code>
 {{ code.composition }}
-
-</code></pre>
-        </template>
-
-        <template v-if="codeMode !== 'basic' && codeLang === 'php'">
-            <pre v-code.script><code>
-{{ code.php }}
 
 </code></pre>
         </template>
