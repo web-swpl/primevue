@@ -52,10 +52,10 @@ export default {
                 const props = values[`${docName}Props`];
                 const emits = values[`${docName}Emits`];
                 const slots = values[`${docName}Slots`];
-                const methods = values['default'];
+                const methods = values[docName];
                 const types = APIDocs[moduleName]['types'];
                 let events = this.findEvents(values);
-                const interfaces = this.findOtherInterfaces(values);
+                const interfaces = this.findOtherInterfaces(values, docName);
 
                 if (props && props.props.length) {
                     newDoc.children.push({
@@ -118,7 +118,6 @@ export default {
                 }
 
                 if (types) {
-                    console.log('test');
                     newDoc.children.push({
                         id: `api.${moduleName}.types`,
                         label: 'Types',
@@ -255,11 +254,11 @@ export default {
 
             return events;
         },
-        findOtherInterfaces(values) {
+        findOtherInterfaces(values, docName) {
             const interfaces = [];
 
             for (const key of Object.keys(values)) {
-                if (!key.includes('Event') && !key.includes('Props') && !key.includes('Emits') && !key.includes('Slots') && key !== 'default') {
+                if (!key.includes('Event') && !key.includes('Props') && !key.includes('Emits') && !key.includes('Slots') && key !== docName) {
                     interfaces.push({ key, values: values[key] });
                 }
             }

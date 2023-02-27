@@ -5855,11 +5855,6 @@
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
             "values": {
-                "ColumnGroupEmits": {
-                    "relatedProp": "",
-                    "props": [],
-                    "methods": []
-                },
                 "ColumnGroupProps": {
                     "relatedProp": "",
                     "props": [
@@ -5878,6 +5873,14 @@
                     "relatedProp": "",
                     "props": [],
                     "methods": []
+                }
+            }
+        },
+        "types": {
+            "description": "Defines the custom types used by the module.",
+            "values": {
+                "ColumnGroupEmits": {
+                    "values": "{}"
                 }
             }
         }
@@ -6307,6 +6310,55 @@
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
             "values": {
+                "DataTable": {
+                    "description": "**PrimeReact - DataTable**\n\n * _DataTable displays data in tabular format._\n\n[Live Demo](https://www.primevue.org/datatable/)\n--- ---\n![PrimeVue](https://primefaces.org/cdn/primevue/images/logo.svg)",
+                    "relatedProp": "",
+                    "props": [
+                        {
+                            "name": "$emit",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function",
+                            "default": ""
+                        },
+                        {
+                            "name": "$props",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "DataTableProps & VNodeProps & AllowedComponentProps & ComponentCustomProps",
+                            "default": ""
+                        },
+                        {
+                            "name": "$slots",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "DataTableSlots",
+                            "default": ""
+                        }
+                    ],
+                    "methods": [
+                        {
+                            "name": "exportCSV",
+                            "parameters": [
+                                {
+                                    "name": "options",
+                                    "optional": true,
+                                    "type": "DataTableExportCSVOptions",
+                                    "description": "Export options."
+                                },
+                                {
+                                    "name": "data",
+                                    "optional": true,
+                                    "type": "any[]",
+                                    "description": "Custom exportable data. This param can be used on lazy dataTable."
+                                }
+                            ],
+                            "returnType": "void",
+                            "description": "Exports the data to CSV format."
+                        }
+                    ],
+                    "extendedTypes": "ClassComponent<DataTableProps, DataTableSlots, DataTableEmits>"
+                },
                 "DataTableCellEditCancelEvent": {
                     "description": "",
                     "relatedProp": "",
@@ -8322,13 +8374,6 @@
                             "default": ""
                         },
                         {
-                            "name": "header",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        },
-                        {
                             "name": "loading",
                             "optional": false,
                             "readonly": false,
@@ -8355,14 +8400,20 @@
                             "name": "groupheader",
                             "parameters": [
                                 {
-                                    "name": "options",
-                                    "optional": true,
+                                    "name": "scope",
+                                    "optional": false,
                                     "type": "Object",
-                                    "description": "Export options."
+                                    "description": "The employee who is responsible for the project."
                                 }
                             ],
                             "returnType": "VNode<RendererNode, RendererElement, Object>[]",
                             "description": "Custom group header template."
+                        },
+                        {
+                            "name": "header",
+                            "parameters": [],
+                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
+                            "description": "Custom header template."
                         }
                     ]
                 },

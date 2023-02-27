@@ -809,7 +809,7 @@ export interface DataTableSlots {
     /**
      * Custom header template.
      */
-    header: () => VNode[];
+    header(): VNode[];
     /**
      * Custom footer template.
      */
@@ -828,9 +828,11 @@ export interface DataTableSlots {
     empty: () => VNode[];
     /**
      * Custom group header template.
-     * @param {Object} scope - group header slot's params.
+     * @param {Object} scope - The employee who is responsible for the project.
+     * @param {*} scope.data - The name of the employee.
+     * @param {number} scope.index - The employee's department.
      */
-    groupheader: (scope: {
+    groupheader(scope: {
         /**
          * Row data
          */
@@ -839,7 +841,7 @@ export interface DataTableSlots {
          * Row index
          */
         index: number;
-    }) => VNode[];
+    }): VNode[];
     /**
      * Custom group footer template.
      * @param {Object} scope - group footer slot's params.
@@ -1076,9 +1078,9 @@ export interface DataTableEmits {
  * --- ---
  * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo.svg)
  *
- * @group Interface
+ * @group Interfaces
  */
-declare class DataTable extends ClassComponent<DataTableProps, DataTableSlots, DataTableEmits> {
+export declare class DataTable extends ClassComponent<DataTableProps, DataTableSlots, DataTableEmits> {
     /**
      * Exports the data to CSV format.
      * @param {DataTableExportCSVOptions} [options] - Export options.
