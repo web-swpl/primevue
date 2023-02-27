@@ -5719,7 +5719,7 @@
                                 {
                                     "name": "scope",
                                     "optional": false,
-                                    "type": "Object",
+                                    "type": "{\n  \t column: Column, // Column node.\n  \t data: any, // Row data.\n  \t editorInitCallback: undefined, // undefined\n  \t field: string, // Column field.\n  \t frozenRow: boolean, // Whether the row is frozen.\n  \t index: number, // Row index.\n  \t node: any, // Row node data.\n  }",
                                     "description": "body slot's params."
                                 }
                             ],
@@ -5732,7 +5732,7 @@
                                 {
                                     "name": "scope",
                                     "optional": false,
-                                    "type": "Object",
+                                    "type": "{\n  \t column: Column, // Column node.\n  \t data: any, // Row data.\n  \t editorCancelCallback: undefined, // undefined\n  \t editorSaveCallback: undefined, // undefined\n  \t field: string, // Column field.\n  \t frozenRow: boolean, // Whether the row is frozen.\n  \t index: number, // Row index.\n  }",
                                     "description": "editor slot's params."
                                 }
                             ],
@@ -5745,7 +5745,7 @@
                                 {
                                     "name": "scope",
                                     "optional": false,
-                                    "type": "Object",
+                                    "type": "{\n  \t field: string, // Column field.\n  \t filterCallback: undefined, // undefined\n  \t filterModel: ColumnFilterModelType, // Filter metadata\n  }",
                                     "description": "filter slot's params."
                                 }
                             ],
@@ -5758,7 +5758,7 @@
                                 {
                                     "name": "scope",
                                     "optional": false,
-                                    "type": "Object",
+                                    "type": "{\n  \t field: string, // Column field.\n  \t filterCallback: undefined, // undefined\n  \t filterModel: ColumnFilterModelType, // Filter metadata\n  }",
                                     "description": "filter apply slot's params."
                                 }
                             ],
@@ -5771,7 +5771,7 @@
                                 {
                                     "name": "scope",
                                     "optional": false,
-                                    "type": "Object",
+                                    "type": "{\n  \t field: string, // Column field.\n  \t filterCallback: undefined, // undefined\n  \t filterModel: ColumnFilterModelType, // Filter metadata\n  }",
                                     "description": "filter clear slot's params."
                                 }
                             ],
@@ -5784,7 +5784,7 @@
                                 {
                                     "name": "scope",
                                     "optional": false,
-                                    "type": "Object",
+                                    "type": "{\n  \t field: string, // Column field.\n  \t filterCallback: undefined, // undefined\n  \t filterModel: ColumnFilterModelType, // Filter metadata\n  }",
                                     "description": "filter footer slot's params."
                                 }
                             ],
@@ -5797,7 +5797,7 @@
                                 {
                                     "name": "scope",
                                     "optional": false,
-                                    "type": "Object",
+                                    "type": "{\n  \t field: string, // Column field.\n  \t filterCallback: undefined, // undefined\n  \t filterModel: ColumnFilterModelType, // Filter metadata\n  }",
                                     "description": "filter header slot's params."
                                 }
                             ],
@@ -5810,7 +5810,7 @@
                                 {
                                     "name": "scope",
                                     "optional": false,
-                                    "type": "Object",
+                                    "type": "{\n  \t column: Column, // Column node.\n  }",
                                     "description": "footer slot's params."
                                 }
                             ],
@@ -5823,7 +5823,7 @@
                                 {
                                     "name": "scope",
                                     "optional": false,
-                                    "type": "Object",
+                                    "type": "{\n  \t column: Column, // Column node.\n  }",
                                     "description": "header slot's params."
                                 }
                             ],
@@ -5836,7 +5836,7 @@
                                 {
                                     "name": "scope",
                                     "optional": false,
-                                    "type": "Object",
+                                    "type": "{\n  \t column: Column, // Column node.\n  \t data: any, // Row data.\n  \t field: string, // Column field.\n  \t frozenRow: boolean, // Whether the row is frozen.\n  \t index: number, // Row index.\n  \t loadingOptions: ColumnLoadingOptions, // Loading options.\n  }",
                                     "description": "loading slot's params."
                                 }
                             ],
@@ -8344,66 +8344,53 @@
                 },
                 "DataTableSlots": {
                     "relatedProp": "",
-                    "props": [
+                    "props": [],
+                    "methods": [
                         {
                             "name": "empty",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
+                            "parameters": [],
+                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
+                            "description": "Custom empty template."
                         },
                         {
                             "name": "expansion",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
+                            "parameters": [
+                                {
+                                    "name": "scope",
+                                    "optional": false,
+                                    "type": "{\n  \t data: any, // Row data\n  \t index: number, // Row index\n  }",
+                                    "description": "expansion slot's params."
+                                }
+                            ],
+                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
+                            "description": "Custom expansion template."
                         },
                         {
                             "name": "footer",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
+                            "parameters": [],
+                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
+                            "description": "Custom footer template."
                         },
                         {
                             "name": "groupfooter",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
+                            "parameters": [
+                                {
+                                    "name": "scope",
+                                    "optional": false,
+                                    "type": "{\n  \t data: any, // Row data\n  \t index: number, // Row index\n  }",
+                                    "description": "group footer slot's params."
+                                }
+                            ],
+                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
+                            "description": "Custom group footer template."
                         },
-                        {
-                            "name": "loading",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        },
-                        {
-                            "name": "paginatorend",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        },
-                        {
-                            "name": "paginatorstart",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        }
-                    ],
-                    "methods": [
                         {
                             "name": "groupheader",
                             "parameters": [
                                 {
                                     "name": "scope",
                                     "optional": false,
-                                    "type": "Object",
-                                    "description": "The employee who is responsible for the project."
+                                    "type": "{\n  \t data: any, // Row data\n  \t index: number, // Row index\n  }"
                                 }
                             ],
                             "returnType": "VNode<RendererNode, RendererElement, Object>[]",
@@ -8414,6 +8401,24 @@
                             "parameters": [],
                             "returnType": "VNode<RendererNode, RendererElement, Object>[]",
                             "description": "Custom header template."
+                        },
+                        {
+                            "name": "loading",
+                            "parameters": [],
+                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
+                            "description": "Custom loading template."
+                        },
+                        {
+                            "name": "paginatorend",
+                            "parameters": [],
+                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
+                            "description": "Custom paginator end template."
+                        },
+                        {
+                            "name": "paginatorstart",
+                            "parameters": [],
+                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
+                            "description": "Custom paginator start template."
                         }
                     ]
                 },
@@ -12191,7 +12196,21 @@
                     "description": "Defines valid slots in Knob component.",
                     "relatedProp": "",
                     "props": [],
-                    "methods": []
+                    "methods": [
+                        {
+                            "name": "groupheader",
+                            "parameters": [
+                                {
+                                    "name": "scope",
+                                    "optional": false,
+                                    "type": "{\n  \t data: any, // Row data\n  \t index: number, // Row index\n  }",
+                                    "description": "The employee who is responsible for the project."
+                                }
+                            ],
+                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
+                            "description": "Custom group header template."
+                        }
+                    ]
                 }
             }
         }

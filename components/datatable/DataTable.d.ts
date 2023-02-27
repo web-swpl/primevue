@@ -813,24 +813,21 @@ export interface DataTableSlots {
     /**
      * Custom footer template.
      */
-    footer: () => VNode[];
+    footer(): VNode[];
     /**
      * Custom paginator start template.
      */
-    paginatorstart: () => VNode[];
+    paginatorstart(): VNode[];
     /**
      * Custom paginator end template.
      */
-    paginatorend: () => VNode[];
+    paginatorend(): VNode[];
     /**
      * Custom empty template.
      */
-    empty: () => VNode[];
+    empty(): VNode[];
     /**
      * Custom group header template.
-     * @param {Object} scope - The employee who is responsible for the project.
-     * @param {*} scope.data - The name of the employee.
-     * @param {number} scope.index - The employee's department.
      */
     groupheader(scope: {
         /**
@@ -846,7 +843,7 @@ export interface DataTableSlots {
      * Custom group footer template.
      * @param {Object} scope - group footer slot's params.
      */
-    groupfooter: (scope: {
+    groupfooter(scope: {
         /**
          * Row data
          */
@@ -855,16 +852,16 @@ export interface DataTableSlots {
          * Row index
          */
         index: number;
-    }) => VNode[];
+    }): VNode[];
     /**
      * Custom loading template.
      */
-    loading: () => VNode[];
+    loading(): VNode[];
     /**
      * Custom expansion template.
      * @param {Object} scope - expansion slot's params.
      */
-    expansion: (scope: {
+    expansion(scope: {
         /**
          * Row data
          */
@@ -873,7 +870,7 @@ export interface DataTableSlots {
          * Row index
          */
         index: number;
-    }) => VNode[];
+    }): VNode[];
 }
 
 export interface DataTableEmits {

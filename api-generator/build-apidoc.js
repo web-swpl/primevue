@@ -46,6 +46,10 @@ if (project) {
     project.children.forEach((module) => {
         const { name, comment } = module;
 
+        /*  if (name === 'knob') {
+            console.log('module', module);
+        } */ // REMOVE
+
         // if (name !== 'datatable') return; // REMOVE
 
         const description = comment && comment.summary.map((s) => s.text || '').join(' ');
@@ -299,10 +303,22 @@ if (project) {
                             methods.push({
                                 name: signature.name,
                                 parameters: signature.parameters.map((param) => {
+                                    let type = param.type.toString();
+
+                                    if (param.type.declaration) {
+                                        type = '';
+
+                                        param.type.declaration.children.forEach((child) => {
+                                            type += ` \t ${child.name}: ${child.type.name}, // ${child.comment?.summary[0].text}\n `;
+                                        });
+
+                                        type = `{\n ${type} }`;
+                                    }
+
                                     return {
                                         name: param.name,
                                         optional: param.flags.isOptional,
-                                        type: param.type.toString(),
+                                        type: type,
                                         description: param.comment && param.comment.summary.map((s) => parseText(s.text || '')).join(' ')
                                     };
                                 }),
