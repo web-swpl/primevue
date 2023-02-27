@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>3 slots are included to customize the overlay. These are <i>header</i> , <i>content</i> and <i>footer</i>. Note that content overrides the default meter.</p>
+        <p>3 slots are included to customize the overlay. These are <i>header</i>, <i>content</i> and <i>footer</i>. Note that content overrides the default meter.</p>
     </DocSectionText>
     <div class="card flex justify-content-center">
         <Password v-model="value">
@@ -54,7 +54,7 @@ export default {
             <template #footer>
                 <Divider />
                 <p class="mt-2">Suggestions</p>
-                <ul class="pl-2 ml-2     tyle="line-height: 1.5">
+                <ul class="pl-2 ml-2 style="line-height: 1.5">
                     <li>At least one lowercase</li>
                     <li>At least one uppercase</li>
                     <li>At least one numeric</li>
@@ -67,11 +67,11 @@ export default {
 
 <script>
 export default {
-  data() {
-      return {
-          value: null
-      }
-  }
+    data() {
+        return {
+            value: null
+        }
+    }
 };
 <\/script>`,
                 composition: `
