@@ -79,7 +79,7 @@ export default {
 
                 if (slots && slots.methods.length) {
                     newDoc.children.push({
-                        id: `api.${moduleName}.emits`,
+                        id: `api.${moduleName}.slots`,
                         label: 'Slots',
                         component: DocApiTable,
                         data: this.setEmitData(slots.methods),
@@ -113,7 +113,7 @@ export default {
                         label: 'Interfaces',
                         component: DocApiTable,
                         data: this.setInterfacesData(moduleName, interfaces),
-                        description: APIDocs[moduleName].interfaces.interfaceDescription || null
+                        description: APIDocs[moduleName].interfaces.description || null
                     });
                 }
 
@@ -172,7 +172,7 @@ export default {
 
             for (const event of events) {
                 const eventData = {
-                    id: `api.${moduleName}.${event.key}.events`,
+                    id: `api.${moduleName}.events.${event.key}`,
                     label: event.key,
                     component: DocApiTable,
                     description: event.values.description,
@@ -202,7 +202,7 @@ export default {
 
             for (const interfaceData of interfaces) {
                 const interfaceDatas = {
-                    id: `api.${moduleName}.${interfaceData.key}.interfaces`,
+                    id: `api.${moduleName}.interfaces.${interfaceData.key}`,
                     label: interfaceData.key,
                     component: DocApiTable,
                     description: interfaceData.values.description,
@@ -228,7 +228,7 @@ export default {
             for (const key of Object.keys(types)) {
                 const value = types[key];
                 const typeData = {
-                    id: `api.${moduleName}.${value}.events`,
+                    id: `api.${moduleName}.types.${key}`,
                     label: key,
                     component: DocApiTable,
                     data: []

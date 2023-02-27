@@ -24,7 +24,18 @@
                     <tr v-for="prop in data" :key="prop">
                         <td v-for="[k, v] in Object.entries(prop)" :key="k" :class="{ 'doc-option-type': k === 'type', 'doc-option-default': k === 'defaultValue' }">
                             <template v-if="k !== 'readonly' && k !== 'optional' && k !== 'deprecated'">
-                                {{ v }}
+                                <span v-if="k === 'name'" :id="id + '.' + v" class="doc-option-name">
+                                    {{ v }}
+                                    <nuxt-link :to="`/${$router.currentRoute.value.name}/#${id}.${v}`" class="doc-option-link">
+                                        <i class="pi pi-link"></i>
+                                    </nuxt-link>
+                                </span>
+
+                                <nuxt-link v-else-if="isLinkType(k, v)" :to="setLinkPath(v)" class="doc-option-link"> {{ v }} </nuxt-link>
+
+                                <span v-else :id="id + '.' + v">
+                                    {{ v }}
+                                </span>
                             </template>
                         </td>
                     </tr>
@@ -57,6 +68,20 @@ export default {
         },
         relatedProp: {
             type: String
+        }
+    },
+    methods: {
+        isLinkType(key, value) {
+            const primitiveTypes = ['string', 'number', 'boolean', 'object', 'array', 'function', 'symbol', 'null', 'undefined'];
+
+            return key === 'type' && !primitiveTypes.includes(value);
+        },
+        setLinkPath(value) {
+            const currentRoute = this.$router.currentRoute.value.name;
+
+            const definationType = value.includes('type') ? 'types' : 'interfaces';
+
+            return `/${currentRoute}/#api.${currentRoute}.${definationType}.${value}`;
         }
     }
 };

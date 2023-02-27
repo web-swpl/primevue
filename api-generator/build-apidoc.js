@@ -7,7 +7,8 @@ const outputPath = path.resolve(rootDir, 'doc/common/apidoc');
 
 const staticMessages = {
     methods: "Defines methods that can be accessed by the component's reference.",
-    emit: 'Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.',
+    emits: 'Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.',
+    slots: 'Defines the slots used by the component.',
     functions: 'Defines the custom functions used by the module.',
     events: "Defines the custom events used by the component's emit.",
     interfaces: 'Defines the custom interfaces used by the module.',
@@ -273,6 +274,9 @@ if (project) {
                         description: staticMessages['interfaces'],
                         eventDescription: staticMessages['events'],
                         methodDescription: staticMessages['methods'],
+                        typeDescription: staticMessages['types'],
+                        emitDescription: staticMessages['emits'],
+                        slotDescription: staticMessages['slots'],
                         values: {}
                     });
 

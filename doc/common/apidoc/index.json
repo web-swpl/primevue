@@ -5,6 +5,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "AccordionClickEvent": {
                     "description": "Custom tab open event.",
@@ -222,6 +225,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "AccordionTabEmits": {
                     "description": "Defines valid emits in Acordion component.",
@@ -335,6 +341,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "FilterMatchModeOptions": {
                     "relatedProp": "",
@@ -2328,6 +2337,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "AutoCompleteChangeEvent": {
                     "relatedProp": "",
@@ -2869,6 +2881,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "AvatarProps": {
                     "relatedProp": "",
@@ -2961,6 +2976,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "AvatarGroupProps": {
                     "relatedProp": "",
@@ -2988,6 +3006,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "BadgeProps": {
                     "relatedProp": "",
@@ -3049,6 +3070,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "BlockUIProps": {
                     "relatedProp": "",
@@ -3117,6 +3141,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "BreadcrumbProps": {
                     "relatedProp": "",
@@ -3193,6 +3220,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ButtonProps": {
                     "relatedProp": "",
@@ -3310,6 +3340,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "CalendarBlurEvent": {
                     "relatedProp": "",
@@ -3895,6 +3928,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "CardProps": {
                     "relatedProp": "",
@@ -3958,6 +3994,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "CarouselProps": {
                     "relatedProp": "",
@@ -4166,6 +4205,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "CascadeSelectChangeEvent": {
                     "relatedProp": "",
@@ -4527,6 +4569,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ChartProps": {
                     "relatedProp": "",
@@ -4641,6 +4686,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "CheckboxProps": {
                     "relatedProp": "",
@@ -4797,6 +4845,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ChipProps": {
                     "relatedProp": "",
@@ -4873,6 +4924,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ChipsAddEvent": {
                     "relatedProp": "",
@@ -5068,6 +5122,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ColorPickerChangeEvent": {
                     "relatedProp": "",
@@ -5199,6 +5256,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ColumnEmits": {
                     "relatedProp": "",
@@ -5854,6 +5914,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ColumnGroupProps": {
                     "relatedProp": "",
@@ -5902,6 +5965,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ConfirmationOptions": {
                     "relatedProp": "",
@@ -6058,6 +6124,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ConfirmationServiceMethods": {
                     "relatedProp": "",
@@ -6092,6 +6161,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ConfirmDialogBreakpoints": {
                     "relatedProp": "",
@@ -6156,6 +6228,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ConfirmPopupProps": {
                     "relatedProp": "",
@@ -6200,6 +6275,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ContextMenuProps": {
                     "relatedProp": "",
@@ -6309,6 +6387,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "DataTable": {
                     "description": "**PrimeReact - DataTable**\n\n * _DataTable displays data in tabular format._\n\n[Live Demo](https://www.primevue.org/datatable/)\n--- ---\n![PrimeVue](https://primefaces.org/cdn/primevue/images/logo.svg)",
@@ -6573,6 +6654,7 @@
                     "methods": []
                 },
                 "DataTableEmits": {
+                    "description": "Defines valid emits in Datatable component.",
                     "relatedProp": "",
                     "props": [],
                     "methods": [
@@ -8343,6 +8425,7 @@
                     "methods": []
                 },
                 "DataTableSlots": {
+                    "description": "Defines valid slots in Datatable component.",
                     "relatedProp": "",
                     "props": [],
                     "methods": [
@@ -8690,6 +8773,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "DataViewPageEvent": {
                     "relatedProp": "",
@@ -8934,6 +9020,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "DataViewLayoutOptionsProps": {
                     "relatedProp": "",
@@ -8970,6 +9059,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "DeferredContentProps": {
                     "relatedProp": "",
@@ -9005,6 +9097,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "DialogBreakpoints": {
                     "relatedProp": "",
@@ -9275,6 +9370,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "DialogServiceMethods": {
                     "relatedProp": "",
@@ -9297,6 +9395,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "DividerProps": {
                     "relatedProp": "",
@@ -9357,6 +9458,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "DockProps": {
                     "relatedProp": "",
@@ -9508,6 +9612,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "DropdownChangeEvent": {
                     "relatedProp": "",
@@ -10019,6 +10126,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "DynamicDialogProps": {
                     "relatedProp": "",
@@ -10046,6 +10156,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "DynamicDialogCloseOptions": {
                     "relatedProp": "",
@@ -10193,6 +10306,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "EditorLoadEvent": {
                     "relatedProp": "",
@@ -10391,6 +10507,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "FieldsetProps": {
                     "relatedProp": "",
@@ -10488,6 +10607,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "FileUploadBeforeSendEvent": {
                     "relatedProp": "",
@@ -10929,6 +11051,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "FullCalendarProps": {
                     "relatedProp": "",
@@ -10971,6 +11096,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "GalleriaProps": {
                     "relatedProp": "",
@@ -11280,6 +11408,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ImageProps": {
                     "relatedProp": "",
@@ -11340,6 +11471,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "InlineMessageProps": {
                     "relatedProp": "",
@@ -11384,6 +11518,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "InplaceProps": {
                     "relatedProp": "",
@@ -11475,6 +11612,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "InputMaskProps": {
                     "relatedProp": "",
@@ -11543,6 +11683,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "InputNumberBlurEvent": {
                     "relatedProp": "",
@@ -11887,6 +12030,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "InputSwitchProps": {
                     "relatedProp": "",
@@ -11987,6 +12133,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "InputTextProps": {
                     "relatedProp": "",
@@ -12025,6 +12174,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "KnobEmits": {
                     "description": "Defines valid emits in Knob component.",
@@ -12196,21 +12348,7 @@
                     "description": "Defines valid slots in Knob component.",
                     "relatedProp": "",
                     "props": [],
-                    "methods": [
-                        {
-                            "name": "groupheader",
-                            "parameters": [
-                                {
-                                    "name": "scope",
-                                    "optional": false,
-                                    "type": "{\n  \t data: any, // Row data\n  \t index: number, // Row index\n  }",
-                                    "description": "The employee who is responsible for the project."
-                                }
-                            ],
-                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
-                            "description": "Custom group header template."
-                        }
-                    ]
+                    "methods": []
                 }
             }
         }
@@ -12220,6 +12358,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ListboxChangeEvent": {
                     "relatedProp": "",
@@ -12589,6 +12730,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "MegaMenuProps": {
                     "relatedProp": "",
@@ -12695,6 +12839,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "MenuProps": {
                     "relatedProp": "",
@@ -12817,6 +12964,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "MenubarProps": {
                     "relatedProp": "",
@@ -12907,6 +13057,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "MenuItem": {
                     "relatedProp": "",
@@ -13073,6 +13226,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "MessageProps": {
                     "relatedProp": "",
@@ -13165,6 +13321,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "MultiSelectAllChangeEvent": {
                     "relatedProp": "",
@@ -13729,6 +13888,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "OrderListProps": {
                     "relatedProp": "",
@@ -13966,6 +14128,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "OrganizationChartCollapsedKeys": {
                     "relatedProp": "",
@@ -14132,6 +14297,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "OverlayPanelBreakpoints": {
                     "relatedProp": "",
@@ -14228,6 +14396,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "PageState": {
                     "relatedProp": "",
@@ -14373,6 +14544,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "PanelProps": {
                     "relatedProp": "",
@@ -14477,6 +14651,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "PanelMenuExpandedKeys": {
                     "relatedProp": "",
@@ -14604,6 +14781,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "PasswordProps": {
                     "relatedProp": "",
@@ -14855,6 +15035,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "PickListMoveAllToSourceEvent": {
                     "description": "",
@@ -15277,6 +15460,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "PortalProps": {
                     "relatedProp": "",
@@ -15329,6 +15515,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ProgressBarProps": {
                     "relatedProp": "",
@@ -15389,6 +15578,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ProgressSpinnerProps": {
                     "relatedProp": "",
@@ -15441,6 +15633,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "RadioButtonProps": {
                     "relatedProp": "",
@@ -15549,6 +15744,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "RatingChangeEvent": {
                     "relatedProp": "",
@@ -15695,6 +15893,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "RowEmits": {
                     "relatedProp": "",
@@ -15719,6 +15920,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ScrollPanelProps": {
                     "relatedProp": "",
@@ -15763,6 +15967,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ScrollTopProps": {
                     "relatedProp": "",
@@ -15823,6 +16030,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "SelectButtonChangeEvent": {
                     "relatedProp": "",
@@ -15961,6 +16171,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "SidebarProps": {
                     "relatedProp": "",
@@ -16076,6 +16289,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "SkeletonProps": {
                     "relatedProp": "",
@@ -16152,6 +16368,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "SliderProps": {
                     "relatedProp": "",
@@ -16282,6 +16501,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "SpeedDialProps": {
                     "relatedProp": "",
@@ -16513,6 +16735,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "SplitButtonProps": {
                     "relatedProp": "",
@@ -16645,6 +16870,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "SplitterProps": {
                     "relatedProp": "",
@@ -16765,6 +16993,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "SplitterPanelProps": {
                     "relatedProp": "",
@@ -16817,6 +17048,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "StepsProps": {
                     "relatedProp": "",
@@ -16886,6 +17120,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "TabMenuChangeEvent": {
                     "relatedProp": "",
@@ -16984,6 +17221,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "TabPanelProps": {
                     "relatedProp": "",
@@ -17099,6 +17339,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "TabViewChangeEvent": {
                     "relatedProp": "",
@@ -17238,6 +17481,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "TagProps": {
                     "relatedProp": "",
@@ -17306,6 +17552,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "TerminalProps": {
                     "relatedProp": "",
@@ -17350,6 +17599,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "TerminalServiceOptions": {
                     "relatedProp": "",
@@ -17413,6 +17665,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "TextareaProps": {
                     "relatedProp": "",
@@ -17458,6 +17713,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "TieredMenuProps": {
                     "relatedProp": "",
@@ -17574,6 +17832,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "TimelineProps": {
                     "relatedProp": "",
@@ -17663,6 +17924,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ToastBreakpointsType": {
                     "relatedProp": "",
@@ -17869,6 +18133,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ToastServiceMethods": {
                     "relatedProp": "",
@@ -17905,6 +18172,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ToggleButtonProps": {
                     "relatedProp": "",
@@ -18045,6 +18315,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "ToolbarProps": {
                     "relatedProp": "",
@@ -18104,6 +18377,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "TreeExpandedKeys": {
                     "relatedProp": "",
@@ -18391,6 +18667,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "TreeSelectProps": {
                     "relatedProp": "",
@@ -18599,6 +18878,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "TreeTableExpandedKeys": {
                     "relatedProp": "",
@@ -19308,6 +19590,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "TriStateCheckboxProps": {
                     "relatedProp": "",
@@ -19479,6 +19764,9 @@
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "emitDescription": "Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.",
+            "slotDescription": "Defines the slots used by the component.",
             "values": {
                 "VirtualScrollerItemOptions": {
                     "relatedProp": "",

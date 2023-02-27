@@ -44,6 +44,9 @@ export default {
         return {
             tab: 0
         };
+    },
+    mounted() {
+        this.tab = this.$route.hash.includes('api') ? 1 : 0;
     }
 };
 </script>

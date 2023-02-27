@@ -804,7 +804,9 @@ export interface DataTableProps {
      */
     filterInputProps?: InputHTMLAttributes | undefined;
 }
-
+/**
+ * Defines valid slots in Datatable component.
+ */
 export interface DataTableSlots {
     /**
      * Custom header template.
@@ -872,7 +874,9 @@ export interface DataTableSlots {
         index: number;
     }): VNode[];
 }
-
+/**
+ * Defines valid emits in Datatable component.
+ */
 export interface DataTableEmits {
     /**
      * Emitted when the first changes.
