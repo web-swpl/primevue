@@ -1068,15 +1068,15 @@ export interface DataTableEmits {
 }
 
 /**
- * **PrimeReact - Knob**
+ * **PrimeReact - DataTable**
  *
- * _Knob is a form component to define number inputs with a dial._
+ *  * _DataTable displays data in tabular format._
  *
  * [Live Demo](https://www.primevue.org/datatable/)
  * --- ---
  * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo.svg)
  *
- * @group Interfaces
+ * @group Component
  */
 declare class DataTable extends ClassComponent<DataTableProps, DataTableSlots, DataTableEmits> {
     /**
@@ -1101,6 +1101,7 @@ declare module '@vue/runtime-core' {
  *
  * - Column
  * - ColumnGroup
+ * - Row
  *
  * Demos:
  *

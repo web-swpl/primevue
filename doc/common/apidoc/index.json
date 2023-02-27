@@ -5848,7 +5848,7 @@
             }
         }
     },
-    "columnGroup": {
+    "columngroup": {
         "description": "",
         "interfaces": {
             "description": "Defines the custom interfaces used by the module.",
@@ -5862,7 +5862,7 @@
                             "name": "type",
                             "optional": true,
                             "readonly": false,
-                            "type": "ColumnGroupType",
+                            "type": "\"footer\" | \"header\"",
                             "default": "",
                             "description": "Type of column group"
                         }
@@ -6305,50 +6305,22 @@
     },
     "datatable": {
         "description": "DataTable displays data in tabular format.\n\n[Live Demo](https://www.primereact.org/datatable/)",
-        "interfaces": {
-            "description": "Defines the custom interfaces used by the module.",
-            "eventDescription": "Defines the custom events used by the component's emit.",
-            "methodDescription": "Defines methods that can be accessed by the component's reference.",
-            "values": {
-                "default": {
-                    "description": "**PrimeReact - Knob**\n\n_Knob is a form component to define number inputs with a dial._\n\n[Live Demo](https://www.primevue.org/datatable/)\n--- ---\n![PrimeVue](https://primefaces.org/cdn/primevue/images/logo.svg)",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "$emit",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function & Function",
-                            "default": ""
-                        },
-                        {
-                            "name": "$props",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "DataTableProps & VNodeProps & AllowedComponentProps & ComponentCustomProps",
-                            "default": ""
-                        },
-                        {
-                            "name": "$slots",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "DataTableSlots",
-                            "default": ""
-                        }
-                    ],
-                    "methods": [
+        "components": {
+            "default": {
+                "description": "DataTable displays data in tabular format.",
+                "methods": {
+                    "description": "Defines methods that can be accessed by the component's reference.",
+                    "values": [
                         {
                             "name": "exportCSV",
                             "parameters": [
                                 {
                                     "name": "options",
-                                    "optional": true,
                                     "type": "DataTableExportCSVOptions",
                                     "description": "Export options."
                                 },
                                 {
                                     "name": "data",
-                                    "optional": true,
                                     "type": "any[]",
                                     "description": "Custom exportable data. This param can be used on lazy dataTable."
                                 }
@@ -6356,9 +6328,15 @@
                             "returnType": "void",
                             "description": "Exports the data to CSV format."
                         }
-                    ],
-                    "extendedTypes": "ClassComponent<DataTableProps, DataTableSlots, DataTableEmits>"
-                },
+                    ]
+                }
+            }
+        },
+        "interfaces": {
+            "description": "Defines the custom interfaces used by the module.",
+            "eventDescription": "Defines the custom events used by the component's emit.",
+            "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "values": {
                 "DataTableCellEditCancelEvent": {
                     "description": "",
                     "relatedProp": "",
