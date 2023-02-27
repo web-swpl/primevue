@@ -6305,33 +6305,6 @@
     },
     "datatable": {
         "description": "DataTable displays data in tabular format.\n\n[Live Demo](https://www.primereact.org/datatable/)",
-        "components": {
-            "default": {
-                "description": "DataTable displays data in tabular format.",
-                "methods": {
-                    "description": "Defines methods that can be accessed by the component's reference.",
-                    "values": [
-                        {
-                            "name": "exportCSV",
-                            "parameters": [
-                                {
-                                    "name": "options",
-                                    "type": "DataTableExportCSVOptions",
-                                    "description": "Export options."
-                                },
-                                {
-                                    "name": "data",
-                                    "type": "any[]",
-                                    "description": "Custom exportable data. This param can be used on lazy dataTable."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Exports the data to CSV format."
-                        }
-                    ]
-                }
-            }
-        },
         "interfaces": {
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",

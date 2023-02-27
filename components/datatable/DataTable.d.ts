@@ -1076,7 +1076,7 @@ export interface DataTableEmits {
  * --- ---
  * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo.svg)
  *
- * @group Component
+ * @group Interface
  */
 declare class DataTable extends ClassComponent<DataTableProps, DataTableSlots, DataTableEmits> {
     /**
