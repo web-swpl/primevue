@@ -5855,6 +5855,11 @@
             "eventDescription": "Defines the custom events used by the component's emit.",
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
             "values": {
+                "ColumnGroupEmits": {
+                    "relatedProp": "",
+                    "props": [],
+                    "methods": []
+                },
                 "ColumnGroupProps": {
                     "relatedProp": "",
                     "props": [
@@ -5873,14 +5878,6 @@
                     "relatedProp": "",
                     "props": [],
                     "methods": []
-                }
-            }
-        },
-        "types": {
-            "description": "Defines the custom types used by the module.",
-            "values": {
-                "ColumnGroupEmits": {
-                    "values": "{}"
                 }
             }
         }
@@ -8325,13 +8322,6 @@
                             "default": ""
                         },
                         {
-                            "name": "groupheader",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        },
-                        {
                             "name": "header",
                             "optional": false,
                             "readonly": false,
@@ -8360,7 +8350,21 @@
                             "default": ""
                         }
                     ],
-                    "methods": []
+                    "methods": [
+                        {
+                            "name": "groupheader",
+                            "parameters": [
+                                {
+                                    "name": "options",
+                                    "optional": true,
+                                    "type": "Object",
+                                    "description": "Export options."
+                                }
+                            ],
+                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
+                            "description": "Custom group header template."
+                        }
+                    ]
                 },
                 "DataTableSortEvent": {
                     "description": "Custom tab open event.",

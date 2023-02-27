@@ -53,6 +53,7 @@ export default {
                 const emits = values[`${docName}Emits`];
                 const slots = values[`${docName}Slots`];
                 const methods = values['default'];
+                const types = APIDocs[moduleName]['types'];
                 let events = this.findEvents(values);
                 const interfaces = this.findOtherInterfaces(values);
 
@@ -113,6 +114,17 @@ export default {
                         component: DocApiTable,
                         data: this.setInterfacesData(moduleName, interfaces),
                         description: APIDocs[moduleName].interfaces.interfaceDescription || null
+                    });
+                }
+
+                if (types) {
+                    console.log('test');
+                    newDoc.children.push({
+                        id: `api.${moduleName}.types`,
+                        label: 'Types',
+                        component: DocApiTable,
+                        data: this.setTypesData(moduleName, types.values),
+                        description: APIDocs[moduleName].interfaces.typeDescription || null
                     });
                 }
 
@@ -207,6 +219,27 @@ export default {
                 });
 
                 data.push(interfaceDatas);
+            }
+
+            return data;
+        },
+        setTypesData(moduleName, types) {
+            const data = [];
+
+            for (const key of Object.keys(types)) {
+                const value = types[key];
+                const typeData = {
+                    id: `api.${moduleName}.${value}.events`,
+                    label: key,
+                    component: DocApiTable,
+                    data: []
+                };
+
+                typeData.data.push({
+                    values: value.values
+                });
+
+                data.push(typeData);
             }
 
             return data;
