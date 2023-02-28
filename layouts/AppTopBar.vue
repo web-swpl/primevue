@@ -52,6 +52,8 @@
 </template>
 
 <script>
+import pkg from '@/package.json';
+
 export default {
     emits: ['menubutton-click', 'configbutton-click'],
     outsideClickListener: null,
@@ -60,7 +62,7 @@ export default {
             versions: [
                 {
                     name: 'v3',
-                    version: '3.23.0',
+                    version: pkg.version,
                     url: 'https://www.primevue.org'
                 },
                 {
