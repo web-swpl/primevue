@@ -5,7 +5,9 @@
     <div class="card">
         <MegaMenu :model="items" orientation="horizontal">
             <template #start>
-                <img alt="logo" src="https://primefaces.org/cdn/primevue/images/primevue-logo-dark.svg" height="40" class="mr-2" />
+                <span class="flex align-items-center">
+                    <img alt="logo" src="https://primefaces.org/cdn/primevue/images/primevue-logo-dark.svg" height="28" class="mr-2" />
+                </span>
             </template>
             <template #end>
                 <InputText placeholder="Search" type="text" />
@@ -139,7 +141,7 @@ export default {
                 basic: `
 <MegaMenu :model="items" orientation="horizontal">
     <template #start>
-        <img alt="logo" src="https://primefaces.org/cdn/primevue/images/primevue-logo-dark.svg" height="40" class="mr-2" />
+        <img alt="logo" src="https://primefaces.org/cdn/primevue/images/primevue-logo-dark.svg" height="28" class="mr-2" />
     </template>
     <template #end>
         <InputText placeholder="Search" type="text" />
@@ -150,7 +152,9 @@ export default {
     <div class="card">
         <MegaMenu :model="items" orientation="horizontal">
             <template #start>
-                <img alt="logo" src="https://primefaces.org/cdn/primevue/images/primevue-logo-dark.svg" height="40" class="mr-2" />
+                <span class="flex align-items-center">
+                    <img alt="logo" src="https://primefaces.org/cdn/primevue/images/primevue-logo-dark.svg" height="28" class="mr-2" />
+                </span>
             </template>
             <template #end>
                 <InputText placeholder="Search" type="text" />
@@ -286,7 +290,9 @@ export default {
                 composition: `
 <MegaMenu :model="items" orientation="horizontal">
     <template #start>
-        <img alt="logo" src="https://primefaces.org/cdn/primevue/images/primevue-logo-dark.svg" height="40" class="mr-2" />
+        <span class="flex align-items-center">
+            <img alt="logo" src="https://primefaces.org/cdn/primevue/images/primevue-logo-dark.svg" height="28" class="mr-2" />
+        </span>
     </template>
     <template #end>
         <InputText placeholder="Search" type="text" />
