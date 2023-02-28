@@ -1,11 +1,11 @@
 export default {
     surfaces: {
-        ground: '#eff3f8',
-        section: '#ffffff',
-        card: '#ffffff',
-        overlay: '#ffffff',
-        border: '#dfe7ef',
-        hover: '#f6f9fc'
+        ground: '#040d19',
+        section: '#040d19',
+        card: '#071426',
+        overlay: '#071426',
+        border: '#0b213f',
+        hover: 'rgba(255,255,255,.03)'
     },
     general: {
         fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
@@ -23,7 +23,7 @@ export default {
         border: '1px solid #ced4da'
     },
     inputSwitch: {
-        width: '5rem',
+        width: '3rem',
         height: '1.75rem',
         borderRadius: '30px',
         transitionProperty: 'background-color, color, box-shadow',
@@ -38,7 +38,7 @@ export default {
             padding: '.25rem',
             offBg: '#ced4da',
             offHoverBg: '#b6bfc8',
-            onBg: '#6366F1',
+            onBg: '#ff0000',
             onHoverBg: '#4F46E5'
         }
     }

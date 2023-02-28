@@ -7,6 +7,8 @@
 <script>
 import EventBus from '@/layouts/AppEventBus';
 import News from '@/assets/data/news.json';
+import laraLight from '@/themes/lara-light';
+import laraDark from '@/themes/lara-dark';
 
 export default {
     themeChangeListener: null,
@@ -47,7 +49,13 @@ export default {
         };
 
         this.themeChangeListener = (event) => {
-            const elementId = 'theme-link';
+            if (event.dark)
+                this.$primevue.config.theme = laraDark;
+            else
+                this.$primevue.config.theme = laraLight;
+            
+            
+            /*const elementId = 'theme-link';
             const linkElement = document.getElementById(elementId);
             const cloneLinkElement = linkElement.cloneNode(true);
             const newThemeUrl = linkElement.getAttribute('href').replace(this.$appState.theme, event.theme);
@@ -59,7 +67,7 @@ export default {
                 cloneLinkElement.setAttribute('id', elementId);
             });
             linkElement.parentNode?.insertBefore(cloneLinkElement, linkElement.nextSibling);
-
+*/
             this.$appState.theme = event.theme;
             this.$appState.darkTheme = event.dark;
         };

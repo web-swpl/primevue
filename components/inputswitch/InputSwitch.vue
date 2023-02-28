@@ -66,6 +66,10 @@ export default {
         'aria-label': {
             type: String,
             default: null
+        },
+        theme: {
+            type: null,
+            default: null
         }
     },
     data() {
@@ -109,12 +113,15 @@ export default {
         },
         checked() {
             return this.modelValue === this.trueValue;
+        },
+        themeProps() {
+            return this.theme ? {...this.$primevue.config.theme, ...this.theme} : this.$primevue.config.theme;
         }
     }
 };
 </script>
 
-<style>
+<style scoped>
 .p-inputswitch {
     position: relative;
     display: inline-block;
@@ -129,49 +136,45 @@ export default {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--p-input-switch-slider-off-bg);
-    transition-property: var(--p-input-switch-transition-property);
-    transition-duration: var(--p-transition-duration);
-    border-radius: var(--p-input-switch-border-radius);
+    background: var('--p-input-switch-slider-off-bg');
+    transition-property: var('--p-input-switch-transition-property');
+    transition-duration: var('--p-transition-duration');
+    border-radius: var('--p-input-switch-border-radius');
 }
 
 .p-inputswitch-slider:before {
     position: absolute;
     content: '';
     top: 50%;
-    background: var(--p-input-switch-handle-off-bg);
-    width: var(--p-input-switch-handle-width);
-    height: var(--p-input-switch-handle-height);
-    left: var(--p-input-switch-slider-padding);
-    margin-top: calc(-1 * var(--p-input-switch-handle-height) / 2);
-    border-radius: var(--p-input-switch-handle-border-radius);
-    transition-duration: var(--p-transition-duration);
+    background: v-bind('themeProps.inputSwitch.handle.offBg');
+    width: v-bind('themeProps.inputSwitch.handle.width');
+    height: v-bind('themeProps.inputSwitch.handle.height');
+    left: v-bind('themeProps.inputSwitch.slider.padding');
+    margin-top: calc(-1 * v-bind('themeProps.inputSwitch.handle.height') / 2);
+    border-radius: v-bind('themeProps.inputSwitch.handle.borderRadius');
+    transition-duration: v-bind('themeProps.general.transitionDuration');
 }
 
 .p-inputswitch-checked .p-inputswitch-slider {
-    background: var(--p-input-switch-slider-on-bg);
+    background: v-bind('themeProps.inputSwitch.slider.onBg');
 }
 
 .p-inputswitch-checked .p-inputswitch-slider:before {
-    transform: translateX(var(--p-input-switch-handle-width));
-    background: var(--p-input-switch-handle-on-bg);
+    transform: translateX(v-bind('themeProps.inputSwitch.handle.width'));
+    background: v-bind('themeProps.inputSwitch.handle.onBg');
 }
 
 .p-inputswitch-checked:not(.p-disabled):hover .p-inputswitch-slider {
-    background: var(--p-input-switch-slider-on-hover-bg);
+    background: v-bind('themeProps.inputSwitch.slider.onHoverBg');
 }
 
 /* *** */
 .p-inputswitch {
-
-
     /*&.p-focus {
         .p-inputswitch-slider {
             @include focused();
         }
     }
-
-    
 
     &.p-invalid {
         @include invalid-input();

@@ -19,9 +19,9 @@
                 <InputSwitch v-model="checked1" />
 
                 <h5>Preselection</h5>
-                <InputSwitch v-model="checked2" />
-            </div>
-        </div>
+                <InputSwitch v-model="checked2" :theme="mytheme" :style="{'--p-input-switch-width': '10rem'}"/>
+                </div>
+                </div>
 
         <InputSwitchDoc />
     </div>
@@ -33,8 +33,30 @@ import InputSwitchDoc from './InputSwitchDoc';
 export default {
     data() {
         return {
-            checked1: false,
-            checked2: true
+            checked1: true,
+            checked2: true,
+            mytheme: {
+                inputSwitch: {
+                    width: '3rem',
+                    height: '1.75rem',
+                    borderRadius: '4px',
+                    transitionProperty: 'background-color, color, box-shadow',
+                    handle: {
+                        width: '1.250rem',
+                        height: '1.250rem',
+                        borderRadius: '4px',
+                        offBg: '#ffffff',
+                        onBg: '#ffffff',
+                    },
+                    slider: {
+                        padding: '.25rem',
+                        offBg: '#ced4da',
+                        offHoverBg: '#b6bfc8',
+                        onBg: '#008080',
+                        onHoverBg: '#329999'
+                    }
+                }
+            }
         };
     },
     components: {

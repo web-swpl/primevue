@@ -1,5 +1,5 @@
 import { FilterMatchMode } from 'primevue/api';
-import { inject, reactive } from 'vue';
+import { inject, reactive, watch } from 'vue';
 import CommonStyle from './CommonStyle.vue';
 
 const defaultOptions = {
@@ -154,12 +154,34 @@ function camelToKebab(str) {
     return str;
  }
 
+ function applyCSSVariables(theme) {
+    try {
+        let root = document.documentElement;
+
+        for (const key in theme.surfaces) {
+            let variableName = '--surface-' + key;
+            let variableValue = theme.surfaces[key];
+
+            root.style.setProperty(variableName, variableValue);
+        }
+    } catch (error) {
+
+    }
+}
+
 export default {
     install: (app, options) => {
         let configOptions = options ? { ...defaultOptions, ...options } : { ...defaultOptions };
-        const PrimeVue = {
-            config: reactive(configOptions)
-        };
+        const PrimeVue = reactive({config: configOptions});
+
+        applyCSSVariables(PrimeVue.config.theme);
+
+        watch(
+            () => PrimeVue.config.theme,
+            (theme) => {
+                applyCSSVariables(theme);
+            }
+        );
         
         try {
             let root = document.documentElement;
@@ -187,7 +209,6 @@ export default {
         } catch (error) {
 
         }
-        
 
         app.config.globalProperties.$primevue = PrimeVue;
         app.component('PrimeVueCommonStyle', CommonStyle);
