@@ -7473,7 +7473,7 @@
                             "name": "compareSelectionBy",
                             "optional": true,
                             "readonly": false,
-                            "type": "DataTableCompareSelectionBy",
+                            "type": "DataTableCompareSelectionByType",
                             "default": "",
                             "description": "Algorithm to define if a row is selected, valid values are 'equals' that compares by reference and 'deepEquals' that compares all fields."
                         },
@@ -8717,7 +8717,7 @@
                 "DataTableColumnResizeModeType": {
                     "values": "\"fit\" | \"expand\" | undefined"
                 },
-                "DataTableCompareSelectionBy": {
+                "DataTableCompareSelectionByType": {
                     "values": "\"equals\" | \"deepEquals\" | undefined"
                 },
                 "DataTableDataKeyType": {

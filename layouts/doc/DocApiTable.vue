@@ -72,14 +72,14 @@ export default {
     },
     methods: {
         isLinkType(key, value) {
-            const primitiveTypes = ['string', 'number', 'boolean', 'object', 'array', 'function', 'symbol', 'null', 'undefined'];
+            const primitiveTypes = ['string', 'number', 'boolean', 'object', 'array', 'function', 'symbol', 'null', 'undefined', 'any', 'Event'];
 
             return key === 'type' && !primitiveTypes.includes(value);
         },
         setLinkPath(value) {
             const currentRoute = this.$router.currentRoute.value.name;
 
-            const definationType = value.includes('type') ? 'types' : 'interfaces';
+            const definationType = value.includes('Type') ? 'types' : 'interfaces';
 
             return `/${currentRoute}/#api.${currentRoute}.${definationType}.${value}`;
         }

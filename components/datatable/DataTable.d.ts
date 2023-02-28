@@ -29,7 +29,7 @@ export declare type DataTableFilterDisplayType = 'menu' | 'row' | undefined;
 
 export declare type DataTableSelectionModeType = 'single' | 'multiple' | undefined;
 
-export declare type DataTableCompareSelectionBy = 'equals' | 'deepEquals' | undefined;
+export declare type DataTableCompareSelectionByType = 'equals' | 'deepEquals' | undefined;
 
 export declare type DataTableColumnResizeModeType = 'fit' | 'expand' | undefined;
 
@@ -622,10 +622,10 @@ export interface DataTableProps {
     selectionMode?: DataTableSelectionModeType;
     /**
      * Algorithm to define if a row is selected, valid values are 'equals' that compares by reference and 'deepEquals' that compares all fields.
-     * @see DataTableCompareSelectionBy
+     * @see DataTableCompareSelectionByType
      * Default value is 'deepEquals'.
      */
-    compareSelectionBy?: DataTableCompareSelectionBy;
+    compareSelectionBy?: DataTableCompareSelectionByType;
     /**
      * Defines whether metaKey is requred or not for the selection. When true metaKey needs to be pressed to select or unselect an item and
      * when set to false selection of each item can be toggled individually. On touch enabled devices, metaKeySelection is turned off automatically.
