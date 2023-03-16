@@ -491,7 +491,6 @@ export default {
 
                         this.$emit('update:sortField', this.d_sortField);
                         this.$emit('update:sortOrder', this.d_sortOrder);
-                        this.resetPage();
                     }
                     else if (this.sortMode === 'multiple') {
                         let metaKey = event.metaKey || event.ctrlKey;
@@ -503,6 +502,7 @@ export default {
                         this.$emit('update:multiSortMeta', this.d_multiSortMeta);
                     }
 
+                    this.resetPage();
                     this.$emit('sort', this.createLazyLoadEvent(event));
                     this.$emit('value-change', this.processedData);
                 }
